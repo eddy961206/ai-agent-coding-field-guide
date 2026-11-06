@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "title": "AI 에이전트와 일을 잘하는 방법",
+  "edition": "2026-11-06",
+  "timezone": "Asia/Seoul",
+  "research_run": "research/runs/2026-11-06.md",
+  "repo": "https://github.com/eddy961206/ai-agent-coding-field-guide",
+  "language": "ko",
+  "summary": "X·Reddit·GitHub의 AI 에이전트 개발 방법론을 날짜, 원문, 적용 조건과 함께 비교하는 공개 연구 자료집."
+}

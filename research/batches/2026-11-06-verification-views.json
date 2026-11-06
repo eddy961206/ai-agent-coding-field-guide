@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "topic": "검증 방법에 관한 입장 차이와 형식 기법의 범위",
+  "as_of": "2026-11-06",
+  "timezone": "Asia/Seoul",
+  "scope": "2026년 10–11월의 원작성자 X 게시물. 검증 효과의 재현 실험은 하지 않음.",
+  "findings": [
+    {
+      "source_id": "2117437607940681849",
+      "original_url": "https://x.com/poteto/status/2117437607940681849",
+      "author": "@poteto",
+      "published_on": "2026-11-03",
+      "date_basis": "게시 시각을 KST로 변환",
+      "checked_on": "2026-11-06",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "추상적인 적대적 리뷰의 가치가 작았다는 자신의 경험을 바탕으로 사용을 줄이겠다고 말한다.",
+      "editorial_takeaway": "재현 가능한 결함을 찾는지와 비용을 보고 리뷰 방식을 고른다.",
+      "limitations": [
+        "개인 경험이며 모든 리뷰가 불필요하다는 비교 실험은 아니다."
+      ],
+      "related_source_ids": [
+        "2111604705340326393"
+      ],
+      "change_type": "changed_view",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2111604705340326393",
+      "original_url": "https://x.com/addyosmani/status/2111604705340326393",
+      "author": "@addyosmani",
+      "published_on": "2026-10-18",
+      "date_basis": "게시 시각을 KST로 변환",
+      "checked_on": "2026-11-06",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "실행 검사·속성 검사·기능 지도와 함께 여러 에이전트의 적대적 리뷰를 검증의 한 층으로 제시한다.",
+      "editorial_takeaway": "후속 poteto의 다른 경험과 함께 읽고 작업 종류에 맞는 검증을 선택한다.",
+      "limitations": [
+        "다층 검증의 제안이며 리뷰 수를 늘리면 품질이 보장된다는 뜻은 아니다."
+      ],
+      "related_source_ids": [
+        "2117437607940681849"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2118416074601545968",
+      "original_url": "https://x.com/poteto/status/2118416074601545968",
+      "author": "@poteto",
+      "published_on": "2026-11-06",
+      "date_basis": "게시 시각을 KST로 변환",
+      "checked_on": "2026-11-06",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "형식 기법은 가정과 명세의 범위에서 성질을 확인하며, 명세가 사람의 의도에 맞는지는 사람이 판단해야 한다.",
+      "editorial_takeaway": "모델 범위, 코드 대응, 실제 실행 관찰을 함께 기록한다.",
+      "limitations": [
+        "모델과 코드의 차이와 한정된 탐색 범위를 보존해야 한다."
+      ],
+      "related_source_ids": [
+        "2118425409276801121"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    }
+  ],
+  "counterevidence": [
+    "Addy의 다층 검증 제안과 poteto의 추상적 적대 리뷰에 대한 부정적인 경험을 어느 한쪽의 보편적 승리로 해석하지 않음."
+  ],
+  "access_gaps": [
+    "이 batch는 모든 후속 답글을 다루지 않음."
+  ],
+  "next_questions": [
+    "같은 작업에서 리뷰 방식별로 실제 결함 발견과 비용을 비교한 근거가 있는가?"
+  ],
+  "publishing_status": "reviewed_for_publication"
+}

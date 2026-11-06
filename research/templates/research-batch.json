@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "topic": "조사할 주제",
+  "as_of": "YYYY-MM-DD",
+  "timezone": "Asia/Seoul",
+  "scope": "기간과 플랫폼, 포함·제외 조건",
+  "findings": [
+    {
+      "source_id": "stable-id",
+      "original_url": "https://example.com/original",
+      "author": "원작성자",
+      "published_on": null,
+      "date_basis": "작성일 미확인. 확인일로 대체하지 않음",
+      "checked_on": "YYYY-MM-DD",
+      "source_kind": "X | Reddit | GitHub | Web",
+      "evidence_kind": "opinion | self_report | implementation | controlled_study | survey | curation | vendor_report",
+      "author_claim": "원작성자의 주장을 짧게 요약",
+      "editorial_takeaway": "조사자가 제안하는 활용법",
+      "limitations": ["확인하지 못한 조건"],
+      "related_source_ids": [],
+      "change_type": "addition | correction | changed_view | applicability_change",
+      "revision": null,
+      "snapshot_url": null
+    }
+  ],
+  "counterevidence": [],
+  "access_gaps": [],
+  "next_questions": [],
+  "publishing_status": "research_only"
+}
