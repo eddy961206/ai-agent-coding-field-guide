@@ -1,0 +1,56 @@
+[
+  {
+    "id": "bug",
+    "label": "Bug fix",
+    "title": "Bug fix: establish the reproduction steps first",
+    "context": "Observed symptoms, steps to reproduce, expected behavior, relevant versions and logs.",
+    "verify": "The problem no longer occurs with the same steps, and related user flows still work.",
+    "trim": "For a narrow bug, do not start with broad architectural changes or several review agents.",
+    "artifact": "Cause → change → execution evidence → unverified scope"
+  },
+  {
+    "id": "migration",
+    "label": "System migration",
+    "title": "System migration: separate behavior to preserve from behavior to change",
+    "context": "Existing contracts and real examples, compatibility scope and intentional behavior changes.",
+    "verify": "Compare before-and-after results for identical inputs, including errors, permissions, data and performance. Connect differences to intent.",
+    "trim": "Divide the work into reviewable user flows instead of replacing everything at once.",
+    "artifact": "Behavior comparison + intentional differences + evidence from the actual environment"
+  },
+  {
+    "id": "state",
+    "label": "State and concurrency",
+    "title": "State and concurrency: connect stated properties to actual code",
+    "context": "States, events, transitions, forbidden states and concurrency assumptions.",
+    "verify": "Check the conditions and scope of model exploration or proofs, and the correspondence with code. Reproduce counterexamples as real flows.",
+    "trim": "Focus on costly races and core states instead of formalizing all the code.",
+    "artifact": "State diagram + checked properties and scope + code correspondence + runtime observations"
+  },
+  {
+    "id": "ui",
+    "label": "UI change",
+    "title": "UI change: judge it through real user flows",
+    "context": "Representative data, empty, failure and loading states, device sizes and action sequences.",
+    "verify": "Check input, navigation, saving and resulting data in a real browser. Also check keyboard use and narrow screens.",
+    "trim": "Distinguish a static mockup from verified functionality. Do not infer working data integration from screenshots alone.",
+    "artifact": "Before-and-after screens + action sequence + actual results + checked viewport sizes"
+  },
+  {
+    "id": "long",
+    "label": "Long-running work",
+    "title": "Long-running work: use units that can be handed off",
+    "context": "The goal, settled decisions, current revision, dependencies, and time and cost budgets.",
+    "verify": "Acceptance criteria and execution results for each unit. Track completed and unverified work separately.",
+    "trim": "Avoid repeated interviews when no major decision needs discussion. Do not repeat every step across several models.",
+    "artifact": "Progress record + evidence by revision + next action + stopping conditions"
+  },
+  {
+    "id": "learn",
+    "label": "Learning a new area",
+    "title": "Learning a new area: assess output and understanding separately",
+    "context": "Your current understanding, an example to try, suspected causes and what you do not yet know.",
+    "verify": "Read the code and explain input → state → result. Predict what would fail if the conditions changed.",
+    "trim": "Ask for the reasoning behind important decisions and small examples, not just finished code.",
+    "artifact": "Your explanation + actual evidence + incorrect assumptions + the next exercise"
+  }
+]

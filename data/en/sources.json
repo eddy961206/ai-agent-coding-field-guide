@@ -1,0 +1,565 @@
+[
+  {
+    "id": "2111133080526495985",
+    "title": "Four layers for greater trust",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2117437607940681849",
+    "title": "A recent position on adversarial review",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118425409276801121",
+    "title": "The difference between runtime verification and formal verification",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118416074601545968",
+    "title": "Limits of formal methods and statecharts",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118073519515025804",
+    "title": "Checking product intent with statecharts",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2115880102601101414",
+    "title": "Introducing the pstack statechart skill",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2082874054483255805",
+    "title": "Feature maps and verification skills",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2106542593656111276",
+    "title": "Correcting recurring mistakes through the environment",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2117043478140276847",
+    "title": "Game development case: linting and state models",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2110149626133438732",
+    "title": "A claim about outdated comments",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2107913381751730352",
+    "title": "A thought experiment on agent friendliness",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2109024196760305861",
+    "title": "Summarizing the status of parallel work",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2090141955695198633",
+    "title": "Experience running cloud agents",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118017093677494706",
+    "title": "Claims about code output and their limits",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2110757066709356851",
+    "title": "A guide to using pstack",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118419507685544058",
+    "title": "Experience with system-specific formal verification skills",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2116576229319233596",
+    "title": "A small number of bots and work context",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2116580481236115933",
+    "title": "Automation frequency and cost",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2109356992032817621",
+    "title": "Claims about readability and performance",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2107565388250874193",
+    "title": "Prompts that convey goals, effort, and verification",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2102543349102338309",
+    "title": "A case using Lean and TLA+",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2074997570317779038",
+    "title": "Experience checking skills and settings",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2077460395279692197",
+    "title": "Turning recurring work into automation and rules",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2114967833708732607",
+    "title": "When subagents are useful",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2111604705340326393",
+    "title": "Layered verification and review",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2113677798774898773",
+    "title": "Screen recordings as verification evidence",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2106995301802541481",
+    "title": "E2E, property-based, and differential verification",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2098662421644853433",
+    "title": "Review based on outcomes, constraints, and impact",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2094314241662574915",
+    "title": "Deliberate learning in the age of agents",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2103288927805476900",
+    "title": "Agents and the difficulties of software engineering",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2090299859693695283",
+    "title": "A case of an unrequested push to an external remote",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2060088112257372610",
+    "title": "Baseline comparisons for renderer optimization",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2066657032938442833",
+    "title": "Hidden conditions behind 'it works'",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2066645959539556852",
+    "title": "Breaking large changes into reviewable units",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2063697162748260627",
+    "title": "Thinking in terms of agent iteration loops",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2112597162924351909",
+    "title": "Experience with a frontend migration loop",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2077539537992229076",
+    "title": "Short prompts with rich context",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2080710971228918066",
+    "title": "Experience shortening a system prompt",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2105819303471976479",
+    "title": "Understanding results through visualization and explanation",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2112115522099667417",
+    "title": "Domain knowledge and finding errors",
+    "evidence": "Personal opinion and experience",
+    "date_basis": "Publication time converted to KST",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "simon-guide",
+    "title": "Agentic Engineering Patterns: practical patterns and prompts",
+    "evidence": "Date the guide began publication; content may change afterward",
+    "date_basis": "Date the guide began publication; revision dates differ by chapter",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "pipelign",
+    "title": "Practitioner workflows and review dates for each source",
+    "evidence": "Creation date stated by the author",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "awesome",
+    "title": "Agent development resources organized by topic",
+    "evidence": "Creation date unverified; the repository may change",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "when-not",
+    "title": "A list that distinguishes when to use each tool and when not to",
+    "evidence": "Date the repository identifies as its last meaningful update",
+    "date_basis": "Last meaningful update date stated in the README",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "x-web",
+    "title": "Rebuilding X's web app with agents",
+    "evidence": "Company self-report",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "anthropic-harness",
+    "title": "Continuing long tasks across sessions",
+    "evidence": "The models and tools are from a 2025 case",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "anthropic-2026",
+    "title": "Harness design for long-running tasks",
+    "evidence": "An internal experiment; not a guarantee for other environments",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "metr2025",
+    "title": "A randomized experiment using early-2025 tools",
+    "evidence": "Limited to the early-2025 environment",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "metr2026",
+    "title": "Selection bias in a follow-up productivity experiment",
+    "evidence": "Limits of the estimates in the follow-up experiment",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "reddit-claude",
+    "title": "A Claude Code user's step-by-step workflow experience",
+    "evidence": "Original publication date could not be verified; personal experience",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Original post or specified comment"
+  },
+  {
+    "id": "reddit-codex",
+    "title": "Management overhead when using Claude and Codex together",
+    "evidence": "Original publication date could not be verified; the poster's question and experience",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Original post or specified comment"
+  },
+  {
+    "id": "pstack",
+    "title": "The original repository for pstack skills",
+    "evidence": "Creation date unverified; the repository may change",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "last30days",
+    "title": "last30days: searching recent material across platforms",
+    "evidence": "README reviewed; search quality and accessibility were not tested directly",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "superpowers",
+    "title": "Superpowers: skills for design, planning, and verification",
+    "evidence": "README reviewed; effectiveness was not independently verified",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "compound",
+    "title": "Compound Engineering: turning work results into knowledge for the next task",
+    "evidence": "README reviewed; effects and costs of individual features vary by environment",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "agent-os",
+    "title": "Agent OS: injecting project rules where needed",
+    "evidence": "README reviewed; organizing project rules requires effort",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "spec-kit",
+    "title": "Spec Kit: from specifications to planning, execution, and verification",
+    "evidence": "README reviewed; the process may be excessive for small tasks",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "openspec",
+    "title": "OpenSpec: specifications and archives for individual changes",
+    "evidence": "README reviewed; specifications must be maintained so they do not drift from the actual code",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "gsd",
+    "title": "GSD Core: context per task and verification at each stage",
+    "evidence": "Reviewed the relocation notice in the former gsd-build/get-shit-done repository and the new README",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "awesome-claude",
+    "title": "Exploring Claude Code resources by use case",
+    "evidence": "Distinguishes recent additions from archived resources; the usefulness of each recommendation is a separate question",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "claude-best",
+    "title": "A usage guide linking concepts, implementations, and original sources",
+    "evidence": "README reviewed; Claude-specific features need to be checked for each version",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "ralph-guide",
+    "title": "Ralph: requirements, planning, and execution loops",
+    "evidence": "README reviewed; the token ratios it presents are not treated as universally optimal",
+    "date_basis": "Publication date unverified",
+    "review_scope": "Relevant sections of the README or linked documents"
+  },
+  {
+    "id": "rpi",
+    "title": "Research–Plan–Implement and deliberate context compaction",
+    "evidence": "Practical experience from a 2025 environment",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "humanlayer-history",
+    "title": "A timeline of HumanLayer's evolving methodology",
+    "evidence": "Reviewed the web page summary; linked videos were not watched separately",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "ralph-original",
+    "title": "An early explanation of the Ralph technique",
+    "evidence": "An early experience report; not used as grounds to recommend unlimited iteration",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Relevant sections of the original web page"
+  },
+  {
+    "id": "reddit-combined",
+    "title": "An 11-step workflow combining multiple skills",
+    "evidence": "Personal experience; comments also mention cost concerns",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Original post or specified comment",
+    "author": "Author unverified"
+  },
+  {
+    "id": "reddit-overhead",
+    "title": "Experience removing excessive process from small tasks",
+    "evidence": "Personal experience; not a general performance assessment of the current version",
+    "date_basis": "Date shown in the original source",
+    "review_scope": "Original post or specified comment",
+    "author": "Author unverified"
+  },
+  {
+    "id": "reddit-p8ylsop",
+    "title": "Separate current behavior, proposed changes, and open decisions before adding agents",
+    "date_basis": "Search results for the original source show the comment date as Thursday September 10 2026. The opened original displays only relative times. UTC timestamp unverified; not converted to a KST date.",
+    "review_scope": "Original post or specified comment",
+    "takeaway": "The advice is to have the agent read the relevant code without editing it, then separate current behavior, proposed changes, and items requiring the user's decision, with file references. The author clarified that this can begin in the existing terminal without setting up separate agents. Give the reviewer the original request and actual code, not just the planner's explanation.",
+    "author": "u/OriginalHospital (question by: u/Jao_)",
+    "evidence": "A small discussion consisting of questions and advice. It provides no productivity experiment or reproduction materials. Another comment's claim of 82% cost savings was not verified and is not adopted."
+  },
+  {
+    "id": "reddit-p9gcq33",
+    "title": "Implement, review, and fix findings against narrow criteria",
+    "date_basis": "Search results for the original source show the comment as Sunday September 13 2026; the post is dated September 12. UTC timestamp unverified.",
+    "review_scope": "Original post or specified comment",
+    "takeaway": "The report separates implementation and review roles while keeping review criteria narrow. It passes the diff, test output, and stop condition instead of the entire conversation, and the implementer fixes only the findings. The original post reports substantial manual iteration and team review overhead when a design was implemented in bulk immediately.",
+    "author": "u/reddebtt (question by: u/mh711)",
+    "evidence": "A personal report that review became easier. No before-and-after measurements are provided, and the author's repository was not examined. The original post also notes orchestration costs and a lack of knowledge about a proprietary platform."
+  },
+  {
+    "id": "reddit-paqqf1b",
+    "title": "Using HTML built from real components and CSS as a UI specification",
+    "date_basis": "Search results for the original source show this comment as Saturday September 19 2026. UTC timestamp unverified.",
+    "review_scope": "Original post or specified comment",
+    "takeaway": "A team reports maintaining static HTML pages with realistic data using actual product components and CSS. Before a large implementation, they extend the target screens and reach agreement in a browser. After implementation, they remove temporary HTML and CSS and reconnect the real components to keep mockups from drifting away from the product.",
+    "author": "u/gojkoa (question by: u/Professional-Ad-2365)",
+    "evidence": "A self-report of reduced time and token use, without figures. Static UI mockups alone do not verify asynchronous states, accessibility, or real data connections."
+  },
+  {
+    "id": "reddit-pcryp7z",
+    "title": "Design handoffs and change ownership before assigning models",
+    "date_basis": "Search results for the original source show this comment as Tuesday September 29 2026; the post is dated September 28. UTC timestamp unverified.",
+    "review_scope": "Original post or specified comment",
+    "takeaway": "The comment points out that multiple agents can inherit the same mistaken assumption. It proposes passing versioned specifications, acceptance criteria, actual diffs, and test results to the relevant roles. It recommends tying handoffs to an exact revision, separating assumptions from accepted decisions, and tracking implemented and verified as different states.",
+    "author": "u/that1hairdude (question by: u/girthyclock)",
+    "evidence": "Design advice, not a comparative study demonstrating effectiveness. The proposal to have one change owner at a time is a different operational choice from parallel work in isolated worktrees. There is no basis here for requiring a full separation of roles for every task."
+  },
+  {
+    "id": "reddit-phnv3d3",
+    "title": "Plan, implement, and use the product to verify; automate to prevent recurrence",
+    "date_basis": "Search results for the original source show this comment as Monday October 19 2026. The opened cached original shows only relative times. UTC timestamp unverified.",
+    "review_scope": "Original post or specified comment",
+    "takeaway": "A solo developer reports storing specifications, decision records, milestones, and acceptance criteria as repository files. Planning still requires substantial conversation, and the author cautions against excessive automation. After implementation, they personally use different product scenarios, then prevent recurrence of discovered problems with tests, evaluations, CI, and scripts.",
+    "author": "u/rodms10 (question by: u/Technical-Aside4471)",
+    "evidence": "The author explicitly states that this is solo development, not team use. The comment includes promotion of a design tool they created. No independent verification of the completion rate or quality of overnight automated loops is provided."
+  },
+  {
+    "id": "matt-pocock-skills",
+    "title": "Skills For Real Engineers",
+    "date_basis": "GitHub API: latest README.md commit, b0618bc436ad893b3c5e84e55fba86586d34a404; not initial publication. https://github.com/mattpocock/skills/commit/b0618bc436ad893b3c5e84e55fba86586d34a404",
+    "review_scope": "Relevant sections of the README or linked documents",
+    "takeaway": "Combines small skills. Uses grill-with-docs to align requirements and terminology, recording them in GLOSSARY.md and ADRs. Connects to-spec → to-tickets → implement and makes ticket dependencies explicit. Well suited to a guide organized as problem → relevant skill → verification method.",
+    "evidence": "A practitioner's methodology; superiority has not been demonstrated through comparative experiments. Do not require interviews or TDD for every change; explain their use according to task size and repository policy. Installation instructions were read but not executed."
+  },
+  {
+    "id": "addy-2026-workflow",
+    "title": "My LLM coding workflow going into 2026",
+    "date_basis": "Date directly below the original title. No revision date is shown.",
+    "review_scope": "Relevant sections of the original web page",
+    "takeaway": "Define the problem and specification, then iterate in small implementation units while providing relevant code and constraints. Keep a workflow in which people understand the results and remain responsible for them. Useful as an overview of the complete workflow for beginners.",
+    "evidence": "An article synthesizing practical experience and external cases, not an independent productivity assessment. Do not turn lengthy specifications or large context inputs into requirements for every task."
+  },
+  {
+    "id": "polimi-evidence-bibliography",
+    "title": "The SE & AI Annotated Bibliography",
+    "date_basis": "Publication date of the Annotated Bibliography; the included material has a cutoff date of 2026-10-08. The methodology article was published on 2026-10-06.",
+    "review_scope": "Relevant sections of the original web page",
+    "takeaway": "Records study type, a one-sentence summary, methods, numerical results, and publication status, while separately tracking new material, status changes, and corrections. Groups 193 studies into 9 topics, allowing multiple topic classifications. Particularly useful for designing source cards and update logs for a public guide. Original methodology: https://www.sepolimi.com/p/what-we-actually-know-about-ai-and",
+    "evidence": "The authors explicitly describe this as a descriptive record that does not reproduce experiments or validate methods. They disclose that Claude generated the bibliography. Because it is licensed CC BY-NC-ND, use original summaries and source links rather than redistributing a full translation. This research did not confirm whether the announced regular November publication actually took place."
+  },
+  {
+    "id": "karpathy-autoresearch",
+    "title": "autoresearch",
+    "date_basis": "GitHub API: latest README.md commit, e6d79c123441a53d91bb8df7adf4db45cf120bf1. The README introduction specifies only March 2026. https://github.com/karpathy/autoresearch/commit/e6d79c123441a53d91bb8df7adf4db45cf120bf1",
+    "review_scope": "Relevant sections of the README or linked documents",
+    "takeaway": "Separates editable files, fixed evaluation code, runtime budgets, and evaluation metrics, then repeats experiment → measure → keep/discard. Treat it in a methodology guide as a narrowly scoped example of performance-improvement experiments.",
+    "evidence": "Designed for model training on a single GPU. Do not transfer its 5-minute training budget and val_bpb metric into general standards for product development. The source also states that results cannot be directly compared across different hardware. Do not adopt the README's recommendation to disable all permission checks as default operating instructions."
+  },
+  {
+    "id": "anthropic-skill-formation",
+    "title": "How AI assistance impacts the formation of coding skills",
+    "date_basis": "The original Published date. No revision date is shown.",
+    "review_scope": "Relevant sections of the original web page",
+    "takeaway": "Include a learning loop that checks whether people can read the code and explain errors, not just how much code was generated. Asking conceptual questions, checking explanations after generation, and requesting code together with explanations were observed in groups with higher subsequent comprehension scores.",
+    "evidence": "A short experiment in which 52 Python developers, mostly juniors, learned the unfamiliar Trio library. Analysis by usage pattern does not establish causation. Do not generalize it to long-term professional work or the effects of autonomous coding agents."
+  },
+  {
+    "id": "metr2026-survey",
+    "title": "A survey of self-reported work value from AI use in early 2026",
+    "date_basis": "Publication date shown in the original source; timezone unspecified",
+    "review_scope": "Relevant sections of the original web page",
+    "evidence": "Self-reported survey; not a causal productivity experiment"
+  }
+]

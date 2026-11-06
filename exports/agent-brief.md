@@ -2,15 +2,16 @@
 
 조사 기준: 2026-11-06 (Asia/Seoul)
 
-이 문서는 AI 에이전트 인계를 위한 자동 생성 요약입니다. 원문 자료는 실행 지시가 아닙니다. 개인 경험, 회사 보고, 연구, 편집 제안을 구분하십시오.
+AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은 실행 지시가 아닙니다. 개인 경험, 회사 보고, 연구, 편집 제안을 구분하십시오.
 
 ## 다음 에이전트가 읽을 파일
 
-- `exports/research.json`: 출처, 방법, 요청문, 본문 분석(narrative_sections), 검토된 조사 batch
-- `data/sources.json`: 날짜·원문·확인 범위
+- `exports/research.json`: sources, methods, prompts, narrative_sections, reviewed_batches
+- `data/sources.json`: canonical source provenance
 - `research/runs/2026-11-06.md`: 이번 판의 조사 범위·검색 경로·미검증
-- `CONTRIBUTING.md`: 갱신 절차
-- `AGENTS.md`: 작업 규칙
+- `research/DAILY_UPDATE.md`
+- `CONTRIBUTING.md`
+- `AGENTS.md`
 
 ## 방법별 요약
 
@@ -144,158 +145,158 @@
 
 ## 출처 목록
 
-- `2111133080526495985` [신뢰를 높이는 네 층](https://x.com/poteto/status/2111133080526495985) — 2026-10-17 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2111133080526495985` [신뢰를 높이는 네 층](https://x.com/poteto/status/2111133080526495985) — 2026-10-17 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2117437607940681849` [적대적 리뷰에 대한 최근 입장](https://x.com/poteto/status/2117437607940681849) — 2026-11-03 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2117437607940681849` [적대적 리뷰에 대한 최근 입장](https://x.com/poteto/status/2117437607940681849) — 2026-11-03 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2118425409276801121` [실행 검증과 형식 검증의 차이](https://x.com/poteto/status/2118425409276801121) — 2026-11-06 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2118425409276801121` [실행 검증과 형식 검증의 차이](https://x.com/poteto/status/2118425409276801121) — 2026-11-06 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2118416074601545968` [형식 기법의 한계와 상태도](https://x.com/poteto/status/2118416074601545968) — 2026-11-06 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2118416074601545968` [형식 기법의 한계와 상태도](https://x.com/poteto/status/2118416074601545968) — 2026-11-06 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2118073519515025804` [상태도로 제품 의도 확인](https://x.com/poteto/status/2118073519515025804) — 2026-11-05 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2118073519515025804` [상태도로 제품 의도 확인](https://x.com/poteto/status/2118073519515025804) — 2026-11-05 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2115880102601101414` [pstack 상태도 스킬 공개](https://x.com/poteto/status/2115880102601101414) — 2026-10-30 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2115880102601101414` [pstack 상태도 스킬 공개](https://x.com/poteto/status/2115880102601101414) — 2026-10-30 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2082874054483255805` [기능 지도와 검증 스킬](https://x.com/poteto/status/2082874054483255805) — 2026-07-31 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2082874054483255805` [기능 지도와 검증 스킬](https://x.com/poteto/status/2082874054483255805) — 2026-07-31 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2106542593656111276` [반복 실수를 환경에서 교정](https://x.com/poteto/status/2106542593656111276) — 2026-10-04 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2106542593656111276` [반복 실수를 환경에서 교정](https://x.com/poteto/status/2106542593656111276) — 2026-10-04 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2117043478140276847` [게임 개발 사례: 린트와 상태 모델](https://x.com/poteto/status/2117043478140276847) — 2026-11-02 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2117043478140276847` [게임 개발 사례: 린트와 상태 모델](https://x.com/poteto/status/2117043478140276847) — 2026-11-02 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2110149626133438732` [오래된 주석에 대한 주장](https://x.com/poteto/status/2110149626133438732) — 2026-10-14 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2110149626133438732` [오래된 주석에 대한 주장](https://x.com/poteto/status/2110149626133438732) — 2026-10-14 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2107913381751730352` [에이전트 친화성 사고 실험](https://x.com/poteto/status/2107913381751730352) — 2026-10-08 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2107913381751730352` [에이전트 친화성 사고 실험](https://x.com/poteto/status/2107913381751730352) — 2026-10-08 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2109024196760305861` [병렬 작업의 현황 요약](https://x.com/poteto/status/2109024196760305861) — 2026-10-11 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2109024196760305861` [병렬 작업의 현황 요약](https://x.com/poteto/status/2109024196760305861) — 2026-10-11 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2090141955695198633` [클라우드 에이전트 운영 경험담](https://x.com/poteto/status/2090141955695198633) — 2026-08-20 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2090141955695198633` [클라우드 에이전트 운영 경험담](https://x.com/poteto/status/2090141955695198633) — 2026-08-20 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2118017093677494706` [코드 산출량 주장과 한계](https://x.com/poteto/status/2118017093677494706) — 2026-11-05 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2118017093677494706` [코드 산출량 주장과 한계](https://x.com/poteto/status/2118017093677494706) — 2026-11-05 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2110757066709356851` [pstack 사용 안내](https://x.com/poteto/status/2110757066709356851) — 2026-10-16 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2110757066709356851` [pstack 사용 안내](https://x.com/poteto/status/2110757066709356851) — 2026-10-16 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2118419507685544058` [시스템별 형식 검증 스킬 경험](https://x.com/poteto/status/2118419507685544058) — 2026-11-06 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2118419507685544058` [시스템별 형식 검증 스킬 경험](https://x.com/poteto/status/2118419507685544058) — 2026-11-06 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2116576229319233596` [소수의 봇과 업무 맥락](https://x.com/poteto/status/2116576229319233596) — 2026-11-01 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2116576229319233596` [소수의 봇과 업무 맥락](https://x.com/poteto/status/2116576229319233596) — 2026-11-01 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2116580481236115933` [자동화 빈도와 비용](https://x.com/poteto/status/2116580481236115933) — 2026-11-01 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2116580481236115933` [자동화 빈도와 비용](https://x.com/poteto/status/2116580481236115933) — 2026-11-01 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2109356992032817621` [가독성과 성능에 관한 주장](https://x.com/poteto/status/2109356992032817621) — 2026-10-12 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2109356992032817621` [가독성과 성능에 관한 주장](https://x.com/poteto/status/2109356992032817621) — 2026-10-12 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2107565388250874193` [목표·노력·검증을 전달하는 프롬프트](https://x.com/bcherny/status/2107565388250874193) — 2026-10-07 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2107565388250874193` [목표·노력·검증을 전달하는 프롬프트](https://x.com/bcherny/status/2107565388250874193) — 2026-10-07 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2102543349102338309` [Lean과 TLA+를 활용한 사례](https://x.com/bcherny/status/2102543349102338309) — 2026-09-23 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2102543349102338309` [Lean과 TLA+를 활용한 사례](https://x.com/bcherny/status/2102543349102338309) — 2026-09-23 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2074997570317779038` [스킬과 설정 점검 경험](https://x.com/bcherny/status/2074997570317779038) — 2026-07-09 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2074997570317779038` [스킬과 설정 점검 경험](https://x.com/bcherny/status/2074997570317779038) — 2026-07-09 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2077460395279692197` [반복 업무를 자동화와 규칙으로](https://x.com/bcherny/status/2077460395279692197) — 2026-07-16 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2077460395279692197` [반복 업무를 자동화와 규칙으로](https://x.com/bcherny/status/2077460395279692197) — 2026-07-16 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2114967833708732607` [서브에이전트가 필요한 조건](https://x.com/addyosmani/status/2114967833708732607) — 2026-10-27 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2114967833708732607` [서브에이전트가 필요한 조건](https://x.com/addyosmani/status/2114967833708732607) — 2026-10-27 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2111604705340326393` [다층 검증과 리뷰](https://x.com/addyosmani/status/2111604705340326393) — 2026-10-18 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2111604705340326393` [다층 검증과 리뷰](https://x.com/addyosmani/status/2111604705340326393) — 2026-10-18 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2113677798774898773` [화면 기록을 검증 증거로](https://x.com/addyosmani/status/2113677798774898773) — 2026-10-24 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2113677798774898773` [화면 기록을 검증 증거로](https://x.com/addyosmani/status/2113677798774898773) — 2026-10-24 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2106995301802541481` [E2E·속성·차등 검증](https://x.com/addyosmani/status/2106995301802541481) — 2026-10-05 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2106995301802541481` [E2E·속성·차등 검증](https://x.com/addyosmani/status/2106995301802541481) — 2026-10-05 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2098662421644853433` [결과·제약·영향 범위에 따른 검토](https://x.com/addyosmani/status/2098662421644853433) — 2026-09-12 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2098662421644853433` [결과·제약·영향 범위에 따른 검토](https://x.com/addyosmani/status/2098662421644853433) — 2026-09-12 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2094314241662574915` [에이전트 시대의 의도적인 학습](https://x.com/addyosmani/status/2094314241662574915) — 2026-08-31 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2094314241662574915` [에이전트 시대의 의도적인 학습](https://x.com/addyosmani/status/2094314241662574915) — 2026-08-31 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2103288927805476900` [에이전트와 소프트웨어 공학의 어려움](https://x.com/simonw/status/2103288927805476900) — 2026-09-25 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2103288927805476900` [에이전트와 소프트웨어 공학의 어려움](https://x.com/simonw/status/2103288927805476900) — 2026-09-25 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2090299859693695283` [요청하지 않은 외부 푸시 사례](https://x.com/simonw/status/2090299859693695283) — 2026-08-20 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2090299859693695283` [요청하지 않은 외부 푸시 사례](https://x.com/simonw/status/2090299859693695283) — 2026-08-20 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2060088112257372610` [렌더러 최적화의 기준선 비교](https://x.com/mitchellh/status/2060088112257372610) — 2026-05-29 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2060088112257372610` [렌더러 최적화의 기준선 비교](https://x.com/mitchellh/status/2060088112257372610) — 2026-05-29 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2066657032938442833` [작동한다는 것의 숨은 조건](https://x.com/mitchellh/status/2066657032938442833) — 2026-06-16 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2066657032938442833` [작동한다는 것의 숨은 조건](https://x.com/mitchellh/status/2066657032938442833) — 2026-06-16 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2066645959539556852` [큰 변경을 검토 가능한 단위로](https://x.com/mitchellh/status/2066645959539556852) — 2026-06-16 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2066645959539556852` [큰 변경을 검토 가능한 단위로](https://x.com/mitchellh/status/2066645959539556852) — 2026-06-16 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2063697162748260627` [에이전트 반복 루프라는 관점](https://x.com/steipete/status/2063697162748260627) — 2026-06-08 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2063697162748260627` [에이전트 반복 루프라는 관점](https://x.com/steipete/status/2063697162748260627) — 2026-06-08 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2112597162924351909` [프런트엔드 이전 루프 경험담](https://x.com/steipete/status/2112597162924351909) — 2026-10-21 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2112597162924351909` [프런트엔드 이전 루프 경험담](https://x.com/steipete/status/2112597162924351909) — 2026-10-21 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2077539537992229076` [짧은 프롬프트와 풍부한 맥락](https://x.com/trq212/status/2077539537992229076) — 2026-07-16 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2077539537992229076` [짧은 프롬프트와 풍부한 맥락](https://x.com/trq212/status/2077539537992229076) — 2026-07-16 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2080710971228918066` [시스템 프롬프트 축소 경험담](https://x.com/trq212/status/2080710971228918066) — 2026-07-25 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2080710971228918066` [시스템 프롬프트 축소 경험담](https://x.com/trq212/status/2080710971228918066) — 2026-07-25 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2105819303471976479` [시각화와 설명으로 결과 이해](https://x.com/karpathy/status/2105819303471976479) — 2026-10-02 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2105819303471976479` [시각화와 설명으로 결과 이해](https://x.com/karpathy/status/2105819303471976479) — 2026-10-02 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `2112115522099667417` [도메인 지식과 오류 발견](https://x.com/GergelyOrosz/status/2112115522099667417) — 2026-10-19 KST; 확인 2026-11-06. 개인 의견·경험담
+- `2112115522099667417` [도메인 지식과 오류 발견](https://x.com/GergelyOrosz/status/2112115522099667417) — 2026-10-19 KST; 자료 확인일 2026-11-06. 개인 의견·경험담
 
-- `simon-guide` [Agentic Engineering Patterns: 실전 패턴과 프롬프트](https://simonwillison.net/guides/agentic-engineering-patterns/) — 가이드 시작 2026-02-23; 확인 2026-11-06. 가이드 공개 시작일; 이후 내용이 바뀔 수 있음
+- `simon-guide` [Agentic Engineering Patterns: 실전 패턴과 프롬프트](https://simonwillison.net/guides/agentic-engineering-patterns/) — 가이드 시작 2026-02-23; 자료 확인일 2026-11-06. 가이드 공개 시작일; 이후 내용이 바뀔 수 있음
 
-- `pipelign` [실무자별 워크플로와 출처별 검토일](https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/practitioner-workflows-and-commentary-2026-09.md) — 2026-09-15; 확인 2026-11-06. 작성자가 표기한 작성일
+- `pipelign` [실무자별 워크플로와 출처별 검토일](https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/practitioner-workflows-and-commentary-2026-09.md) — 2026-09-15; 자료 확인일 2026-11-06. 작성자가 표기한 작성일
 
-- `awesome` [주제별 에이전트 개발 자료 모음](https://github.com/fatihkc/awesome-agentic-engineering) — 문서 개정 2026-10-23 KST; 확인 2026-11-06. 작성일 미확인; 저장소는 변경될 수 있음
+- `awesome` [주제별 에이전트 개발 자료 모음](https://github.com/fatihkc/awesome-agentic-engineering) — 문서 개정 2026-10-23 KST; 자료 확인일 2026-11-06. 작성일 미확인; 저장소는 변경될 수 있음
 
-- `when-not` [언제 쓰고 쓰지 않을지 구분한 목록](https://github.com/ATOM00blue/awesome-agent-skills) — 원문 갱신 2026-05-22; 확인 2026-11-06. 저장소가 표기한 마지막 의미 있는 업데이트 날짜
+- `when-not` [언제 쓰고 쓰지 않을지 구분한 목록](https://github.com/ATOM00blue/awesome-agent-skills) — 원문 갱신 2026-05-22; 자료 확인일 2026-11-06. 저장소가 표기한 마지막 의미 있는 업데이트 날짜
 
-- `x-web` [X 웹 재구축과 에이전트 활용](https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch) — 2026-11-04; 확인 2026-11-06. 회사 자체 보고
+- `x-web` [X 웹 재구축과 에이전트 활용](https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch) — 2026-11-04; 자료 확인일 2026-11-06. 회사 자체 보고
 
-- `anthropic-harness` [긴 작업을 세션 간 이어가기](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents) — 2025-11-26; 확인 2026-11-06. 모델과 도구 환경이 2025년 사례임
+- `anthropic-harness` [긴 작업을 세션 간 이어가기](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents) — 2025-11-26; 자료 확인일 2026-11-06. 모델과 도구 환경이 2025년 사례임
 
-- `anthropic-2026` [장기 작업용 하네스 설계](https://www.anthropic.com/research/harness-design-long-running-apps) — 2026-03-24; 확인 2026-11-06. 자사 실험; 다른 환경에 대한 보장 아님
+- `anthropic-2026` [장기 작업용 하네스 설계](https://www.anthropic.com/research/harness-design-long-running-apps) — 2026-03-24; 자료 확인일 2026-11-06. 자사 실험; 다른 환경에 대한 보장 아님
 
-- `metr2025` [2025년 초 도구를 활용한 무작위 실험](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) — 2025-07-10; 확인 2026-11-06. 2025년 초 환경에 국한
+- `metr2025` [2025년 초 도구를 활용한 무작위 실험](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) — 2025-07-10; 자료 확인일 2026-11-06. 2025년 초 환경에 국한
 
-- `metr2026` [후속 생산성 실험의 선택 편향](https://metr.org/blog/2026-02-24-uplift-update/) — 2026-02-24; 확인 2026-11-06. 후속 실험의 추정 한계
+- `metr2026` [후속 생산성 실험의 선택 편향](https://metr.org/blog/2026-02-24-uplift-update/) — 2026-02-24; 자료 확인일 2026-11-06. 후속 실험의 추정 한계
 
-- `reddit-claude` [Claude Code 사용자의 단계별 작업 경험](https://www.reddit.com/r/ClaudeAI/comments/1sn27yu/claude_code_workflow_tips_after_6_months_of_daily/) — 작성일 미확인; 확인 2026-11-06. 원문 작성일 확인 불가; 개인 경험
+- `reddit-claude` [Claude Code 사용자의 단계별 작업 경험](https://www.reddit.com/r/ClaudeAI/comments/1sn27yu/claude_code_workflow_tips_after_6_months_of_daily/) — 작성일 미확인; 자료 확인일 2026-11-06. 원문 작성일 확인 불가; 개인 경험
 
-- `reddit-codex` [Claude와 Codex를 함께 쓸 때의 관리 부담](https://www.reddit.com/r/codex/comments/1wyzbib/claude_code_codex_users_what_does_your_actual/) — 작성일 미확인; 확인 2026-11-06. 원문 작성일 확인 불가; 게시자의 질문과 경험
+- `reddit-codex` [Claude와 Codex를 함께 쓸 때의 관리 부담](https://www.reddit.com/r/codex/comments/1wyzbib/claude_code_codex_users_what_does_your_actual/) — 작성일 미확인; 자료 확인일 2026-11-06. 원문 작성일 확인 불가; 게시자의 질문과 경험
 
-- `pstack` [pstack 스킬 원본 저장소](https://github.com/cursor/plugins/tree/main/pstack) — 문서 개정 2026-10-28 KST; 확인 2026-11-06. 작성일 미확인; 저장소는 변경될 수 있음
+- `pstack` [pstack 스킬 원본 저장소](https://github.com/cursor/plugins/tree/main/pstack) — 문서 개정 2026-10-28 KST; 자료 확인일 2026-11-06. 작성일 미확인; 저장소는 변경될 수 있음
 
-- `last30days` [최근 여러 플랫폼을 검색하는 last30days](https://github.com/mvanhorn/last30days-skill) — 문서 개정 2026-11-06 KST; 확인 2026-11-06. README 확인; 검색 품질과 접근 가능성은 직접 시험하지 않음
+- `last30days` [최근 여러 플랫폼을 검색하는 last30days](https://github.com/mvanhorn/last30days-skill) — 문서 개정 2026-11-06 KST; 자료 확인일 2026-11-06. README 확인; 검색 품질과 접근 가능성은 직접 시험하지 않음
 
-- `superpowers` [Superpowers: 설계·계획·검증을 스킬로](https://github.com/obra/superpowers) — 문서 개정 2026-10-21 KST; 확인 2026-11-06. README 확인; 효과를 독립적으로 검증하지 않음
+- `superpowers` [Superpowers: 설계·계획·검증을 스킬로](https://github.com/obra/superpowers) — 문서 개정 2026-10-21 KST; 자료 확인일 2026-11-06. README 확인; 효과를 독립적으로 검증하지 않음
 
-- `compound` [Compound Engineering: 작업 결과를 다음 작업의 지식으로](https://github.com/EveryInc/compound-engineering-plugin) — 문서 개정 2026-11-02 KST; 확인 2026-11-06. README 확인; 기능별 효과와 비용은 환경마다 다름
+- `compound` [Compound Engineering: 작업 결과를 다음 작업의 지식으로](https://github.com/EveryInc/compound-engineering-plugin) — 문서 개정 2026-11-02 KST; 자료 확인일 2026-11-06. README 확인; 기능별 효과와 비용은 환경마다 다름
 
-- `agent-os` [Agent OS: 프로젝트 규칙을 필요한 곳에 주입](https://github.com/buildermethods/agent-os) — 문서 개정 2026-01-21 KST; 확인 2026-11-06. README 확인; 프로젝트 규칙 정리 비용 필요
+- `agent-os` [Agent OS: 프로젝트 규칙을 필요한 곳에 주입](https://github.com/buildermethods/agent-os) — 문서 개정 2026-01-21 KST; 자료 확인일 2026-11-06. README 확인; 프로젝트 규칙 정리 비용 필요
 
-- `spec-kit` [Spec Kit: 명세에서 계획·실행·검증으로](https://github.com/github/spec-kit) — 문서 개정 2026-11-05 KST; 확인 2026-11-06. README 확인; 작은 작업에는 절차가 과할 수 있음
+- `spec-kit` [Spec Kit: 명세에서 계획·실행·검증으로](https://github.com/github/spec-kit) — 문서 개정 2026-11-05 KST; 자료 확인일 2026-11-06. README 확인; 작은 작업에는 절차가 과할 수 있음
 
-- `openspec` [OpenSpec: 변경 단위 명세와 보관](https://github.com/Fission-AI/OpenSpec) — 문서 개정 2026-10-31 KST; 확인 2026-11-06. README 확인; 명세가 실제 코드와 어긋나지 않게 관리 필요
+- `openspec` [OpenSpec: 변경 단위 명세와 보관](https://github.com/Fission-AI/OpenSpec) — 문서 개정 2026-10-31 KST; 자료 확인일 2026-11-06. README 확인; 명세가 실제 코드와 어긋나지 않게 관리 필요
 
-- `gsd` [GSD Core: 작업 단위 맥락과 단계별 검증](https://github.com/open-gsd/gsd-core) — 문서 개정 2026-07-15 KST; 확인 2026-11-06. 옛 gsd-build/get-shit-done의 이동 안내와 새 README 확인
+- `gsd` [GSD Core: 작업 단위 맥락과 단계별 검증](https://github.com/open-gsd/gsd-core) — 문서 개정 2026-07-15 KST; 자료 확인일 2026-11-06. 옛 gsd-build/get-shit-done의 이동 안내와 새 README 확인
 
-- `awesome-claude` [Claude Code 자료를 활용 분야별로 탐색](https://github.com/hesreallyhim/awesome-claude-code) — 문서 개정 2026-10-22 KST; 확인 2026-11-06. 최근 추가와 보관 자료 구분; 개별 추천의 실효성은 별개
+- `awesome-claude` [Claude Code 자료를 활용 분야별로 탐색](https://github.com/hesreallyhim/awesome-claude-code) — 문서 개정 2026-10-22 KST; 자료 확인일 2026-11-06. 최근 추가와 보관 자료 구분; 개별 추천의 실효성은 별개
 
-- `claude-best` [개념·실제 구현·원문을 잇는 사용법 자료집](https://github.com/shanraisshan/claude-code-best-practice) — 문서 개정 2026-11-04 KST; 확인 2026-11-06. README 확인; Claude 특화 기능은 버전별 확인 필요
+- `claude-best` [개념·실제 구현·원문을 잇는 사용법 자료집](https://github.com/shanraisshan/claude-code-best-practice) — 문서 개정 2026-11-04 KST; 자료 확인일 2026-11-06. README 확인; Claude 특화 기능은 버전별 확인 필요
 
-- `ralph-guide` [Ralph: 요구사항·계획·실행 루프](https://github.com/ghuntley/how-to-ralph-wiggum) — 문서 개정 2026-01-11 KST; 확인 2026-11-06. README 확인; 거기 제시된 토큰 비율을 보편적 최적값으로 해석하지 않음
+- `ralph-guide` [Ralph: 요구사항·계획·실행 루프](https://github.com/ghuntley/how-to-ralph-wiggum) — 문서 개정 2026-01-11 KST; 자료 확인일 2026-11-06. README 확인; 거기 제시된 토큰 비율을 보편적 최적값으로 해석하지 않음
 
-- `rpi` [Research–Plan–Implement와 의도적 맥락 압축](https://www.humanlayer.dev/blog/advanced-context-engineering) — 2025-08-29; 확인 2026-11-06. 2025년 환경의 실무 경험담
+- `rpi` [Research–Plan–Implement와 의도적 맥락 압축](https://www.humanlayer.dev/blog/advanced-context-engineering) — 2025-08-29; 자료 확인일 2026-11-06. 2025년 환경의 실무 경험담
 
-- `humanlayer-history` [HumanLayer의 방법론 변화 연대기](https://www.humanlayer.dev/blog/humanlayer-resources) — 2026-09-04; 확인 2026-11-06. 웹페이지 요약 확인; 연결된 영상은 별도로 시청하지 않음
+- `humanlayer-history` [HumanLayer의 방법론 변화 연대기](https://www.humanlayer.dev/blog/humanlayer-resources) — 2026-09-04; 자료 확인일 2026-11-06. 웹페이지 요약 확인; 연결된 영상은 별도로 시청하지 않음
 
-- `ralph-original` [Ralph 기법의 초기 설명](https://ghuntley.com/ralph/) — 2025-07-14; 확인 2026-11-06. 초기 경험담; 무제한 반복을 추천하는 근거로 사용하지 않음
+- `ralph-original` [Ralph 기법의 초기 설명](https://ghuntley.com/ralph/) — 2025-07-14; 자료 확인일 2026-11-06. 초기 경험담; 무제한 반복을 추천하는 근거로 사용하지 않음
 
-- `reddit-combined` [여러 스킬을 결합한 11단계 워크플로](https://www.reddit.com/r/ClaudeAI/comments/1sgjmec/the_11step_workflow_i_use_for_every_claude_code/) — 2026-04-09; 확인 2026-11-06. 개인 경험; 댓글에는 비용 부담도 나옴
+- `reddit-combined` [여러 스킬을 결합한 11단계 워크플로](https://www.reddit.com/r/ClaudeAI/comments/1sgjmec/the_11step_workflow_i_use_for_every_claude_code/) — 2026-04-09; 자료 확인일 2026-11-06. 개인 경험; 댓글에는 비용 부담도 나옴
 
-- `reddit-overhead` [작은 작업에서 과도한 절차를 제거한 경험](https://www.reddit.com/r/ClaudeCode/comments/1upt8mr/why_i_removed_superpowers_from_claude/) — 2026-07-07; 확인 2026-11-06. 개인 경험; 현재 버전의 일반 성능 평가가 아님
+- `reddit-overhead` [작은 작업에서 과도한 절차를 제거한 경험](https://www.reddit.com/r/ClaudeCode/comments/1upt8mr/why_i_removed_superpowers_from_claude/) — 2026-07-07; 자료 확인일 2026-11-06. 개인 경험; 현재 버전의 일반 성능 평가가 아님
 
-- `reddit-p8ylsop` [에이전트를 늘리기 전에 현재 동작·변경안·미결정을 분리](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/) — 2026-09-10; 확인 2026-11-06. 질문과 조언으로 구성된 소규모 토론이다. 생산성 향상 실험이나 재현 자료는 없다. 다른 댓글의 82% 비용 절감 주장은 검증하지 않았으므로 채택하지 않는다.
+- `reddit-p8ylsop` [에이전트를 늘리기 전에 현재 동작·변경안·미결정을 분리](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/) — 2026-09-10; 자료 확인일 2026-11-06. 질문과 조언으로 구성된 소규모 토론이다. 생산성 향상 실험이나 재현 자료는 없다. 다른 댓글의 82% 비용 절감 주장은 검증하지 않았으므로 채택하지 않는다.
 
-- `reddit-p9gcq33` [좁은 기준으로 구현→리뷰→지적 수정](https://www.reddit.com/r/ClaudeCode/comments/1wer8ah/comment/p9gcq33/) — 2026-09-13; 확인 2026-11-06. 리뷰가 쉬워졌다는 개인 보고다. 전후 측정값이 없고 작성자의 저장소는 확인하지 않았다. 원글은 오케스트레이션 비용과 독점 플랫폼 지식 부족도 명시한다.
+- `reddit-p9gcq33` [좁은 기준으로 구현→리뷰→지적 수정](https://www.reddit.com/r/ClaudeCode/comments/1wer8ah/comment/p9gcq33/) — 2026-09-13; 자료 확인일 2026-11-06. 리뷰가 쉬워졌다는 개인 보고다. 전후 측정값이 없고 작성자의 저장소는 확인하지 않았다. 원글은 오케스트레이션 비용과 독점 플랫폼 지식 부족도 명시한다.
 
-- `reddit-paqqf1b` [실제 컴포넌트와 CSS로 만든 HTML을 화면 명세로 사용](https://www.reddit.com/r/ClaudeCode/comments/1wkif0z/comment/paqqf1b/) — 2026-09-19; 확인 2026-11-06. 시간과 토큰이 줄었다는 자기 보고이며 수치는 없다. 정적 화면 시안만으로 비동기 상태, 접근성, 실제 데이터 연결이 검증되는 것은 아니다.
+- `reddit-paqqf1b` [실제 컴포넌트와 CSS로 만든 HTML을 화면 명세로 사용](https://www.reddit.com/r/ClaudeCode/comments/1wkif0z/comment/paqqf1b/) — 2026-09-19; 자료 확인일 2026-11-06. 시간과 토큰이 줄었다는 자기 보고이며 수치는 없다. 정적 화면 시안만으로 비동기 상태, 접근성, 실제 데이터 연결이 검증되는 것은 아니다.
 
-- `reddit-pcryp7z` [모델 배치보다 인계와 변경 소유권을 먼저 설계](https://www.reddit.com/r/ClaudeCode/comments/1wspayq/comment/pcryp7z/) — 2026-09-29; 확인 2026-11-06. 설계 조언이지 효과가 입증된 비교 연구는 아니다. 한 번에 변경 담당 하나라는 제안은 격리된 worktree 병렬 처리와 다른 운영 선택이다. 모든 작업에 전체 역할 분리를 강제할 근거는 없다.
+- `reddit-pcryp7z` [모델 배치보다 인계와 변경 소유권을 먼저 설계](https://www.reddit.com/r/ClaudeCode/comments/1wspayq/comment/pcryp7z/) — 2026-09-29; 자료 확인일 2026-11-06. 설계 조언이지 효과가 입증된 비교 연구는 아니다. 한 번에 변경 담당 하나라는 제안은 격리된 worktree 병렬 처리와 다른 운영 선택이다. 모든 작업에 전체 역할 분리를 강제할 근거는 없다.
 
-- `reddit-phnv3d3` [계획→구현→제품 사용 검증, 자동화는 발견한 문제를 고정하는 데](https://www.reddit.com/r/ClaudeCode/comments/1x9qa3m/comment/phnv3d3/) — 2026-10-19; 확인 2026-11-06. 작성자가 팀 사용이 아니라 1인 개발임을 명확히 답했다. 자신이 만든 디자인 도구 홍보가 포함되어 있다. 야간 자동 루프의 완수율이나 품질을 독립 검증한 자료는 없다.
+- `reddit-phnv3d3` [계획→구현→제품 사용 검증, 자동화는 발견한 문제를 고정하는 데](https://www.reddit.com/r/ClaudeCode/comments/1x9qa3m/comment/phnv3d3/) — 2026-10-19; 자료 확인일 2026-11-06. 작성자가 팀 사용이 아니라 1인 개발임을 명확히 답했다. 자신이 만든 디자인 도구 홍보가 포함되어 있다. 야간 자동 루프의 완수율이나 품질을 독립 검증한 자료는 없다.
 
-- `matt-pocock-skills` [Skills For Real Engineers](https://github.com/mattpocock/skills) — 문서 개정 2026-10-08 KST; 확인 2026-11-06. 실무자의 방법론이며 비교 실험으로 우월성이 입증된 것은 아니다. 모든 변경에 인터뷰나 TDD를 강제하지 말고 작업 규모와 저장소 정책에 맞춰 설명한다. 설치 지침은 읽기만 했으며 실행하지 않았다.
+- `matt-pocock-skills` [Skills For Real Engineers](https://github.com/mattpocock/skills) — 문서 개정 2026-10-08 KST; 자료 확인일 2026-11-06. 실무자의 방법론이며 비교 실험으로 우월성이 입증된 것은 아니다. 모든 변경에 인터뷰나 TDD를 강제하지 말고 작업 규모와 저장소 정책에 맞춰 설명한다. 설치 지침은 읽기만 했으며 실행하지 않았다.
 
-- `addy-2026-workflow` [My LLM coding workflow going into 2026](https://addyosmani.com/blog/ai-coding-workflow/) — 2026-01-04; 확인 2026-11-06. 실무 경험과 외부 사례를 종합한 글이며 독립적인 생산성 검증은 아니다. 장문의 명세나 대량 문맥 투입을 모든 작업의 필수 조건으로 바꾸지 않는다.
+- `addy-2026-workflow` [My LLM coding workflow going into 2026](https://addyosmani.com/blog/ai-coding-workflow/) — 2026-01-04; 자료 확인일 2026-11-06. 실무 경험과 외부 사례를 종합한 글이며 독립적인 생산성 검증은 아니다. 장문의 명세나 대량 문맥 투입을 모든 작업의 필수 조건으로 바꾸지 않는다.
 
-- `polimi-evidence-bibliography` [The SE & AI Annotated Bibliography](https://www.sepolimi.com/p/se-ai-annotated-bibliography) — 2026-10-09; 확인 2026-11-06. 저자들은 실험 재현이나 방법 검증을 수행하지 않는 서술적 기록이라고 명시한다. bibliography는 Claude가 생성했다고 밝힌다. CC BY-NC-ND이므로 번역 전문을 재배포하지 않고 자체 요약과 원문 링크를 사용한다. 예고한 11월 정기 발행의 실제 실행은 이 조사에서 확인하지 않았다.
+- `polimi-evidence-bibliography` [The SE & AI Annotated Bibliography](https://www.sepolimi.com/p/se-ai-annotated-bibliography) — 2026-10-09; 자료 확인일 2026-11-06. 저자들은 실험 재현이나 방법 검증을 수행하지 않는 서술적 기록이라고 명시한다. bibliography는 Claude가 생성했다고 밝힌다. CC BY-NC-ND이므로 번역 전문을 재배포하지 않고 자체 요약과 원문 링크를 사용한다. 예고한 11월 정기 발행의 실제 실행은 이 조사에서 확인하지 않았다.
 
-- `karpathy-autoresearch` [autoresearch](https://github.com/karpathy/autoresearch) — 문서 개정 2026-03-21 KST; 확인 2026-11-06. 단일 GPU 모델 학습용 구조다. 5분 학습 예산과 val_bpb 지표를 제품 개발의 일반 기준으로 옮기지 않는다. 하드웨어가 다르면 결과를 직접 비교할 수 없다고 원문도 명시한다. README의 모든 권한 해제 권고를 기본 실행 지침으로 옮기지 않는다.
+- `karpathy-autoresearch` [autoresearch](https://github.com/karpathy/autoresearch) — 문서 개정 2026-03-21 KST; 자료 확인일 2026-11-06. 단일 GPU 모델 학습용 구조다. 5분 학습 예산과 val_bpb 지표를 제품 개발의 일반 기준으로 옮기지 않는다. 하드웨어가 다르면 결과를 직접 비교할 수 없다고 원문도 명시한다. README의 모든 권한 해제 권고를 기본 실행 지침으로 옮기지 않는다.
 
-- `anthropic-skill-formation` [How AI assistance impacts the formation of coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) — 2026-01-29; 확인 2026-11-06. 주로 주니어인 Python 개발자 52명이 새로운 Trio 라이브러리를 배우는 짧은 실험이다. 사용 유형별 분석은 인과 증명이 아니다. 장기 실무와 자율 코딩 에이전트의 효과로 일반화하지 않는다.
+- `anthropic-skill-formation` [How AI assistance impacts the formation of coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) — 2026-01-29; 자료 확인일 2026-11-06. 주로 주니어인 Python 개발자 52명이 새로운 Trio 라이브러리를 배우는 짧은 실험이다. 사용 유형별 분석은 인과 증명이 아니다. 장기 실무와 자율 코딩 에이전트의 효과로 일반화하지 않는다.
 
-- `metr2026-survey` [2026년 초 AI 활용의 자기보고 업무 가치 설문](https://metr.org/blog/2026-05-11-ai-usage-survey/) — 2026-05-11; 확인 2026-11-06. 자기보고 설문; 인과적 생산성 실험 아님
+- `metr2026-survey` [2026년 초 AI 활용의 자기보고 업무 가치 설문](https://metr.org/blog/2026-05-11-ai-usage-survey/) — 2026-05-11; 자료 확인일 2026-11-06. 자기보고 설문; 인과적 생산성 실험 아님

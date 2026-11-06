@@ -27,6 +27,7 @@
 | `review_scope` | 실제 읽은 부분. 읽기와 효과 재현을 구분 |
 | `revised`, `revision`, `snapshot_url` | 선택 필드. GitHub 문서 변경 커밋과 당시 문서 |
 | `takeaway` | 선택 필드. 출처에서 가져온 짧은 요약 |
+| `aliases` | 선택 필드. 같은 원문의 이전 HTTPS 주소. 잘못 연결했던 다른 원문 주소는 넣지 않음 |
 
 방법 카드의 `kind`는 `editorial_recommendation`입니다. `action`과 `limit`를 함께 작성하고 `sources` 배열로 원문을 연결합니다. 요청문은 `editorial_template`입니다. 이 구분은 `exports/research.json`에도 유지됩니다.
 
@@ -36,9 +37,12 @@
 
 ```shell
 python scripts/validate_batch.py path/to/research-batch.json
+python scripts/research_delta.py path/to/research-batch.json
 ```
 
 이 명령은 형식과 참조를 검사하며 데이터 수정이나 게시를 하지 않습니다. 원문과 공개 적합성을 검토한 batch만 `research/batches/YYYY-MM-DD-topic.json`에 보관합니다. 미검토 결과와 비공개 원문은 이 공개 폴더에 넣지 않습니다.
+
+중복 검사는 원문 ID와 정규화한 주소를 사용합니다. Reddit 댓글과 게시글은 구분합니다. 기존 자료라도 주장이 바뀌었는지는 사람이 또는 조사 에이전트가 원문·기존 문서 버전을 비교해야 합니다. 제목이나 날짜가 달라졌다는 이유만으로 새 근거로 세지 않습니다.
 
 출처 카탈로그로 옮길 때는 `source_id→id`, `original_url→url`, `published_on→date`, `checked_on→checked`, `source_kind→kind`, `evidence_kind→evidence_kind`로 대응시킵니다. `author`, `date_basis`, `revision`, `snapshot_url`도 보존합니다. 표시용 `title`, `category`, 짧은 `evidence`를 추가합니다.
 
@@ -55,6 +59,14 @@ python scripts/validate_batch.py path/to/research-batch.json
 유효기간을 날짜 하나로 자동 판정하지 않습니다. 일반 원칙과 모델별 우회 방법을 구분하고, 더 최근이라는 이유만으로 약한 근거가 강한 근거를 덮지 않게 합니다.
 
 새 조사판은 `data/site.json`의 `edition`과 `research_run`을 해당 기록으로 바꿉니다. 개별 출처는 실제 재확인한 것만 `checked`를 갱신합니다. HTML에 직접 적힌 날짜와 설명도 함께 검토합니다.
+
+## 한국어·영어 동시 갱신
+
+`data/en/sources.json`은 `id`, `title`, `evidence`, `date_basis`, `review_scope`와 필요한 `takeaway`·표시용 `author`만 담는 번역 오버레이입니다. 출처 URL, 원문 날짜, 확인일, 커밋은 공유 카탈로그에 한 번만 보관합니다. 방법·요청문·적용 도우미의 영어 레코드는 같은 ID·kind·sources를 유지합니다. 본문은 `src/en/`에 대응 파일을 둡니다. 화면 문구는 `data/ui.json`과 `data/en/ui.json`에서 관리합니다.
+
+매일 갱신 절차는 `research/DAILY_UPDATE.md`를 따릅니다. 새 자료 수를 채우기 위한 추가, 중복 주장, 단순 확인일 변경만으로 공개 업데이트를 만들지 않습니다. 원문이 바뀌면 이전 해석을 지우지 말고 변화의 이유와 관련 출처를 남깁니다.
+
+영어 번역을 실제로 검토·수정한 다음 `python scripts/translation_baseline.py --record-reviewed`로 원문 기준 버전을 기록합니다. 빌드는 한국어 변경 후 갱신되지 않은 번역 기준을 거절합니다. 오류를 지우기 위해 검토 없이 기준만 갱신하면 안 됩니다. 이 검사는 변경 누락을 감지하며 번역 의미의 정확성을 자동 보증하지는 않습니다.
 
 ## 5. 생성·검토·게시를 구분합니다
 

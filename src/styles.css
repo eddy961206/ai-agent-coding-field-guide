@@ -86,7 +86,11 @@
                                                   display:flex;
                                                   justify-content:space-between;
                                                   gap:20px}
-                                                  .brand{
+.topbar .shell > a:not(.brand){
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.brand{
                                                     font-weight:750;
                                                     text-decoration:none}
                                                     .hero{

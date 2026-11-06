@@ -1,0 +1,130 @@
+[
+  {
+    "id": "goal",
+    "title": "Specify the goal, effort and verification",
+    "kind": "editorial_recommendation",
+    "action": "Explain what should change, how deeply to investigate, and which outcomes to verify. Make the change scope and prohibited external actions explicit.",
+    "limit": "You do not need to dictate every step. Do not expect the model to infer omitted requirements correctly.",
+    "sources": ["2107565388250874193", "2098662421644853433"]
+  },
+  {
+    "id": "context",
+    "title": "Keep instructions short and evidence rich",
+    "kind": "editorial_recommendation",
+    "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
+    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience.",
+    "sources": ["2077539537992229076", "2080710971228918066", "agent-os"]
+  },
+  {
+    "id": "feature-map",
+    "title": "Map features the agent can actually use",
+    "kind": "editorial_recommendation",
+    "action": "Connect feature names, entry points, prerequisites, user actions, expected results and data to inspect. Avoid making the agent guess how to run the feature each time.",
+    "limit": "Update the map when screens or features change. Writing documentation and verifying actual behavior are separate tasks.",
+    "sources": ["2082874054483255805", "2118425409276801121"]
+  },
+  {
+    "id": "correct",
+    "title": "Address the cause of recurring mistakes",
+    "kind": "editorial_recommendation",
+    "action": "Classify recurring errors and prevent them with a small change to structure, types, lint rules or permitted checks. Record why the rule exists and its exceptions.",
+    "limit": "Adding a rule for every one-off problem raises maintenance costs. Follow the repository's policy on creating and running tests.",
+    "sources": ["2106542593656111276", "2077460395279692197"]
+  },
+  {
+    "id": "differential",
+    "title": "Use existing behavior as the comparison baseline",
+    "kind": "editorial_recommendation",
+    "action": "For migrations, compare the old and new versions with the same inputs. Specify which UI, error, data and performance behavior must be preserved.",
+    "limit": "You do not need to preserve existing bugs. Agree on intentional behavior changes first so that differences can be interpreted.",
+    "sources": ["2106995301802541481", "x-web"]
+  },
+  {
+    "id": "handoff",
+    "title": "Hand off artifacts, not just a session",
+    "kind": "editorial_recommendation",
+    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly note assumptions that proved wrong.",
+    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state.",
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd"]
+  },
+  {
+    "id": "parallel",
+    "title": "Give parallel work a reason",
+    "kind": "editorial_recommendation",
+    "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
+    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs.",
+    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop"]
+  },
+  {
+    "id": "review",
+    "title": "Narrow the review criteria",
+    "kind": "editorial_recommendation",
+    "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
+    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems.",
+    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33"]
+  },
+  {
+    "id": "slice",
+    "title": "Work in units you can verify",
+    "kind": "editorial_recommendation",
+    "action": "Divide work by user behavior or contracts rather than file counts. Make each unit small enough to verify its runtime results when it is done.",
+    "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file.",
+    "sources": ["2066645959539556852", "openspec", "matt-pocock-skills"]
+  },
+  {
+    "id": "loop",
+    "title": "Give loops budgets and stopping conditions",
+    "kind": "editorial_recommendation",
+    "action": "Define success, time and cost budgets, what counts as no progress, and when to hand control to a person for each iteration.",
+    "limit": "Iteration counts and elapsed time do not establish quality. Handle permission to publish or deploy separately.",
+    "sources": ["2063697162748260627", "2116580481236115933", "ralph-guide"]
+  },
+  {
+    "id": "benchmark",
+    "title": "Keep performance comparisons consistent",
+    "kind": "editorial_recommendation",
+    "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality.",
+    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough.",
+    "sources": ["2060088112257372610", "karpathy-autoresearch"]
+  },
+  {
+    "id": "product-use",
+    "title": "Use the actual product",
+    "kind": "editorial_recommendation",
+    "action": "Inspect the running UI, real data and important state transitions. Use realistic example data even when creating a visual mockup.",
+    "limit": "A mockup or screenshot does not establish correct persistence, permissions or asynchronous behavior. Connect it to the running product.",
+    "sources": ["2113677798774898773", "reddit-paqqf1b", "reddit-phnv3d3"]
+  },
+  {
+    "id": "boundaries",
+    "title": "Separate execution permissions from the goal",
+    "kind": "editorial_recommendation",
+    "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization.",
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact.",
+    "sources": ["2090299859693695283", "2098662421644853433"]
+  },
+  {
+    "id": "compound",
+    "title": "Reuse what you learn",
+    "kind": "editorial_recommendation",
+    "action": "Keep only rules, reasons and exceptions that will help again. Check in later work whether the same errors occur less often.",
+    "limit": "Do not accumulate entire conversations as instructions. Retire stale lessons, duplicate guidance and unnecessary tools too.",
+    "sources": ["compound", "2074997570317779038"]
+  },
+  {
+    "id": "learn",
+    "title": "Check your own understanding separately",
+    "kind": "editorial_recommendation",
+    "action": "Form a hypothesis before prompting. After receiving the result, explain the cause and failure conditions, and read important diffs yourself.",
+    "limit": "Even agreement among several models can leave errors in a domain you do not understand. Check AI explanations against the evidence.",
+    "sources": ["2094314241662574915", "2112115522099667417", "anthropic-skill-formation"]
+  },
+  {
+    "id": "explain",
+    "title": "Summarize status so people can judge it",
+    "kind": "editorial_recommendation",
+    "action": "Separate changes since the last check, execution evidence, remaining unknowns and decisions needed. Use a state diagram or a small HTML page when it aids understanding.",
+    "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents.",
+    "sources": ["2109024196760305861", "2105819303471976479", "simon-guide"]
+  }
+]

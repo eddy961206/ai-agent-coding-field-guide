@@ -1,0 +1,50 @@
+[
+  {
+    "id": "start",
+    "title": "Start a task",
+    "kind": "editorial_template",
+    "text": "The goal is [the outcome for the user].\nCurrent evidence is in [reproduction steps, files and logs].\nThe constraints are [contracts, compatibility and change scope].\nInvestigate to [the required depth] and inspect the existing structure first.\nCompletion means [behavior that can actually be observed].\nFollow through within the authorized scope of changes and execution.\nReport the results, verification evidence and remaining uncertainty separately."
+  },
+  {
+    "id": "map",
+    "title": "Map a feature",
+    "kind": "editorial_template",
+    "text": "Describe [feature] in the order a real user would use it.\nConnect entry point → prerequisites → actions → expected results → data to inspect.\nSeparate observations in the app from inferences based only on source code.\nFlag missing conditions and stale explanations.\nFollow this repository's permissions for creating and running tests."
+  },
+  {
+    "id": "correct",
+    "title": "Address recurring mistakes",
+    "kind": "editorial_template",
+    "text": "Find why [recurring error] keeps happening.\nBefore adding instructions, check whether example code, APIs\nor data structures encourage the wrong behavior.\nSuggest a small preventive change to structure, types, lint rules or permitted checks.\nExplain which cases it prevents and which it does not."
+  },
+  {
+    "id": "state",
+    "title": "Review state and concurrency",
+    "kind": "editorial_template",
+    "text": "Describe the user's intent and the invariants for [state transition or race].\nShow states, events and transitions in a diagram.\nState what the model includes and which environment conditions it excludes.\nUse permitted checks and verify the correspondence between code and model.\nExplain counterexamples as sequences of user actions.\nDo not claim guarantees beyond the explored scope."
+  },
+  {
+    "id": "review",
+    "title": "Ask another model to review",
+    "kind": "editorial_template",
+    "text": "The original requirements are [requirements], and the target revision is [commit].\nFocus the review on [important failure types].\nIndependently compare the original requirements, actual diff and execution results.\nFor each finding, give its location, triggering conditions, impact and a way to verify it.\nSeparate preferences and speculation from actual defects.\nDo not make changes. Report only findings worth fixing."
+  },
+  {
+    "id": "handoff",
+    "title": "Hand off long-running work",
+    "kind": "editorial_template",
+    "text": "Summarize the current state so the next session can continue.\nSeparate the goal, settled decisions, remaining assumptions, current revision,\ncompleted changes, actual execution evidence, failed attempts,\nremaining work and next action.\nList anything that must be checked again if the execution environment changes.\nDo not include sensitive values or unnecessary raw logs."
+  },
+  {
+    "id": "performance",
+    "title": "Improve performance",
+    "kind": "editorial_template",
+    "text": "The target metric is [latency, memory, cost, etc.].\nKeep the comparison inputs, environment, versions and measurement interval fixed.\nPreserve [conditions] for correctness and compatibility.\nDo not change the evaluation criteria to make the result look better.\nReport before-and-after values, measurement limits and any new costs.\nIf there is no progress within [time and cost budget], summarize the cause."
+  },
+  {
+    "id": "learn",
+    "title": "Learn from the result",
+    "kind": "editorial_template",
+    "text": "Explain the main cause behind this change so I can understand it.\nUse a small example to connect input → state change → result.\nDistinguish real cases from hypothetical examples.\nGive me 3 questions I should try to explain myself\nand 2 assumptions that are easy to get wrong.\nAfter I give my explanation, use the code and execution evidence to give feedback."
+  }
+]
