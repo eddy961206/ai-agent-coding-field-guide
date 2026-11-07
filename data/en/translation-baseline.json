@@ -78,23 +78,28 @@
     "polimi-evidence-bibliography": "e7dd4887f40f23ba5272a70433ab9b60fd0e869c1c03630b6581e87e0921ae74",
     "karpathy-autoresearch": "c68478c6897407464900f374f36d2643193f818c9f58cc4f1dd0c284d7722e38",
     "anthropic-skill-formation": "807ee6197ed6e1ee1546be7b6cfa4ad4cd02a5895e31e78bc613aa25e0243dac",
-    "metr2026-survey": "05ce202a1f3a6a843b1f8dfc28101ff0d0be9cbaafe3fdd405686d9b8d3bd598"
+    "metr2026-survey": "05ce202a1f3a6a843b1f8dfc28101ff0d0be9cbaafe3fdd405686d9b8d3bd598",
+    "2118746525811753061": "d57fe0e509d6c88ad11d2ee399a592ac60734bdb58ef3df3b007dc0cacdef56c",
+    "reddit-1xpaoth": "8a2435b19d869917105ba2344fe7ce387178415c81f0398cdc25679bcc942a07",
+    "github-claude-email-107757": "6a484d3c761daa0ccd7f98a6b0f9a1bb69a79b01430f8c70b7864bb71f235f16",
+    "2118771062913802383": "e56bc4aef3cba72060f3aac4ce6148044377b3c0fc30840da887ba7c7bffc444",
+    "github-claude-changelog-privacy": "289d9abe7aaec7c55d07c7d1befda924735b7dd861cc85d16926c5e601888903"
   },
   "methods": {
     "goal": "07f596842cc436a554c883bc8d744eb0c20ef812b07c0b14c5b8cb547033d180",
-    "context": "6f5b0fb049e8bf45c6411cdcc5d6036a55c23001f3ff1c6b7c8d072d993c147e",
+    "context": "60dc622bd120314d5c2ec5895391ce23421b0463594fd3beb65dc831ca922728",
     "feature-map": "eb5ba24007562d6013fb94a9a4b1c74a5e71ec7edfbe42a4caf6143111b4610a",
     "correct": "54e934692acb2e8208a5740e02788f880d99a9aaae45238f418ed26b6691d51b",
     "differential": "3fbcfc36298d40e301a052a88b086db64b6b3283595a68973bfed2f86bad0a6c",
-    "handoff": "389955ce3cf92d926830f2456004ab5727ca02a7ff470231b2c5d491cc667b9f",
+    "handoff": "bc361d660ee06e20756c289246792bda7e3504db99175ce61727dc67a560c3a4",
     "parallel": "c0f5fbcb3c24a5b845c833cd9faa0d105c84ede519042014dec0e0994ffe8e73",
     "review": "4b736d992694596a85080676fc7c40a0be9d5ea10a6b3aed82ec8e7f992873a2",
     "slice": "6e536adfc8c6ca5214419f0749dd1c9c6d6870a5a9be57124c2a68aac629bfd7",
     "loop": "3a165cb077073d274453b6ff71b34cb207d10e4fe0683308139ee02be7eba5ff",
     "benchmark": "57921dc442f600b59889bd70e13a4c74b6cb1c51df13e4a96329658a4dbd4916",
     "product-use": "9324c7174f04eb787bf1426c521f8a8aae653b97206c3b4f71b84f63f1b2103a",
-    "boundaries": "3d67575572395e08d8d291ca588fea927ac2b99fa53c99ad5febb26dc9bc8de7",
-    "compound": "c1cf73143eea29d790224e23a9d28f271657f8caae3b5b7627bf830691d484bd",
+    "boundaries": "9b9f87fbf9b36d9b66317d1bc3940630458b92f14618eb117ac776d810e9160a",
+    "compound": "e179a297332458618aba94cd5119056e373703b3ca182699070012640c014998",
     "learn": "8c4ece64c0609ae6417cd3e3b3d19e749b07509ec3f66f4b7dd645b066db6c7f",
     "explain": "222e046b0e9a134e4da5ac200b32e3029d4336104747cd9b581ac2c93ba70dc1"
   },
@@ -121,7 +126,7 @@
     "src/outro.html": "049fd5f4374edd2afb99ea4fe5b029c0883796a8ca7ba1ade9463e83577df1cd",
     "src/sections/01-start.html": "93325361c71b393055a3ab8b77f66b790a3d801315b3ff4fa4f8f5e9da4af765",
     "src/sections/02-precedents.html": "22176c9d5cfc967086256a1eb4b1fe9e0a228649b23e77d26ede56e1e1b3edb4",
-    "src/sections/03-poteto.html": "3aa4001aba8fb6a11674a9fd5069aaf875e092b01e5f2cffb51d5ae27d0c1dbd",
+    "src/sections/03-poteto.html": "6de1c1a1cb61414ab7fedd9d9937b818460702027777c8fb57662dcdeb9afe5d",
     "src/sections/04-patterns.html": "8e475d7b4300cf763b589852f9270ec20c903c1cdc1306a261506d7f71b1baca",
     "src/sections/05-verification.html": "dd0db689327fe32a599f6804c55b6a41fa957abe68e05b5020d935505e60453f",
     "src/sections/06-chooser.html": "8408e438d08e6e0f526ef0270a7860b82230d87ad5008dbe148efaf63170dec1",
@@ -129,7 +134,7 @@
     "src/sections/08-prompts.html": "e3102cc435e847cdadc08a7c123ac214e0815fb5f363e0e85b415f1731efc35b",
     "src/sections/09-evidence.html": "b6f4746e3347ebd1afdebce27bec58331781620462032553c747d750a414fb8e",
     "src/sections/10-library.html": "a70c1d0a8f0350c70cbc19e8abda1db908e56b58748eee487336a8b8a17b6be2",
-    "src/sections/11-updates.html": "f0fdbf9ee3d54a5ce402f1b682f0553febd184f8cfac9d534917f72286a0dbc7"
+    "src/sections/11-updates.html": "299e22fbaf9cac13cc728fb44916c2e893316fd87765f31be178f09c2180607c"
   },
   "ui": "64a110635e01bdee0e57069bb0a13c1d733c28dba525ff8813d3eb24d1abdf38"
 }

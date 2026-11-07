@@ -561,5 +561,40 @@
     "date_basis": "Publication date shown in the original source; timezone unspecified",
     "review_scope": "Relevant sections of the original web page",
     "evidence": "Self-reported survey; not a causal productivity experiment"
+  },
+  {
+    "id": "2118746525811753061",
+    "title": "Prediction: future skills may become shorter",
+    "evidence": "A personal prediction about future models, not an experiment demonstrating the effects of removing current skills.",
+    "date_basis": "2026-11-06 16:45:10 UTC converted to Asia/Seoul",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "reddit-1xpaoth",
+    "title": "What different agent handoff approaches can lose or cost",
+    "evidence": "The author asks about tradeoffs among transcripts, summaries, converters and sticking with one tool, noting that summaries can omit rejected approaches. This is not a comparative efficiency experiment.",
+    "date_basis": "Post timestamp 2026-11-06 11:38:57 UTC converted to Asia/Seoul",
+    "review_scope": "Original post; comments are not treated as separate evidence"
+  },
+  {
+    "id": "github-claude-email-107757",
+    "title": "User report: account email in Claude Code request headers",
+    "evidence": "The reporter says account email appeared in web request headers on macOS with version 2.1.318. This guide did not reproduce the report or establish the cause of spam.",
+    "date_basis": "Issue creation time 2026-11-05 22:13:15 UTC converted to Asia/Seoul",
+    "review_scope": "Issue body and reported environment"
+  },
+  {
+    "id": "2118771062913802383",
+    "title": "Claude Code team explains the email exposure and mitigation scope",
+    "evidence": "A team member explains how account email could enter generated requests and says the 2.1.317+ prompt does not catch everything, including generated scripts. The next release removing email from context was planned; its shipment was not established.",
+    "date_basis": "2026-11-06 18:22:40 UTC converted to Asia/Seoul",
+    "review_scope": "Team member post text and publication time"
+  },
+  {
+    "id": "github-claude-changelog-privacy",
+    "title": "Account-email network prompt in Claude Code 2.1.317",
+    "evidence": "The official changelog lists a 2.1.317 check that asks before a web or shell tool call sends the account email to the network. Its actual coverage was not independently tested.",
+    "date_basis": "Original file publication date unknown; reviewed document revision at 2026-11-06 17:03:45 UTC",
+    "review_scope": "The 2.1.317 entry at the pinned revision"
   }
 ]

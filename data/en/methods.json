@@ -12,8 +12,8 @@
     "title": "Keep instructions short and evidence rich",
     "kind": "editorial_recommendation",
     "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
-    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience.",
-    "sources": ["2077539537992229076", "2080710971228918066", "agent-os"]
+    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work.",
+    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061"]
   },
   {
     "id": "feature-map",
@@ -43,9 +43,9 @@
     "id": "handoff",
     "title": "Hand off artifacts, not just a session",
     "kind": "editorial_recommendation",
-    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly note assumptions that proved wrong.",
+    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them.",
     "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state.",
-    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd"]
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth"]
   },
   {
     "id": "parallel",
@@ -99,9 +99,9 @@
     "id": "boundaries",
     "title": "Separate execution permissions from the goal",
     "kind": "editorial_recommendation",
-    "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization.",
-    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact.",
-    "sources": ["2090299859693695283", "2098662421644853433"]
+    "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately.",
+    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy"]
   },
   {
     "id": "compound",
@@ -109,7 +109,7 @@
     "kind": "editorial_recommendation",
     "action": "Keep only rules, reasons and exceptions that will help again. Check in later work whether the same errors occur less often.",
     "limit": "Do not accumulate entire conversations as instructions. Retire stale lessons, duplicate guidance and unnecessary tools too.",
-    "sources": ["compound", "2074997570317779038"]
+    "sources": ["compound", "2074997570317779038", "2118746525811753061"]
   },
   {
     "id": "learn",

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "title": "AI 에이전트와 일을 잘하는 방법",
-  "edition": "2026-11-06",
+  "edition": "2026-11-07",
   "timezone": "Asia/Seoul",
-  "research_run": "research/runs/2026-11-06.md",
+  "research_run": "research/runs/2026-11-07.md",
   "repo": "https://github.com/eddy961206/ai-agent-coding-field-guide",
   "site_url": "https://eddy961206.github.io/ai-agent-coding-field-guide/",
   "language": "ko",
