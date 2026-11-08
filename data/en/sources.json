@@ -596,5 +596,75 @@
     "evidence": "The official changelog lists a 2.1.317 check that asks before a web or shell tool call sends the account email to the network. Its actual coverage was not independently tested.",
     "date_basis": "Original file publication date unknown; reviewed document revision at 2026-11-06 17:03:45 UTC",
     "review_scope": "The 2.1.317 entry at the pinned revision"
+  },
+  {
+    "id": "github-claude-privacy-mod",
+    "title": "Scope of the Claude Code privacy mod",
+    "evidence": "The published README and hook source describe refusal of certain shell calls containing both the account email and a User-Agent reference. This mod does not check WebFetch, WebSearch, MCP calls or values inside scripts. Other protections and runtime behavior were not reproduced.",
+    "date_basis": "Original publication date unknown; reviewed document revision 2026-11-06 00:00:33 UTC",
+    "review_scope": "Mod README and hooks/register.ts at the pinned revision"
+  },
+  {
+    "id": "reddit-1xqfukk",
+    "title": "Recovering recent work in order after compaction",
+    "evidence": "The Neo.mjs creator describes checking messages, self-handoffs, recent turns, relevant memories, live repository state and direction documents. This is not a controlled comparison of recovery effectiveness.",
+    "date_basis": "Post time 2026-11-07 20:17:50 UTC converted to Asia/Seoul",
+    "review_scope": "Original post and publication time"
+  },
+  {
+    "id": "github-neo-context-recovery",
+    "title": "Cross-check messages, recent history and live state during recovery",
+    "evidence": "The published procedure checks messages and outgoing commitments first, derives search anchors from recent activity, and verifies live issue, branch and CI state. It marks recovery degraded if a required check is unavailable or ambiguous. It is tied to a particular MCP setup and was not tested here.",
+    "date_basis": "Original publication date unknown; reviewed revision 2026-10-29 18:35:29 UTC converted to Asia/Seoul",
+    "review_scope": "Recovery sequence and limits at the pinned revision"
+  },
+  {
+    "id": "reddit-1xqfukk-19sar3yje5wch",
+    "title": "A handoff perspective: surface recent decisions and refusals first",
+    "evidence": "One commenter reports using a short state note instead of a full log and suggests finding user refusals early so search does not revive stale work. This is not a comparative experiment.",
+    "date_basis": "Comment time 2026-11-07 23:03:55 UTC converted to Asia/Seoul",
+    "review_scope": "The cited comment and its publication time"
+  },
+  {
+    "id": "driftproof-report-018",
+    "title": "Small report comparing skills with same-length placebo text",
+    "evidence": "The tool authors compare a skill, same-length placebo text and no skill on text tasks with Haiku 5.5. Twelve of sixteen scored above placebo on at least one of three tasks and below it on none. The same model graded the answers; beating placebo does not establish an advantage over no skill.",
+    "date_basis": "Publication date unknown; experiment recorded 2026-11-02, reviewed report revision 2026-11-05 05:55:18 UTC",
+    "review_scope": "Report 018 comparison design, classification and limitations"
+  },
+  {
+    "id": "github-openspec-v1-16-1",
+    "title": "OpenSpec 1.16.1 changes handling of unrecognized sections",
+    "evidence": "The release notes say requirements under an unrecognized delta section could previously pass with a warning and be dropped by archive; 1.16.1 makes validation fail and refuses archive. This was not reproduced by running the tool.",
+    "date_basis": "Release timestamp 2026-11-07 00:44:30 UTC converted to Asia/Seoul",
+    "review_scope": "v1.16.1 release notes"
+  },
+  {
+    "id": "2118690987153186845",
+    "title": "A prompt to investigate implicit transitions, retries and concurrency",
+    "evidence": "The author proposes documenting explicit and implicit states, invariants and transitions; finding reachable invalid behavior with evidence; then fixing and regression-testing it. The reported benefit is personal experience.",
+    "date_basis": "Post time 2026-11-06 13:04:29 UTC converted to Asia/Seoul",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2118721146678096239",
+    "title": "Counterpoint: screen false bug reports before changing code",
+    "evidence": "One commenter says some AI-identified bugs were not real and should be read before fixes. This is not a measurement of a general false-positive rate.",
+    "date_basis": "Post time 2026-11-06 15:04:19 UTC converted to Asia/Seoul",
+    "review_scope": "Reply text and publication time"
+  },
+  {
+    "id": "2118958843501920268",
+    "title": "Claude Code’s Concise output style",
+    "evidence": "A Claude Code team member suggests Concise for shorter responses. This is an output-format setting, not an experiment demonstrating improved verification quality.",
+    "date_basis": "Post time 2026-11-07 06:48:51 UTC converted to Asia/Seoul",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "anthropic-output-styles",
+    "title": "Versions and scope for Claude Code output styles",
+    "evidence": "The official documentation says Concise requires 2.1.237 or later and detail can still be requested. Styles apply to the main conversation and forks, not separately prompted subagents. No application setting was changed.",
+    "date_basis": "Document publication and last-modified dates unknown",
+    "review_scope": "Concise, per-app configuration and subagent scope"
   }
 ]

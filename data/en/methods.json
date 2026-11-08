@@ -12,8 +12,8 @@
     "title": "Keep instructions short and evidence rich",
     "kind": "editorial_recommendation",
     "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
-    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work.",
-    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061"]
+    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work. Compare a skill separately against no skill and against a same-length control. Do not generalize a small result from one model.",
+    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061", "driftproof-report-018"]
   },
   {
     "id": "feature-map",
@@ -43,9 +43,9 @@
     "id": "handoff",
     "title": "Hand off artifacts, not just a session",
     "kind": "editorial_recommendation",
-    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them.",
+    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence.",
     "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state.",
-    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth"]
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch"]
   },
   {
     "id": "parallel",
@@ -60,16 +60,16 @@
     "title": "Narrow the review criteria",
     "kind": "editorial_recommendation",
     "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
-    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems.",
-    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33"]
+    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path.",
+    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239"]
   },
   {
     "id": "slice",
     "title": "Work in units you can verify",
     "kind": "editorial_recommendation",
     "action": "Divide work by user behavior or contracts rather than file counts. Make each unit small enough to verify its runtime results when it is done.",
-    "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file.",
-    "sources": ["2066645959539556852", "openspec", "matt-pocock-skills"]
+    "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results.",
+    "sources": ["2066645959539556852", "openspec", "matt-pocock-skills", "github-openspec-v1-16-1"]
   },
   {
     "id": "loop",
@@ -100,8 +100,8 @@
     "title": "Separate execution permissions from the goal",
     "kind": "editorial_recommendation",
     "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately.",
-    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy"]
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do.",
+    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod"]
   },
   {
     "id": "compound",
@@ -124,7 +124,7 @@
     "title": "Summarize status so people can judge it",
     "kind": "editorial_recommendation",
     "action": "Separate changes since the last check, execution evidence, remaining unknowns and decisions needed. Use a state diagram or a small HTML page when it aids understanding.",
-    "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents.",
-    "sources": ["2109024196760305861", "2105819303471976479", "simon-guide"]
+    "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents. Claude Code’s Concise style applies to the main conversation and forks, not separate subagents. Request necessary evidence explicitly.",
+    "sources": ["2109024196760305861", "2105819303471976479", "simon-guide", "2118958843501920268", "anthropic-output-styles"]
   }
 ]

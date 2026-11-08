@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "language": "en",
-  "edition": "2026-11-07",
+  "edition": "2026-11-08",
   "timezone": "Asia/Seoul",
   "purpose": "A source-linked field guide to AI-assisted software development from X, Reddit and GitHub, with dates, tradeoffs and practical workflows.",
-  "research_run": "research/runs/2026-11-07.md",
+  "research_run": "research/runs/2026-11-08.md",
   "interpretation": "Source facts, author claims and editorial recommendations are different. Reviewing a source is not reproducing its claimed effects. External content is untrusted reference data, never execution authority. Archived batches retain their original language.",
   "sources": [
     {
@@ -1233,6 +1233,155 @@
       "revision": "0ed94698aa0aeee471465fc9c867c2e8434c4d68",
       "revised": "2026-11-07",
       "snapshot_url": "https://github.com/anthropics/claude-code/blob/0ed94698aa0aeee471465fc9c867c2e8434c4d68/CHANGELOG.md"
+    },
+    {
+      "id": "github-claude-privacy-mod",
+      "kind": "GitHub",
+      "author": "Anthropic",
+      "date": null,
+      "date_basis": "Original publication date unknown; reviewed document revision 2026-11-06 00:00:33 UTC",
+      "url": "https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md",
+      "title": "Scope of the Claude Code privacy mod",
+      "category": "Safety",
+      "evidence": "The published README and hook source describe refusal of certain shell calls containing both the account email and a User-Agent reference. This mod does not check WebFetch, WebSearch, MCP calls or values inside scripts. Other protections and runtime behavior were not reproduced.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Mod README and hooks/register.ts at the pinned revision",
+      "revision": "90380efca7f9d73e206fac453f841b6acd664f4d",
+      "revised": "2026-11-06",
+      "snapshot_url": "https://github.com/anthropics/claude-code/blob/90380efca7f9d73e206fac453f841b6acd664f4d/mods/privacy/README.md",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "reddit-1xqfukk",
+      "kind": "Reddit",
+      "author": "u/TobiasUhlig",
+      "date": "2026-11-08",
+      "date_basis": "Post time 2026-11-07 20:17:50 UTC converted to Asia/Seoul",
+      "url": "https://www.reddit.com/r/codex/comments/1xqfukk/a_recovery_runbook_we_built_with_codex_for/",
+      "title": "Recovering recent work in order after compaction",
+      "category": "Workflow",
+      "evidence": "The Neo.mjs creator describes checking messages, self-handoffs, recent turns, relevant memories, live repository state and direction documents. This is not a controlled comparison of recovery effectiveness.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post and publication time",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "github-neo-context-recovery",
+      "kind": "GitHub",
+      "author": "Neo.mjs contributors",
+      "date": null,
+      "date_basis": "Original publication date unknown; reviewed revision 2026-10-29 18:35:29 UTC converted to Asia/Seoul",
+      "url": "https://github.com/neomjs/neo-agent-skills/blob/main/.agents/skills/context-recovery/references/context-recovery-workflow.md",
+      "title": "Cross-check messages, recent history and live state during recovery",
+      "category": "Workflow",
+      "evidence": "The published procedure checks messages and outgoing commitments first, derives search anchors from recent activity, and verifies live issue, branch and CI state. It marks recovery degraded if a required check is unavailable or ambiguous. It is tied to a particular MCP setup and was not tested here.",
+      "evidence_kind": "implementation",
+      "review_scope": "Recovery sequence and limits at the pinned revision",
+      "revision": "76e66d9ce8303ae8eda49f21b16ac2bdefa3d6be",
+      "revised": "2026-10-30",
+      "snapshot_url": "https://github.com/neomjs/neo-agent-skills/blob/76e66d9ce8303ae8eda49f21b16ac2bdefa3d6be/.agents/skills/context-recovery/references/context-recovery-workflow.md",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "reddit-1xqfukk-19sar3yje5wch",
+      "kind": "Reddit",
+      "author": "u/kaijurules",
+      "date": "2026-11-08",
+      "date_basis": "Comment time 2026-11-07 23:03:55 UTC converted to Asia/Seoul",
+      "url": "https://www.reddit.com/r/codex/comments/1xqfukk/comment/19sar3yje5wch/",
+      "title": "A handoff perspective: surface recent decisions and refusals first",
+      "category": "Community",
+      "evidence": "One commenter reports using a short state note instead of a full log and suggests finding user refusals early so search does not revive stale work. This is not a comparative experiment.",
+      "evidence_kind": "self_report",
+      "review_scope": "The cited comment and its publication time",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "driftproof-report-018",
+      "kind": "Web",
+      "author": "Driftproof",
+      "date": null,
+      "date_basis": "Publication date unknown; experiment recorded 2026-11-02, reviewed report revision 2026-11-05 05:55:18 UTC",
+      "url": "https://driftproofhq.com/reports/018/",
+      "title": "Small report comparing skills with same-length placebo text",
+      "category": "Measurement",
+      "evidence": "The tool authors compare a skill, same-length placebo text and no skill on text tasks with Haiku 5.5. Twelve of sixteen scored above placebo on at least one of three tasks and below it on none. The same model graded the answers; beating placebo does not establish an advantage over no skill.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Report 018 comparison design, classification and limitations",
+      "revision": "8004921ca9baca91a4343c30da867cde88ff3dff",
+      "revised": "2026-11-05",
+      "snapshot_url": "https://github.com/driftproofhq/driftproof/blob/8004921ca9baca91a4343c30da867cde88ff3dff/docs/reports/018/index.md",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "github-openspec-v1-16-1",
+      "kind": "GitHub",
+      "author": "Fission AI",
+      "date": "2026-11-07",
+      "date_basis": "Release timestamp 2026-11-07 00:44:30 UTC converted to Asia/Seoul",
+      "url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v1.16.1",
+      "title": "OpenSpec 1.16.1 changes handling of unrecognized sections",
+      "category": "Tools",
+      "evidence": "The release notes say requirements under an unrecognized delta section could previously pass with a warning and be dropped by archive; 1.16.1 makes validation fail and refuses archive. This was not reproduced by running the tool.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "v1.16.1 release notes",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "2118690987153186845",
+      "kind": "X",
+      "author": "@trevin",
+      "date": "2026-11-06",
+      "date_basis": "Post time 2026-11-06 13:04:29 UTC converted to Asia/Seoul",
+      "url": "https://x.com/trevin/status/2118690987153186845",
+      "title": "A prompt to investigate implicit transitions, retries and concurrency",
+      "category": "Verification",
+      "evidence": "The author proposes documenting explicit and implicit states, invariants and transitions; finding reachable invalid behavior with evidence; then fixing and regression-testing it. The reported benefit is personal experience.",
+      "evidence_kind": "self_report",
+      "review_scope": "Post text and publication time",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "2118721146678096239",
+      "kind": "X",
+      "author": "@literallyhimmmm",
+      "date": "2026-11-07",
+      "date_basis": "Post time 2026-11-06 15:04:19 UTC converted to Asia/Seoul",
+      "url": "https://x.com/literallyhimmmm/status/2118721146678096239",
+      "title": "Counterpoint: screen false bug reports before changing code",
+      "category": "Contrasting views",
+      "evidence": "One commenter says some AI-identified bugs were not real and should be read before fixes. This is not a measurement of a general false-positive rate.",
+      "evidence_kind": "opinion",
+      "review_scope": "Reply text and publication time",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "2118958843501920268",
+      "kind": "X",
+      "author": "@addyosmani",
+      "date": "2026-11-07",
+      "date_basis": "Post time 2026-11-07 06:48:51 UTC converted to Asia/Seoul",
+      "url": "https://x.com/addyosmani/status/2118958843501920268",
+      "title": "Claude Code’s Concise output style",
+      "category": "Tools",
+      "evidence": "A Claude Code team member suggests Concise for shorter responses. This is an output-format setting, not an experiment demonstrating improved verification quality.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Post text and publication time",
+      "checked": "2026-11-08"
+    },
+    {
+      "id": "anthropic-output-styles",
+      "kind": "Web",
+      "author": "Anthropic",
+      "date": null,
+      "date_basis": "Document publication and last-modified dates unknown",
+      "url": "https://code.claude.com/docs/en/output-styles",
+      "title": "Versions and scope for Claude Code output styles",
+      "category": "Tools",
+      "evidence": "The official documentation says Concise requires 2.1.237 or later and detail can still be requested. Styles apply to the main conversation and forks, not separately prompted subagents. No application setting was changed.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Concise, per-app configuration and subagent scope",
+      "checked": "2026-11-08"
     }
   ],
   "methods": [
@@ -1252,12 +1401,13 @@
       "title": "Keep instructions short and evidence rich",
       "kind": "editorial_recommendation",
       "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
-      "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work.",
+      "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work. Compare a skill separately against no skill and against a same-length control. Do not generalize a small result from one model.",
       "sources": [
         "2077539537992229076",
         "2080710971228918066",
         "agent-os",
-        "2118746525811753061"
+        "2118746525811753061",
+        "driftproof-report-018"
       ]
     },
     {
@@ -1297,13 +1447,16 @@
       "id": "handoff",
       "title": "Hand off artifacts, not just a session",
       "kind": "editorial_recommendation",
-      "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them.",
+      "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence.",
       "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state.",
       "sources": [
         "anthropic-harness",
         "reddit-pcryp7z",
         "gsd",
-        "reddit-1xpaoth"
+        "reddit-1xpaoth",
+        "reddit-1xqfukk",
+        "github-neo-context-recovery",
+        "reddit-1xqfukk-19sar3yje5wch"
       ]
     },
     {
@@ -1323,11 +1476,13 @@
       "title": "Narrow the review criteria",
       "kind": "editorial_recommendation",
       "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
-      "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems.",
+      "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path.",
       "sources": [
         "2117437607940681849",
         "2111604705340326393",
-        "reddit-p9gcq33"
+        "reddit-p9gcq33",
+        "2118690987153186845",
+        "2118721146678096239"
       ]
     },
     {
@@ -1335,11 +1490,12 @@
       "title": "Work in units you can verify",
       "kind": "editorial_recommendation",
       "action": "Divide work by user behavior or contracts rather than file counts. Make each unit small enough to verify its runtime results when it is done.",
-      "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file.",
+      "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results.",
       "sources": [
         "2066645959539556852",
         "openspec",
-        "matt-pocock-skills"
+        "matt-pocock-skills",
+        "github-openspec-v1-16-1"
       ]
     },
     {
@@ -1382,13 +1538,14 @@
       "title": "Separate execution permissions from the goal",
       "kind": "editorial_recommendation",
       "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-      "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately.",
+      "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do.",
       "sources": [
         "2090299859693695283",
         "2098662421644853433",
         "github-claude-email-107757",
         "2118771062913802383",
-        "github-claude-changelog-privacy"
+        "github-claude-changelog-privacy",
+        "github-claude-privacy-mod"
       ]
     },
     {
@@ -1420,11 +1577,13 @@
       "title": "Summarize status so people can judge it",
       "kind": "editorial_recommendation",
       "action": "Separate changes since the last check, execution evidence, remaining unknowns and decisions needed. Use a state diagram or a small HTML page when it aids understanding.",
-      "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents.",
+      "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents. Claude Code’s Concise style applies to the main conversation and forks, not separate subagents. Request necessary evidence explicitly.",
       "sources": [
         "2109024196760305861",
         "2105819303471976479",
-        "simon-guide"
+        "simon-guide",
+        "2118958843501920268",
+        "anthropic-output-styles"
       ]
     }
   ],
@@ -1645,10 +1804,21 @@
         "github-claude-email-107757",
         "2118771062913802383",
         "github-claude-changelog-privacy",
+        "github-claude-privacy-mod",
+        "reddit-1xqfukk",
+        "github-neo-context-recovery",
+        "reddit-1xqfukk-19sar3yje5wch",
+        "reddit-1xpaoth",
+        "driftproof-report-018",
         "2118746525811753061",
-        "reddit-1xpaoth"
+        "github-openspec-v1-16-1",
+        "openspec",
+        "2118690987153186845",
+        "2118721146678096239",
+        "2118958843501920268",
+        "anthropic-output-styles"
       ],
-      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nNew findings reviewed on 2026-11-07\n\n2026-11-06–07 KST · CLAUDE CODE\nPersonal data in request headers\n\nA user reported that account email appeared in web requests. A team member said the 2.1.317+ prompt for some calls does not catch every case, including generated scripts. A next release removing the email from context was planned at the time.\n\nReview generated scripts and request headers, and check subsequent notices for the actual tool version.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-07 KST ↗\n\n2026-11-07 KST · POTETO\nRevisit skills as models change\n\npoteto predicts future models may absorb some instructions, making skills shorter. This is a prediction. Test whether project-specific conditions and verification procedures remain necessary before removing them.\n\nOriginal · 2026-11-07 KST ↗\n\n2026-11-06 KST · REDDIT\nFailed approaches can disappear in handoffs\n\nA discussion notes that summaries may retain decisions while losing rejected approaches. Pass the current revision, failed approaches and reasons to the next agent.\n\nOriginal discussion · 2026-11-06 ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
+      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nNew findings reviewed on 2026-11-08\n\n2026-11-06 DOCUMENT REVISION · CLAUDE CODE\nScope of the privacy mod\n\nOur previous edition described the changelog and team member’s account of checks for web or shell calls. The newly reviewed public cc-plugin-privacy documentation says this mod checks only some shell inputs, excluding WebFetch, WebSearch, MCP and values inside scripts.\n\nThe descriptions have different scopes. This mod’s documentation alone does not establish what other protections or the whole product actually do.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-07 KST ↗ Mod source · Document revised 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nWhere to start after compaction\n\nThe Neo.mjs example checks messages, outgoing commitments and recent activity first, then compares related decisions with current issues and branches. It records degraded confidence when checks are missing.\n\nAnother user suggests short notes that surface refusals early so stale work is not revived. These are examples and opinions, not a comparative experiment.\n\nReddit post · 2026-11-08 ↗ Recovery procedure · Document revised 2026-10-30 KST ↗ Comment · 2026-11-08 ↗ Earlier handoff discussion · 2026-11-06 ↗\n\nRECORDED 2026-11-02 · SKILL EVAL\nCompare before keeping a skill\n\nIn a small report, twelve of sixteen counted skills scored above same-length placebo text on at least one of three text tasks and below it on none. The same Haiku model generated and graded answers.\n\nBeating placebo does not establish an advantage over no skill. Test poteto’s prediction of shorter skills on actual work too.\n\nEvaluation · Document revised 2026-11-05 KST ↗ poteto’s prediction · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\nHandling changes that could lose requirements\n\nThe 1.16.1 release says that requirements under an unrecognized delta section, previously warned about and potentially dropped during archive, now cause validation to fail and archive to refuse the change.\n\nCheck the version and actual result. This guide did not run the tool.\n\nRelease notes · 2026-11-07 ↗ Existing OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-06–07 KST · X\nHidden states and suspected bugs\n\nTrevin proposes examining implicit states and transitions, retries and concurrency, with evidence of reachable execution paths. One reply warns that AI can also report things that are not bugs.\n\nCheck requirements and actual paths, and follow the repository’s rules for changes and tests.\n\nOriginal prompt · 2026-11-06 KST ↗ Counterpoint · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\nShort answers have a scope too\n\nConcise is an output style for shorter default responses. The official docs say it requires Claude Code 2.1.237 or later and applies to the main conversation and forks, but not separate subagents.\n\nAsk separately for the evidence and details you need.\n\nTeam member post · 2026-11-07 KST ↗ Official docs · Publication date unknown ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
     }
   ],
   "reviewed_batches": [
@@ -1871,6 +2041,254 @@
         "next_questions": [
           "계정 이메일을 모델 맥락에서 제거한 릴리스가 실제 배포됐는가?",
           "같은 작업과 모델에서 스킬의 지침을 줄였을 때 품질과 재작업은 어떻게 달라지는가?"
+        ],
+        "publishing_status": "reviewed_for_publication"
+      }
+    },
+    {
+      "path": "research/batches/2026-11-08-recovery-validation-privacy.json",
+      "data": {
+        "schema_version": 1,
+        "topic": "프라이버시 검사 범위, 압축 복구와 검증 가능한 에이전트 작업",
+        "as_of": "2026-11-08",
+        "timezone": "Asia/Seoul",
+        "scope": "2026-11-04 09:15 KST부터 조사. 맥락 비교를 위해 11월 2일에 기록된 스킬 평가와 10월 문서 개정도 포함한다.",
+        "findings": [
+          {
+            "source_id": "github-claude-privacy-mod",
+            "original_url": "https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md",
+            "author": "Anthropic",
+            "published_on": null,
+            "date_basis": "최초 게시일 미확인. 확인한 문서 개정 2026-11-06 00:00:33 UTC",
+            "checked_on": "2026-11-08",
+            "source_kind": "GitHub",
+            "evidence_kind": "vendor_report",
+            "author_claim": "공개된 cc-plugin-privacy 문서는 일부 셸 도구의 계정 이메일과 User-Agent 표현을 함께 검사하고 해당 호출을 확인 창 없이 거절하며 웹 도구와 스크립트 내부 등은 검사하지 않는다고 설명한다.",
+            "editorial_takeaway": "이 모듈의 범위를 전체 Claude Code 보호 기능과 구별하고 변경 이력과 팀원 설명을 함께 읽는다.",
+            "limitations": [
+              "소스 열람만 했으며 설치 버전의 실제 동작이나 별도 내장 검사 존재를 재현하지 않았다."
+            ],
+            "related_source_ids": [
+              "github-claude-changelog-privacy",
+              "2118771062913802383",
+              "github-claude-email-107757"
+            ],
+            "change_type": "applicability_change",
+            "revision": "90380efca7f9d73e206fac453f841b6acd664f4d",
+            "snapshot_url": "https://github.com/anthropics/claude-code/blob/90380efca7f9d73e206fac453f841b6acd664f4d/mods/privacy/README.md"
+          },
+          {
+            "source_id": "reddit-1xqfukk",
+            "original_url": "https://www.reddit.com/r/codex/comments/1xqfukk/a_recovery_runbook_we_built_with_codex_for/",
+            "author": "u/TobiasUhlig",
+            "published_on": "2026-11-08",
+            "date_basis": "게시 시각 2026-11-07 20:17:50 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "Reddit",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 압축 뒤 의미 검색만으로 오래된 작업을 선택할 수 있어 메시지와 최근 작업 순서를 먼저 보고 저장소 현재 상태를 대조한다고 설명한다.",
+            "editorial_takeaway": "재개 전에 최근 지시와 약속, 현재 작업, 관련 과거 결정과 라이브 상태를 확인하고 빠진 확인을 명시한다.",
+            "limitations": [
+              "사용자의 사례 소개이며 효과나 비용을 독립 재현하지 않았다."
+            ],
+            "related_source_ids": [
+              "reddit-1xpaoth",
+              "github-neo-context-recovery"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "github-neo-context-recovery",
+            "original_url": "https://github.com/neomjs/neo-agent-skills/blob/main/.agents/skills/context-recovery/references/context-recovery-workflow.md",
+            "author": "Neo.mjs contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 개정 2026-10-29 18:35:29 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "GitHub",
+            "evidence_kind": "implementation",
+            "author_claim": "복구 문서는 최근 대화에서 검색 단서를 얻고 현재 상태를 재확인하며 필수 근거를 확보하지 못하면 복구 신뢰도를 낮춰 기록한다.",
+            "editorial_takeaway": "다른 환경에서는 접근 가능한 기존 자료에 맞춰 순서만 조정하고 미확인 항목을 기록한다.",
+            "limitations": [
+              "특정 프로젝트의 절차이며 새 도구 설치나 다른 프로젝트의 기억 접근을 의미하지 않는다."
+            ],
+            "related_source_ids": [
+              "reddit-1xqfukk",
+              "reddit-1xpaoth"
+            ],
+            "change_type": "addition",
+            "revision": "76e66d9ce8303ae8eda49f21b16ac2bdefa3d6be",
+            "snapshot_url": "https://github.com/neomjs/neo-agent-skills/blob/76e66d9ce8303ae8eda49f21b16ac2bdefa3d6be/.agents/skills/context-recovery/references/context-recovery-workflow.md"
+          },
+          {
+            "source_id": "reddit-1xqfukk-19sar3yje5wch",
+            "original_url": "https://www.reddit.com/r/codex/comments/1xqfukk/comment/19sar3yje5wch/",
+            "author": "u/kaijurules",
+            "published_on": "2026-11-08",
+            "date_basis": "댓글 시각 2026-11-07 23:03:55 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "Reddit",
+            "evidence_kind": "self_report",
+            "author_claim": "댓글 작성자는 긴 로그를 대신해 짧은 상태 메모를 쓰고 사용자가 거절한 과거 접근을 먼저 확인하자고 제안한다.",
+            "editorial_takeaway": "최신 사용자 지시와 거절 결정을 보존하되 짧은 요약과 상세 기록의 비용을 작업에 맞게 선택한다.",
+            "limitations": [
+              "한 사람의 사용 경험이며 모든 복구 절차보다 효과적이라는 근거는 아니다."
+            ],
+            "related_source_ids": [
+              "reddit-1xqfukk",
+              "reddit-1xpaoth"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "driftproof-report-018",
+            "original_url": "https://driftproofhq.com/reports/018/",
+            "author": "Driftproof",
+            "published_on": null,
+            "date_basis": "원문 게시일 미확인. 실험 기록일 2026-11-02, 확인한 보고서 파일 개정 2026-11-05 05:55:18 UTC",
+            "checked_on": "2026-11-08",
+            "source_kind": "Web",
+            "evidence_kind": "vendor_report",
+            "author_claim": "제작자의 보고는 20개 스킬 중 평가에 포함한 16개에서 12개가 3개 텍스트 작업 중 하나 이상에서 동량 위약 텍스트보다 높은 기준을 만족했다고 설명한다.",
+            "editorial_takeaway": "스킬을 유지·축소할 때 같은 작업의 무스킬과 길이가 비슷한 대조 조건을 함께 비교한다.",
+            "limitations": [
+              "같은 Haiku 모델이 답변과 채점을 맡았고 스킬당 텍스트 작업은 3개다.",
+              "위약보다 낫다는 결과가 무스킬보다 낫다는 뜻은 아니다. 네 개의 라우터는 집계에서 제외됐다.",
+              "본 조사는 실험을 재현하지 않았다."
+            ],
+            "related_source_ids": [
+              "2118746525811753061",
+              "pstack"
+            ],
+            "change_type": "applicability_change",
+            "revision": "8004921ca9baca91a4343c30da867cde88ff3dff",
+            "snapshot_url": "https://github.com/driftproofhq/driftproof/blob/8004921ca9baca91a4343c30da867cde88ff3dff/docs/reports/018/index.md"
+          },
+          {
+            "source_id": "github-openspec-v1-16-1",
+            "original_url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v1.16.1",
+            "author": "Fission AI",
+            "published_on": "2026-11-07",
+            "date_basis": "릴리스 시각 2026-11-07 00:44:30 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "GitHub",
+            "evidence_kind": "vendor_report",
+            "author_claim": "1.16.1 릴리스는 인식되지 않는 변경 명세 섹션의 요구사항이 조용히 누락되는 대신 검증과 보관이 실패하도록 바꿨다고 밝혔다.",
+            "editorial_takeaway": "OpenSpec으로 명세를 보관할 때 버전과 허용된 섹션을 확인하고 검증 결과와 실제 보관 결과를 함께 본다.",
+            "limitations": [
+              "릴리스 설명이며 실제 도구 실행이나 모든 명세 손실 사례를 검증하지 않았다."
+            ],
+            "related_source_ids": [
+              "openspec"
+            ],
+            "change_type": "applicability_change",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2118690987153186845",
+            "original_url": "https://x.com/trevin/status/2118690987153186845",
+            "author": "@trevin",
+            "published_on": "2026-11-06",
+            "date_basis": "게시 시각 2026-11-06 13:04:29 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "상태와 불변조건, 전이를 문서화하고 재시도와 동시 실행에서 실제 도달 가능한 오류를 찾아 수정과 회귀 검사를 이어가는 요청을 제안한다.",
+            "editorial_takeaway": "사용자가 허용한 범위에서 실제 코드 근거와 재현 여부를 나누어 검토하고 필요한 상태 범위를 먼저 정한다.",
+            "limitations": [
+              "저자의 경험담이며 모든 버그가 탐지되거나 모든 추정이 정확하다는 증거는 아니다.",
+              "수정·이슈 작성·검사는 저장소별 권한과 제한을 따른다."
+            ],
+            "related_source_ids": [
+              "2118073519515025804",
+              "2118721146678096239"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2118721146678096239",
+            "original_url": "https://x.com/literallyhimmmm/status/2118721146678096239",
+            "author": "@literallyhimmmm",
+            "published_on": "2026-11-07",
+            "date_basis": "게시 시각 2026-11-06 15:04:19 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "X",
+            "evidence_kind": "opinion",
+            "author_claim": "답글 작성자는 AI가 보고한 버그 중 실제 문제가 아닌 것도 있으므로 수정 전에 살펴봐야 한다고 말했다.",
+            "editorial_takeaway": "제품 요구와 실제 도달 경로에 비추어 후보를 검증하고 추측은 확인된 결함과 분리한다.",
+            "limitations": [
+              "개인 경험이며 전체 오탐률을 나타내지 않는다."
+            ],
+            "related_source_ids": [
+              "2118690987153186845"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2118958843501920268",
+            "original_url": "https://x.com/addyosmani/status/2118958843501920268",
+            "author": "@addyosmani",
+            "published_on": "2026-11-07",
+            "date_basis": "게시 시각 2026-11-07 06:48:51 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-08",
+            "source_kind": "X",
+            "evidence_kind": "vendor_report",
+            "author_claim": "작성자는 Claude Code의 Concise 출력 스타일을 사용해 기본 응답을 짧게 하고 필요하면 세부 설명을 요청할 수 있다고 안내했다.",
+            "editorial_takeaway": "작업 검증과 보고에 필요한 근거는 별도로 요구하고 앱과 버전에 맞는 설정 방법을 확인한다.",
+            "limitations": [
+              "간결한 답변이 더 정확하거나 작업이 빨라진다는 비교 자료는 제시하지 않았다."
+            ],
+            "related_source_ids": [
+              "anthropic-output-styles"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "anthropic-output-styles",
+            "original_url": "https://code.claude.com/docs/en/output-styles",
+            "author": "Anthropic",
+            "published_on": null,
+            "date_basis": "문서 게시일과 최종 수정일 미확인",
+            "checked_on": "2026-11-08",
+            "source_kind": "Web",
+            "evidence_kind": "vendor_report",
+            "author_claim": "공식 문서는 Concise의 버전 조건과 주 대화·fork에 적용되고 별도 subagent에는 적용되지 않는 범위를 설명한다.",
+            "editorial_takeaway": "Claude Code 데스크톱과 터미널의 설정 경로를 구별하고 여러 에이전트가 같은 출력 스타일을 따른다고 가정하지 않는다.",
+            "limitations": [
+              "문서가 변경될 수 있고 현재 사용자의 앱 버전과 설정을 조사하지 않았다."
+            ],
+            "related_source_ids": [
+              "2118958843501920268"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          }
+        ],
+        "counterevidence": [
+          "Claude Code 변경 이력과 팀원 설명은 웹 또는 셸 확인을 설명하지만 공개된 개인정보 모듈 문서는 해당 모듈의 검사 범위를 더 좁게 기술한다. 별도 보호 기능의 존재는 결론내리지 않는다.",
+          "스킬과 동량 위약의 비교는 무스킬보다 나음을 증명하지 않으며 동일 모델 채점과 제한된 작업이 한계다.",
+          "상태기계 분석의 개인적 버그 발견 사례와 오탐 우려를 함께 보관한다."
+        ],
+        "access_gaps": [
+          "X와 Reddit 검색과 답글은 전수조사가 아니다.",
+          "Claude Code 모듈, OpenSpec과 스킬 평가를 직접 실행하거나 모델을 호출하지 않았다.",
+          "인계 복구 절차를 특정 환경 밖에서 재현하지 않았다."
+        ],
+        "next_questions": [
+          "계정 이메일을 모델 맥락에서 제거한 후속 릴리스의 실제 배포와 검사 범위는 무엇인가?",
+          "스킬이 생략된 조건과 동량 위약 조건의 성능은 같은 실제 개발 작업에서 어떻게 다른가?",
+          "문맥 복구에 필요한 최근 이력과 전달해야 할 양의 비용 균형은 어떤가?"
         ],
         "publishing_status": "reviewed_for_publication"
       }
