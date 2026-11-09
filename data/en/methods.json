@@ -52,16 +52,16 @@
     "title": "Give parallel work a reason",
     "kind": "editorial_recommendation",
     "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
-    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs.",
-    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop"]
+    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app.",
+    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t"]
   },
   {
     "id": "review",
     "title": "Narrow the review criteria",
     "kind": "editorial_recommendation",
     "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
-    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path.",
-    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239"]
+    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path. Check each subsystem model’s assumptions, bounds and correspondence to actual code. Record checks not run on delegated work as unverified.",
+    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239", "2119521036660314339", "reddit-1xqvxx2-19sbs80jyau04"]
   },
   {
     "id": "slice",

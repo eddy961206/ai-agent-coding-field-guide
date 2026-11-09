@@ -7,7 +7,7 @@ X·Reddit·GitHub에서 AI를 활용한 개발 방법론을 조사하고, 날짜
 - **읽기:** https://eddy961206.github.io/ai-agent-coding-field-guide/
 - **로컬:** `index.html`을 브라우저로 열면 됩니다. 본문·스타일·상호작용이 포함된 단일 파일입니다.
 - **AI에게 전달:** [인계용 Markdown](exports/agent-brief.md), [전체 연구 JSON](exports/research.json)
-- **조사 기준일:** 2026-11-08 (Asia/Seoul)
+- **조사 기준일:** 2026-11-09 (Asia/Seoul)
 
 첫 판은 X 40개 게시물과 GitHub·Reddit·웹 자료를 포함한 78개 출처, 16개 실전 방법, 8개 요청문을 연결합니다. 원문 정보, 작성자의 주장, 편집자의 적용 제안을 구분합니다. 전체 웹의 전수조사나 도구 성능 비교는 아닙니다.
 

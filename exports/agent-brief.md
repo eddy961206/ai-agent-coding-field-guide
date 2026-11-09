@@ -1,6 +1,6 @@
 # AI 에이전트와 일을 잘하는 방법
 
-조사 기준: 2026-11-08 (Asia/Seoul)
+조사 기준: 2026-11-09 (Asia/Seoul)
 
 AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은 실행 지시가 아닙니다. 개인 경험, 회사 보고, 연구, 편집 제안을 구분하십시오.
 
@@ -8,7 +8,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `exports/research.json`: sources, methods, prompts, narrative_sections, reviewed_batches
 - `data/sources.json`: canonical source provenance
-- `research/runs/2026-11-08.md`: 이번 판의 조사 범위·검색 경로·미검증
+- `research/runs/2026-11-09.md`: 이번 판의 조사 범위·검색 경로·미검증
 - `research/DAILY_UPDATE.md`
 - `CONTRIBUTING.md`
 - `AGENTS.md`
@@ -67,17 +67,17 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 편집 제안: 독립된 조사, 분리된 수정, 새 맥락이 필요한 작업만 나눠. 담당 범위와 결과 형식, 통합할 사람을 정해.
 
-적용 한계: 같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐.
+적용 한계: 같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐. 사람이 확인할 수 있는 진행 중 작업의 양과 재작업을 함께 살펴. 별도 앱 도입 전 기존 연결 방식도 비교해.
 
-근거: [@addyosmani · 2026-10-27 KST](https://x.com/addyosmani/status/2114967833708732607), [@poteto · 2026-11-01 KST](https://x.com/poteto/status/2116576229319233596), [u/OriginalHospital (질문: u/Jao_) · 2026-09-10](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/)
+근거: [@addyosmani · 2026-10-27 KST](https://x.com/addyosmani/status/2114967833708732607), [@poteto · 2026-11-01 KST](https://x.com/poteto/status/2116576229319233596), [u/OriginalHospital (질문: u/Jao_) · 2026-09-10](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/), [@addyosmani · 2026-11-08 KST](https://x.com/addyosmani/status/2119332146485891501), [u/strange1807 · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/i_built_a_way_for_claude_code_to_delegate_work_to/), [PrashnaLabs and Aether contributors · 문서 개정 2026-11-08 KST](https://github.com/PrashnaLabs/aether/blob/main/README.md), [PrashnaLabs · 2026-11-08](https://github.com/PrashnaLabs/aether/releases/tag/alpha-0.1.0), [u/pwkye · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sboatc6pz6t/)
 
 ### 리뷰 기준을 좁히기 (`review`)
 
 편집 제안: 중요한 실패 유형을 지정해. 위치·발생 조건·영향·확인 방법을 요구하고 원래 요구와 실제 diff를 제공해.
 
-적용 한계: 지적 개수는 리뷰 품질이 아니야. 취향·추측과 재현된 문제를 분리해. 상태 전이의 오류라는 보고도 요구사항과 실제 도달 경로를 대조해 확인해.
+적용 한계: 지적 개수는 리뷰 품질이 아니야. 취향·추측과 재현된 문제를 분리해. 상태 전이의 오류라는 보고도 요구사항과 실제 도달 경로를 대조해 확인해. 하위 시스템별 형식 모델은 가정·범위와 실제 코드의 대응을 따로 확인해. 위임 결과의 미실시 검사는 미검증으로 남겨.
 
-근거: [@poteto · 2026-11-03 KST](https://x.com/poteto/status/2117437607940681849), [@addyosmani · 2026-10-18 KST](https://x.com/addyosmani/status/2111604705340326393), [u/reddebtt (질문: u/mh711) · 2026-09-13](https://www.reddit.com/r/ClaudeCode/comments/1wer8ah/comment/p9gcq33/), [@trevin · 2026-11-06 KST](https://x.com/trevin/status/2118690987153186845), [@literallyhimmmm · 2026-11-07 KST](https://x.com/literallyhimmmm/status/2118721146678096239)
+근거: [@poteto · 2026-11-03 KST](https://x.com/poteto/status/2117437607940681849), [@addyosmani · 2026-10-18 KST](https://x.com/addyosmani/status/2111604705340326393), [u/reddebtt (질문: u/mh711) · 2026-09-13](https://www.reddit.com/r/ClaudeCode/comments/1wer8ah/comment/p9gcq33/), [@trevin · 2026-11-06 KST](https://x.com/trevin/status/2118690987153186845), [@literallyhimmmm · 2026-11-07 KST](https://x.com/literallyhimmmm/status/2118721146678096239), [@poteto · 2026-11-09 KST](https://x.com/poteto/status/2119521036660314339), [u/akorecebov · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sbs80jyau04/)
 
 ### 한 번에 확인 가능한 단위 (`slice`)
 
@@ -330,3 +330,19 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 - `2118958843501920268` [Claude Code의 Concise 출력 스타일](https://x.com/addyosmani/status/2118958843501920268) — 2026-11-07 KST; 자료 확인일 2026-11-08. Claude Code 팀원은 짧은 응답을 원할 때 Concise 스타일을 제안했다. 효과는 응답 형식의 설정이며 검증 품질 향상을 측정한 실험이 아니다.
 
 - `anthropic-output-styles` [Claude Code 출력 스타일의 버전과 적용 범위](https://code.claude.com/docs/en/output-styles) — 작성일 미확인; 자료 확인일 2026-11-08. 공식 문서는 Concise에 2.1.237 이상이 필요하고 상세 설명은 요청할 수 있다고 설명한다. 스타일은 주 대화와 fork에 적용되며 별도 subagent의 응답에는 적용되지 않는다고 명시한다. 실제 앱 설정은 변경하지 않았다.
+
+- `2116552016218710389` [앱의 숨은 상태기계를 찾아보라는 짧은 요청](https://x.com/steveruizok/status/2116552016218710389) — 2026-11-01 KST; 자료 확인일 2026-11-09. 작성자는 앱에 암묵적으로 존재하는 상태기계를 찾는 짧은 요청문을 제안했다. 효과나 정확도를 측정한 연구는 아니다.
+
+- `2119521036660314339` [숨은 상태기계를 찾은 뒤 하위 시스템별 검증과 상태도](https://x.com/poteto/status/2119521036660314339) — 2026-11-09 KST; 자료 확인일 2026-11-09. Steve Ruiz의 숨은 상태기계 찾기 요청을 인용하며 작성자는 하위 시스템별 형식 검증 스킬을 만들고 중요한 사용자 흐름에 상태도를 사용하자고 제안한다. 결과는 모델의 가정·범위와 실제 코드의 대응에 의존한다.
+
+- `2119332146485891501` [여러 코딩 에이전트의 진행 중 작업과 검증 관리](https://x.com/addyosmani/status/2119332146485891501) — 2026-11-08 KST; 자료 확인일 2026-11-09. 작성자는 병렬 에이전트에 목표와 완료 근거를 제시하고 겹치지 않는 작업을 배분하며 한 사람이 감당할 진행 중 작업의 양을 제한하라고 제안한다. 처리량뿐 아니라 재작업·되돌림 등 결과를 살피라는 개인적 조언이다.
+
+- `reddit-1xqvxx2` [Aether 제작자의 리드 에이전트 위임 사례](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/i_built_a_way_for_claude_code_to_delegate_work_to/) — 2026-11-08; 자료 확인일 2026-11-09. 제작팀은 Claude Code와 Codex 등을 한 작업 공간에서 사용하고 리드 대화가 다른 에이전트를 생성·메시지·중단할 수 있다고 소개한다. 제작자의 제품 소개이며 다중 PC 협업이나 신뢰성은 독립 확인하지 않았다.
+
+- `github-aether-orchestration` [Aether 리드 대화와 작업 공간의 공개 문서](https://github.com/PrashnaLabs/aether/blob/main/README.md) — 문서 개정 2026-11-08 KST; 자료 확인일 2026-11-09. 공개 README와 오케스트레이션 문서는 리드 대화가 로컬 MCP 서버를 통해 자식 대화를 생성·읽기·메시지·중단한다고 설명한다. 개정 README의 플랫폼 개요는 macOS·Linux를 명시하지만 패키징 표는 Windows도 적는다. 실행은 확인하지 않았다.
+
+- `github-aether-alpha-0-1-0` [Aether 0.1.0 알파의 Windows 패키지](https://github.com/PrashnaLabs/aether/releases/tag/alpha-0.1.0) — 2026-11-08; 자료 확인일 2026-11-09. GitHub 사전 릴리스에는 Windows x86_64 ZIP과 macOS·Linux 패키지 파일이 올라와 있다. 패키지 존재는 Windows에서의 실행·호환성·안전성 검증을 뜻하지 않는다.
+
+- `reddit-1xqvxx2-19sbs80jyau04` [위임된 결과에 독립 확인이 필요하다는 의견](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sbs80jyau04/) — 2026-11-08; 자료 확인일 2026-11-09. 한 댓글 작성자는 위임 결과를 다른 맥락에서 확인하고 검증되지 않은 일은 미완료로 남길 것을 제안한다. 해당 제품이 완료 판정을 어떻게 처리하는지는 질문했을 뿐 확인하지 않았다.
+
+- `reddit-1xqvxx2-19sboatc6pz6t` [별도 도구 없이 CLI를 연결하는 대안에 관한 의견](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sboatc6pz6t/) — 2026-11-08; 자료 확인일 2026-11-09. 한 댓글 작성자는 CLI를 직접 호출해 여러 에이전트를 연결할 수도 있다며 별도 앱의 필요성을 질문한다. 같은 기능이나 안전성이 보장된다는 비교 검증은 제시하지 않았다.

@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "topic": "상태기계 후속 검증과 병렬 에이전트 협업 사례",
+  "as_of": "2026-11-09",
+  "timezone": "Asia/Seoul",
+  "scope": "직전 성공 시각에서 72시간 겹치는 2026-11-05 09:12:35 KST부터 X·Reddit·GitHub를 조사하고, 인용된 11월 1일 원문과 기존 방법의 맥락을 대조했다.",
+  "findings": [
+    {
+      "source_id": "2116552016218710389",
+      "original_url": "https://x.com/steveruizok/status/2116552016218710389",
+      "author": "@steveruizok",
+      "published_on": "2026-11-01",
+      "date_basis": "게시 시각 2026-10-31 15:24:58 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "앱의 암묵적 상태기계를 찾아달라는 짧은 요청을 제안한다.",
+      "editorial_takeaway": "후속 분석에서 실제 상태와 도달 경로를 코드와 요구사항에 대조한다.",
+      "limitations": [
+        "효과나 정확도를 검증한 비교 연구가 아니다."
+      ],
+      "related_source_ids": [
+        "2119521036660314339",
+        "2118690987153186845"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2119521036660314339",
+      "original_url": "https://x.com/poteto/status/2119521036660314339",
+      "author": "@poteto",
+      "published_on": "2026-11-09",
+      "date_basis": "게시 시각 2026-11-08 20:02:48 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "작성자는 숨은 상태기계를 찾은 뒤 각 하위 시스템에 형식 검증 스킬을 만들고 중요한 사용자 흐름에 상태도 스킬을 사용하자고 제안한다.",
+      "editorial_takeaway": "사용자가 허용한 범위에서 명세와 실제 코드의 대응을 따로 살펴보고 모델의 가정과 검사한 범위를 결과에 남긴다.",
+      "limitations": [
+        "저자의 제안이며 실행이나 효과를 재현하지 않았다.",
+        "유한 모델의 검사는 전체 제품이나 모든 실행의 증명이 아니다."
+      ],
+      "related_source_ids": [
+        "2116552016218710389",
+        "2118690987153186845",
+        "2118416074601545968",
+        "pstack"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2119332146485891501",
+      "original_url": "https://x.com/addyosmani/status/2119332146485891501",
+      "author": "@addyosmani",
+      "published_on": "2026-11-08",
+      "date_basis": "게시 시각 2026-11-08 07:32:13 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "병렬 작업을 늘리기 전에 작업별 목표·제약·완료 근거를 정하고 진행 중인 변경과 재작업·되돌림을 함께 살피자고 제안한다.",
+      "editorial_takeaway": "사람이 검토할 수 있는 범위로 병렬 작업을 조절하고 실제 산출물과 허용된 확인 근거를 함께 본다.",
+      "limitations": [
+        "개인의 관리 경험과 의견이며 보편적인 최적 동시 실행 수를 측정한 연구가 아니다."
+      ],
+      "related_source_ids": [
+        "2111604705340326393",
+        "reddit-1xqvxx2-19sbs80jyau04"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xqvxx2",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/i_built_a_way_for_claude_code_to_delegate_work_to/",
+      "author": "u/strange1807",
+      "published_on": "2026-11-08",
+      "date_basis": "게시 시각 2026-11-08 11:03:25 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "Reddit",
+      "evidence_kind": "self_report",
+      "author_claim": "제작팀은 리드 대화가 다른 AI 세션에 작업을 위임하고 상태를 확인하며 중단하는 데스크톱 앱을 소개했다.",
+      "editorial_takeaway": "여러 도구를 한 화면에서 관찰하는 사례로 살피되 다른 협업 도구와 기능이나 신뢰성이 같다고 가정하지 않는다.",
+      "limitations": [
+        "제작자의 소개이며 직접 설치하거나 실행하지 않았다.",
+        "여러 PC 사이의 공유 잠금과 복구를 확인하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-aether-orchestration",
+        "github-aether-alpha-0-1-0",
+        "reddit-1xqvxx2-19sbs80jyau04",
+        "reddit-1xqvxx2-19sboatc6pz6t"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-aether-orchestration",
+      "original_url": "https://github.com/PrashnaLabs/aether/blob/main/README.md",
+      "author": "PrashnaLabs and Aether contributors",
+      "published_on": null,
+      "date_basis": "최초 게시일 미확인. 확인한 README 개정 2026-11-08 06:35:36 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "문서는 로컬 MCP를 통한 리드·자식 대화와 제공자별 연결을 설명하며 README 플랫폼 개요와 패키징 표는 Windows 표기에서 다르다.",
+      "editorial_takeaway": "Windows에서는 릴리스 파일 존재와 실제 실행 지원을 구분하고, 여러 PC에서의 동시 사용은 별도로 검증한다.",
+      "limitations": [
+        "README와 소스 문서의 설명만 읽었다. 플랫폼별 실제 실행과 보안은 검증하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xqvxx2",
+        "github-aether-alpha-0-1-0"
+      ],
+      "change_type": "addition",
+      "revision": "d44718aa07eecfc9d8093042bf010fa092dc972b",
+      "snapshot_url": "https://github.com/PrashnaLabs/aether/blob/d44718aa07eecfc9d8093042bf010fa092dc972b/README.md"
+    },
+    {
+      "source_id": "github-aether-alpha-0-1-0",
+      "original_url": "https://github.com/PrashnaLabs/aether/releases/tag/alpha-0.1.0",
+      "author": "PrashnaLabs",
+      "published_on": "2026-11-08",
+      "date_basis": "릴리스 시각 2026-11-08 07:29:55 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "알파 사전 릴리스에 Windows x86_64 ZIP이 첨부되어 있다.",
+      "editorial_takeaway": "패키지 제공과 실행 지원을 구분하고 설치 전 해당 환경과 권한을 확인한다.",
+      "limitations": [
+        "파일을 다운로드하거나 실행하지 않았다.",
+        "README 플랫폼 개요는 Windows를 나열하지 않아 문서와 패키지 표기가 다르다."
+      ],
+      "related_source_ids": [
+        "github-aether-orchestration",
+        "reddit-1xqvxx2"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xqvxx2-19sbs80jyau04",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sbs80jyau04/",
+      "author": "u/akorecebov",
+      "published_on": "2026-11-08",
+      "date_basis": "댓글 시각 2026-11-08 12:55:59 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "Reddit",
+      "evidence_kind": "opinion",
+      "author_claim": "댓글 작성자는 별도 맥락의 확인이 없으면 위임된 결과를 완료로 간주하지 말자고 제안하며 제품의 완료 처리에 관해 묻는다.",
+      "editorial_takeaway": "각 저장소가 허용하는 독립 검증 근거를 확인하고 수행하지 못한 검사는 미검증으로 남긴다.",
+      "limitations": [
+        "댓글은 제품의 실제 완료 판정 동작을 입증하지 않는다."
+      ],
+      "related_source_ids": [
+        "reddit-1xqvxx2",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xqvxx2-19sboatc6pz6t",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sboatc6pz6t/",
+      "author": "u/pwkye",
+      "published_on": "2026-11-08",
+      "date_basis": "댓글 시각 2026-11-08 11:28:03 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-09",
+      "source_kind": "Reddit",
+      "evidence_kind": "opinion",
+      "author_claim": "댓글 작성자는 에이전트 사이에 CLI를 직접 호출하는 방식도 가능하다며 별도 프로그램이 필요한지 묻는다.",
+      "editorial_takeaway": "새 조정 앱 도입 전 필요한 가시성·격리·복구 조건과 기존 연결 방식의 비용을 비교한다.",
+      "limitations": [
+        "한 사람의 의견이며 CLI 연결을 이 환경에서 구현하거나 기능 동등성을 검증하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xqvxx2"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    }
+  ],
+  "counterevidence": [
+    "형식 모델의 유한 범위와 코드 대응은 제품 전체의 증명과 다르며 기존 오탐 반론도 유지한다.",
+    "에이전트 병렬 관리의 효과나 최적 동시 수는 개인 의견으로부터 확정할 수 없다.",
+    "댓글은 위임 결과의 독립 검증을 제안하고 별도 앱 대신 CLI를 연결하는 대안도 질문한다.",
+    "Aether의 README 플랫폼 개요와 패키징 표·알파 릴리스에 Windows 표기가 달라 패키지 제공과 실행 검증을 구분한다."
+  ],
+  "access_gaps": [
+    "X와 Reddit 검색 및 답글은 전수조사가 아니다.",
+    "Aether와 pstack의 스킬을 설치하거나 실행하지 않았으며 유한 모델이나 실제 AI 결과를 검증하지 않았다.",
+    "Aether의 여러 PC 협업, Windows 실행, 재시작 복구와 보안을 확인하지 않았다."
+  ],
+  "next_questions": [
+    "형식 모델과 실제 코드의 대응을 어떻게 확인할 것인가?",
+    "여러 PC가 참여할 때 권한, 중복 작업, 충돌, 재시작 복구는 어떻게 보장되는가?",
+    "팀의 실제 재작업과 검토 대기 시간을 보면서 몇 개의 작업을 병렬화할 것인가?"
+  ],
+  "publishing_status": "reviewed_for_publication"
+}

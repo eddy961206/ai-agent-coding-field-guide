@@ -666,5 +666,61 @@
     "evidence": "The official documentation says Concise requires 2.1.237 or later and detail can still be requested. Styles apply to the main conversation and forks, not separately prompted subagents. No application setting was changed.",
     "date_basis": "Document publication and last-modified dates unknown",
     "review_scope": "Concise, per-app configuration and subagent scope"
+  },
+  {
+    "id": "2116552016218710389",
+    "title": "A short prompt to find implicit state machines in an app",
+    "evidence": "The author suggests a short prompt asking an agent to find implicit state machines in an app. The post is not a study of effectiveness or accuracy.",
+    "date_basis": "Post time 2026-10-31 15:24:58 UTC converted to Asia/Seoul",
+    "review_scope": "Post text and publication time"
+  },
+  {
+    "id": "2119521036660314339",
+    "title": "After finding hidden state machines: subsystem verification and flow diagrams",
+    "evidence": "Quoting Steve Ruiz’s prompt to find implicit state machines, the author suggests creating a formal-verification skill per subsystem and using statecharts for important user flows. Results depend on model assumptions, bounds and correspondence to actual code.",
+    "date_basis": "Post time 2026-11-08 20:02:48 UTC converted to Asia/Seoul",
+    "review_scope": "Quoted post, recommendation and date; pinned pstack skill documents"
+  },
+  {
+    "id": "2119332146485891501",
+    "title": "Managing work in progress and verification across coding agents",
+    "evidence": "The author suggests giving parallel agents goals and completion evidence, assigning non-overlapping slices, and limiting work in progress to what a person can manage. The advice to observe rework and reversions as well as throughput is personal guidance.",
+    "date_basis": "Post time 2026-11-08 07:32:13 UTC converted to Asia/Seoul",
+    "review_scope": "X Article text and publication time"
+  },
+  {
+    "id": "reddit-1xqvxx2",
+    "title": "Aether maker’s lead-agent delegation example",
+    "evidence": "The team describes using Claude Code, Codex and other agents in one workspace, with a lead chat able to spawn, message and stop other agents. This is a product maker’s account; multi-PC collaboration and reliability were not independently verified.",
+    "date_basis": "Post time 2026-11-08 11:03:25 UTC converted to Asia/Seoul",
+    "review_scope": "Original post and publication time"
+  },
+  {
+    "id": "github-aether-orchestration",
+    "title": "Aether’s public lead-chat and workspace documentation",
+    "evidence": "The README and orchestration document describe a lead chat spawning, reading, messaging and stopping child chats through a local MCP server. The pinned README’s platform overview lists macOS and Linux, while its packaging table also lists Windows. Runtime behavior was not tested.",
+    "date_basis": "Original publication date unknown; reviewed README revision 2026-11-08 06:35:36 UTC converted to Asia/Seoul",
+    "review_scope": "README and docs/orchestration.md at the pinned revision"
+  },
+  {
+    "id": "github-aether-alpha-0-1-0",
+    "title": "Windows package in the Aether 0.1.0 alpha",
+    "evidence": "The GitHub prerelease includes a Windows x86_64 ZIP alongside macOS and Linux packages. A package listing does not establish Windows runtime compatibility or safety.",
+    "date_basis": "Release time 2026-11-08 07:29:55 UTC converted to Asia/Seoul",
+    "review_scope": "alpha-0.1.0 prerelease time and asset list"
+  },
+  {
+    "id": "reddit-1xqvxx2-19sbs80jyau04",
+    "title": "A call for independent checks on delegated results",
+    "evidence": "A commenter suggests checking delegated work in a separate context and keeping unverified work open. The comment asks, but does not establish, how the product handles completion.",
+    "date_basis": "Comment time 2026-11-08 12:55:59 UTC converted to Asia/Seoul",
+    "review_scope": "The cited comment and its publication time"
+  },
+  {
+    "id": "reddit-1xqvxx2-19sboatc6pz6t",
+    "title": "A comment on connecting CLIs without a separate app",
+    "evidence": "One commenter suggests agents can call other CLIs directly and questions the need for a separate app. The comment does not demonstrate equivalent features or safety.",
+    "date_basis": "Comment time 2026-11-08 11:28:03 UTC converted to Asia/Seoul",
+    "review_scope": "The cited comment and its publication time"
   }
 ]
