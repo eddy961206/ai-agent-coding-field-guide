@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "topic": "버전별 협업·보호 범위와 검증 비용의 변화",
+  "as_of": "2026-11-10",
+  "timezone": "Asia/Seoul",
+  "scope": "직전 성공 시각에서 72시간 겹치는 2026-11-06 09:12:04 KST부터 X·Reddit·GitHub를 조사했다. 문서 개정은 이전에 보관한 버전과 비교했다.",
+  "findings": [
+    {
+      "source_id": "github-claude-changelog-privacy",
+      "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "author": "Anthropic",
+      "published_on": null,
+      "date_basis": "파일 최초 게시일 미확인. 확인한 최신 문서 개정 2026-11-09 19:22:09 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "이전 2.1.317 문서는 웹 또는 셸 호출의 이메일 전송 전 확인을 설명했고 2.1.321 변경 이력은 계정 이메일과 User-Agent가 함께 있는 셸 명령만 확인 없이 거절하는 검사로 바뀌었다고 설명한다.",
+      "editorial_takeaway": "사용 중인 버전과 별도 보호 기능의 실제 범위를 확인한다. 이 변경만으로 계정 이메일이 모델 맥락에서 제거됐다고 판단하지 않는다.",
+      "limitations": [
+        "공식 변경 이력의 설명이며 실제 설치 환경에서 재현하지 않았다.",
+        "다른 보호 기능의 유무와 모델 맥락에서의 이메일 제거는 이 항목만으로 확인할 수 없다."
+      ],
+      "related_source_ids": [
+        "github-claude-privacy-mod",
+        "github-claude-2-1-321",
+        "2118771062913802383"
+      ],
+      "change_type": "applicability_change",
+      "revision": "a4fcccc70a89df6607e66cc30682d551269d0680",
+      "snapshot_url": "https://github.com/anthropics/claude-code/blob/a4fcccc70a89df6607e66cc30682d551269d0680/CHANGELOG.md"
+    },
+    {
+      "source_id": "github-aether-orchestration",
+      "original_url": "https://github.com/PrashnaLabs/aether/blob/main/README.md",
+      "author": "PrashnaLabs and Aether contributors",
+      "published_on": null,
+      "date_basis": "최초 게시일 미확인. 확인한 README 개정 2026-11-09 08:28:03 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "11월 9일 개정 README는 보고 있지 않은 대화의 종료·응답 요청에 대한 알림과 기본 비활성 webhook을 새로 설명한다.",
+      "editorial_takeaway": "여러 작업을 관찰할 때 알림의 수신 위치와 전송 내용을 확인하고 여러 PC의 상태 조정 기능과 구분한다.",
+      "limitations": [
+        "문서와 이전 문서를 비교했으며 설치·실행하지 않았다.",
+        "이 개정은 기존 11월 8일 알파 릴리스보다 뒤라 그 배포 파일에 포함됐는지 확인하지 않았다.",
+        "여러 PC의 공유 잠금과 재시작 복구는 확인하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xqvxx2",
+        "github-aether-alpha-0-1-0"
+      ],
+      "change_type": "applicability_change",
+      "revision": "44b517a4b13280909718cbe527b8068f00fff9f6",
+      "snapshot_url": "https://github.com/PrashnaLabs/aether/blob/44b517a4b13280909718cbe527b8068f00fff9f6/README.md"
+    },
+    {
+      "source_id": "github-claude-2-1-321",
+      "original_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "author": "Anthropic",
+      "published_on": "2026-11-10",
+      "date_basis": "릴리스 시각 2026-11-09 19:22:30 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "2.1.321 릴리스는 Remote Control의 나중에 보낼 메시지가 실행 중 도착하는 경우, auto mode의 일부 배경 보고 유실, MCP OAuth 리디렉션 시 다른 호스트로 비밀이 전달되는 경우를 수정했다고 밝혔다.",
+      "editorial_takeaway": "사용하는 버전과 해당 기능의 조건을 확인한다. Remote Control 대기열의 수정이 모든 이슈·에이전트 대기열을 처리한다는 뜻은 아니다.",
+      "limitations": [
+        "제공자의 릴리스 설명이며 설치된 버전이나 동작을 확인하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-claude-changelog-privacy",
+        "github-claude-privacy-mod"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-openspec-v1-17-0",
+      "original_url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v1.17.0",
+      "author": "Fission AI",
+      "published_on": "2026-11-10",
+      "date_basis": "릴리스 시각 2026-11-09 23:46:31 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "1.17.0은 과거 프로젝트의 한 번에 업데이트와 수정한 파일 보존을 설명하고 2.0에서 명령 파일을 없앨 계획을 예고한다.",
+      "editorial_takeaway": "업데이트 전 실제 버전과 생성 파일의 변경 여부를 살피고 2.0 계획을 이미 시행된 변경으로 취급하지 않는다.",
+      "limitations": [
+        "릴리스 설명만 확인했으며 이전 버전에서의 업그레이드와 파일 보존을 직접 시험하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-openspec-v1-16-1",
+        "openspec"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2119530707026653650",
+      "original_url": "https://x.com/ASaltyVet/status/2119530707026653650",
+      "author": "@ASaltyVet",
+      "published_on": "2026-11-09",
+      "date_basis": "게시 시각 2026-11-08 20:41:14 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "작성자는 에이전트 도구가 다른 작업에도 필요한 제한된 사용량을 얼마나 소비할지 우려한다.",
+      "editorial_takeaway": "도구의 생성·반복 실행과 유지 비용을 실제 사용량 한도에 비추어 평가한다.",
+      "limitations": [
+        "개인의 질문이며 특정 사용량이나 비용을 측정하지 않았다."
+      ],
+      "related_source_ids": [
+        "2119607350453776677",
+        "2119521036660314339"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2119607350453776677",
+      "original_url": "https://x.com/poteto/status/2119607350453776677",
+      "author": "@poteto",
+      "published_on": "2026-11-09",
+      "date_basis": "게시 시각 2026-11-09 01:45:47 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "작성자는 검사 자체를 에이전트 대신 코드로 수행하면 장기적으로 토큰을 아낄 수 있다고 예상한다.",
+      "editorial_takeaway": "생성뿐 아니라 수정·유지·실패 조사에 쓰는 비용과 검사 실행 시간을 실제 업무에서 함께 비교한다.",
+      "limitations": [
+        "측정 결과가 아니라 저자의 예상이다.",
+        "코드 기반 검사도 만들거나 유지하고 결과를 해석하는 데 비용이 들 수 있다."
+      ],
+      "related_source_ids": [
+        "2119530707026653650",
+        "2119521036660314339",
+        "driftproof-report-018"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "anthropic-fable-5-2-overview",
+      "original_url": "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "author": "Anthropic",
+      "published_on": "2026-11-09",
+      "date_basis": "공식 API 문서에 명시된 모델 출시일 2026-11-09. 표기 시간대 미확인",
+      "checked_on": "2026-11-10",
+      "source_kind": "Web",
+      "evidence_kind": "vendor_report",
+      "author_claim": "공식 API 문서는 Fable 5.2의 토큰당 기본 가격과 강제 도구 사용 제한 및 데이터 보존 조건을 명시한다.",
+      "editorial_takeaway": "API 사용 시 가격뿐 아니라 작업당 실제 토큰 사용량과 도구 호출·조직의 데이터 보존 요구를 확인한다.",
+      "limitations": [
+        "API 문서의 조건이며 Claude 구독의 사용량이나 비용과 동일하다고 가정하지 않는다.",
+        "문서는 바뀔 수 있고 API 요청을 재현하지 않았다."
+      ],
+      "related_source_ids": [
+        "2119907165007945813",
+        "github-claude-2-1-321"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2119907165007945813",
+      "original_url": "https://x.com/addyosmani/status/2119907165007945813",
+      "author": "@addyosmani",
+      "published_on": "2026-11-10",
+      "date_basis": "게시 시각 2026-11-09 21:37:08 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "X",
+      "evidence_kind": "vendor_report",
+      "author_claim": "팀원은 자체 시험에서 토큰 단가 20% 인하에도 높은 토큰 사용량 때문에 작업당 비용이 이전 모델과 대체로 비슷했다고 설명했다.",
+      "editorial_takeaway": "같은 과제에서 성공률, 재시도와 입력·출력·캐시를 포함한 실제 비용을 비교한다.",
+      "limitations": [
+        "작업 구성과 분산을 확인하지 못한 제공자 측 설명이다.",
+        "모든 작업에서 비용이 같다는 보편적 결론은 아니다."
+      ],
+      "related_source_ids": [
+        "anthropic-fable-5-2-overview",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xs7q0l",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xs7q0l/multiagent_release_pipeline_with_claude_code_pm/",
+      "author": "u/BTCLSD",
+      "published_on": "2026-11-10",
+      "date_basis": "게시 시각 2026-11-09 23:45:27 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "Reddit",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 단독 개발에서 PM·Lead·작업자로 일을 나누고 결정 ID와 구현 위치를 연결하며 지적을 별도 에이전트가 반증한다고 설명한다.",
+      "editorial_takeaway": "필요한 결정만 추적하고 기계적 경로 검사와 실제 의미 검토를 분리한다. 여러 사람이 쓰는 경우에는 담당·충돌·변경 승인 절차를 따로 설계한다.",
+      "limitations": [
+        "단독 사례이며 모든 결정과 출시마다 승인을 거치는 작성자의 절차를 일반 규칙으로 채택하지 않는다.",
+        "효과와 비용을 비교한 연구가 아니다."
+      ],
+      "related_source_ids": [
+        "github-agent-built",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-agent-built",
+      "original_url": "https://github.com/Copypaster3000/agent-built/blob/main/README.md",
+      "author": "agent-built contributors",
+      "published_on": null,
+      "date_basis": "최초 게시일 미확인. 확인한 README 개정 2026-11-09 23:04:45 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-10",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "작성자의 공개 절차는 결정 ID·코드 지도와 기계적 확인을 결합하지만 검사기가 누락된 내용을 보지 못하므로 수동 대조가 필요하다고 설명한다.",
+      "editorial_takeaway": "경로와 ID의 존재를 내용의 정확성으로 오인하지 않고 결정의 규모에 맞게 유지 비용을 정한다.",
+      "limitations": [
+        "문서의 주장과 설명을 확인했으며 검사기를 실행하거나 모든 설계상의 보장을 검증하지 않았다.",
+        "한 사람의 승인 흐름이며 다중 사용자 충돌 해결의 증거는 아니다."
+      ],
+      "related_source_ids": [
+        "reddit-1xs7q0l",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": "15764174697c069c02407beed271bd367e5b95c0",
+      "snapshot_url": "https://github.com/Copypaster3000/agent-built/blob/15764174697c069c02407beed271bd367e5b95c0/README.md"
+    }
+  ],
+  "counterevidence": [
+    "코드 기반 결정적 검사가 장기 토큰을 줄인다는 답변은 측정이 아니라 예상이며 도구 유지·실패 조사 비용이 따로 든다.",
+    "토큰 단가 인하가 작업당 비용 인하를 보장하지 않는다는 내부 시험은 과제 구성과 분산이 공개되지 않았다.",
+    "결정 ID 검사기는 누락된 내용을 감지하지 못하며 단독 작업 사례를 다중 사용자 협업 보장으로 해석하지 않는다.",
+    "Claude Code의 버전별 이메일 검사 변화는 다른 보호 기능 또는 모델 맥락의 계정 이메일 제거를 입증하지 않는다."
+  ],
+  "access_gaps": [
+    "X와 Reddit 검색·답글은 전수조사가 아니다.",
+    "Claude Code와 OpenSpec의 새 버전, Aether와 agent-built 문서의 도구는 설치·실행하지 않았다.",
+    "Aether의 README 개정이 11월 8일 알파 배포판에 포함됐는지, 여러 PC의 공유 잠금·복구가 되는지는 확인하지 않았다.",
+    "Fable API 호출, 토큰 절감량과 작업당 비용은 재현하지 않았다."
+  ],
+  "next_questions": [
+    "Claude Code 계정 이메일의 모델 맥락 제거 여부와 다른 보호 계층은 무엇인가?",
+    "새 버전에서 사용자 환경의 대기 메시지와 압축 후 보고가 어떻게 동작하는가?",
+    "결정 추적의 유지 비용과 반복 검사의 실제 비용은 각 저장소에서 얼마인가?"
+  ],
+  "publishing_status": "reviewed_for_publication"
+}

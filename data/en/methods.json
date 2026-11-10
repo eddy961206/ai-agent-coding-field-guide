@@ -12,8 +12,8 @@
     "title": "Keep instructions short and evidence rich",
     "kind": "editorial_recommendation",
     "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
-    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work. Compare a skill separately against no skill and against a same-length control. Do not generalize a small result from one model.",
-    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061", "driftproof-report-018"]
+    "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work. Compare a skill separately against no skill and against a same-length control. Do not generalize a small result from one model. Token savings from code-based checks remain a hypothesis. Compare maintenance and failure investigation as well as creation costs.",
+    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061", "driftproof-report-018", "2119530707026653650", "2119607350453776677"]
   },
   {
     "id": "feature-map",
@@ -44,32 +44,32 @@
     "title": "Hand off artifacts, not just a session",
     "kind": "editorial_recommendation",
     "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence.",
-    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state.",
-    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch"]
+    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state. Claude Code 2.1.321 reports a fix for some background reports lost during compaction in auto mode. Verify actual behavior in the version used.",
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch", "github-claude-2-1-321"]
   },
   {
     "id": "parallel",
     "title": "Give parallel work a reason",
     "kind": "editorial_recommendation",
     "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
-    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app.",
-    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t"]
+    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people.",
+    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t", "reddit-1xs7q0l", "github-agent-built"]
   },
   {
     "id": "review",
     "title": "Narrow the review criteria",
     "kind": "editorial_recommendation",
     "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
-    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path. Check each subsystem model’s assumptions, bounds and correspondence to actual code. Record checks not run on delegated work as unverified.",
-    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239", "2119521036660314339", "reddit-1xqvxx2-19sbs80jyau04"]
+    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path. Check each subsystem model’s assumptions, bounds and correspondence to actual code. Record checks not run on delegated work as unverified. Mechanical checks that IDs and paths exist cannot establish that content is complete or semantically correct.",
+    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239", "2119521036660314339", "reddit-1xqvxx2-19sbs80jyau04", "reddit-1xs7q0l", "github-agent-built"]
   },
   {
     "id": "slice",
     "title": "Work in units you can verify",
     "kind": "editorial_recommendation",
     "action": "Divide work by user behavior or contracts rather than file counts. Make each unit small enough to verify its runtime results when it is done.",
-    "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results.",
-    "sources": ["2066645959539556852", "openspec", "matt-pocock-skills", "github-openspec-v1-16-1"]
+    "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results. OpenSpec 1.17.0 describes preserving edited files during updates. Command-file removal is a plan for 2.0.",
+    "sources": ["2066645959539556852", "openspec", "matt-pocock-skills", "github-openspec-v1-16-1", "github-openspec-v1-17-0"]
   },
   {
     "id": "loop",
@@ -84,8 +84,8 @@
     "title": "Keep performance comparisons consistent",
     "kind": "editorial_recommendation",
     "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality.",
-    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough.",
-    "sources": ["2060088112257372610", "karpathy-autoresearch"]
+    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks.",
+    "sources": ["2060088112257372610", "karpathy-autoresearch", "2119907165007945813", "anthropic-fable-5-2-overview"]
   },
   {
     "id": "product-use",
@@ -100,8 +100,8 @@
     "title": "Separate execution permissions from the goal",
     "kind": "editorial_recommendation",
     "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do.",
-    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod"]
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context.",
+    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod", "github-claude-2-1-321"]
   },
   {
     "id": "compound",

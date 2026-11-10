@@ -592,10 +592,10 @@
   },
   {
     "id": "github-claude-changelog-privacy",
-    "title": "Account-email network prompt in Claude Code 2.1.317",
-    "evidence": "The official changelog lists a 2.1.317 check that asks before a web or shell tool call sends the account email to the network. Its actual coverage was not independently tested.",
-    "date_basis": "Original file publication date unknown; reviewed document revision at 2026-11-06 17:03:45 UTC",
-    "review_scope": "The 2.1.317 entry at the pinned revision"
+    "title": "Account-email checks in Claude Code 2.1.317 and 2.1.321",
+    "evidence": "The changelog recorded a 2.1.317 prompt for account-email transmission by web or shell calls. It says 2.1.321 changed the check to refuse only shell commands containing the account email and a User-Agent reference, without a prompt. Other protections and runtime scope were not tested.",
+    "date_basis": "Original file publication date unknown; latest reviewed document revision 2026-11-09 19:22:09 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of account-email entries for 2.1.317 and 2.1.321 at both pinned revisions"
   },
   {
     "id": "github-claude-privacy-mod",
@@ -697,10 +697,10 @@
   },
   {
     "id": "github-aether-orchestration",
-    "title": "Aether’s public lead-chat and workspace documentation",
-    "evidence": "The README and orchestration document describe a lead chat spawning, reading, messaging and stopping child chats through a local MCP server. The pinned README’s platform overview lists macOS and Linux, while its packaging table also lists Windows. Runtime behavior was not tested.",
-    "date_basis": "Original publication date unknown; reviewed README revision 2026-11-08 06:35:36 UTC converted to Asia/Seoul",
-    "review_scope": "README and docs/orchestration.md at the pinned revision"
+    "title": "Aether lead chats and completion or request notifications",
+    "evidence": "The pinned docs describe a lead chat managing child chats through local MCP. Unlike the previous README, this revision documents notifications for completion or user input in an inactive chat and an optional webhook. The webhook is off by default and is described as sending title, body, chat and state.",
+    "date_basis": "Original publication date unknown; reviewed README revision 2026-11-09 08:28:03 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of previous and current pinned README plus orchestration document"
   },
   {
     "id": "github-aether-alpha-0-1-0",
@@ -722,5 +722,61 @@
     "evidence": "One commenter suggests agents can call other CLIs directly and questions the need for a separate app. The comment does not demonstrate equivalent features or safety.",
     "date_basis": "Comment time 2026-11-08 11:28:03 UTC converted to Asia/Seoul",
     "review_scope": "The cited comment and its publication time"
+  },
+  {
+    "id": "github-claude-2-1-321",
+    "title": "Claude Code 2.1.321 fixes for queued messages, reports and MCP",
+    "evidence": "The release notes report fixes for Remote Control Queue for later messages arriving mid-turn, some background subagent reports lost during compaction in auto mode, and MCP OAuth secrets sent to another host after redirects. These were not reproduced here.",
+    "date_basis": "Release time 2026-11-09 19:22:30 UTC converted to Asia/Seoul",
+    "review_scope": "Queue, compaction, MCP and account-email entries in the 2.1.321 release notes"
+  },
+  {
+    "id": "github-openspec-v1-17-0",
+    "title": "OpenSpec 1.17.0 upgrade cleanup and the 2.0 plan",
+    "evidence": "The release notes say projects from 0.12 onward can be upgraded in one run and edited generated files are kept. Command-file removal is a plan for 2.0, while skills are to remain. The tool was not run here.",
+    "date_basis": "Release time 2026-11-09 23:46:31 UTC converted to Asia/Seoul",
+    "review_scope": "Upgrade, cleanup and 2.0 notice in the v1.17.0 release"
+  },
+  {
+    "id": "2119530707026653650",
+    "title": "A question about usage limits and agent tools",
+    "evidence": "The commenter asks whether useful tools can consume too much of a limited usage allowance for people with different plans. This is not a measurement of a particular tool’s token cost.",
+    "date_basis": "Post time 2026-11-08 20:41:14 UTC converted to Asia/Seoul",
+    "review_scope": "Original reply and publication time"
+  },
+  {
+    "id": "2119607350453776677",
+    "title": "A hypothesis about deterministic checks and long-term token use",
+    "evidence": "In response to a usage concern, poteto says deterministic checks run in code may save tokens over time and describes skill creation as a one-time token cost. The reply gives no comparative measurement of savings or maintenance.",
+    "date_basis": "Post time 2026-11-09 01:45:47 UTC converted to Asia/Seoul",
+    "review_scope": "Reply to the usage concern and its publication time"
+  },
+  {
+    "id": "anthropic-fable-5-2-overview",
+    "title": "Fable 5.2 API costs, tool choice and data conditions",
+    "evidence": "The official API documentation lists standard input and output prices of $8 and $40 per million tokens for Fable 5.2. Forced tool_choice types any and tool return 400, and 30-day data retention is required unless Anthropic expressly authorizes an exception. No API call was made.",
+    "date_basis": "Model release date 2026-11-09 as stated in the official API docs; timezone not specified",
+    "review_scope": "Release date, standard API pricing, tool_choice and data retention conditions"
+  },
+  {
+    "id": "2119907165007945813",
+    "title": "Lower token prices can differ from cost per task",
+    "evidence": "An Anthropic team member says internal tests tended to show roughly similar per-task costs for Fable 5.2 and 5.1 because 5.2 used more tokens despite 20% lower token pricing. The task mix and variance were not disclosed and the claim was not independently reproduced.",
+    "date_basis": "Post time 2026-11-09 21:37:08 UTC converted to Asia/Seoul",
+    "review_scope": "Cost reply to the model announcement and publication time"
+  },
+  {
+    "id": "reddit-1xs7q0l",
+    "title": "A solo developer’s decision IDs and adversarial review workflow",
+    "evidence": "The author describes one person coordinating a PM, per-version Lead and workers, linking decision IDs to code, and having another agent try to disprove findings. This is one person’s account; effectiveness and multi-person collaboration were not independently tested.",
+    "date_basis": "Post time 2026-11-09 23:45:27 UTC converted to Asia/Seoul",
+    "review_scope": "Post text, author and publication time"
+  },
+  {
+    "id": "github-agent-built",
+    "title": "Decision IDs, code maps and a documentation audit",
+    "evidence": "The pinned README and audit document describe decision IDs, a code map, mechanical checks for paths and names, and manual comparison against changed code. The audit explicitly says the checker cannot detect missing content. The tool was not run.",
+    "date_basis": "Original publication date unknown; reviewed README revision 2026-11-09 23:04:45 UTC converted to Asia/Seoul",
+    "review_scope": "Pinned README, release-process.md and docs-audit skill"
   }
 ]
