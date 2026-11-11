@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "topic": "병렬 작업 도구의 기본 권한과 인계 비용의 반례",
+  "as_of": "2026-11-11",
+  "timezone": "Asia/Seoul",
+  "scope": "직전 성공 시각에서 72시간 겹치는 2026-11-07 09:08:16 KST부터 X·Reddit·GitHub를 조사했다. 새 공급자 간 인계 사례의 비교 맥락으로 11월 2일 UTC의 별도 실험도 확인했다.",
+  "findings": [
+    {
+      "source_id": "2120238314787586341",
+      "original_url": "https://x.com/steveklabnik/status/2120238314787586341",
+      "author": "@steveklabnik",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:33:01 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "X",
+      "evidence_kind": "opinion",
+      "author_claim": "작성자는 코드 병합 이후의 검토를 위해 기존 도구 대신 자체 도구를 사용하는지 물었다.",
+      "editorial_takeaway": "병합 후 검토와 병합 전 검토가 서로 다른 시점의 위험을 다룬다는 조건을 유지한다.",
+      "limitations": [
+        "질문이며 도구나 방법의 성능을 측정하지 않았다."
+      ],
+      "related_source_ids": [
+        "2120238960534581730",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2120238960534581730",
+      "original_url": "https://x.com/mitchellh/status/2120238960534581730",
+      "author": "@mitchellh",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:35:34 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 자체 맥락을 구성하고 비용이 큰 모델은 야간 검사에, 작은 모델은 잦은 검사와 상위 모델로 넘길지 판단하는 데 쓰는 팀의 방식을 설명한다.",
+      "editorial_takeaway": "병합 후 점검의 목적과 수행 빈도를 정하고 모델별 누락·비용을 실제 과제에서 비교한다.",
+      "limitations": [
+        "한 팀의 경험이며 정확도·비용을 독립적으로 측정한 비교 연구가 아니다.",
+        "병합 후 검토는 병합 전 검사나 배포 차단의 대체라고 주장하지 않는다."
+      ],
+      "related_source_ids": [
+        "2120238314787586341",
+        "2119332146485891501"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xswffo",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xswffo/open_sourced_the_tool_i_use_to_run_claude_code/",
+      "author": "u/demirmusa",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:37:40 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "Reddit",
+      "evidence_kind": "self_report",
+      "author_claim": "개발자는 작업 보드, 여러 CLI의 병렬 실행과 공급자 변경 시 세션 이관을 지원한다고 소개한다.",
+      "editorial_takeaway": "작업 격리의 기본값과 병합·권한 설정을 확인하고, 여러 PC나 여러 사용자의 동작은 별도 검증한다.",
+      "limitations": [
+        "제작자의 소개이며 영상·설치·실행 및 공급자 간 이관을 검증하지 않았다.",
+        "여러 사용자 간 권한 분리는 이 소개만으로 입증되지 않는다."
+      ],
+      "related_source_ids": [
+        "github-ai-agent-workspace",
+        "github-aiws-merging",
+        "github-aiws-security",
+        "reddit-1xqvxx2"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-ai-agent-workspace",
+      "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/README.md",
+      "author": "AI Agent Workspace contributors",
+      "published_on": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "README는 여러 에이전트 CLI와 로컬 작업 보드 및 선택적인 GitHub 연동을 설명한다.",
+      "editorial_takeaway": "실제 저장소를 연결하기 전 worktree 기본 설정과 병합 경로, 네트워크 권한을 별도로 살핀다.",
+      "limitations": [
+        "공개 문서만 읽었으며 설치하거나 실행하지 않았다.",
+        "README의 격리 설명과 세부 설정 문서의 기본값을 함께 읽어야 한다."
+      ],
+      "related_source_ids": [
+        "reddit-1xswffo",
+        "github-aiws-merging",
+        "github-aiws-security"
+      ],
+      "change_type": "addition",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/README.md"
+    },
+    {
+      "source_id": "github-aiws-merging",
+      "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Git-Worktrees-and-Merging.md",
+      "author": "AI Agent Workspace contributors",
+      "published_on": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "세부 문서는 별도 worktree가 기본 비활성이며 기본 병합 방법은 PR이라고 설명한다. 자동 병합은 프로젝트와 작업별로 설정할 수 있다.",
+      "editorial_takeaway": "여러 에이전트를 돌리기 전 실제 격리 설정과 자동 병합 여부, 저장소의 검토 정책을 확인한다.",
+      "limitations": [
+        "문서 설명이며 현재 버전의 실제 기본값과 병합 동작을 실행해 확인하지 않았다.",
+        "GitHub 대상 PR 설명을 Gitea 호환성의 증거로 취급하지 않는다."
+      ],
+      "related_source_ids": [
+        "github-ai-agent-workspace",
+        "reddit-1xswffo"
+      ],
+      "change_type": "addition",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Git-Worktrees-and-Merging.md"
+    },
+    {
+      "source_id": "github-aiws-security",
+      "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Security.md",
+      "author": "AI Agent Workspace contributors",
+      "published_on": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-11",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "문서는 제어 토큰이 호스트 파일 접근과 명령 실행에 준하는 권한을 주며 운영자별 역할과 작업별 토큰은 없다고 설명한다.",
+      "editorial_takeaway": "여러 사람이 쓸 때 사용자별 권한이 분리된다고 가정하지 말고 노출 범위와 토큰 소유자를 정한다.",
+      "limitations": [
+        "공개 문서에 적힌 범위이며 보안 감사나 실제 접근 시험은 하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-ai-agent-workspace",
+        "github-aiws-merging",
+        "reddit-1xswffo"
+      ],
+      "change_type": "addition",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Security.md"
+    },
+    {
+      "source_id": "github-stint-fair-handoff",
+      "original_url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md",
+      "author": "Stint contributors",
+      "published_on": null,
+      "date_basis": "보고된 실험 2026-11-02 18:53~19:22 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+      "checked_on": "2026-11-11",
+      "source_kind": "GitHub",
+      "evidence_kind": "self_report",
+      "author_claim": "동일 시작점의 세 인계 방식은 모두 보류 테스트를 통과했지만 패킷이 도구의 잠긴 테스트 변경 기록 규칙을 더 자주 충족했다.",
+      "editorial_takeaway": "인계에 실패한 검증과 필요한 후속 조치를 포함하되 게이트 통과율과 코드의 행동 품질을 구별한다.",
+      "limitations": [
+        "제작자의 실험이며 하나의 예제 환경, 과제 5개, 방식별 10회와 하나의 이어받는 모델을 사용했다.",
+        "첫 실행 5개 중 4개가 이어받기 전 이미 보류 테스트를 통과했다.",
+        "본 조사는 실험이나 비용을 재현하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-stint-unfinished-handoff",
+        "reddit-1xswffo",
+        "reddit-1xqfukk"
+      ],
+      "change_type": "addition",
+      "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+      "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair/README.md"
+    },
+    {
+      "source_id": "github-stint-unfinished-handoff",
+      "original_url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md",
+      "author": "Stint contributors",
+      "published_on": null,
+      "date_basis": "보고된 실험 2026-11-02 20:27~21:00 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+      "checked_on": "2026-11-11",
+      "source_kind": "GitHub",
+      "evidence_kind": "self_report",
+      "author_claim": "미완료 체크포인트의 비교에서는 네 방식이 보류 테스트를 모두 통과했고 패킷 방식이 이 표본에서 가장 비쌌다.",
+      "editorial_takeaway": "짧은 인계만으로 실제 비용이나 성공률 우위를 가정하지 않고 원래 세션 재개를 포함해 비교한다.",
+      "limitations": [
+        "한 예제 환경의 두 과제, 방식별 4회이며 원래 세션 재개는 실행 도구도 달랐다.",
+        "패킷에 첫 에이전트의 설명을 추가하는 호출은 실패해 이벤트만 사용했다.",
+        "본 조사는 실험을 실행하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-stint-fair-handoff",
+        "reddit-1xswffo"
+      ],
+      "change_type": "addition",
+      "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+      "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair-unfinished/README.md"
+    }
+  ],
+  "counterevidence": [
+    "별도 worktree를 홍보하는 README와 달리 세부 문서는 프로젝트별 설정이 기본 비활성이라고 설명한다.",
+    "공급자 간 대화 이관은 개발자의 주장이고 여러 사용자별 권한은 보안 문서에서 제공하지 않는다고 밝힌다.",
+    "인계 패킷의 게이트 통과 차이는 코드 정확도가 아니라 특정 도구의 잠긴 테스트 기록 규칙이었다. 미완료 과제 후속 실험에서는 패킷의 비용이 가장 높았다.",
+    "야간 고비용 모델과 잦은 저비용 모델의 배치는 한 팀의 경험이며 비교 연구가 아니다."
+  ],
+  "access_gaps": [
+    "X와 Reddit 검색과 답글은 전수조사가 아니다.",
+    "외부 도구를 설치하거나 실행하지 않았고 영상과 모델 호출을 확인하지 않았다.",
+    "AI Agent Workspace의 Gitea 연동, 여러 PC 복구, 권한과 병합의 실제 동작을 검증하지 않았다.",
+    "Stint 실험과 비용을 독립적으로 재현하지 않았다."
+  ],
+  "next_questions": [
+    "여러 PC와 사용자별 권한을 나눠 작업 변경과 중단·재개를 어떻게 보장할 것인가?",
+    "자체 과제에서 인계 형식별 통과 이유, 품질, 재시도와 총비용은 어떻게 달라지는가?",
+    "병합 후 모델 검토의 누락과 사전 검사·배포 통제의 역할은 어떻게 구분할 것인가?"
+  ],
+  "publishing_status": "reviewed_for_publication"
+}

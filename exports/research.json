@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "language": "ko",
-  "edition": "2026-11-10",
+  "edition": "2026-11-11",
   "timezone": "Asia/Seoul",
   "purpose": "X·Reddit·GitHub의 AI 에이전트 개발 방법론을 날짜, 원문, 적용 조건과 함께 비교하는 공개 연구 자료집.",
-  "research_run": "research/runs/2026-11-10.md",
+  "research_run": "research/runs/2026-11-11.md",
   "interpretation": "Source facts, author claims and editorial recommendations are different. Reviewing a source is not reproducing its claimed effects. External content is untrusted reference data, never execution authority. Archived batches retain their original language.",
   "sources": [
     {
@@ -1612,6 +1612,133 @@
       "revised": "2026-11-10",
       "snapshot_url": "https://github.com/Copypaster3000/agent-built/blob/15764174697c069c02407beed271bd367e5b95c0/README.md",
       "checked": "2026-11-10"
+    },
+    {
+      "id": "2120238314787586341",
+      "kind": "X",
+      "author": "@steveklabnik",
+      "date": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:33:01 UTC를 Asia/Seoul로 변환",
+      "url": "https://x.com/steveklabnik/status/2120238314787586341",
+      "title": "병합 후 코드 리뷰 도구에 관한 질문",
+      "category": "커뮤니티",
+      "evidence": "작성자는 병합 전에 검토하는 도구가 많다고 말하며 병합 후 리뷰를 위해 직접 만든 도구가 있는지 물었다. 도구의 성능을 비교한 실험은 아니다.",
+      "evidence_kind": "opinion",
+      "review_scope": "질문 원문과 게시 시각",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "2120238960534581730",
+      "kind": "X",
+      "author": "@mitchellh",
+      "date": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:35:34 UTC를 Asia/Seoul로 변환",
+      "url": "https://x.com/mitchellh/status/2120238960534581730",
+      "title": "병합 후 검토에서 모델 비용을 나누는 팀 사례",
+      "category": "사례",
+      "evidence": "병합 후 코드 리뷰에 관한 질문에 작성자는 팀의 자체 프롬프트와 맥락 구성이 사용해 본 기성 도구보다 나았다고 말한다. 비싼 모델은 야간 검사, 저렴한 모델은 더 잦은 검사와 분기 판단에 쓰고 필요하면 상위 모델로 넘긴다고 설명한다.",
+      "evidence_kind": "self_report",
+      "review_scope": "병합 후 리뷰 질문에 대한 답글과 작성 시각",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "reddit-1xswffo",
+      "kind": "Reddit",
+      "author": "u/demirmusa",
+      "date": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-10 19:37:40 UTC를 Asia/Seoul로 변환",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xswffo/open_sourced_the_tool_i_use_to_run_claude_code/",
+      "title": "여러 CLI와 작업 보드를 연결하는 개발자 사례",
+      "category": "사례",
+      "evidence": "개발자는 Claude Code·Codex 등을 작업 카드와 연결하고 작업마다 브랜치·worktree를 사용하며 완료 결과를 병합하는 로컬 앱을 소개한다. 공급자 사이의 세션 이관도 주장하지만 본 조사는 재현하지 않았다.",
+      "evidence_kind": "self_report",
+      "review_scope": "게시물의 텍스트·작성자·작성 시각. 첨부 영상은 보지 않음",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "github-ai-agent-workspace",
+      "kind": "GitHub",
+      "author": "AI Agent Workspace contributors",
+      "date": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/README.md",
+      "title": "AI Agent Workspace의 로컬 작업 보드",
+      "category": "도구",
+      "evidence": "README는 여러 에이전트 CLI, 작업 보드와 Git 브랜치·worktree, GitHub Projects 선택 연동을 설명한다. 기본 worktree 설정과 병합·권한 범위는 별도 문서에서 확인해야 한다. 도구를 실행하지 않았다.",
+      "evidence_kind": "implementation",
+      "review_scope": "고정 개정 README의 기능·설치 전제와 연동 범위",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "revised": "2026-11-11",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/README.md",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "github-aiws-merging",
+      "kind": "GitHub",
+      "author": "AI Agent Workspace contributors",
+      "date": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Git-Worktrees-and-Merging.md",
+      "title": "작업 격리 기본값과 병합 제어",
+      "category": "도구",
+      "evidence": "세부 문서는 별도 worktree가 프로젝트별 기본 비활성이며 PR 방식이 기본이라고 설명한다. 자동 병합은 프로젝트별로 설정하고 작업별로 덮어쓸 수 있으며 끄면 검토를 기다린다고 적는다. 실제 실행은 확인하지 않았다.",
+      "evidence_kind": "implementation",
+      "review_scope": "고정 개정 문서의 worktree 기본값·PR·자동 병합 설정",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "revised": "2026-11-11",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Git-Worktrees-and-Merging.md",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "github-aiws-security",
+      "kind": "GitHub",
+      "author": "AI Agent Workspace contributors",
+      "date": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+      "url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Security.md",
+      "title": "AI Agent Workspace 제어 토큰과 사용자 역할의 범위",
+      "category": "안전",
+      "evidence": "보안 문서는 제어 토큰이 호스트 파일 접근과 명령 실행에 준하는 권한을 주며 운영자 계정·역할·작업별 토큰·승인 정책은 없다고 명시한다. UI의 에이전트 질문에 답하는 기능과 서비스 접근 권한 분리는 별개다.",
+      "evidence_kind": "implementation",
+      "review_scope": "고정 개정 보안 문서의 제어 토큰과 권한 범위",
+      "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+      "revised": "2026-11-11",
+      "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Security.md",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "github-stint-fair-handoff",
+      "kind": "GitHub",
+      "author": "Stint contributors",
+      "date": null,
+      "date_basis": "보고된 실험 2026-11-02 18:53~19:22 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+      "url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md",
+      "title": "인계 패킷·대화록·diff를 같은 시작점에서 비교",
+      "category": "측정",
+      "evidence": "제작자의 작은 실험은 과제 5개를 방식별로 두 번 이어갔다. 보류 테스트는 세 방식 모두 10회 통과했고 도구 게이트는 패킷 10회, 대화록 7회, 작업과 diff 4회 통과했다. 차이는 잠긴 테스트 변경 기록 규칙에 있었다.",
+      "evidence_kind": "self_report",
+      "review_scope": "고정 개정의 공통 시작점, 결과표, 잠긴 테스트 규칙과 한계",
+      "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+      "revised": "2026-11-04",
+      "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair/README.md",
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "github-stint-unfinished-handoff",
+      "kind": "GitHub",
+      "author": "Stint contributors",
+      "date": null,
+      "date_basis": "보고된 실험 2026-11-02 20:27~21:00 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+      "url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md",
+      "title": "실제로 미완료인 과제로 다시 비교한 인계 방식",
+      "category": "상반된 관점",
+      "evidence": "제작자는 미완료 과제 2개에서 패킷·대화록·diff·원래 세션 재개를 각각 4회 비교했다. 모두 보류 테스트를 통과했고 이 표본에서는 패킷 방식의 비용이 가장 높았다. 원래 세션 재개는 다른 실행 도구를 사용해 조건도 다르다.",
+      "evidence_kind": "self_report",
+      "review_scope": "고정 개정의 미완료 체크포인트, 4가지 방식의 결과와 한계",
+      "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+      "revised": "2026-11-04",
+      "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair-unfinished/README.md",
+      "checked": "2026-11-11"
     }
   ],
   "methods": [
@@ -1679,8 +1806,8 @@
       "id": "handoff",
       "title": "세션보다 산출물로 인계",
       "kind": "editorial_recommendation",
-      "action": "목표·확정된 결정·현재 리비전·완료한 일·실행 결과·다음 행동을 파일에 남겨. 실패한 가정과 기각한 접근, 그 이유도 짧게 기록해. 다시 시작할 때 최신 지시와 보낸 약속, 최근 작업 순서, 현재 저장소 상태를 차례로 확인하고 빠진 근거를 남겨.",
-      "limit": "요약이 오래되면 오히려 위험해. 다음 세션은 코드와 실행 상태를 다시 대조해야 해. Claude Code 2.1.321은 auto mode의 일부 압축 중 배경 보고 유실을 수정했다고 안내해. 현재 버전의 실제 결과는 따로 확인해.",
+      "action": "목표·확정된 결정·현재 리비전·완료한 일·실행 결과·다음 행동을 파일에 남겨. 실패한 가정과 기각한 접근, 그 이유도 짧게 기록해. 다시 시작할 때 최신 지시와 보낸 약속, 최근 작업 순서, 현재 저장소 상태를 차례로 확인하고 빠진 근거를 남겨. 실패한 검증과 다음에 필요한 조치도 인계해.",
+      "limit": "요약이 오래되면 오히려 위험해. 다음 세션은 코드와 실행 상태를 다시 대조해야 해. Claude Code 2.1.321은 auto mode의 일부 압축 중 배경 보고 유실을 수정했다고 안내해. 현재 버전의 실제 결과는 따로 확인해. 작은 비교 사례에서는 인계 방식별 도구 게이트와 보류 테스트 결과가 달랐어. 짧은 인계가 항상 더 싸거나 코드가 더 낫다는 뜻은 아니야.",
       "sources": [
         "anthropic-harness",
         "reddit-pcryp7z",
@@ -1689,7 +1816,9 @@
         "reddit-1xqfukk",
         "github-neo-context-recovery",
         "reddit-1xqfukk-19sar3yje5wch",
-        "github-claude-2-1-321"
+        "github-claude-2-1-321",
+        "github-stint-fair-handoff",
+        "github-stint-unfinished-handoff"
       ]
     },
     {
@@ -1697,7 +1826,7 @@
       "title": "병렬화에는 이유를 붙이기",
       "kind": "editorial_recommendation",
       "action": "독립된 조사, 분리된 수정, 새 맥락이 필요한 작업만 나눠. 담당 범위와 결과 형식, 통합할 사람을 정해.",
-      "limit": "같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐. 사람이 확인할 수 있는 진행 중 작업의 양과 재작업을 함께 살펴. 별도 앱 도입 전 기존 연결 방식도 비교해. 단독 개발 사례의 역할 구분을 여러 사람 간 충돌 해결의 검증으로 여기지 마.",
+      "limit": "같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐. 사람이 확인할 수 있는 진행 중 작업의 양과 재작업을 함께 살펴. 별도 앱 도입 전 기존 연결 방식도 비교해. 단독 개발 사례의 역할 구분을 여러 사람 간 충돌 해결의 검증으로 여기지 마. AI Agent Workspace 문서는 별도 worktree 설정이 기본으로 꺼져 있다고 설명해. 실제 프로젝트 설정과 병합 경로를 확인해.",
       "sources": [
         "2114967833708732607",
         "2116576229319233596",
@@ -1708,7 +1837,10 @@
         "github-aether-alpha-0-1-0",
         "reddit-1xqvxx2-19sboatc6pz6t",
         "reddit-1xs7q0l",
-        "github-agent-built"
+        "github-agent-built",
+        "reddit-1xswffo",
+        "github-ai-agent-workspace",
+        "github-aiws-merging"
       ]
     },
     {
@@ -1716,7 +1848,7 @@
       "title": "리뷰 기준을 좁히기",
       "kind": "editorial_recommendation",
       "action": "중요한 실패 유형을 지정해. 위치·발생 조건·영향·확인 방법을 요구하고 원래 요구와 실제 diff를 제공해.",
-      "limit": "지적 개수는 리뷰 품질이 아니야. 취향·추측과 재현된 문제를 분리해. 상태 전이의 오류라는 보고도 요구사항과 실제 도달 경로를 대조해 확인해. 하위 시스템별 형식 모델은 가정·범위와 실제 코드의 대응을 따로 확인해. 위임 결과의 미실시 검사는 미검증으로 남겨. 결정 ID·경로의 기계적 존재 확인만으로 빠진 내용이나 의미의 정확성을 보장할 수 없어.",
+      "limit": "지적 개수는 리뷰 품질이 아니야. 취향·추측과 재현된 문제를 분리해. 상태 전이의 오류라는 보고도 요구사항과 실제 도달 경로를 대조해 확인해. 하위 시스템별 형식 모델은 가정·범위와 실제 코드의 대응을 따로 확인해. 위임 결과의 미실시 검사는 미검증으로 남겨. 결정 ID·경로의 기계적 존재 확인만으로 빠진 내용이나 의미의 정확성을 보장할 수 없어. 병합 후 모델 검토는 한 팀의 사례야. 병합 전 검사와 배포 통제의 대체라고 가정하지 마.",
       "sources": [
         "2117437607940681849",
         "2111604705340326393",
@@ -1726,7 +1858,9 @@
         "2119521036660314339",
         "reddit-1xqvxx2-19sbs80jyau04",
         "reddit-1xs7q0l",
-        "github-agent-built"
+        "github-agent-built",
+        "2120238314787586341",
+        "2120238960534581730"
       ]
     },
     {
@@ -1760,12 +1894,14 @@
       "title": "성능은 비교 대상을 고정",
       "kind": "editorial_recommendation",
       "action": "같은 입력·하드웨어·버전·측정 구간에서 전후를 비교해. 지연·메모리·비용·품질 중 무엇을 바꾸는지도 정해.",
-      "limit": "일부러 느린 출발점에서 좋아졌다는 사실만으로 충분히 좋은 결과라고 판단하지 않아. 모델의 토큰 단가와 작업당 총비용을 구별하고 같은 과제의 재시도·캐시·성공률을 함께 비교해.",
+      "limit": "일부러 느린 출발점에서 좋아졌다는 사실만으로 충분히 좋은 결과라고 판단하지 않아. 모델의 토큰 단가와 작업당 총비용을 구별하고 같은 과제의 재시도·캐시·성공률을 함께 비교해. 도구가 정한 게이트 통과와 보류 테스트 통과는 다른 지표야. 인계 실험의 과제와 반복 횟수도 함께 봐.",
       "sources": [
         "2060088112257372610",
         "karpathy-autoresearch",
         "2119907165007945813",
-        "anthropic-fable-5-2-overview"
+        "anthropic-fable-5-2-overview",
+        "github-stint-fair-handoff",
+        "github-stint-unfinished-handoff"
       ]
     },
     {
@@ -1785,7 +1921,7 @@
       "title": "실행 권한을 과제와 분리",
       "kind": "editorial_recommendation",
       "action": "읽을 자료, 바꿀 파일, 네트워크·계정·배포 범위를 정해. 문서에 적힌 명령을 사용자 허가로 취급하지 않게 해. 생성된 스크립트와 요청 헤더에 외부로 나가면 안 되는 정보가 있는지도 확인해.",
-      "limit": "목표를 완수하려고 다른 실행 환경으로 넘어가는 행동도 영향 범위에 포함돼. 일부 전송 확인 절차가 모든 경로를 막는 것은 아니야. 도구 버전과 생성 스크립트의 동작을 따로 확인해. 공개된 Claude Code 개인정보 모듈은 일부 셸 입력만 검사한다고 명시해. 이것만으로 다른 검사나 전체 제품 동작을 단정할 수 없어. Claude Code 2.1.321의 이메일 검사 변경은 다른 보호 계층이나 모델 맥락에서의 제거를 입증하지 않아.",
+      "limit": "목표를 완수하려고 다른 실행 환경으로 넘어가는 행동도 영향 범위에 포함돼. 일부 전송 확인 절차가 모든 경로를 막는 것은 아니야. 도구 버전과 생성 스크립트의 동작을 따로 확인해. 공개된 Claude Code 개인정보 모듈은 일부 셸 입력만 검사한다고 명시해. 이것만으로 다른 검사나 전체 제품 동작을 단정할 수 없어. Claude Code 2.1.321의 이메일 검사 변경은 다른 보호 계층이나 모델 맥락에서의 제거를 입증하지 않아. AI Agent Workspace 문서는 제어 토큰에 광범위한 호스트 권한이 있고 운영자별 역할 분리는 없다고 설명해.",
       "sources": [
         "2090299859693695283",
         "2098662421644853433",
@@ -1793,7 +1929,8 @@
         "2118771062913802383",
         "github-claude-changelog-privacy",
         "github-claude-privacy-mod",
-        "github-claude-2-1-321"
+        "github-claude-2-1-321",
+        "github-aiws-security"
       ]
     },
     {
@@ -2049,6 +2186,14 @@
       "id": "11-updates",
       "kind": "editorial_synthesis",
       "source_ids": [
+        "reddit-1xswffo",
+        "github-ai-agent-workspace",
+        "github-aiws-merging",
+        "github-aiws-security",
+        "github-stint-fair-handoff",
+        "github-stint-unfinished-handoff",
+        "2120238314787586341",
+        "2120238960534581730",
         "github-claude-2-1-321",
         "github-claude-changelog-privacy",
         "github-claude-privacy-mod",
@@ -2084,7 +2229,7 @@
         "2118958843501920268",
         "anthropic-output-styles"
       ],
-      "text": "11 / HUMAN + AGENT\n사람이 읽고,\n다음 에이전트가 이어받는 자료집\n\n발견기간 · 검색어 · 플랫폼\n\n원문 확인작성자 · 날짜 · 맥락\n\n비교기존 주장 · 반례 · 변경\n\n적용 판단조건 · 비용 · 한계\n\n기록출처 · 변경 이력 · Git\n\n2026-11-10에 새로 확인한 내용\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\n대기 메시지와 이메일 검사 변경\n\n릴리스 노트는 Remote Control의 Queue for later 메시지가 실행 중 도착하던 문제, auto mode에서 압축 중 일부 배경 보고가 빠지던 문제, MCP OAuth 리디렉션 때 비밀이 다른 호스트로 전송되던 문제 등을 수정했다고 설명해.\n\n계정 이메일 검사는 이메일과 User-Agent가 함께 있는 셸 명령만 확인 없이 거절하도록 바뀌었다고 해. 별도 보호 기능이나 모델 맥락에서의 이메일 제거까지 확인한 것은 아니야. 사용자 환경에서 재현하지 않았어.\n\n2.1.321 릴리스 · 2026-11-10 ↗ 변경 이력 비교 · 문서 개정 2026-11-10 KST ↗ 개인정보 모듈 · 문서 개정 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\n명세 도구 업데이트 조건\n\n릴리스 노트는 0.12 이후 프로젝트를 한 번에 업데이트하며 수정하지 않은 생성 파일은 정리하고 수정한 파일은 보존한다고 설명해.\n\n명령 파일 제거는 2.0의 계획이고 스킬은 유지할 예정이야. 이 자료집은 업데이트를 실행하지 않았어.\n\n1.17.0 릴리스 · 2026-11-10 ↗ 이전 릴리스 · 2026-11-07 ↗ OpenSpec 자료 · 문서 개정 2026-10-31 KST ↗\n\n2026-11-09 모델 출시일 · 11-10 KST 의견\n토큰 단가와 작업당 비용은 다를 수 있어\n\nAnthropic 팀원은 내부 시험에서 Fable 5.2가 토큰을 더 사용해 단가가 20% 낮아도 작업당 비용이 5.1과 대체로 비슷했다고 말했어. 과제 구성과 편차는 공개되지 않았어.\n\n공식 API 문서는 강제 tool_choice의 일부 유형과 데이터 보존 조건도 안내해. API 가격을 구독 사용량과 같게 취급하지 말고 실제 과제로 비교해.\n\n팀원의 비용 설명 · 2026-11-10 KST ↗ 공식 API 조건 · 2026-11-09 ↗\n\n2026-11-09 KST · X\n결정적 검사의 절약은 측정할 가설\n\n사용량 한도에 관한 질문에 poteto는 에이전트 대신 코드로 검사를 실행하면 장기적으로 토큰을 절약할 수 있다고 예상했어.\n\n절감량을 비교한 실험은 제시하지 않았어. 만드는 비용뿐 아니라 검사 유지·실패 조사·실행 시간도 실제 작업에서 함께 봐.\n\n사용량 우려 · 2026-11-09 KST ↗ poteto의 답변 · 2026-11-09 KST ↗ 관련 검증 제안 · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\n결정과 구현을 이어두는 단독 사례\n\n한 개발자는 PM·Lead·작업자로 나누고 결정마다 ID를 붙여 구현 위치와 연결했어. 다른 에이전트는 검토 지적을 반증하려고 해.\n\n문서 감사 도구는 경로와 ID를 확인하지만 빠진 내용까지 찾아내지는 못해. 단독 개발 사례이며 여러 사람의 충돌 해결을 검증한 것은 아니야.\n\n개발자 사례 · 2026-11-10 ↗ 절차와 감사 문서 · 문서 개정 2026-11-10 KST ↗\n\n2026-11-09 문서 개정 · AETHER\n완료·응답 요청 알림이 문서에 추가됐어\n\n이전 README에는 없던 알림 설명이 추가됐어. 보고 있지 않은 대화가 끝나거나 응답이 필요할 때 알리고, 기본 비활성인 webhook을 켜면 제목·본문·대화·상태를 보내도록 설명해.\n\n이 문서 개정은 기존 알파 배포보다 나중이야. 해당 파일에 포함됐는지, 여러 PC에서 복구되는지는 실행해 보지 않았어.\n\n개정 문서 · 문서 개정 2026-11-09 KST ↗ 기존 알파 릴리스 · 2026-11-08 ↗ 제작자 소개 · 2026-11-08 ↗\n\n2026-11-09에 새로 확인한 내용\n\n2026-11-09 KST · X / PSTACK\n숨은 상태를 찾은 다음 단계\n\npoteto는 Steve Ruiz의 숨은 상태기계 찾기 요청을 인용하며 하위 시스템마다 형식 검증 스킬을 만들고, 중요한 사용자 흐름은 상태도로 그려보라고 제안했어. Trevin의 기존 조사 요청과도 연결해 볼 수 있어.\n\n모델의 가정과 검사 범위, 실제 코드와의 대응을 확인해. 유한 모델을 검사했다고 제품 전체를 증명한 것은 아니야.\n\n인용한 요청 · 2026-11-01 KST ↗ poteto의 후속 제안 · 2026-11-09 KST ↗ Trevin의 조사 요청 · 2026-11-06 KST ↗ pstack 원문 · 문서 개정 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\n병렬 작업의 양과 검증 근거\n\nAddy Osmani는 각 작업의 목표·제약·완료 근거를 정하고 서로 겹치지 않게 나누자고 제안해. 사람이 검토할 수 있는 진행 중 작업의 양을 살피고 재작업·되돌림도 보라고 해.\n\n한 Reddit 댓글은 위임 결과를 별도 맥락에서 확인하고 미검증인 일은 미완료로 남기자고 제안했어. 작업 수나 방법의 보편적인 최적값을 입증한 연구는 아니야.\n\nAddy의 글 · 2026-11-08 KST ↗ 독립 확인 의견 · 2026-11-08 ↗ 기존 다층 검증 · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether의 위임 사례와 확인할 조건\n\n제작자는 Claude Code와 Codex 등의 대화를 한 작업 공간에서 관리하고 리드 대화가 자식 에이전트를 생성·조회·메시지·중단하는 앱을 소개했어. 다른 댓글은 기존 CLI끼리 연결하는 대안도 제기해.\n\n알파 릴리스에는 Windows ZIP이 있지만 README의 플랫폼 개요와 표기가 달라. 직접 실행하지 않았고 여러 PC의 동시 협업과 복구도 확인하지 않았어.\n\n제작자 소개 · 2026-11-08 ↗ 문서 · 문서 개정 2026-11-09 KST ↗ 알파 릴리스 · 2026-11-08 ↗ CLI 대안 의견 · 2026-11-08 ↗\n\n2026-11-08에 새로 확인한 내용\n\n2026-11-06 문서 개정 · CLAUDE CODE\n개인정보 모듈의 검사 범위\n\n전판의 변경 이력·팀원 설명은 웹 또는 셸 호출의 이메일 확인을 안내했어. 새로 읽은 공개 cc-plugin-privacy 문서는 이 모듈이 일부 셸 입력만 검사하며 WebFetch·WebSearch·MCP와 스크립트 내부는 확인하지 않는다고 밝혀.\n\n두 설명의 범위가 달라. 이 모듈의 문서만으로 별도 보호 기능이나 전체 제품의 실제 동작까지 단정하지 않아.\n\n사용자 보고 · 2026-11-06 ↗ 팀원 설명 · 2026-11-07 KST ↗ 변경 이력 · 문서 개정 2026-11-10 KST ↗ 모듈 원문 · 문서 개정 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\n압축 이후 무엇부터 복구할까\n\nNeo.mjs 사례는 메시지와 이미 한 약속, 최근 작업 순서를 먼저 확인하고 관련 과거 결정과 현재 이슈·브랜치를 대조해. 확인이 빠지면 복구 신뢰도를 낮춰 기록해.\n\n다른 사용자는 오래된 일을 되살리지 않도록 거절된 요청을 먼저 보자는 짧은 메모 방식을 제안했어. 사례와 의견이지 우열을 비교한 실험은 아니야.\n\nReddit 원문 · 2026-11-08 ↗ 복구 절차 · 문서 개정 2026-10-30 KST ↗ 댓글 · 2026-11-08 ↗ 이전 인계 논의 · 2026-11-06 ↗\n\n2026-11-02 기록 · SKILL EVAL\n스킬은 비교해서 남기기\n\n한 소규모 보고에서 집계한 스킬 16개 중 12개는 세 텍스트 작업 중 하나 이상에서 같은 길이의 위약 텍스트보다 높았고 낮은 작업은 없었어. 답변과 채점에 같은 Haiku 모델을 썼어.\n\n위약보다 낫다는 결과는 스킬이 없는 경우보다 낫다는 뜻이 아니야. poteto의 짧은 스킬 전망도 실제 작업에서 따로 확인해.\n\n평가 원문 · 문서 개정 2026-11-05 KST ↗ poteto의 전망 · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\n명세가 빠지는 경우의 처리 변경\n\n1.16.1 릴리스는 인식하지 못한 변경 명세 섹션의 요구사항이 경고 뒤 보관에서 빠질 수 있던 경우를, 검증 실패와 보관 거절로 바꿨다고 설명해.\n\n사용 중인 버전과 실제 결과를 확인해. 이 자료집은 도구를 직접 실행하지 않았어.\n\n릴리스 노트 · 2026-11-07 ↗ 기존 OpenSpec 자료 · 문서 개정 2026-10-31 KST ↗\n\n2026-11-06~07 KST · X\n숨은 상태와 버그 후보\n\nTrevin은 암묵적인 상태와 전이, 재시도·동시 실행을 조사하고 실제 도달 경로를 근거로 찾자고 제안해. 한 답글은 AI가 버그가 아닌 것을 지적할 수도 있다고 경고해.\n\n요구사항과 실제 경로를 대조하고, 수정과 검사는 저장소 규칙에 맞춰.\n\n요청 원문 · 2026-11-06 KST ↗ 반론 · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\n짧은 응답도 범위를 확인\n\nConcise는 기본 응답을 짧게 하는 출력 스타일이야. 공식 문서는 Claude Code 2.1.237 이상이 필요하고 주 대화와 fork에 적용되지만 별도 subagent에는 적용되지 않는다고 설명해.\n\n중요한 근거와 세부사항은 따로 요청해.\n\n팀원 글 · 2026-11-07 KST ↗ 공식 문서 · 작성일 미확인 ↗\n\n사람에게\nHTML로 이해하고 탐색\n\n주제별 비교, 시간 흐름, 적용 도우미, 요청문, 원문 카드로 읽어. 이 파일만 저장해도 본문과 탐색 기능을 사용할 수 있어.\n\n다음 에이전트에게\n고정 ID와 구조화된 인계\n\n출처·날짜·주장·조건을 JSON으로 전달해. 다음 에이전트는 원문 정보와 편집 판단을 구분한 채 내용을 확장할 수 있어.\n\n인계용 Markdown ↗ · 전체 연구 JSON ↗\n\n업데이트는 “새 자료”, “기존 설명의 수정”, “확인하지 못한 것”을 나눠 기록해. 오래됐다는 이유만으로 원칙을 버리지 않고, 모델·도구에 의존한 조언을 다시 확인해.\n\n매일 오전 9시(Asia/Seoul)에 X·Reddit·GitHub의 신규 자료와 기존 방법의 변화를 조사하고, 의미 있는 변경만 한국어·영어에 함께 반영하는 자동화를 등록했어. 이 로컬 실행에는 노트북과 Codex 앱이 켜져 있어야 해. 예약 등록과 미래 실행 성공은 별개야.\n\n변경 이력 ↗조사·갱신 절차 ↗에이전트 작업 규칙 ↗"
+      "text": "11 / HUMAN + AGENT\n사람이 읽고,\n다음 에이전트가 이어받는 자료집\n\n발견기간 · 검색어 · 플랫폼\n\n원문 확인작성자 · 날짜 · 맥락\n\n비교기존 주장 · 반례 · 변경\n\n적용 판단조건 · 비용 · 한계\n\n기록출처 · 변경 이력 · Git\n\n2026-11-11에 새로 확인한 내용\n\n2026-11-11 KST · REDDIT / GITHUB\n여러 에이전트의 작업 보드와 권한\n\nAI Agent Workspace 제작자는 Claude Code·Codex 등의 작업을 카드로 관리하고 브랜치와 worktree로 나누는 로컬 앱을 소개했어. 세부 문서는 별도 worktree 설정이 프로젝트마다 기본으로 꺼져 있고, 자동 병합은 프로젝트·작업별로 조절한다고 설명해.\n\n보안 문서에 따르면 제어 토큰은 호스트 파일 접근과 명령 실행에 준하는 권한이 있고 운영자별 역할 분리는 없어. Gitea 연동과 여러 PC의 복구는 실행해 확인하지 않았어.\n\n제작자 소개 · 2026-11-11 ↗ README · 문서 개정 2026-11-11 KST ↗ 격리·병합 문서 · 문서 개정 2026-11-11 KST ↗ 권한 문서 · 문서 개정 2026-11-11 KST ↗\n\n2026-11-02 UTC 실험 · GITHUB\n인계 패킷의 성공률은 무엇을 뜻할까\n\nStint 제작자는 같은 시작점에서 인계 패킷·대화록·작업과 diff를 비교했어. 세 방식의 보류 테스트는 모두 통과했지만 도구 자체의 게이트 통과 횟수는 달랐어. 아래 표는 각 방식의 10회 결과야.\n\n차이는 잠긴 테스트 변경의 기록 규칙이었어. 별도의 미완료 과제 2개 비교에서는 네 방식 모두 보류 테스트를 통과했고, 패킷이 이 작은 표본에서 가장 비쌌어. 어느 방식이 항상 낫다는 뜻은 아니야.\n\n공통 시작점 실험 · 문서 개정 2026-11-04 KST ↗ 미완료 과제 후속 실험 · 문서 개정 2026-11-04 KST ↗\n\n2026-11-11 KST · X\n병합 후 점검의 모델 비용 배분\n\nMitchell Hashimoto는 병합 후 리뷰에 관한 질문에 팀의 자체 맥락 구성을 설명했어. 비싼 모델은 야간 검사에, 저렴한 모델은 더 잦은 검사와 상위 모델로 넘길지 판단하는 데 사용한다고 해.\n\n한 팀의 경험이며 비용과 정확도의 비교 실험은 아니야. 병합 후 점검을 병합 전 검사와 배포 통제의 대체로 가정하지 마.\n\n병합 후 리뷰 질문 · 2026-11-11 KST ↗ Mitchell의 답변 · 2026-11-11 KST ↗\n\nStint 제작자의 11월 2일 UTC 비교: 과제 5개 × 방식별 2회. 보류 테스트와 도구 게이트는 다른 기준이야.\n인계 방식보류 테스트 통과도구 게이트 통과\n인계 패킷10 / 10\n10 / 10\n\n대화록10 / 10\n7 / 10\n\n작업과 diff10 / 10\n4 / 10\n\n첫 실행 5개 중 4개는 인계 전 이미 보류 테스트를 통과했어. 게이트 차이를 코드 품질 차이로 해석할 수 없어. 제작자의 한 예제 환경에서 나온 결과이며 직접 재현하지 않았어.\n\n2026-11-10에 새로 확인한 내용\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\n대기 메시지와 이메일 검사 변경\n\n릴리스 노트는 Remote Control의 Queue for later 메시지가 실행 중 도착하던 문제, auto mode에서 압축 중 일부 배경 보고가 빠지던 문제, MCP OAuth 리디렉션 때 비밀이 다른 호스트로 전송되던 문제 등을 수정했다고 설명해.\n\n계정 이메일 검사는 이메일과 User-Agent가 함께 있는 셸 명령만 확인 없이 거절하도록 바뀌었다고 해. 별도 보호 기능이나 모델 맥락에서의 이메일 제거까지 확인한 것은 아니야. 사용자 환경에서 재현하지 않았어.\n\n2.1.321 릴리스 · 2026-11-10 ↗ 변경 이력 비교 · 문서 개정 2026-11-10 KST ↗ 개인정보 모듈 · 문서 개정 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\n명세 도구 업데이트 조건\n\n릴리스 노트는 0.12 이후 프로젝트를 한 번에 업데이트하며 수정하지 않은 생성 파일은 정리하고 수정한 파일은 보존한다고 설명해.\n\n명령 파일 제거는 2.0의 계획이고 스킬은 유지할 예정이야. 이 자료집은 업데이트를 실행하지 않았어.\n\n1.17.0 릴리스 · 2026-11-10 ↗ 이전 릴리스 · 2026-11-07 ↗ OpenSpec 자료 · 문서 개정 2026-10-31 KST ↗\n\n2026-11-09 모델 출시일 · 11-10 KST 의견\n토큰 단가와 작업당 비용은 다를 수 있어\n\nAnthropic 팀원은 내부 시험에서 Fable 5.2가 토큰을 더 사용해 단가가 20% 낮아도 작업당 비용이 5.1과 대체로 비슷했다고 말했어. 과제 구성과 편차는 공개되지 않았어.\n\n공식 API 문서는 강제 tool_choice의 일부 유형과 데이터 보존 조건도 안내해. API 가격을 구독 사용량과 같게 취급하지 말고 실제 과제로 비교해.\n\n팀원의 비용 설명 · 2026-11-10 KST ↗ 공식 API 조건 · 2026-11-09 ↗\n\n2026-11-09 KST · X\n결정적 검사의 절약은 측정할 가설\n\n사용량 한도에 관한 질문에 poteto는 에이전트 대신 코드로 검사를 실행하면 장기적으로 토큰을 절약할 수 있다고 예상했어.\n\n절감량을 비교한 실험은 제시하지 않았어. 만드는 비용뿐 아니라 검사 유지·실패 조사·실행 시간도 실제 작업에서 함께 봐.\n\n사용량 우려 · 2026-11-09 KST ↗ poteto의 답변 · 2026-11-09 KST ↗ 관련 검증 제안 · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\n결정과 구현을 이어두는 단독 사례\n\n한 개발자는 PM·Lead·작업자로 나누고 결정마다 ID를 붙여 구현 위치와 연결했어. 다른 에이전트는 검토 지적을 반증하려고 해.\n\n문서 감사 도구는 경로와 ID를 확인하지만 빠진 내용까지 찾아내지는 못해. 단독 개발 사례이며 여러 사람의 충돌 해결을 검증한 것은 아니야.\n\n개발자 사례 · 2026-11-10 ↗ 절차와 감사 문서 · 문서 개정 2026-11-10 KST ↗\n\n2026-11-09 문서 개정 · AETHER\n완료·응답 요청 알림이 문서에 추가됐어\n\n이전 README에는 없던 알림 설명이 추가됐어. 보고 있지 않은 대화가 끝나거나 응답이 필요할 때 알리고, 기본 비활성인 webhook을 켜면 제목·본문·대화·상태를 보내도록 설명해.\n\n이 문서 개정은 기존 알파 배포보다 나중이야. 해당 파일에 포함됐는지, 여러 PC에서 복구되는지는 실행해 보지 않았어.\n\n개정 문서 · 문서 개정 2026-11-09 KST ↗ 기존 알파 릴리스 · 2026-11-08 ↗ 제작자 소개 · 2026-11-08 ↗\n\n2026-11-09에 새로 확인한 내용\n\n2026-11-09 KST · X / PSTACK\n숨은 상태를 찾은 다음 단계\n\npoteto는 Steve Ruiz의 숨은 상태기계 찾기 요청을 인용하며 하위 시스템마다 형식 검증 스킬을 만들고, 중요한 사용자 흐름은 상태도로 그려보라고 제안했어. Trevin의 기존 조사 요청과도 연결해 볼 수 있어.\n\n모델의 가정과 검사 범위, 실제 코드와의 대응을 확인해. 유한 모델을 검사했다고 제품 전체를 증명한 것은 아니야.\n\n인용한 요청 · 2026-11-01 KST ↗ poteto의 후속 제안 · 2026-11-09 KST ↗ Trevin의 조사 요청 · 2026-11-06 KST ↗ pstack 원문 · 문서 개정 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\n병렬 작업의 양과 검증 근거\n\nAddy Osmani는 각 작업의 목표·제약·완료 근거를 정하고 서로 겹치지 않게 나누자고 제안해. 사람이 검토할 수 있는 진행 중 작업의 양을 살피고 재작업·되돌림도 보라고 해.\n\n한 Reddit 댓글은 위임 결과를 별도 맥락에서 확인하고 미검증인 일은 미완료로 남기자고 제안했어. 작업 수나 방법의 보편적인 최적값을 입증한 연구는 아니야.\n\nAddy의 글 · 2026-11-08 KST ↗ 독립 확인 의견 · 2026-11-08 ↗ 기존 다층 검증 · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether의 위임 사례와 확인할 조건\n\n제작자는 Claude Code와 Codex 등의 대화를 한 작업 공간에서 관리하고 리드 대화가 자식 에이전트를 생성·조회·메시지·중단하는 앱을 소개했어. 다른 댓글은 기존 CLI끼리 연결하는 대안도 제기해.\n\n알파 릴리스에는 Windows ZIP이 있지만 README의 플랫폼 개요와 표기가 달라. 직접 실행하지 않았고 여러 PC의 동시 협업과 복구도 확인하지 않았어.\n\n제작자 소개 · 2026-11-08 ↗ 문서 · 문서 개정 2026-11-09 KST ↗ 알파 릴리스 · 2026-11-08 ↗ CLI 대안 의견 · 2026-11-08 ↗\n\n2026-11-08에 새로 확인한 내용\n\n2026-11-06 문서 개정 · CLAUDE CODE\n개인정보 모듈의 검사 범위\n\n전판의 변경 이력·팀원 설명은 웹 또는 셸 호출의 이메일 확인을 안내했어. 새로 읽은 공개 cc-plugin-privacy 문서는 이 모듈이 일부 셸 입력만 검사하며 WebFetch·WebSearch·MCP와 스크립트 내부는 확인하지 않는다고 밝혀.\n\n두 설명의 범위가 달라. 이 모듈의 문서만으로 별도 보호 기능이나 전체 제품의 실제 동작까지 단정하지 않아.\n\n사용자 보고 · 2026-11-06 ↗ 팀원 설명 · 2026-11-07 KST ↗ 변경 이력 · 문서 개정 2026-11-10 KST ↗ 모듈 원문 · 문서 개정 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\n압축 이후 무엇부터 복구할까\n\nNeo.mjs 사례는 메시지와 이미 한 약속, 최근 작업 순서를 먼저 확인하고 관련 과거 결정과 현재 이슈·브랜치를 대조해. 확인이 빠지면 복구 신뢰도를 낮춰 기록해.\n\n다른 사용자는 오래된 일을 되살리지 않도록 거절된 요청을 먼저 보자는 짧은 메모 방식을 제안했어. 사례와 의견이지 우열을 비교한 실험은 아니야.\n\nReddit 원문 · 2026-11-08 ↗ 복구 절차 · 문서 개정 2026-10-30 KST ↗ 댓글 · 2026-11-08 ↗ 이전 인계 논의 · 2026-11-06 ↗\n\n2026-11-02 기록 · SKILL EVAL\n스킬은 비교해서 남기기\n\n한 소규모 보고에서 집계한 스킬 16개 중 12개는 세 텍스트 작업 중 하나 이상에서 같은 길이의 위약 텍스트보다 높았고 낮은 작업은 없었어. 답변과 채점에 같은 Haiku 모델을 썼어.\n\n위약보다 낫다는 결과는 스킬이 없는 경우보다 낫다는 뜻이 아니야. poteto의 짧은 스킬 전망도 실제 작업에서 따로 확인해.\n\n평가 원문 · 문서 개정 2026-11-05 KST ↗ poteto의 전망 · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\n명세가 빠지는 경우의 처리 변경\n\n1.16.1 릴리스는 인식하지 못한 변경 명세 섹션의 요구사항이 경고 뒤 보관에서 빠질 수 있던 경우를, 검증 실패와 보관 거절로 바꿨다고 설명해.\n\n사용 중인 버전과 실제 결과를 확인해. 이 자료집은 도구를 직접 실행하지 않았어.\n\n릴리스 노트 · 2026-11-07 ↗ 기존 OpenSpec 자료 · 문서 개정 2026-10-31 KST ↗\n\n2026-11-06~07 KST · X\n숨은 상태와 버그 후보\n\nTrevin은 암묵적인 상태와 전이, 재시도·동시 실행을 조사하고 실제 도달 경로를 근거로 찾자고 제안해. 한 답글은 AI가 버그가 아닌 것을 지적할 수도 있다고 경고해.\n\n요구사항과 실제 경로를 대조하고, 수정과 검사는 저장소 규칙에 맞춰.\n\n요청 원문 · 2026-11-06 KST ↗ 반론 · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\n짧은 응답도 범위를 확인\n\nConcise는 기본 응답을 짧게 하는 출력 스타일이야. 공식 문서는 Claude Code 2.1.237 이상이 필요하고 주 대화와 fork에 적용되지만 별도 subagent에는 적용되지 않는다고 설명해.\n\n중요한 근거와 세부사항은 따로 요청해.\n\n팀원 글 · 2026-11-07 KST ↗ 공식 문서 · 작성일 미확인 ↗\n\n사람에게\nHTML로 이해하고 탐색\n\n주제별 비교, 시간 흐름, 적용 도우미, 요청문, 원문 카드로 읽어. 이 파일만 저장해도 본문과 탐색 기능을 사용할 수 있어.\n\n다음 에이전트에게\n고정 ID와 구조화된 인계\n\n출처·날짜·주장·조건을 JSON으로 전달해. 다음 에이전트는 원문 정보와 편집 판단을 구분한 채 내용을 확장할 수 있어.\n\n인계용 Markdown ↗ · 전체 연구 JSON ↗\n\n업데이트는 “새 자료”, “기존 설명의 수정”, “확인하지 못한 것”을 나눠 기록해. 오래됐다는 이유만으로 원칙을 버리지 않고, 모델·도구에 의존한 조언을 다시 확인해.\n\n매일 오전 9시(Asia/Seoul)에 X·Reddit·GitHub의 신규 자료와 기존 방법의 변화를 조사하고, 의미 있는 변경만 한국어·영어에 함께 반영하는 자동화를 등록했어. 이 로컬 실행에는 노트북과 Codex 앱이 켜져 있어야 해. 예약 등록과 미래 실행 성공은 별개야.\n\n변경 이력 ↗조사·갱신 절차 ↗에이전트 작업 규칙 ↗"
     }
   ],
   "reviewed_batches": [
@@ -3026,6 +3171,225 @@
           "Claude Code 계정 이메일의 모델 맥락 제거 여부와 다른 보호 계층은 무엇인가?",
           "새 버전에서 사용자 환경의 대기 메시지와 압축 후 보고가 어떻게 동작하는가?",
           "결정 추적의 유지 비용과 반복 검사의 실제 비용은 각 저장소에서 얼마인가?"
+        ],
+        "publishing_status": "reviewed_for_publication"
+      }
+    },
+    {
+      "path": "research/batches/2026-11-11-agent-handoffs.json",
+      "data": {
+        "schema_version": 1,
+        "topic": "병렬 작업 도구의 기본 권한과 인계 비용의 반례",
+        "as_of": "2026-11-11",
+        "timezone": "Asia/Seoul",
+        "scope": "직전 성공 시각에서 72시간 겹치는 2026-11-07 09:08:16 KST부터 X·Reddit·GitHub를 조사했다. 새 공급자 간 인계 사례의 비교 맥락으로 11월 2일 UTC의 별도 실험도 확인했다.",
+        "findings": [
+          {
+            "source_id": "2120238314787586341",
+            "original_url": "https://x.com/steveklabnik/status/2120238314787586341",
+            "author": "@steveklabnik",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 19:33:01 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "X",
+            "evidence_kind": "opinion",
+            "author_claim": "작성자는 코드 병합 이후의 검토를 위해 기존 도구 대신 자체 도구를 사용하는지 물었다.",
+            "editorial_takeaway": "병합 후 검토와 병합 전 검토가 서로 다른 시점의 위험을 다룬다는 조건을 유지한다.",
+            "limitations": [
+              "질문이며 도구나 방법의 성능을 측정하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120238960534581730",
+              "2119332146485891501"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120238960534581730",
+            "original_url": "https://x.com/mitchellh/status/2120238960534581730",
+            "author": "@mitchellh",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 19:35:34 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 자체 맥락을 구성하고 비용이 큰 모델은 야간 검사에, 작은 모델은 잦은 검사와 상위 모델로 넘길지 판단하는 데 쓰는 팀의 방식을 설명한다.",
+            "editorial_takeaway": "병합 후 점검의 목적과 수행 빈도를 정하고 모델별 누락·비용을 실제 과제에서 비교한다.",
+            "limitations": [
+              "한 팀의 경험이며 정확도·비용을 독립적으로 측정한 비교 연구가 아니다.",
+              "병합 후 검토는 병합 전 검사나 배포 차단의 대체라고 주장하지 않는다."
+            ],
+            "related_source_ids": [
+              "2120238314787586341",
+              "2119332146485891501"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "reddit-1xswffo",
+            "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xswffo/open_sourced_the_tool_i_use_to_run_claude_code/",
+            "author": "u/demirmusa",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 19:37:40 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "Reddit",
+            "evidence_kind": "self_report",
+            "author_claim": "개발자는 작업 보드, 여러 CLI의 병렬 실행과 공급자 변경 시 세션 이관을 지원한다고 소개한다.",
+            "editorial_takeaway": "작업 격리의 기본값과 병합·권한 설정을 확인하고, 여러 PC나 여러 사용자의 동작은 별도 검증한다.",
+            "limitations": [
+              "제작자의 소개이며 영상·설치·실행 및 공급자 간 이관을 검증하지 않았다.",
+              "여러 사용자 간 권한 분리는 이 소개만으로 입증되지 않는다."
+            ],
+            "related_source_ids": [
+              "github-ai-agent-workspace",
+              "github-aiws-merging",
+              "github-aiws-security",
+              "reddit-1xqvxx2"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "github-ai-agent-workspace",
+            "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/README.md",
+            "author": "AI Agent Workspace contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "GitHub",
+            "evidence_kind": "implementation",
+            "author_claim": "README는 여러 에이전트 CLI와 로컬 작업 보드 및 선택적인 GitHub 연동을 설명한다.",
+            "editorial_takeaway": "실제 저장소를 연결하기 전 worktree 기본 설정과 병합 경로, 네트워크 권한을 별도로 살핀다.",
+            "limitations": [
+              "공개 문서만 읽었으며 설치하거나 실행하지 않았다.",
+              "README의 격리 설명과 세부 설정 문서의 기본값을 함께 읽어야 한다."
+            ],
+            "related_source_ids": [
+              "reddit-1xswffo",
+              "github-aiws-merging",
+              "github-aiws-security"
+            ],
+            "change_type": "addition",
+            "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+            "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/README.md"
+          },
+          {
+            "source_id": "github-aiws-merging",
+            "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Git-Worktrees-and-Merging.md",
+            "author": "AI Agent Workspace contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "GitHub",
+            "evidence_kind": "implementation",
+            "author_claim": "세부 문서는 별도 worktree가 기본 비활성이며 기본 병합 방법은 PR이라고 설명한다. 자동 병합은 프로젝트와 작업별로 설정할 수 있다.",
+            "editorial_takeaway": "여러 에이전트를 돌리기 전 실제 격리 설정과 자동 병합 여부, 저장소의 검토 정책을 확인한다.",
+            "limitations": [
+              "문서 설명이며 현재 버전의 실제 기본값과 병합 동작을 실행해 확인하지 않았다.",
+              "GitHub 대상 PR 설명을 Gitea 호환성의 증거로 취급하지 않는다."
+            ],
+            "related_source_ids": [
+              "github-ai-agent-workspace",
+              "reddit-1xswffo"
+            ],
+            "change_type": "addition",
+            "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+            "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Git-Worktrees-and-Merging.md"
+          },
+          {
+            "source_id": "github-aiws-security",
+            "original_url": "https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Security.md",
+            "author": "AI Agent Workspace contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 문서 개정 2026-11-10 19:05:53 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-11",
+            "source_kind": "GitHub",
+            "evidence_kind": "implementation",
+            "author_claim": "문서는 제어 토큰이 호스트 파일 접근과 명령 실행에 준하는 권한을 주며 운영자별 역할과 작업별 토큰은 없다고 설명한다.",
+            "editorial_takeaway": "여러 사람이 쓸 때 사용자별 권한이 분리된다고 가정하지 말고 노출 범위와 토큰 소유자를 정한다.",
+            "limitations": [
+              "공개 문서에 적힌 범위이며 보안 감사나 실제 접근 시험은 하지 않았다."
+            ],
+            "related_source_ids": [
+              "github-ai-agent-workspace",
+              "github-aiws-merging",
+              "reddit-1xswffo"
+            ],
+            "change_type": "addition",
+            "revision": "b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00",
+            "snapshot_url": "https://github.com/demirmusa/ai-agent-workspace/blob/b6c827cfb5fa144ce46fdf1f5ce6072a581f6d00/wiki/Security.md"
+          },
+          {
+            "source_id": "github-stint-fair-handoff",
+            "original_url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md",
+            "author": "Stint contributors",
+            "published_on": null,
+            "date_basis": "보고된 실험 2026-11-02 18:53~19:22 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+            "checked_on": "2026-11-11",
+            "source_kind": "GitHub",
+            "evidence_kind": "self_report",
+            "author_claim": "동일 시작점의 세 인계 방식은 모두 보류 테스트를 통과했지만 패킷이 도구의 잠긴 테스트 변경 기록 규칙을 더 자주 충족했다.",
+            "editorial_takeaway": "인계에 실패한 검증과 필요한 후속 조치를 포함하되 게이트 통과율과 코드의 행동 품질을 구별한다.",
+            "limitations": [
+              "제작자의 실험이며 하나의 예제 환경, 과제 5개, 방식별 10회와 하나의 이어받는 모델을 사용했다.",
+              "첫 실행 5개 중 4개가 이어받기 전 이미 보류 테스트를 통과했다.",
+              "본 조사는 실험이나 비용을 재현하지 않았다."
+            ],
+            "related_source_ids": [
+              "github-stint-unfinished-handoff",
+              "reddit-1xswffo",
+              "reddit-1xqfukk"
+            ],
+            "change_type": "addition",
+            "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+            "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair/README.md"
+          },
+          {
+            "source_id": "github-stint-unfinished-handoff",
+            "original_url": "https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md",
+            "author": "Stint contributors",
+            "published_on": null,
+            "date_basis": "보고된 실험 2026-11-02 20:27~21:00 UTC. 문서 최초 게시일 미확인; 확인한 개정 2026-11-03 20:26:12 UTC",
+            "checked_on": "2026-11-11",
+            "source_kind": "GitHub",
+            "evidence_kind": "self_report",
+            "author_claim": "미완료 체크포인트의 비교에서는 네 방식이 보류 테스트를 모두 통과했고 패킷 방식이 이 표본에서 가장 비쌌다.",
+            "editorial_takeaway": "짧은 인계만으로 실제 비용이나 성공률 우위를 가정하지 않고 원래 세션 재개를 포함해 비교한다.",
+            "limitations": [
+              "한 예제 환경의 두 과제, 방식별 4회이며 원래 세션 재개는 실행 도구도 달랐다.",
+              "패킷에 첫 에이전트의 설명을 추가하는 호출은 실패해 이벤트만 사용했다.",
+              "본 조사는 실험을 실행하지 않았다."
+            ],
+            "related_source_ids": [
+              "github-stint-fair-handoff",
+              "reddit-1xswffo"
+            ],
+            "change_type": "addition",
+            "revision": "55363bfa042f7f743a26d4cffa7a1870f26c408b",
+            "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair-unfinished/README.md"
+          }
+        ],
+        "counterevidence": [
+          "별도 worktree를 홍보하는 README와 달리 세부 문서는 프로젝트별 설정이 기본 비활성이라고 설명한다.",
+          "공급자 간 대화 이관은 개발자의 주장이고 여러 사용자별 권한은 보안 문서에서 제공하지 않는다고 밝힌다.",
+          "인계 패킷의 게이트 통과 차이는 코드 정확도가 아니라 특정 도구의 잠긴 테스트 기록 규칙이었다. 미완료 과제 후속 실험에서는 패킷의 비용이 가장 높았다.",
+          "야간 고비용 모델과 잦은 저비용 모델의 배치는 한 팀의 경험이며 비교 연구가 아니다."
+        ],
+        "access_gaps": [
+          "X와 Reddit 검색과 답글은 전수조사가 아니다.",
+          "외부 도구를 설치하거나 실행하지 않았고 영상과 모델 호출을 확인하지 않았다.",
+          "AI Agent Workspace의 Gitea 연동, 여러 PC 복구, 권한과 병합의 실제 동작을 검증하지 않았다.",
+          "Stint 실험과 비용을 독립적으로 재현하지 않았다."
+        ],
+        "next_questions": [
+          "여러 PC와 사용자별 권한을 나눠 작업 변경과 중단·재개를 어떻게 보장할 것인가?",
+          "자체 과제에서 인계 형식별 통과 이유, 품질, 재시도와 총비용은 어떻게 달라지는가?",
+          "병합 후 모델 검토의 누락과 사전 검사·배포 통제의 역할은 어떻게 구분할 것인가?"
         ],
         "publishing_status": "reviewed_for_publication"
       }

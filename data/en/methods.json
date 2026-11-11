@@ -43,25 +43,25 @@
     "id": "handoff",
     "title": "Hand off artifacts, not just a session",
     "kind": "editorial_recommendation",
-    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence.",
-    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state. Claude Code 2.1.321 reports a fix for some background reports lost during compaction in auto mode. Verify actual behavior in the version used.",
-    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch", "github-claude-2-1-321"]
+    "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence. Hand off failed checks and the actions still needed.",
+    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state. Claude Code 2.1.321 reports a fix for some background reports lost during compaction in auto mode. Verify actual behavior in the version used. A small comparison had different tool-gate and held-out-test results. A shorter handoff does not always mean lower cost or better code.",
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch", "github-claude-2-1-321", "github-stint-fair-handoff", "github-stint-unfinished-handoff"]
   },
   {
     "id": "parallel",
     "title": "Give parallel work a reason",
     "kind": "editorial_recommendation",
     "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
-    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people.",
-    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t", "reddit-1xs7q0l", "github-agent-built"]
+    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people. AI Agent Workspace’s docs say separate worktrees are disabled by default. Check the actual project setting and merge path.",
+    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t", "reddit-1xs7q0l", "github-agent-built", "reddit-1xswffo", "github-ai-agent-workspace", "github-aiws-merging"]
   },
   {
     "id": "review",
     "title": "Narrow the review criteria",
     "kind": "editorial_recommendation",
     "action": "Specify important failure types. Request locations, triggering conditions, impact and a way to verify each finding. Supply the original requirements and actual diff.",
-    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path. Check each subsystem model’s assumptions, bounds and correspondence to actual code. Record checks not run on delegated work as unverified. Mechanical checks that IDs and paths exist cannot establish that content is complete or semantically correct.",
-    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239", "2119521036660314339", "reddit-1xqvxx2-19sbs80jyau04", "reddit-1xs7q0l", "github-agent-built"]
+    "limit": "The number of findings does not measure review quality. Separate preferences and speculation from reproduced problems. Check reported state-transition defects against the requirements and a reachable execution path. Check each subsystem model’s assumptions, bounds and correspondence to actual code. Record checks not run on delegated work as unverified. Mechanical checks that IDs and paths exist cannot establish that content is complete or semantically correct. Post-merge model review is one team’s example. Do not assume it replaces pre-merge checks or deployment controls.",
+    "sources": ["2117437607940681849", "2111604705340326393", "reddit-p9gcq33", "2118690987153186845", "2118721146678096239", "2119521036660314339", "reddit-1xqvxx2-19sbs80jyau04", "reddit-1xs7q0l", "github-agent-built", "2120238314787586341", "2120238960534581730"]
   },
   {
     "id": "slice",
@@ -84,8 +84,8 @@
     "title": "Keep performance comparisons consistent",
     "kind": "editorial_recommendation",
     "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality.",
-    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks.",
-    "sources": ["2060088112257372610", "karpathy-autoresearch", "2119907165007945813", "anthropic-fable-5-2-overview"]
+    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks. A tool-specific gate and held-out tests are different metrics. Check the tasks and repetitions in handoff experiments too.",
+    "sources": ["2060088112257372610", "karpathy-autoresearch", "2119907165007945813", "anthropic-fable-5-2-overview", "github-stint-fair-handoff", "github-stint-unfinished-handoff"]
   },
   {
     "id": "product-use",
@@ -100,8 +100,8 @@
     "title": "Separate execution permissions from the goal",
     "kind": "editorial_recommendation",
     "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context.",
-    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod", "github-claude-2-1-321"]
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context. AI Agent Workspace’s security docs describe broad host authority for its control token and no per-operator role separation.",
+    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod", "github-claude-2-1-321", "github-aiws-security"]
   },
   {
     "id": "compound",

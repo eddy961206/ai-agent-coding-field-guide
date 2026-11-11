@@ -4,7 +4,7 @@
 
 A bilingual research guide to AI-assisted software development, built from original X posts, Reddit discussions, GitHub documents and first-party articles. Publication dates, document revisions and review dates are distinct. Opinions, self-reports, studies and editorial recommendations remain distinct too.
 
-The current research edition is **2026-11-10 (Asia/Seoul)**. The first edition contained 78 sources, including 40 X posts, 16 practical methods and eight original prompt templates. It is a curated investigation, not an exhaustive survey or an independent reproduction of every claimed effect.
+The current research edition is **2026-11-11 (Asia/Seoul)**. The first edition contained 78 sources, including 40 X posts, 16 practical methods and eight original prompt templates. It is a curated investigation, not an exhaustive survey or an independent reproduction of every claimed effect.
 
 ## Read or hand off
 

@@ -778,5 +778,61 @@
     "evidence": "The pinned README and audit document describe decision IDs, a code map, mechanical checks for paths and names, and manual comparison against changed code. The audit explicitly says the checker cannot detect missing content. The tool was not run.",
     "date_basis": "Original publication date unknown; reviewed README revision 2026-11-09 23:04:45 UTC converted to Asia/Seoul",
     "review_scope": "Pinned README, release-process.md and docs-audit skill"
+  },
+  {
+    "id": "2120238314787586341",
+    "title": "A question about tools for post-merge code review",
+    "evidence": "The author says many tools assume pre-merge review and asks about a custom post-merge approach. The question is not a comparison of tool performance.",
+    "date_basis": "Post time 2026-11-10 19:33:01 UTC converted to Asia/Seoul",
+    "review_scope": "Question text and publication time"
+  },
+  {
+    "id": "2120238960534581730",
+    "title": "A team’s model-cost allocation for post-merge review",
+    "evidence": "Asked about post-merge review, the author says the team’s custom prompts and context worked better for them than off-the-shelf tools they tried. They use expensive models for nightly checks and cheaper ones for frequent checks or branching decisions that may escalate.",
+    "date_basis": "Post time 2026-11-10 19:35:34 UTC converted to Asia/Seoul",
+    "review_scope": "Reply in the post-merge review discussion and publication time"
+  },
+  {
+    "id": "reddit-1xswffo",
+    "title": "A developer’s board for multiple coding-agent CLIs",
+    "evidence": "The maker describes a local app connecting Claude Code, Codex and other CLIs to task cards, using branches and worktrees and merging completed work. The maker also claims provider-to-provider session transfer, which this guide did not reproduce.",
+    "date_basis": "Post time 2026-11-10 19:37:40 UTC converted to Asia/Seoul",
+    "review_scope": "Post text, author and publication time; attached video not reviewed"
+  },
+  {
+    "id": "github-ai-agent-workspace",
+    "title": "AI Agent Workspace’s local task board",
+    "evidence": "The README describes multiple agent CLIs, a task board, Git branches and worktrees, and optional GitHub Projects integration. The separate docs must be checked for worktree defaults, merge behavior and permission scope. The tool was not run.",
+    "date_basis": "Original document publication date unknown; reviewed README revision 2026-11-10 19:05:53 UTC converted to Asia/Seoul",
+    "review_scope": "Features, installation prerequisites and integration scope at the pinned README revision"
+  },
+  {
+    "id": "github-aiws-merging",
+    "title": "Worktree defaults and merge controls",
+    "evidence": "The detailed docs say separate worktrees are disabled by default per project and the PR method is the default. Automatic merge can be configured per project or overridden per task; when off, work waits for review. Runtime behavior was not tested.",
+    "date_basis": "Original document publication date unknown; reviewed revision 2026-11-10 19:05:53 UTC converted to Asia/Seoul",
+    "review_scope": "Worktree default, PR method and automatic-merge settings at the pinned revision"
+  },
+  {
+    "id": "github-aiws-security",
+    "title": "Scope of AI Agent Workspace control tokens and operator roles",
+    "evidence": "The security document says the control token grants access equivalent to host file access and command execution, without operator accounts, roles, per-task tokens or approval policies. Answering agent questions in the UI is separate from isolating service access.",
+    "date_basis": "Original document publication date unknown; reviewed revision 2026-11-10 19:05:53 UTC converted to Asia/Seoul",
+    "review_scope": "Control-token authority and permission scope at the pinned security-document revision"
+  },
+  {
+    "id": "github-stint-fair-handoff",
+    "title": "Comparing a handoff packet, transcript and diff from a shared start",
+    "evidence": "In the makers’ small experiment, each of five tasks was continued twice per method. Held-out tests passed in all ten runs for each method; the tool’s gate passed ten packet, seven transcript and four task-plus-diff runs. The difference was its locked-test decision rule.",
+    "date_basis": "Reported experiment 2026-11-02 18:53–19:22 UTC. Original publication date unknown; reviewed revision 2026-11-03 20:26:12 UTC",
+    "review_scope": "Shared start, results, locked-test rule and limitations at the pinned revision"
+  },
+  {
+    "id": "github-stint-unfinished-handoff",
+    "title": "A follow-up comparison from genuinely unfinished checkpoints",
+    "evidence": "The makers compared packet, transcript, diff and original-session resume four times each on two unfinished tasks. All passed held-out tests, and the packet was the most expensive arm in this sample. Original-session resume also used a different harness.",
+    "date_basis": "Reported experiment 2026-11-02 20:27–21:00 UTC. Original publication date unknown; reviewed revision 2026-11-03 20:26:12 UTC",
+    "review_scope": "Unfinished checkpoints, four methods, results and limitations at the pinned revision"
   }
 ]
