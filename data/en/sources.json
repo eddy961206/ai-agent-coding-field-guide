@@ -733,7 +733,7 @@
   {
     "id": "github-openspec-v1-17-0",
     "title": "OpenSpec 1.17.0 upgrade cleanup and the 2.0 plan",
-    "evidence": "The release notes say projects from 0.12 onward can be upgraded in one run and edited generated files are kept. Command-file removal is a plan for 2.0, while skills are to remain. The tool was not run here.",
+    "evidence": "The release notes say projects from 0.12 onward can be upgraded in one run and edited generated files are kept. At the time, it announced planned removal of command files in 2.0 while retaining skills. The tool was not run here.",
     "date_basis": "Release time 2026-11-09 23:46:31 UTC converted to Asia/Seoul",
     "review_scope": "Upgrade, cleanup and 2.0 notice in the v1.17.0 release"
   },
@@ -834,5 +834,54 @@
     "evidence": "The makers compared packet, transcript, diff and original-session resume four times each on two unfinished tasks. All passed held-out tests, and the packet was the most expensive arm in this sample. Original-session resume also used a different harness.",
     "date_basis": "Reported experiment 2026-11-02 20:27–21:00 UTC. Original publication date unknown; reviewed revision 2026-11-03 20:26:12 UTC",
     "review_scope": "Unfinished checkpoints, four methods, results and limitations at the pinned revision"
+  },
+  {
+    "id": "github-openspec-v2-0-0",
+    "title": "OpenSpec 2.0 removes commands and qualifies skill-update preservation",
+    "evidence": "The release notes say 2.0 removes /opsx:* commands and stores skills in the shared .agents/skills/ directory. Edited generated files in old locations are kept, but update overwrites skills directly edited in the shared location. We did not run it.",
+    "date_basis": "Release time 2026-11-11 22:41:44 UTC converted to Asia/Seoul",
+    "review_scope": "2.0 command changes, update behavior and preservation of edits by location"
+  },
+  {
+    "id": "2120375285724123578",
+    "title": "A slower verified session versus gains from parallel work",
+    "evidence": "Responding to a pstack speed concern, the author says verification can make a single session slower, while needing less handholding lets them run multiple large projects at once. This is personal experience.",
+    "date_basis": "Post time 2026-11-11 04:37:17 UTC converted to Asia/Seoul",
+    "review_scope": "Reply to a speed concern and original publication time"
+  },
+  {
+    "id": "2120411302162292902",
+    "title": "Useful for larger work, with concern about applying it to everything",
+    "evidence": "The author says they like pstack mode for larger tasks but worry that every request gets routed through it. This is a personal experience and preference.",
+    "date_basis": "Post time 2026-11-11 07:00:24 UTC converted to Asia/Seoul",
+    "review_scope": "Follow-up to poteto’s parallel-work explanation and publication time"
+  },
+  {
+    "id": "2120378980561990033",
+    "title": "A user’s experience reducing effort after quota use",
+    "evidence": "The author reports substantial quota consumption while using pstack and subsequently limiting the effort it used. The reply provides no measured savings or causal analysis.",
+    "date_basis": "Post time 2026-11-11 04:51:58 UTC converted to Asia/Seoul",
+    "review_scope": "Reply in the parallel-work discussion and publication time"
+  },
+  {
+    "id": "reddit-1xtwbw1",
+    "title": "A beta attempting per-file locks for agents in a shared project",
+    "evidence": "The maker describes a pre-change hook that shows a lock and makes another agent wait when people run separate Claude Code sessions. They claim Codex uses the same lock through its approval path. It is a paid macOS Apple Silicon beta; we did not run it.",
+    "date_basis": "Post time 2026-11-11 22:54:44 UTC converted to Asia/Seoul",
+    "review_scope": "Maker’s post text, workflow, platform and pricing conditions, and publication time"
+  },
+  {
+    "id": "github-codex-issue-60189",
+    "title": "A Codex user report of searching sibling worktrees for instructions",
+    "evidence": "The reporter says an agent using Codex CLI 0.166.0 on Linux ran a recursive search from the parent directory, attempting to reach sibling worktrees. They say an outer boundary denied the search in another setup. This open user report was not reproduced and a fix was not verified.",
+    "date_basis": "Issue creation time 2026-11-08 01:16:58 UTC converted to Asia/Seoul",
+    "review_scope": "Reported command, environment, denied access and issue state; actual application of sibling instructions is unverified"
+  },
+  {
+    "id": "github-codex-issue-60189-comment",
+    "title": "A proposed check for instruction leakage from sibling worktrees",
+    "evidence": "The comment suggests keeping the outer access boundary and putting different harmless markers in two worktrees, then checking both sibling-path search and marker leakage into context. It is a proposed test, not a report that it was run.",
+    "date_basis": "Comment time 2026-11-08 17:14:30 UTC converted to Asia/Seoul",
+    "review_scope": "Issue comment’s test proposal and publication time"
   }
 ]

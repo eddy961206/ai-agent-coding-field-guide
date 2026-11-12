@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "topic": "병렬 검증의 비용과 작업 경계, OpenSpec 2.0 전환",
+  "as_of": "2026-11-12",
+  "timezone": "Asia/Seoul",
+  "scope": "직전 성공 조사에서 72시간 겹치는 2026-11-08 09:24:33 KST부터 X·Reddit·GitHub의 원문과 기존 버전 기록을 확인했다.",
+  "findings": [
+    {
+      "source_id": "github-openspec-v2-0-0",
+      "original_url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v2.0.0",
+      "author": "Fission AI",
+      "published_on": "2026-11-12",
+      "date_basis": "릴리스 시각 2026-11-11 22:41:44 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "2.0에서 /opsx:* 명령이 제거되고 공통 스킬 경로로 바뀌었다. 이전 위치의 수정 파일은 보존하지만 .agents/skills/에서 직접 수정한 스킬은 update가 덮어쓴다고 릴리스 노트에 적혀 있다.",
+      "editorial_takeaway": "2.0 전환 전 공통 경로의 수정분을 보관하고 dry-run 결과를 검토한다. 버전에 따라 명령 이름과 수정 파일 보존 범위가 다르다.",
+      "limitations": [
+        "릴리스 노트를 읽었으며 실제 업데이트나 보존 동작을 실행하지 않았다.",
+        "기존 위치와 .agents/skills/의 보존 조건을 혼동하지 않는다."
+      ],
+      "related_source_ids": [
+        "github-openspec-v1-17-0",
+        "github-openspec-v1-16-1",
+        "openspec"
+      ],
+      "change_type": "applicability_change",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2120375285724123578",
+      "original_url": "https://x.com/poteto/status/2120375285724123578",
+      "author": "@poteto",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-11 04:37:17 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 검증으로 한 대화가 느려질 수 있지만 사람의 개입이 줄어 여러 큰 프로젝트를 동시에 진행한다고 설명한다.",
+      "editorial_takeaway": "단일 작업 완료 시간과 같은 기간의 완료 작업 수, 사람의 개입·검토·재작업 및 사용량을 따로 살핀다.",
+      "limitations": [
+        "개인의 경험이며 작업 처리량이나 품질 향상을 대조 실험으로 입증하지 않았다."
+      ],
+      "related_source_ids": [
+        "2119607350453776677",
+        "2119332146485891501",
+        "2120411302162292902",
+        "2120378980561990033"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2120411302162292902",
+      "original_url": "https://x.com/robinebers/status/2120411302162292902",
+      "author": "@robinebers",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-11 07:00:24 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 큰 작업에 해당 모드를 좋아하지만 모든 작업이 그 과정을 거치는 것은 우려한다고 말했다.",
+      "editorial_takeaway": "작업 규모와 위험도에 맞춰 검증 강도를 선택하고 매번 같은 절차가 적절하다고 가정하지 않는다.",
+      "limitations": [
+        "개인 의견이며 각 모드의 성능 비교는 아니다."
+      ],
+      "related_source_ids": [
+        "2120375285724123578",
+        "2119607350453776677"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "2120378980561990033",
+      "original_url": "https://x.com/matthewbeikoff/status/2120378980561990033",
+      "author": "@matthewbeikoff",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-11 04:51:58 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 사용량이 크게 소모된 뒤 투입 노력을 제한했다고 설명한다.",
+      "editorial_takeaway": "병렬 작업 수와 검증 강도별 전체 사용량과 결과를 자기 과제에서 비교한다.",
+      "limitations": [
+        "단일 사용자의 보고이며 사용량의 원인이나 수치를 확인할 수 없다."
+      ],
+      "related_source_ids": [
+        "2120375285724123578",
+        "2119607350453776677"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xtwbw1",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/",
+      "author": "u/byfastorg",
+      "published_on": "2026-11-12",
+      "date_basis": "게시 시각 2026-11-11 22:54:44 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "Reddit",
+      "evidence_kind": "self_report",
+      "author_claim": "제작자는 여러 사람의 같은 프로젝트에서 파일 변경 전 훅과 잠금으로 두 에이전트의 동시 편집을 조정한다고 설명한다.",
+      "editorial_takeaway": "공유 폴더를 쓰면 잠금이 실제로 적용되는 편집 경로, 강제 종료 후 해제, 다른 도구의 우회 가능성을 별도로 시험한다.",
+      "limitations": [
+        "제작자의 소개이고 베타다. 설치나 동시 편집을 재현하지 않았다.",
+        "macOS Apple Silicon 전용이며 체험 후 유료다. 모든 편집기나 여러 PC에서 잠금이 강제되는지는 확인하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xswffo",
+        "github-aiws-merging",
+        "github-codex-issue-60189"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-codex-issue-60189",
+      "original_url": "https://github.com/openai/codex/issues/60189",
+      "author": "oalders",
+      "published_on": "2026-11-08",
+      "date_basis": "이슈 등록 시각 2026-11-08 01:16:58 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "GitHub",
+      "evidence_kind": "self_report",
+      "author_claim": "사용자는 작업 중인 worktree의 상위 폴더를 재귀 검색하는 명령이 실행돼 다른 worktree까지 탐색하려 했다고 보고했다.",
+      "editorial_takeaway": "worktree를 변경 분리로 사용하되 파일 접근 경계는 별도로 두고 지침 탐색 범위를 작업 공간에 제한한다.",
+      "limitations": [
+        "한 사용자의 Linux 보고다. 재현하지 않았고 다른 지침이 실제로 적용됐는지 확인하지 못했다.",
+        "문제 수정이나 모든 Codex 버전에 대한 영향을 확인하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xtwbw1",
+        "github-aiws-merging",
+        "github-codex-issue-60189-comment"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-codex-issue-60189-comment",
+      "original_url": "https://github.com/openai/codex/issues/60189#issuecomment-6724530693",
+      "author": "Zyph3rKeaton",
+      "published_on": "2026-11-09",
+      "date_basis": "댓글 게시 시각 2026-11-08 17:14:30 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-12",
+      "source_kind": "GitHub",
+      "evidence_kind": "opinion",
+      "author_claim": "댓글 작성자는 접근 경계를 유지하고 서로 다른 무해한 표식으로 다른 worktree의 탐색과 맥락 유입을 각각 확인하자고 제안한다.",
+      "editorial_takeaway": "격리 시험에서는 파일 검색 시도와 실제 맥락에 들어온 내용을 구분해 본다.",
+      "limitations": [
+        "시험 제안이며 결과가 아니다. 이 자료집은 이를 실행하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-codex-issue-60189"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    }
+  ],
+  "counterevidence": [
+    "개별 대화가 더 느려질 수 있다는 poteto의 설명과 대조되는 것은 자신의 병렬 작업 경험이지 통제된 속도 측정이 아니다.",
+    "같은 대화의 다른 사용자는 큰 작업에 선택적으로 쓰기를 선호하고 또 다른 사용자는 사용량이 크게 소모됐다고 보고했다.",
+    "OpenSpec 2.0의 기존 위치 수정 파일 보존 설명과 공통 스킬 경로의 직접 수정분 덮어쓰기 경고를 구분한다.",
+    "파일 잠금 베타의 제조사 주장은 worktree의 파일 접근 차단이나 임의 도구의 잠금 준수를 입증하지 않는다."
+  ],
+  "access_gaps": [
+    "X와 Reddit 검색 및 답글은 전수조사가 아니다.",
+    "외부 도구, 파일 잠금, Codex 이슈와 OpenSpec 업데이트를 설치·실행·재현하지 않았다.",
+    "Codex 사용자 보고에서 형제 worktree 지침이 실제로 적용됐는지와 수정 여부는 확인하지 못했다."
+  ],
+  "next_questions": [
+    "같은 과제에서 단일 작업 지연, 검토·재작업과 병렬 처리량 및 사용량은 어떻게 달라지는가?",
+    "서로 다른 PC와 편집 경로에서 잠금 복구와 접근 경계가 어떻게 동작하는가?",
+    "OpenSpec 2.0 업그레이드에서 사용자별 수정분 보존은 실제로 어떻게 동작하는가?"
+  ],
+  "publishing_status": "reviewed_for_publication"
+}

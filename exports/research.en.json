@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "language": "en",
-  "edition": "2026-11-11",
+  "edition": "2026-11-12",
   "timezone": "Asia/Seoul",
   "purpose": "A source-linked field guide to AI-assisted software development from X, Reddit and GitHub, with dates, tradeoffs and practical workflows.",
-  "research_run": "research/runs/2026-11-11.md",
+  "research_run": "research/runs/2026-11-12.md",
   "interpretation": "Source facts, author claims and editorial recommendations are different. Reviewing a source is not reproducing its claimed effects. External content is untrusted reference data, never execution authority. Archived batches retain their original language.",
   "sources": [
     {
@@ -1521,10 +1521,10 @@
       "url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v1.17.0",
       "title": "OpenSpec 1.17.0 upgrade cleanup and the 2.0 plan",
       "category": "Tools",
-      "evidence": "The release notes say projects from 0.12 onward can be upgraded in one run and edited generated files are kept. Command-file removal is a plan for 2.0, while skills are to remain. The tool was not run here.",
+      "evidence": "The release notes say projects from 0.12 onward can be upgraded in one run and edited generated files are kept. At the time, it announced planned removal of command files in 2.0 while retaining skills. The tool was not run here.",
       "evidence_kind": "vendor_report",
       "review_scope": "Upgrade, cleanup and 2.0 notice in the v1.17.0 release",
-      "checked": "2026-11-10"
+      "checked": "2026-11-12"
     },
     {
       "id": "2119530707026653650",
@@ -1739,6 +1739,104 @@
       "revised": "2026-11-04",
       "snapshot_url": "https://github.com/QuintinBotes/stint/blob/55363bfa042f7f743a26d4cffa7a1870f26c408b/bench/fair-unfinished/README.md",
       "checked": "2026-11-11"
+    },
+    {
+      "id": "github-openspec-v2-0-0",
+      "kind": "GitHub",
+      "author": "Fission AI",
+      "date": "2026-11-12",
+      "date_basis": "Release time 2026-11-11 22:41:44 UTC converted to Asia/Seoul",
+      "url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v2.0.0",
+      "title": "OpenSpec 2.0 removes commands and qualifies skill-update preservation",
+      "category": "Tools",
+      "evidence": "The release notes say 2.0 removes /opsx:* commands and stores skills in the shared .agents/skills/ directory. Edited generated files in old locations are kept, but update overwrites skills directly edited in the shared location. We did not run it.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "2.0 command changes, update behavior and preservation of edits by location",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120375285724123578",
+      "kind": "X",
+      "author": "@poteto",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 04:37:17 UTC converted to Asia/Seoul",
+      "url": "https://x.com/poteto/status/2120375285724123578",
+      "title": "A slower verified session versus gains from parallel work",
+      "category": "Case studies",
+      "evidence": "Responding to a pstack speed concern, the author says verification can make a single session slower, while needing less handholding lets them run multiple large projects at once. This is personal experience.",
+      "evidence_kind": "self_report",
+      "review_scope": "Reply to a speed concern and original publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120411302162292902",
+      "kind": "X",
+      "author": "@robinebers",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 07:00:24 UTC converted to Asia/Seoul",
+      "url": "https://x.com/robinebers/status/2120411302162292902",
+      "title": "Useful for larger work, with concern about applying it to everything",
+      "category": "Contrasting views",
+      "evidence": "The author says they like pstack mode for larger tasks but worry that every request gets routed through it. This is a personal experience and preference.",
+      "evidence_kind": "self_report",
+      "review_scope": "Follow-up to poteto’s parallel-work explanation and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120378980561990033",
+      "kind": "X",
+      "author": "@matthewbeikoff",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 04:51:58 UTC converted to Asia/Seoul",
+      "url": "https://x.com/matthewbeikoff/status/2120378980561990033",
+      "title": "A user’s experience reducing effort after quota use",
+      "category": "Contrasting views",
+      "evidence": "The author reports substantial quota consumption while using pstack and subsequently limiting the effort it used. The reply provides no measured savings or causal analysis.",
+      "evidence_kind": "self_report",
+      "review_scope": "Reply in the parallel-work discussion and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "reddit-1xtwbw1",
+      "kind": "Reddit",
+      "author": "u/byfastorg",
+      "date": "2026-11-12",
+      "date_basis": "Post time 2026-11-11 22:54:44 UTC converted to Asia/Seoul",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/",
+      "title": "A beta attempting per-file locks for agents in a shared project",
+      "category": "Case studies",
+      "evidence": "The maker describes a pre-change hook that shows a lock and makes another agent wait when people run separate Claude Code sessions. They claim Codex uses the same lock through its approval path. It is a paid macOS Apple Silicon beta; we did not run it.",
+      "evidence_kind": "self_report",
+      "review_scope": "Maker’s post text, workflow, platform and pricing conditions, and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "github-codex-issue-60189",
+      "kind": "GitHub",
+      "author": "oalders",
+      "date": "2026-11-08",
+      "date_basis": "Issue creation time 2026-11-08 01:16:58 UTC converted to Asia/Seoul",
+      "url": "https://github.com/openai/codex/issues/60189",
+      "title": "A Codex user report of searching sibling worktrees for instructions",
+      "category": "Safety",
+      "evidence": "The reporter says an agent using Codex CLI 0.166.0 on Linux ran a recursive search from the parent directory, attempting to reach sibling worktrees. They say an outer boundary denied the search in another setup. This open user report was not reproduced and a fix was not verified.",
+      "evidence_kind": "self_report",
+      "review_scope": "Reported command, environment, denied access and issue state; actual application of sibling instructions is unverified",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "github-codex-issue-60189-comment",
+      "kind": "GitHub",
+      "author": "Zyph3rKeaton",
+      "date": "2026-11-09",
+      "date_basis": "Comment time 2026-11-08 17:14:30 UTC converted to Asia/Seoul",
+      "url": "https://github.com/openai/codex/issues/60189#issuecomment-6724530693",
+      "title": "A proposed check for instruction leakage from sibling worktrees",
+      "category": "Verification",
+      "evidence": "The comment suggests keeping the outer access boundary and putting different harmless markers in two worktrees, then checking both sibling-path search and marker leakage into context. It is a proposed test, not a report that it was run.",
+      "evidence_kind": "opinion",
+      "review_scope": "Issue comment’s test proposal and publication time",
+      "checked": "2026-11-12"
     }
   ],
   "methods": [
@@ -1826,7 +1924,7 @@
       "title": "Give parallel work a reason",
       "kind": "editorial_recommendation",
       "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
-      "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people. AI Agent Workspace’s docs say separate worktrees are disabled by default. Check the actual project setting and merge path.",
+      "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people. AI Agent Workspace’s docs say separate worktrees are disabled by default. Check the actual project setting and merge path. One practitioner reports that verification slows an individual task but reduces handholding across concurrent work. The same intensity need not suit every request.",
       "sources": [
         "2114967833708732607",
         "2116576229319233596",
@@ -1840,7 +1938,11 @@
         "github-agent-built",
         "reddit-1xswffo",
         "github-ai-agent-workspace",
-        "github-aiws-merging"
+        "github-aiws-merging",
+        "2120375285724123578",
+        "2120411302162292902",
+        "2120378980561990033",
+        "reddit-1xtwbw1"
       ]
     },
     {
@@ -1868,13 +1970,14 @@
       "title": "Work in units you can verify",
       "kind": "editorial_recommendation",
       "action": "Divide work by user behavior or contracts rather than file counts. Make each unit small enough to verify its runtime results when it is done.",
-      "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results. OpenSpec 1.17.0 describes preserving edited files during updates. Command-file removal is a plan for 2.0.",
+      "limit": "Mitchell's roughly 1,500-line threshold is a personal warning sign, not a universal rule for every language or generated file. OpenSpec 1.16.1 reports validation failure and archive refusal for unrecognized delta sections. Check the actual version and results. OpenSpec 2.0 removes /opsx:* commands. Its notes say edited files in old locations are kept, but update overwrites skills directly edited in shared .agents/skills/. Save edits and inspect the dry-run before migrating.",
       "sources": [
         "2066645959539556852",
         "openspec",
         "matt-pocock-skills",
         "github-openspec-v1-16-1",
-        "github-openspec-v1-17-0"
+        "github-openspec-v1-17-0",
+        "github-openspec-v2-0-0"
       ]
     },
     {
@@ -1893,7 +1996,7 @@
       "id": "benchmark",
       "title": "Keep performance comparisons consistent",
       "kind": "editorial_recommendation",
-      "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality.",
+      "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality. Separately measure single-task latency, completed work per interval, human involvement and total usage.",
       "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks. A tool-specific gate and held-out tests are different metrics. Check the tasks and repetitions in handoff experiments too.",
       "sources": [
         "2060088112257372610",
@@ -1901,7 +2004,9 @@
         "2119907165007945813",
         "anthropic-fable-5-2-overview",
         "github-stint-fair-handoff",
-        "github-stint-unfinished-handoff"
+        "github-stint-unfinished-handoff",
+        "2120375285724123578",
+        "2120378980561990033"
       ]
     },
     {
@@ -1921,7 +2026,7 @@
       "title": "Separate execution permissions from the goal",
       "kind": "editorial_recommendation",
       "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-      "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context. AI Agent Workspace’s security docs describe broad host authority for its control token and no per-operator role separation.",
+      "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context. AI Agent Workspace’s security docs describe broad host authority for its control token and no per-operator role separation. A Codex user reported a search attempting to reach sibling worktrees. Do not assume worktrees restrict filesystem access. Check attempted searches separately from actual instruction leakage.",
       "sources": [
         "2090299859693695283",
         "2098662421644853433",
@@ -1930,7 +2035,10 @@
         "github-claude-changelog-privacy",
         "github-claude-privacy-mod",
         "github-claude-2-1-321",
-        "github-aiws-security"
+        "github-aiws-security",
+        "github-codex-issue-60189",
+        "github-codex-issue-60189-comment",
+        "reddit-1xtwbw1"
       ]
     },
     {
@@ -2186,6 +2294,14 @@
       "id": "11-updates",
       "kind": "editorial_synthesis",
       "source_ids": [
+        "github-openspec-v2-0-0",
+        "github-openspec-v1-17-0",
+        "2120375285724123578",
+        "2120411302162292902",
+        "2120378980561990033",
+        "github-codex-issue-60189",
+        "github-codex-issue-60189-comment",
+        "reddit-1xtwbw1",
         "reddit-1xswffo",
         "github-ai-agent-workspace",
         "github-aiws-merging",
@@ -2197,7 +2313,6 @@
         "github-claude-2-1-321",
         "github-claude-changelog-privacy",
         "github-claude-privacy-mod",
-        "github-openspec-v1-17-0",
         "github-openspec-v1-16-1",
         "openspec",
         "2119907165007945813",
@@ -2229,7 +2344,7 @@
         "2118958843501920268",
         "anthropic-output-styles"
       ],
-      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nNew findings reviewed on 2026-11-11\n\n2026-11-11 KST · REDDIT / GITHUB\nA multi-agent task board and its permissions\n\nThe maker of AI Agent Workspace describes a local app that manages Claude Code, Codex and other tasks as cards with branches and worktrees. Its detailed docs say separate worktrees are off by default per project, and automatic merge can be controlled per project or task.\n\nThe security docs say its control token grants authority equivalent to host file access and command execution, without per-operator roles. We did not run it to verify Gitea integration or recovery across PCs.\n\nMaker’s post · 2026-11-11 ↗ README · Document revised 2026-11-11 KST ↗ Isolation and merge docs · Document revised 2026-11-11 KST ↗ Permission docs · Document revised 2026-11-11 KST ↗\n\nEXPERIMENT 2026-11-02 UTC · GITHUB\nWhat does handoff success measure?\n\nThe Stint makers compared handoff packets, transcripts and task-plus-diff from the same starting point. Held-out tests passed for all three methods, but the tool’s own gate counts differed. The table below shows ten runs per method.\n\nThe difference came from a rule for recording locked-test changes. In a separate comparison on two unfinished tasks, all four methods passed held-out tests and the packet cost the most in that small sample. Neither result establishes a universal winner.\n\nShared-start experiment · Document revised 2026-11-04 KST ↗ Unfinished-task follow-up · Document revised 2026-11-04 KST ↗\n\n2026-11-11 KST · X\nAllocating model costs after merge\n\nIn a discussion about post-merge review, Mitchell Hashimoto described his team’s custom context. Expensive models handle nightly checks; cheaper models handle more frequent checks and decisions that may escalate to a stronger model.\n\nThis is one team’s experience, not a comparative study of cost and accuracy. Do not assume post-merge review replaces pre-merge checks or deployment controls.\n\nPost-merge review question · 2026-11-11 KST ↗ Mitchell’s reply · 2026-11-11 KST ↗\n\nThe Stint makers’ comparison on November 2 UTC: five tasks × two runs per method. Held-out tests and the tool’s gate measure different things.\nHandoff methodPassed held-out testsPassed tool gate\nHandoff packet10 / 10\n10 / 10\n\nTranscript10 / 10\n7 / 10\n\nTask and diff10 / 10\n4 / 10\n\nFour of the five initial runs had already passed held-out tests before handoff. The gate difference does not establish a difference in code quality. The makers used one example environment; we did not reproduce the results.\n\nNew findings reviewed on 2026-11-10\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\nQueued messages and email-check changes\n\nThe release notes report fixes for Remote Control Queue for later messages arriving mid-turn, some background reports lost during compaction in auto mode, and MCP OAuth secrets sent to another host after redirects.\n\nThey say the account-email check now refuses only shell commands containing the email and a User-Agent reference, without a prompt. That does not establish other protections or removal from model context. We did not reproduce the behavior in a user environment.\n\n2.1.321 release · 2026-11-10 ↗ Changelog comparison · Document revised 2026-11-10 KST ↗ Privacy mod · Document revised 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\nConditions for updating specs\n\nThe release notes say projects from 0.12 onward can be updated in one run, removing unedited generated files while preserving edited ones.\n\nCommand-file removal is a 2.0 plan; skills are to remain. This guide did not run the update.\n\n1.17.0 release · 2026-11-10 ↗ Previous release · 2026-11-07 ↗ OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-09 RELEASE DATE · 11-10 KST COMMENT\nToken prices can differ from cost per task\n\nAn Anthropic team member says internal tests tended to show Fable 5.2 costing roughly the same as 5.1 per task: it used more tokens despite 20% lower token pricing. The task mix and variance were not disclosed.\n\nThe official API docs also list restrictions on some forced tool_choice types and data retention. Do not equate API prices with subscription usage; compare on actual tasks.\n\nTeam member’s cost explanation · 2026-11-10 KST ↗ Official API conditions · 2026-11-09 ↗\n\n2026-11-09 KST · X\nMeasure the proposed savings from deterministic checks\n\nIn response to a usage-limit concern, poteto predicted that running checks as code instead of through an agent could save tokens over time.\n\nNo comparative savings experiment was supplied. Compare maintenance, failure investigation and execution time as well as the initial creation cost on actual work.\n\nUsage concern · 2026-11-09 KST ↗ poteto’s reply · 2026-11-09 KST ↗ Related verification proposal · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\nA solo example linking decisions to implementation\n\nA developer describes splitting work into PM, Lead and worker roles and linking decision IDs to implementing code. Another agent attempts to disprove review findings.\n\nThe documentation checker verifies paths and IDs but cannot detect omitted content. This is a solo project, not verification of multi-person conflict handling.\n\nDeveloper’s example · 2026-11-10 ↗ Process and audit docs · Document revised 2026-11-10 KST ↗\n\n2026-11-09 DOCUMENT REVISION · AETHER\nCompletion and input-request notifications documented\n\nThe new README describes alerts when a chat that is not being viewed completes or needs input. An optional webhook, off by default, is described as sending title, body, chat and state.\n\nThis documentation revision is newer than the existing alpha release. We did not run it or verify inclusion in that build or recovery across PCs.\n\nRevised docs · Document revised 2026-11-09 KST ↗ Existing alpha release · 2026-11-08 ↗ Maker’s introduction · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-09\n\n2026-11-09 KST · X / PSTACK\nAfter finding hidden states\n\nQuoting Steve Ruiz’s prompt to find implicit state machines, poteto suggests creating a formal-verification skill per subsystem and drawing statecharts for important user flows. This can also be read alongside Trevin’s existing investigation prompt.\n\nCheck the model’s assumptions, bounds and correspondence to actual code. Checking a bounded model does not prove the whole product.\n\nQuoted prompt · 2026-11-01 KST ↗ poteto’s follow-up · 2026-11-09 KST ↗ Trevin’s investigation prompt · 2026-11-06 KST ↗ pstack source · Document revised 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\nWork in progress and evidence\n\nAddy Osmani suggests defining each task’s goal, constraints and completion evidence, and splitting work into non-overlapping slices. He recommends watching the amount of work a person can review, as well as rework and reversions.\n\nOne Reddit commenter suggests checking delegated results in a separate context and leaving unverified work open. Neither is a study establishing a universal optimum for task count or method.\n\nAddy’s article · 2026-11-08 KST ↗ Independent-check viewpoint · 2026-11-08 ↗ Earlier layered verification · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether delegation and open questions\n\nThe maker describes an app for managing Claude Code, Codex and other chats in one workspace, with a lead chat able to spawn, read, message and stop child agents. Another commenter raises connecting existing CLIs as an alternative.\n\nThe alpha release includes a Windows ZIP, but the README’s platform overview differs. We did not run it or verify concurrent collaboration and recovery across PCs.\n\nMaker’s post · 2026-11-08 ↗ Documentation · Document revised 2026-11-09 KST ↗ Alpha release · 2026-11-08 ↗ CLI alternative viewpoint · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-08\n\n2026-11-06 DOCUMENT REVISION · CLAUDE CODE\nScope of the privacy mod\n\nOur previous edition described the changelog and team member’s account of checks for web or shell calls. The newly reviewed public cc-plugin-privacy documentation says this mod checks only some shell inputs, excluding WebFetch, WebSearch, MCP and values inside scripts.\n\nThe descriptions have different scopes. This mod’s documentation alone does not establish what other protections or the whole product actually do.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-10 KST ↗ Mod source · Document revised 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nWhere to start after compaction\n\nThe Neo.mjs example checks messages, outgoing commitments and recent activity first, then compares related decisions with current issues and branches. It records degraded confidence when checks are missing.\n\nAnother user suggests short notes that surface refusals early so stale work is not revived. These are examples and opinions, not a comparative experiment.\n\nReddit post · 2026-11-08 ↗ Recovery procedure · Document revised 2026-10-30 KST ↗ Comment · 2026-11-08 ↗ Earlier handoff discussion · 2026-11-06 ↗\n\nRECORDED 2026-11-02 · SKILL EVAL\nCompare before keeping a skill\n\nIn a small report, twelve of sixteen counted skills scored above same-length placebo text on at least one of three text tasks and below it on none. The same Haiku model generated and graded answers.\n\nBeating placebo does not establish an advantage over no skill. Test poteto’s prediction of shorter skills on actual work too.\n\nEvaluation · Document revised 2026-11-05 KST ↗ poteto’s prediction · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\nHandling changes that could lose requirements\n\nThe 1.16.1 release says that requirements under an unrecognized delta section, previously warned about and potentially dropped during archive, now cause validation to fail and archive to refuse the change.\n\nCheck the version and actual result. This guide did not run the tool.\n\nRelease notes · 2026-11-07 ↗ Existing OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-06–07 KST · X\nHidden states and suspected bugs\n\nTrevin proposes examining implicit states and transitions, retries and concurrency, with evidence of reachable execution paths. One reply warns that AI can also report things that are not bugs.\n\nCheck requirements and actual paths, and follow the repository’s rules for changes and tests.\n\nOriginal prompt · 2026-11-06 KST ↗ Counterpoint · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\nShort answers have a scope too\n\nConcise is an output style for shorter default responses. The official docs say it requires Claude Code 2.1.237 or later and applies to the main conversation and forks, but not separate subagents.\n\nAsk separately for the evidence and details you need.\n\nTeam member post · 2026-11-07 KST ↗ Official docs · Publication date unknown ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
+      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nNew findings reviewed on 2026-11-12\n\n2026-11-12 KST · OPENSPEC 2.0\nSave edited skills before updating\n\nOpenSpec 2.0 removed the /opsx:* commands as previously announced and introduced a shared .agents/skills/ directory. For example, it says to use /openspec-propose instead of /opsx:propose, or $openspec-propose in Codex.\n\nThe release notes say edited generated files in old locations are kept, but openspec update overwrites skills edited directly in the shared directory. Save those edits and inspect the --dry-run before migrating. We did not run the update.\n\n2.0 release · 2026-11-12 ↗ 1.17.0 announcement · 2026-11-10 ↗\n\n2026-11-11 KST · X\nSingle-task speed and multi-task throughput\n\npoteto says verification can make one session take longer, but less handholding lets them run multiple large projects simultaneously.\n\nAnother user prefers selective use on larger tasks, while another reports substantial quota consumption. These are personal experiences. Compare single-task time, work completed per interval, human involvement and total usage separately on comparable tasks.\n\npoteto’s explanation · 2026-11-11 KST ↗ Selective-use view · 2026-11-11 KST ↗ Quota experience · 2026-11-11 KST ↗\n\n2026-11-08 / 11-12 KST · GITHUB / REDDIT\nWork separation and access control differ\n\nOne Codex user reports that an agent recursively searched a parent directory, attempting to reach sibling worktrees. Whether other instructions were actually applied is unverified. Set a separate filesystem access boundary, and check search attempts and actual context leakage separately.\n\nAnother maker describes coordinating agents in the same project with a lock before file changes. The paid beta is macOS Apple Silicon only. We did not verify which edit paths respect the lock or whether it is released after an interruption.\n\nCodex user report · 2026-11-08 ↗ Proposed check · 2026-11-09 ↗ File-lock beta introduction · 2026-11-12 ↗\n\nNew findings reviewed on 2026-11-11\n\n2026-11-11 KST · REDDIT / GITHUB\nA multi-agent task board and its permissions\n\nThe maker of AI Agent Workspace describes a local app that manages Claude Code, Codex and other tasks as cards with branches and worktrees. Its detailed docs say separate worktrees are off by default per project, and automatic merge can be controlled per project or task.\n\nThe security docs say its control token grants authority equivalent to host file access and command execution, without per-operator roles. We did not run it to verify Gitea integration or recovery across PCs.\n\nMaker’s post · 2026-11-11 ↗ README · Document revised 2026-11-11 KST ↗ Isolation and merge docs · Document revised 2026-11-11 KST ↗ Permission docs · Document revised 2026-11-11 KST ↗\n\nEXPERIMENT 2026-11-02 UTC · GITHUB\nWhat does handoff success measure?\n\nThe Stint makers compared handoff packets, transcripts and task-plus-diff from the same starting point. Held-out tests passed for all three methods, but the tool’s own gate counts differed. The table below shows ten runs per method.\n\nThe difference came from a rule for recording locked-test changes. In a separate comparison on two unfinished tasks, all four methods passed held-out tests and the packet cost the most in that small sample. Neither result establishes a universal winner.\n\nShared-start experiment · Document revised 2026-11-04 KST ↗ Unfinished-task follow-up · Document revised 2026-11-04 KST ↗\n\n2026-11-11 KST · X\nAllocating model costs after merge\n\nIn a discussion about post-merge review, Mitchell Hashimoto described his team’s custom context. Expensive models handle nightly checks; cheaper models handle more frequent checks and decisions that may escalate to a stronger model.\n\nThis is one team’s experience, not a comparative study of cost and accuracy. Do not assume post-merge review replaces pre-merge checks or deployment controls.\n\nPost-merge review question · 2026-11-11 KST ↗ Mitchell’s reply · 2026-11-11 KST ↗\n\nThe Stint makers’ comparison on November 2 UTC: five tasks × two runs per method. Held-out tests and the tool’s gate measure different things.\nHandoff methodPassed held-out testsPassed tool gate\nHandoff packet10 / 10\n10 / 10\n\nTranscript10 / 10\n7 / 10\n\nTask and diff10 / 10\n4 / 10\n\nFour of the five initial runs had already passed held-out tests before handoff. The gate difference does not establish a difference in code quality. The makers used one example environment; we did not reproduce the results.\n\nNew findings reviewed on 2026-11-10\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\nQueued messages and email-check changes\n\nThe release notes report fixes for Remote Control Queue for later messages arriving mid-turn, some background reports lost during compaction in auto mode, and MCP OAuth secrets sent to another host after redirects.\n\nThey say the account-email check now refuses only shell commands containing the email and a User-Agent reference, without a prompt. That does not establish other protections or removal from model context. We did not reproduce the behavior in a user environment.\n\n2.1.321 release · 2026-11-10 ↗ Changelog comparison · Document revised 2026-11-10 KST ↗ Privacy mod · Document revised 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\nConditions for updating specs\n\nThe release notes say projects from 0.12 onward can be updated in one run, removing unedited generated files while preserving edited ones.\n\nAt the time, 2.0 was planned to remove command files and retain skills. The later 2.0 release adds a warning about overwriting edits made directly in the shared skill directory. This guide did not run the update.\n\n1.17.0 release · 2026-11-10 ↗ 2.0 release · 2026-11-12 ↗ Previous release · 2026-11-07 ↗ OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-09 RELEASE DATE · 11-10 KST COMMENT\nToken prices can differ from cost per task\n\nAn Anthropic team member says internal tests tended to show Fable 5.2 costing roughly the same as 5.1 per task: it used more tokens despite 20% lower token pricing. The task mix and variance were not disclosed.\n\nThe official API docs also list restrictions on some forced tool_choice types and data retention. Do not equate API prices with subscription usage; compare on actual tasks.\n\nTeam member’s cost explanation · 2026-11-10 KST ↗ Official API conditions · 2026-11-09 ↗\n\n2026-11-09 KST · X\nMeasure the proposed savings from deterministic checks\n\nIn response to a usage-limit concern, poteto predicted that running checks as code instead of through an agent could save tokens over time.\n\nNo comparative savings experiment was supplied. Compare maintenance, failure investigation and execution time as well as the initial creation cost on actual work.\n\nUsage concern · 2026-11-09 KST ↗ poteto’s reply · 2026-11-09 KST ↗ Related verification proposal · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\nA solo example linking decisions to implementation\n\nA developer describes splitting work into PM, Lead and worker roles and linking decision IDs to implementing code. Another agent attempts to disprove review findings.\n\nThe documentation checker verifies paths and IDs but cannot detect omitted content. This is a solo project, not verification of multi-person conflict handling.\n\nDeveloper’s example · 2026-11-10 ↗ Process and audit docs · Document revised 2026-11-10 KST ↗\n\n2026-11-09 DOCUMENT REVISION · AETHER\nCompletion and input-request notifications documented\n\nThe new README describes alerts when a chat that is not being viewed completes or needs input. An optional webhook, off by default, is described as sending title, body, chat and state.\n\nThis documentation revision is newer than the existing alpha release. We did not run it or verify inclusion in that build or recovery across PCs.\n\nRevised docs · Document revised 2026-11-09 KST ↗ Existing alpha release · 2026-11-08 ↗ Maker’s introduction · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-09\n\n2026-11-09 KST · X / PSTACK\nAfter finding hidden states\n\nQuoting Steve Ruiz’s prompt to find implicit state machines, poteto suggests creating a formal-verification skill per subsystem and drawing statecharts for important user flows. This can also be read alongside Trevin’s existing investigation prompt.\n\nCheck the model’s assumptions, bounds and correspondence to actual code. Checking a bounded model does not prove the whole product.\n\nQuoted prompt · 2026-11-01 KST ↗ poteto’s follow-up · 2026-11-09 KST ↗ Trevin’s investigation prompt · 2026-11-06 KST ↗ pstack source · Document revised 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\nWork in progress and evidence\n\nAddy Osmani suggests defining each task’s goal, constraints and completion evidence, and splitting work into non-overlapping slices. He recommends watching the amount of work a person can review, as well as rework and reversions.\n\nOne Reddit commenter suggests checking delegated results in a separate context and leaving unverified work open. Neither is a study establishing a universal optimum for task count or method.\n\nAddy’s article · 2026-11-08 KST ↗ Independent-check viewpoint · 2026-11-08 ↗ Earlier layered verification · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether delegation and open questions\n\nThe maker describes an app for managing Claude Code, Codex and other chats in one workspace, with a lead chat able to spawn, read, message and stop child agents. Another commenter raises connecting existing CLIs as an alternative.\n\nThe alpha release includes a Windows ZIP, but the README’s platform overview differs. We did not run it or verify concurrent collaboration and recovery across PCs.\n\nMaker’s post · 2026-11-08 ↗ Documentation · Document revised 2026-11-09 KST ↗ Alpha release · 2026-11-08 ↗ CLI alternative viewpoint · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-08\n\n2026-11-06 DOCUMENT REVISION · CLAUDE CODE\nScope of the privacy mod\n\nOur previous edition described the changelog and team member’s account of checks for web or shell calls. The newly reviewed public cc-plugin-privacy documentation says this mod checks only some shell inputs, excluding WebFetch, WebSearch, MCP and values inside scripts.\n\nThe descriptions have different scopes. This mod’s documentation alone does not establish what other protections or the whole product actually do.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-10 KST ↗ Mod source · Document revised 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nWhere to start after compaction\n\nThe Neo.mjs example checks messages, outgoing commitments and recent activity first, then compares related decisions with current issues and branches. It records degraded confidence when checks are missing.\n\nAnother user suggests short notes that surface refusals early so stale work is not revived. These are examples and opinions, not a comparative experiment.\n\nReddit post · 2026-11-08 ↗ Recovery procedure · Document revised 2026-10-30 KST ↗ Comment · 2026-11-08 ↗ Earlier handoff discussion · 2026-11-06 ↗\n\nRECORDED 2026-11-02 · SKILL EVAL\nCompare before keeping a skill\n\nIn a small report, twelve of sixteen counted skills scored above same-length placebo text on at least one of three text tasks and below it on none. The same Haiku model generated and graded answers.\n\nBeating placebo does not establish an advantage over no skill. Test poteto’s prediction of shorter skills on actual work too.\n\nEvaluation · Document revised 2026-11-05 KST ↗ poteto’s prediction · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\nHandling changes that could lose requirements\n\nThe 1.16.1 release says that requirements under an unrecognized delta section, previously warned about and potentially dropped during archive, now cause validation to fail and archive to refuse the change.\n\nCheck the version and actual result. This guide did not run the tool.\n\nRelease notes · 2026-11-07 ↗ Existing OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-06–07 KST · X\nHidden states and suspected bugs\n\nTrevin proposes examining implicit states and transitions, retries and concurrency, with evidence of reachable execution paths. One reply warns that AI can also report things that are not bugs.\n\nCheck requirements and actual paths, and follow the repository’s rules for changes and tests.\n\nOriginal prompt · 2026-11-06 KST ↗ Counterpoint · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\nShort answers have a scope too\n\nConcise is an output style for shorter default responses. The official docs say it requires Claude Code 2.1.237 or later and applies to the main conversation and forks, but not separate subagents.\n\nAsk separately for the evidence and details you need.\n\nTeam member post · 2026-11-07 KST ↗ Official docs · Publication date unknown ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
     }
   ],
   "reviewed_batches": [
@@ -3390,6 +3505,196 @@
           "여러 PC와 사용자별 권한을 나눠 작업 변경과 중단·재개를 어떻게 보장할 것인가?",
           "자체 과제에서 인계 형식별 통과 이유, 품질, 재시도와 총비용은 어떻게 달라지는가?",
           "병합 후 모델 검토의 누락과 사전 검사·배포 통제의 역할은 어떻게 구분할 것인가?"
+        ],
+        "publishing_status": "reviewed_for_publication"
+      }
+    },
+    {
+      "path": "research/batches/2026-11-12-parallel-boundaries.json",
+      "data": {
+        "schema_version": 1,
+        "topic": "병렬 검증의 비용과 작업 경계, OpenSpec 2.0 전환",
+        "as_of": "2026-11-12",
+        "timezone": "Asia/Seoul",
+        "scope": "직전 성공 조사에서 72시간 겹치는 2026-11-08 09:24:33 KST부터 X·Reddit·GitHub의 원문과 기존 버전 기록을 확인했다.",
+        "findings": [
+          {
+            "source_id": "github-openspec-v2-0-0",
+            "original_url": "https://github.com/Fission-AI/OpenSpec/releases/tag/v2.0.0",
+            "author": "Fission AI",
+            "published_on": "2026-11-12",
+            "date_basis": "릴리스 시각 2026-11-11 22:41:44 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "GitHub",
+            "evidence_kind": "vendor_report",
+            "author_claim": "2.0에서 /opsx:* 명령이 제거되고 공통 스킬 경로로 바뀌었다. 이전 위치의 수정 파일은 보존하지만 .agents/skills/에서 직접 수정한 스킬은 update가 덮어쓴다고 릴리스 노트에 적혀 있다.",
+            "editorial_takeaway": "2.0 전환 전 공통 경로의 수정분을 보관하고 dry-run 결과를 검토한다. 버전에 따라 명령 이름과 수정 파일 보존 범위가 다르다.",
+            "limitations": [
+              "릴리스 노트를 읽었으며 실제 업데이트나 보존 동작을 실행하지 않았다.",
+              "기존 위치와 .agents/skills/의 보존 조건을 혼동하지 않는다."
+            ],
+            "related_source_ids": [
+              "github-openspec-v1-17-0",
+              "github-openspec-v1-16-1",
+              "openspec"
+            ],
+            "change_type": "applicability_change",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120375285724123578",
+            "original_url": "https://x.com/poteto/status/2120375285724123578",
+            "author": "@poteto",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 04:37:17 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 검증으로 한 대화가 느려질 수 있지만 사람의 개입이 줄어 여러 큰 프로젝트를 동시에 진행한다고 설명한다.",
+            "editorial_takeaway": "단일 작업 완료 시간과 같은 기간의 완료 작업 수, 사람의 개입·검토·재작업 및 사용량을 따로 살핀다.",
+            "limitations": [
+              "개인의 경험이며 작업 처리량이나 품질 향상을 대조 실험으로 입증하지 않았다."
+            ],
+            "related_source_ids": [
+              "2119607350453776677",
+              "2119332146485891501",
+              "2120411302162292902",
+              "2120378980561990033"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120411302162292902",
+            "original_url": "https://x.com/robinebers/status/2120411302162292902",
+            "author": "@robinebers",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 07:00:24 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 큰 작업에 해당 모드를 좋아하지만 모든 작업이 그 과정을 거치는 것은 우려한다고 말했다.",
+            "editorial_takeaway": "작업 규모와 위험도에 맞춰 검증 강도를 선택하고 매번 같은 절차가 적절하다고 가정하지 않는다.",
+            "limitations": [
+              "개인 의견이며 각 모드의 성능 비교는 아니다."
+            ],
+            "related_source_ids": [
+              "2120375285724123578",
+              "2119607350453776677"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120378980561990033",
+            "original_url": "https://x.com/matthewbeikoff/status/2120378980561990033",
+            "author": "@matthewbeikoff",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 04:51:58 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 사용량이 크게 소모된 뒤 투입 노력을 제한했다고 설명한다.",
+            "editorial_takeaway": "병렬 작업 수와 검증 강도별 전체 사용량과 결과를 자기 과제에서 비교한다.",
+            "limitations": [
+              "단일 사용자의 보고이며 사용량의 원인이나 수치를 확인할 수 없다."
+            ],
+            "related_source_ids": [
+              "2120375285724123578",
+              "2119607350453776677"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "reddit-1xtwbw1",
+            "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/",
+            "author": "u/byfastorg",
+            "published_on": "2026-11-12",
+            "date_basis": "게시 시각 2026-11-11 22:54:44 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "Reddit",
+            "evidence_kind": "self_report",
+            "author_claim": "제작자는 여러 사람의 같은 프로젝트에서 파일 변경 전 훅과 잠금으로 두 에이전트의 동시 편집을 조정한다고 설명한다.",
+            "editorial_takeaway": "공유 폴더를 쓰면 잠금이 실제로 적용되는 편집 경로, 강제 종료 후 해제, 다른 도구의 우회 가능성을 별도로 시험한다.",
+            "limitations": [
+              "제작자의 소개이고 베타다. 설치나 동시 편집을 재현하지 않았다.",
+              "macOS Apple Silicon 전용이며 체험 후 유료다. 모든 편집기나 여러 PC에서 잠금이 강제되는지는 확인하지 않았다."
+            ],
+            "related_source_ids": [
+              "reddit-1xswffo",
+              "github-aiws-merging",
+              "github-codex-issue-60189"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "github-codex-issue-60189",
+            "original_url": "https://github.com/openai/codex/issues/60189",
+            "author": "oalders",
+            "published_on": "2026-11-08",
+            "date_basis": "이슈 등록 시각 2026-11-08 01:16:58 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "GitHub",
+            "evidence_kind": "self_report",
+            "author_claim": "사용자는 작업 중인 worktree의 상위 폴더를 재귀 검색하는 명령이 실행돼 다른 worktree까지 탐색하려 했다고 보고했다.",
+            "editorial_takeaway": "worktree를 변경 분리로 사용하되 파일 접근 경계는 별도로 두고 지침 탐색 범위를 작업 공간에 제한한다.",
+            "limitations": [
+              "한 사용자의 Linux 보고다. 재현하지 않았고 다른 지침이 실제로 적용됐는지 확인하지 못했다.",
+              "문제 수정이나 모든 Codex 버전에 대한 영향을 확인하지 않았다."
+            ],
+            "related_source_ids": [
+              "reddit-1xtwbw1",
+              "github-aiws-merging",
+              "github-codex-issue-60189-comment"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "github-codex-issue-60189-comment",
+            "original_url": "https://github.com/openai/codex/issues/60189#issuecomment-6724530693",
+            "author": "Zyph3rKeaton",
+            "published_on": "2026-11-09",
+            "date_basis": "댓글 게시 시각 2026-11-08 17:14:30 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "GitHub",
+            "evidence_kind": "opinion",
+            "author_claim": "댓글 작성자는 접근 경계를 유지하고 서로 다른 무해한 표식으로 다른 worktree의 탐색과 맥락 유입을 각각 확인하자고 제안한다.",
+            "editorial_takeaway": "격리 시험에서는 파일 검색 시도와 실제 맥락에 들어온 내용을 구분해 본다.",
+            "limitations": [
+              "시험 제안이며 결과가 아니다. 이 자료집은 이를 실행하지 않았다."
+            ],
+            "related_source_ids": [
+              "github-codex-issue-60189"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          }
+        ],
+        "counterevidence": [
+          "개별 대화가 더 느려질 수 있다는 poteto의 설명과 대조되는 것은 자신의 병렬 작업 경험이지 통제된 속도 측정이 아니다.",
+          "같은 대화의 다른 사용자는 큰 작업에 선택적으로 쓰기를 선호하고 또 다른 사용자는 사용량이 크게 소모됐다고 보고했다.",
+          "OpenSpec 2.0의 기존 위치 수정 파일 보존 설명과 공통 스킬 경로의 직접 수정분 덮어쓰기 경고를 구분한다.",
+          "파일 잠금 베타의 제조사 주장은 worktree의 파일 접근 차단이나 임의 도구의 잠금 준수를 입증하지 않는다."
+        ],
+        "access_gaps": [
+          "X와 Reddit 검색 및 답글은 전수조사가 아니다.",
+          "외부 도구, 파일 잠금, Codex 이슈와 OpenSpec 업데이트를 설치·실행·재현하지 않았다.",
+          "Codex 사용자 보고에서 형제 worktree 지침이 실제로 적용됐는지와 수정 여부는 확인하지 못했다."
+        ],
+        "next_questions": [
+          "같은 과제에서 단일 작업 지연, 검토·재작업과 병렬 처리량 및 사용량은 어떻게 달라지는가?",
+          "서로 다른 PC와 편집 경로에서 잠금 복구와 접근 경계가 어떻게 동작하는가?",
+          "OpenSpec 2.0 업그레이드에서 사용자별 수정분 보존은 실제로 어떻게 동작하는가?"
         ],
         "publishing_status": "reviewed_for_publication"
       }
