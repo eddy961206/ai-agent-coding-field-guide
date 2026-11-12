@@ -8,7 +8,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `exports/research.json`: sources, methods, prompts, narrative_sections, reviewed_batches
 - `data/sources.json`: canonical source provenance
-- `research/runs/2026-11-12.md`: 이번 판의 조사 범위·검색 경로·미검증
+- `research/runs/2026-11-12-shared-guidance.md`: 이번 판의 조사 범위·검색 경로·미검증
 - `research/DAILY_UPDATE.md`
 - `CONTRIBUTING.md`
 - `AGENTS.md`
@@ -142,6 +142,14 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 적용 한계: 보기 좋은 설명은 검증 결과가 아니야. 각 도식이 실제 코드·모델 어디에 대응하는지 확인해. Claude Code의 Concise 스타일은 주 대화와 fork에 적용되며 별도 subagent에는 적용되지 않아. 필요한 근거는 따로 요청해.
 
 근거: [@poteto · 2026-10-11 KST](https://x.com/poteto/status/2109024196760305861), [@karpathy · 2026-10-02 KST](https://x.com/karpathy/status/2105819303471976479), [Simon Willison · 가이드 시작 2026-02-23](https://simonwillison.net/guides/agentic-engineering-patterns/), [@addyosmani · 2026-11-07 KST](https://x.com/addyosmani/status/2118958843501920268), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/output-styles)
+
+### 공통 지침과 프로젝트 규칙을 연결 (`shared-guidance`)
+
+편집 제안: 공통 스킬의 정본을 정하고 각 프로젝트의 고유 규칙을 가까이 둬. 세션에 실제 적용된 지침·스킬의 출처와 버전을 확인해.
+
+적용 한계: 여러 PC에서 변경 충돌과 진행 중 요청 변경을 다뤄야 해. 홈 저장소나 공통 위키가 프로젝트 지침을 자동으로 읽거나 파일 권한을 제한한다고 가정하지 마. 도구마다 로드 조건이 다르고 게시된 사례는 재현하지 않았어.
+
+근거: [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120260969750540327), [@vikingmute · 2026-11-11 KST](https://x.com/vikingmute/status/2120488589750579646), [@eiaserinnys · 2026-11-11 KST](https://x.com/eiaserinnys/status/2120529839107276803), [@eiaserinnys · 2026-11-12 KST](https://x.com/eiaserinnys/status/2120534567006450041), [@BobClowdr · 2026-11-11 KST](https://x.com/BobClowdr/status/2120488255074517383), [@pobletedev · 2026-11-11 KST](https://x.com/pobletedev/status/2120446713781481544), [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120449526674993463), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/memory), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/skills), [OpenAI · 작성일 미확인](https://developers.openai.com/codex/guides/agents-md), [BeppeTemp/cartographer contributors · 문서 개정 2026-11-09 KST](https://github.com/BeppeTemp/cartographer), [TreatTrick/skill-sync contributors · 문서 개정 2026-08-21 KST](https://github.com/TreatTrick/skill-sync)
 
 ## 출처 목록
 
@@ -392,3 +400,31 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 - `github-codex-issue-60189` [형제 worktree까지 지침 파일을 검색한 Codex 사용자 보고](https://github.com/openai/codex/issues/60189) — 2026-11-08; 자료 확인일 2026-11-12. 작성자는 Linux의 Codex CLI 0.166.0 작업에서 에이전트가 상위 폴더를 재귀 검색하는 명령을 실행해 다른 worktree까지 탐색하려 했다고 보고했다. 외부 경계가 있는 환경에서는 해당 검색이 거부됐다고 한다. 열린 사용자 보고이며 재현하거나 수정 여부를 확인하지 않았다.
 
 - `github-codex-issue-60189-comment` [다른 worktree의 지침 유입을 확인하는 시험 제안](https://github.com/openai/codex/issues/60189#issuecomment-6724530693) — 2026-11-09; 자료 확인일 2026-11-12. 댓글은 외부 접근 경계를 유지하고 두 worktree에 서로 다른 무해한 표식을 둬 다른 경로의 검색과 표식의 맥락 유입을 각각 확인하자고 제안한다. 시험을 수행했다는 보고는 아니다.
+
+- `2120260969750540327` [여러 저장소의 지침을 한곳에 두는 Home Repo](https://x.com/mattpocockuk/status/2120260969750540327) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 스킬·지침·위키가 든 홈 저장소에서 에이전트를 시작하고 AGENTS.md에 다른 저장소의 위치를 적는다고 설명한다. 여러 저장소의 변경에 쓰는 개인 방식이며 비교 실험은 아니다.
+
+- `2120488589750579646` [공통 진입 저장소에서 다른 프로젝트를 찾아가는 방식](https://x.com/vikingmute/status/2120488589750579646) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 Matt의 글을 인용하며 공통 start repo에 지침과 스킬을 모으고 다른 프로젝트 경로를 기록하는 비슷한 방식을 설명한다. 개인 경험이다.
+
+- `2120529839107276803` [여러 PC와 저장소의 지침을 위키 서버와 프로필로 관리한 경험](https://x.com/eiaserinnys/status/2120529839107276803) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 여러 PC에서 저장소로 스킬을 동기화하던 불편을 겪은 뒤, 지침과 스킬을 LLM 위키 서버에 두고 대시보드가 세션을 띄울 때 에이전트 프로필에 맞춰 주입한다고 설명한다. 서버 구현은 공개하지 않았다.
+
+- `2120534567006450041` [많아진 스킬 대신 스킬 검색 스킬을 쓴다는 후속 답변](https://x.com/eiaserinnys/status/2120534567006450041) — 2026-11-12 KST; 자료 확인일 2026-11-12. 작성자는 스킬이 너무 많아 대부분을 덜어내고 스킬을 검색하는 스킬을 쓰고 있다고 답했다. 검색 구현이나 정확도·비용은 설명하지 않았다.
+
+- `2120488255074517383` [프로젝트에서 시작해 공통 지침을 참조한다는 반대 경험](https://x.com/BobClowdr/status/2120488255074517383) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 홈 저장소에서 시작하면 관련 없는 다른 저장소를 탐색하는 일이 있었다며, 각 격리된 저장소에서 시작해 필요한 홈 저장소 내용을 가리키는 편이 자신에게 더 안정적이었다고 말했다.
+
+- `2120446713781481544` [공통 지침과 저장소 고유 AGENTS.md를 분리하자는 의견](https://x.com/pobletedev/status/2120446713781481544) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 스크립트·lint·건드리면 안 되는 범위처럼 저장소에만 적용되는 내용은 각 저장소의 작은 AGENTS.md에 두자고 제안한다.
+
+- `2120449526674993463` [저장소별 지침 분리에 동의한 Matt의 후속 답변](https://x.com/mattpocockuk/status/2120449526674993463) — 2026-11-11 KST; 자료 확인일 2026-11-12. Matt Pocock은 각 저장소에 고유한 AGENTS.md를 두자는 댓글에 동의했다. 세부 적용 방식은 답변에 나오지 않는다.
+
+- `2120262371075670256` [같은 저장소의 병렬 작업에는 worktree를 쓴다는 답변](https://x.com/mattpocockuk/status/2120262371075670256) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 같은 저장소에서 병렬 기능 작업을 어떻게 하는지 묻는 질문에 각 클론 안에서 worktree를 쓴다고 답했다. 잠금이나 충돌 해결은 설명하지 않았다.
+
+- `2120274646348030270` [여러 저장소에 걸친 이슈는 홈 저장소에 둔다는 답변](https://x.com/mattpocockuk/status/2120274646348030270) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 여러 저장소의 변경을 연결하는 메모를 어디에 두느냐는 질문에 자신은 저장소 간 이슈를 홈 저장소에 둔다고 답했다.
+
+- `claude-code-instruction-loading` [Claude Code의 프로젝트 지침 파일과 추가 폴더 적용 조건](https://code.claude.com/docs/en/memory) — 작성일 미확인; 자료 확인일 2026-11-12. 공식 문서는 기본 설정에서 작업 경로에 CLAUDE.md나 CLAUDE.local.md가 있으면 AGENTS.md 대신 CLAUDE.md 계열을 읽는다고 설명한다. 추가 폴더의 CLAUDE.md는 기본 자동 로드되지 않는다. 버전·설정과 예외를 확인해야 한다.
+
+- `claude-code-skills-loading` [Claude Code의 스킬 위치와 필요한 때 본문 로드](https://code.claude.com/docs/en/skills) — 작성일 미확인; 자료 확인일 2026-11-12. 공식 문서는 일반 세션에서 스킬 설명을 맥락에 두고 본문은 호출 시 로드한다고 설명한다. 미리 지정한 서브에이전트 스킬은 예외다. --add-dir의 스킬과 추가 폴더 지침의 로드 조건은 다르다.
+
+- `codex-instruction-discovery` [Codex의 전역·프로젝트 지침 탐색 범위](https://developers.openai.com/codex/guides/agents-md) — 작성일 미확인; 자료 확인일 2026-11-12. 공식 문서는 시작할 때 전역 지침과 프로젝트 루트에서 현재 작업 디렉터리까지의 AGENTS.md 계열을 결합한다고 설명한다. 홈 저장소에서 다른 저장소의 경로를 아는 것만으로 그 저장소 지침이 로드된다고 단정할 수 없다.
+
+- `github-cartographer-shared-wiki` [Git 기반 위키와 에이전트 설정 배포를 묶은 Cartographer](https://github.com/BeppeTemp/cartographer) — 문서 개정 2026-11-09 KST; 자료 확인일 2026-11-12. README는 Git 기반 지식 저장소와 MCP 서버, Claude Code·Codex 등 클라이언트별 설정 배포를 설명한다. Gitea를 Git 저장소 후보로 열거하고 지식 저장소별 토큰 역할을 소개한다. 1.0 이전 프로젝트이며 직접 실행하지 않았다.
+
+- `github-skill-sync-shared` [GitHub 기반 개인 스킬 동기화 도구 Skill Sync](https://github.com/TreatTrick/skill-sync) — 문서 개정 2026-08-21 KST; 자료 확인일 2026-11-12. README의 v1은 GitHub 저장소를 통해 사용자 범위의 Claude Code·Codex·공통 스킬을 미리 비교하고 충돌을 선택해 동기화한다고 설명한다. 프로젝트별 스킬·임의 경로는 범위 밖이며 Windows 설치 프로그램은 서명되지 않았다. 실행하지 않았다.

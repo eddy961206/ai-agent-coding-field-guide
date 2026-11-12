@@ -883,5 +883,103 @@
     "evidence": "The comment suggests keeping the outer access boundary and putting different harmless markers in two worktrees, then checking both sibling-path search and marker leakage into context. It is a proposed test, not a report that it was run.",
     "date_basis": "Comment time 2026-11-08 17:14:30 UTC converted to Asia/Seoul",
     "review_scope": "Issue comment’s test proposal and publication time"
+  },
+  {
+    "id": "2120260969750540327",
+    "title": "A Home Repo for guidance across repositories",
+    "evidence": "The author starts agents in a home repository containing skills, guidance and a wiki, with pointers to other repositories in AGENTS.md. This is a personal workflow, not a comparative study.",
+    "date_basis": "Post time 2026-11-10 21:03:02 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120488589750579646",
+    "title": "A start repository with pointers to other projects",
+    "evidence": "Quoting Matt’s post, the author describes a similar start repository holding shared guidance and skills plus paths to other projects. This is personal experience.",
+    "date_basis": "Post time 2026-11-11 12:07:31 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120529839107276803",
+    "title": "A wiki server and profiles for guidance across PCs and repositories",
+    "evidence": "After finding repository-based skill synchronization cumbersome across PCs, the author says they keep guidance and skills on an LLM wiki server and inject them by agent profile when a dashboard launches a session. The server implementation is not disclosed.",
+    "date_basis": "Post time 2026-11-11 14:51:25 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120534567006450041",
+    "title": "A follow-up about searching for skills",
+    "evidence": "The author says they reduced the number of skills because there were too many and now use a skill for searching skills. The reply does not specify the search implementation, accuracy or cost.",
+    "date_basis": "Post time 2026-11-11 15:10:13 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120488255074517383",
+    "title": "A counterexample: start inside the isolated project and refer to shared guidance",
+    "evidence": "The author reports that starting from the home repository sometimes led to unnecessary exploration of other repositories, and prefers starting inside isolated repositories with pointers to relevant shared guidance.",
+    "date_basis": "Post time 2026-11-11 12:06:11 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120446713781481544",
+    "title": "Keep repository-specific guidance alongside shared rules",
+    "evidence": "The commenter suggests keeping scripts, lint rules and do-not-touch areas that apply only to a given repository in a small local AGENTS.md.",
+    "date_basis": "Post time 2026-11-11 09:21:07 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120449526674993463",
+    "title": "Matt agrees with retaining repository-specific guidance",
+    "evidence": "Matt Pocock agreed with the comment advocating a repository-specific AGENTS.md. The reply does not explain a detailed implementation.",
+    "date_basis": "Post time 2026-11-11 09:32:17 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120262371075670256",
+    "title": "A reply on worktrees for parallel changes",
+    "evidence": "Asked how to work on parallel features in one repository, the author replied that they use worktrees inside each clone. The reply does not describe locking or conflict handling.",
+    "date_basis": "Post time 2026-11-10 21:08:36 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "2120274646348030270",
+    "title": "A reply on cross-repository issues",
+    "evidence": "Asked where to record how changes across repositories fit together, the author says cross-repository issues live in the home repository.",
+    "date_basis": "Post time 2026-11-10 21:57:23 UTC converted to Asia/Seoul",
+    "review_scope": "Original post, conversation context and publication time"
+  },
+  {
+    "id": "claude-code-instruction-loading",
+    "title": "Claude Code instruction-file and additional-directory conditions",
+    "evidence": "The official docs say the default reads CLAUDE.md files instead of AGENTS.md when a CLAUDE.md or CLAUDE.local.md exists in the working path. CLAUDE.md in additional directories is not loaded by default. Version, settings and exceptions matter.",
+    "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+    "review_scope": "Default AGENTS.md versus CLAUDE.md selection, added-directory loading, and Windows linking guidance"
+  },
+  {
+    "id": "claude-code-skills-loading",
+    "title": "Claude Code skill locations and on-demand content loading",
+    "evidence": "The official docs say ordinary sessions include skill descriptions in context and load full content when invoked. Preloaded subagent skills differ. Skills and instruction files in an added directory follow different loading rules.",
+    "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+    "review_scope": "Personal, project and added-directory skills; ordinary-session and subagent loading conditions"
+  },
+  {
+    "id": "codex-instruction-discovery",
+    "title": "Codex global and project instruction discovery",
+    "evidence": "The official docs describe combining global guidance with AGENTS.md files from the project root down to the current working directory at startup. Knowing a separate repository path from a home repository does not establish that its instructions were loaded.",
+    "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+    "review_scope": "Global and project instruction discovery down to the working directory at session start"
+  },
+  {
+    "id": "github-cartographer-shared-wiki",
+    "title": "Cartographer combines a Git-backed wiki with agent configuration delivery",
+    "evidence": "The README describes a Git-backed knowledge base, MCP server and configuration delivery to clients including Claude Code and Codex. It lists Gitea as a Git-host option and describes token roles per knowledge base. It is pre-1.0 and was not run.",
+    "date_basis": "Original README publication date unknown; reviewed revision 2026-11-09 14:47:54 UTC converted to Asia/Seoul",
+    "review_scope": "Pinned README revision: storage and client support, stated access controls and version limits"
+  },
+  {
+    "id": "github-skill-sync-shared",
+    "title": "Skill Sync for user-level skills through GitHub",
+    "evidence": "The v1 README describes previewing and resolving conflicts before syncing user-level Claude Code, Codex and shared skills through a GitHub repository. Project-level and custom roots are excluded; the Windows installer is unsigned. We did not run it.",
+    "date_basis": "Original README publication date unknown; reviewed revision 2026-08-21 11:01:54 UTC converted to Asia/Seoul",
+    "review_scope": "Pinned README revision: synchronization, conflicts, supported roots and Windows condition"
   }
 ]

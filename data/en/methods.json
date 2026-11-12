@@ -126,5 +126,13 @@
     "action": "Separate changes since the last check, execution evidence, remaining unknowns and decisions needed. Use a state diagram or a small HTML page when it aids understanding.",
     "limit": "A polished explanation is not verification evidence. Check which parts of the actual code or model each diagram represents. Claude Code’s Concise style applies to the main conversation and forks, not separate subagents. Request necessary evidence explicitly.",
     "sources": ["2109024196760305861", "2105819303471976479", "simon-guide", "2118958843501920268", "anthropic-output-styles"]
+  },
+  {
+    "id": "shared-guidance",
+    "title": "Connect shared guidance with project rules",
+    "kind": "editorial_recommendation",
+    "action": "Choose a canonical source for shared skills and keep project-specific rules near each project. Check the source and version of guidance and skills actually used in a session.",
+    "limit": "Handle conflicting edits across PCs and changes to active requests. Do not assume a home repository or shared wiki automatically loads project instructions or restricts file access. Loading conditions differ by tool, and the published examples were not reproduced.",
+    "sources": ["2120260969750540327", "2120488589750579646", "2120529839107276803", "2120534567006450041", "2120488255074517383", "2120446713781481544", "2120449526674993463", "claude-code-instruction-loading", "claude-code-skills-loading", "codex-instruction-discovery", "github-cartographer-shared-wiki", "github-skill-sync-shared"]
   }
 ]

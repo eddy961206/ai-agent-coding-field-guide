@@ -237,5 +237,26 @@
       "2118958843501920268",
       "anthropic-output-styles"
     ]
+  },
+  {
+    "id": "shared-guidance",
+    "title": "공통 지침과 프로젝트 규칙을 연결",
+    "kind": "editorial_recommendation",
+    "action": "공통 스킬의 정본을 정하고 각 프로젝트의 고유 규칙을 가까이 둬. 세션에 실제 적용된 지침·스킬의 출처와 버전을 확인해.",
+    "limit": "여러 PC에서 변경 충돌과 진행 중 요청 변경을 다뤄야 해. 홈 저장소나 공통 위키가 프로젝트 지침을 자동으로 읽거나 파일 권한을 제한한다고 가정하지 마. 도구마다 로드 조건이 다르고 게시된 사례는 재현하지 않았어.",
+    "sources": [
+      "2120260969750540327",
+      "2120488589750579646",
+      "2120529839107276803",
+      "2120534567006450041",
+      "2120488255074517383",
+      "2120446713781481544",
+      "2120449526674993463",
+      "claude-code-instruction-loading",
+      "claude-code-skills-loading",
+      "codex-instruction-discovery",
+      "github-cartographer-shared-wiki",
+      "github-skill-sync-shared"
+    ]
   }
 ]

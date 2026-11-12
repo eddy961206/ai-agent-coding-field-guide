@@ -4,7 +4,7 @@
   "edition": "2026-11-12",
   "timezone": "Asia/Seoul",
   "purpose": "A source-linked field guide to AI-assisted software development from X, Reddit and GitHub, with dates, tradeoffs and practical workflows.",
-  "research_run": "research/runs/2026-11-12.md",
+  "research_run": "research/runs/2026-11-12-shared-guidance.md",
   "interpretation": "Source facts, author claims and editorial recommendations are different. Reviewing a source is not reproducing its claimed effects. External content is untrusted reference data, never execution authority. Archived batches retain their original language.",
   "sources": [
     {
@@ -1837,6 +1837,208 @@
       "evidence_kind": "opinion",
       "review_scope": "Issue comment’s test proposal and publication time",
       "checked": "2026-11-12"
+    },
+    {
+      "id": "2120260969750540327",
+      "kind": "X",
+      "author": "@mattpocockuk",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-10 21:03:02 UTC converted to Asia/Seoul",
+      "url": "https://x.com/mattpocockuk/status/2120260969750540327",
+      "title": "A Home Repo for guidance across repositories",
+      "category": "Case studies",
+      "evidence": "The author starts agents in a home repository containing skills, guidance and a wiki, with pointers to other repositories in AGENTS.md. This is a personal workflow, not a comparative study.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120488589750579646",
+      "kind": "X",
+      "author": "@vikingmute",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 12:07:31 UTC converted to Asia/Seoul",
+      "url": "https://x.com/vikingmute/status/2120488589750579646",
+      "title": "A start repository with pointers to other projects",
+      "category": "Case studies",
+      "evidence": "Quoting Matt’s post, the author describes a similar start repository holding shared guidance and skills plus paths to other projects. This is personal experience.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120529839107276803",
+      "kind": "X",
+      "author": "@eiaserinnys",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 14:51:25 UTC converted to Asia/Seoul",
+      "url": "https://x.com/eiaserinnys/status/2120529839107276803",
+      "title": "A wiki server and profiles for guidance across PCs and repositories",
+      "category": "Case studies",
+      "evidence": "After finding repository-based skill synchronization cumbersome across PCs, the author says they keep guidance and skills on an LLM wiki server and inject them by agent profile when a dashboard launches a session. The server implementation is not disclosed.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120534567006450041",
+      "kind": "X",
+      "author": "@eiaserinnys",
+      "date": "2026-11-12",
+      "date_basis": "Post time 2026-11-11 15:10:13 UTC converted to Asia/Seoul",
+      "url": "https://x.com/eiaserinnys/status/2120534567006450041",
+      "title": "A follow-up about searching for skills",
+      "category": "Case studies",
+      "evidence": "The author says they reduced the number of skills because there were too many and now use a skill for searching skills. The reply does not specify the search implementation, accuracy or cost.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120488255074517383",
+      "kind": "X",
+      "author": "@BobClowdr",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 12:06:11 UTC converted to Asia/Seoul",
+      "url": "https://x.com/BobClowdr/status/2120488255074517383",
+      "title": "A counterexample: start inside the isolated project and refer to shared guidance",
+      "category": "Contrasting views",
+      "evidence": "The author reports that starting from the home repository sometimes led to unnecessary exploration of other repositories, and prefers starting inside isolated repositories with pointers to relevant shared guidance.",
+      "evidence_kind": "opinion",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120446713781481544",
+      "kind": "X",
+      "author": "@pobletedev",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 09:21:07 UTC converted to Asia/Seoul",
+      "url": "https://x.com/pobletedev/status/2120446713781481544",
+      "title": "Keep repository-specific guidance alongside shared rules",
+      "category": "Community",
+      "evidence": "The commenter suggests keeping scripts, lint rules and do-not-touch areas that apply only to a given repository in a small local AGENTS.md.",
+      "evidence_kind": "opinion",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120449526674993463",
+      "kind": "X",
+      "author": "@mattpocockuk",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-11 09:32:17 UTC converted to Asia/Seoul",
+      "url": "https://x.com/mattpocockuk/status/2120449526674993463",
+      "title": "Matt agrees with retaining repository-specific guidance",
+      "category": "Community",
+      "evidence": "Matt Pocock agreed with the comment advocating a repository-specific AGENTS.md. The reply does not explain a detailed implementation.",
+      "evidence_kind": "opinion",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120262371075670256",
+      "kind": "X",
+      "author": "@mattpocockuk",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-10 21:08:36 UTC converted to Asia/Seoul",
+      "url": "https://x.com/mattpocockuk/status/2120262371075670256",
+      "title": "A reply on worktrees for parallel changes",
+      "category": "Case studies",
+      "evidence": "Asked how to work on parallel features in one repository, the author replied that they use worktrees inside each clone. The reply does not describe locking or conflict handling.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "2120274646348030270",
+      "kind": "X",
+      "author": "@mattpocockuk",
+      "date": "2026-11-11",
+      "date_basis": "Post time 2026-11-10 21:57:23 UTC converted to Asia/Seoul",
+      "url": "https://x.com/mattpocockuk/status/2120274646348030270",
+      "title": "A reply on cross-repository issues",
+      "category": "Case studies",
+      "evidence": "Asked where to record how changes across repositories fit together, the author says cross-repository issues live in the home repository.",
+      "evidence_kind": "self_report",
+      "review_scope": "Original post, conversation context and publication time",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "claude-code-instruction-loading",
+      "kind": "Web",
+      "author": "Anthropic",
+      "date": null,
+      "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+      "url": "https://code.claude.com/docs/en/memory",
+      "title": "Claude Code instruction-file and additional-directory conditions",
+      "category": "Tools",
+      "evidence": "The official docs say the default reads CLAUDE.md files instead of AGENTS.md when a CLAUDE.md or CLAUDE.local.md exists in the working path. CLAUDE.md in additional directories is not loaded by default. Version, settings and exceptions matter.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Default AGENTS.md versus CLAUDE.md selection, added-directory loading, and Windows linking guidance",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "claude-code-skills-loading",
+      "kind": "Web",
+      "author": "Anthropic",
+      "date": null,
+      "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+      "url": "https://code.claude.com/docs/en/skills",
+      "title": "Claude Code skill locations and on-demand content loading",
+      "category": "Tools",
+      "evidence": "The official docs say ordinary sessions include skill descriptions in context and load full content when invoked. Preloaded subagent skills differ. Skills and instruction files in an added directory follow different loading rules.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Personal, project and added-directory skills; ordinary-session and subagent loading conditions",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "codex-instruction-discovery",
+      "kind": "Web",
+      "author": "OpenAI",
+      "date": null,
+      "date_basis": "Original publication date of official documentation unknown; contents checked on 2026-11-12",
+      "url": "https://developers.openai.com/codex/guides/agents-md",
+      "title": "Codex global and project instruction discovery",
+      "category": "Tools",
+      "evidence": "The official docs describe combining global guidance with AGENTS.md files from the project root down to the current working directory at startup. Knowing a separate repository path from a home repository does not establish that its instructions were loaded.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Global and project instruction discovery down to the working directory at session start",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "github-cartographer-shared-wiki",
+      "kind": "GitHub",
+      "author": "BeppeTemp/cartographer contributors",
+      "date": null,
+      "date_basis": "Original README publication date unknown; reviewed revision 2026-11-09 14:47:54 UTC converted to Asia/Seoul",
+      "url": "https://github.com/BeppeTemp/cartographer",
+      "title": "Cartographer combines a Git-backed wiki with agent configuration delivery",
+      "category": "Tools",
+      "evidence": "The README describes a Git-backed knowledge base, MCP server and configuration delivery to clients including Claude Code and Codex. It lists Gitea as a Git-host option and describes token roles per knowledge base. It is pre-1.0 and was not run.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Pinned README revision: storage and client support, stated access controls and version limits",
+      "revision": "6352f2ee78b810e98707dca2c8bfedc4dc492255",
+      "revised": "2026-11-09",
+      "snapshot_url": "https://github.com/BeppeTemp/cartographer/blob/6352f2ee78b810e98707dca2c8bfedc4dc492255/README.md",
+      "checked": "2026-11-12"
+    },
+    {
+      "id": "github-skill-sync-shared",
+      "kind": "GitHub",
+      "author": "TreatTrick/skill-sync contributors",
+      "date": null,
+      "date_basis": "Original README publication date unknown; reviewed revision 2026-08-21 11:01:54 UTC converted to Asia/Seoul",
+      "url": "https://github.com/TreatTrick/skill-sync",
+      "title": "Skill Sync for user-level skills through GitHub",
+      "category": "Tools",
+      "evidence": "The v1 README describes previewing and resolving conflicts before syncing user-level Claude Code, Codex and shared skills through a GitHub repository. Project-level and custom roots are excluded; the Windows installer is unsigned. We did not run it.",
+      "evidence_kind": "vendor_report",
+      "review_scope": "Pinned README revision: synchronization, conflicts, supported roots and Windows condition",
+      "revision": "da2f3a4c3f665b45add40b8ca18b8416d75fae7f",
+      "revised": "2026-08-21",
+      "snapshot_url": "https://github.com/TreatTrick/skill-sync/blob/da2f3a4c3f665b45add40b8ca18b8416d75fae7f/README.md",
+      "checked": "2026-11-12"
     }
   ],
   "methods": [
@@ -2078,6 +2280,27 @@
         "2118958843501920268",
         "anthropic-output-styles"
       ]
+    },
+    {
+      "id": "shared-guidance",
+      "title": "Connect shared guidance with project rules",
+      "kind": "editorial_recommendation",
+      "action": "Choose a canonical source for shared skills and keep project-specific rules near each project. Check the source and version of guidance and skills actually used in a session.",
+      "limit": "Handle conflicting edits across PCs and changes to active requests. Do not assume a home repository or shared wiki automatically loads project instructions or restricts file access. Loading conditions differ by tool, and the published examples were not reproduced.",
+      "sources": [
+        "2120260969750540327",
+        "2120488589750579646",
+        "2120529839107276803",
+        "2120534567006450041",
+        "2120488255074517383",
+        "2120446713781481544",
+        "2120449526674993463",
+        "claude-code-instruction-loading",
+        "claude-code-skills-loading",
+        "codex-instruction-discovery",
+        "github-cartographer-shared-wiki",
+        "github-skill-sync-shared"
+      ]
     }
   ],
   "recipes": [
@@ -2196,7 +2419,7 @@
         "2113677798774898773",
         "2066657032938442833"
       ],
-      "text": "01 / START HERE\nFour ideas to take with you\n\nThese are editorial recommendations drawn from comparing several sources. They do not require a particular model or plugin.\n\nIntent\nShare the goal\nand the acceptance criteria\n\nAdd reproduction steps, expected results, and boundaries to “fix this.” Specify the working method only as far as needed.\n\nBoris’s three questions · 2026-10-07 KST ↗\n\nEnvironment\nUse structure to\nreduce recurring mistakes\n\nBefore adding more instructions, see whether types, API boundaries, quick checks, or execution tools can prevent the mistake.\n\npoteto’s /correct · 2026-10-04 KST ↗\n\nEvidence\nSupport completion reports\nwith execution evidence\n\nDistinguish changed code, the version actually running, and observed behavior. A single screenshot does not justify broader claims.\n\nAddy’s verification evidence · 2026-10-24 KST ↗\n\nJudgment\nPeople should examine\nthe important assumptions\n\nDeveloper context and judgment are needed to decide whether this is the right product and where performance, compatibility, and permissions matter.\n\nWhat Mitchell means by “works” · 2026-06-16 KST ↗\n\nSuggested reading order: Browse the comparisons and 16 patterns, then choose a task and try the application guide and prompts. In the source library, filter recent posts to the 30 days before the research cutoff."
+      "text": "01 / START HERE\nFour ideas to take with you\n\nThese are editorial recommendations drawn from comparing several sources. They do not require a particular model or plugin.\n\nIntent\nShare the goal\nand the acceptance criteria\n\nAdd reproduction steps, expected results, and boundaries to “fix this.” Specify the working method only as far as needed.\n\nBoris’s three questions · 2026-10-07 KST ↗\n\nEnvironment\nUse structure to\nreduce recurring mistakes\n\nBefore adding more instructions, see whether types, API boundaries, quick checks, or execution tools can prevent the mistake.\n\npoteto’s /correct · 2026-10-04 KST ↗\n\nEvidence\nSupport completion reports\nwith execution evidence\n\nDistinguish changed code, the version actually running, and observed behavior. A single screenshot does not justify broader claims.\n\nAddy’s verification evidence · 2026-10-24 KST ↗\n\nJudgment\nPeople should examine\nthe important assumptions\n\nDeveloper context and judgment are needed to decide whether this is the right product and where performance, compatibility, and permissions matter.\n\nWhat Mitchell means by “works” · 2026-06-16 KST ↗\n\nSuggested reading order: Browse the comparisons and 17 patterns, then choose a task and try the application guide and prompts. In the source library, filter recent posts to the 30 days before the research cutoff."
     },
     {
       "id": "02-precedents",
@@ -2294,6 +2517,20 @@
       "id": "11-updates",
       "kind": "editorial_synthesis",
       "source_ids": [
+        "2120260969750540327",
+        "2120488589750579646",
+        "2120529839107276803",
+        "2120534567006450041",
+        "2120488255074517383",
+        "2120446713781481544",
+        "2120449526674993463",
+        "2120262371075670256",
+        "2120274646348030270",
+        "codex-instruction-discovery",
+        "claude-code-instruction-loading",
+        "claude-code-skills-loading",
+        "github-cartographer-shared-wiki",
+        "github-skill-sync-shared",
         "github-openspec-v2-0-0",
         "github-openspec-v1-17-0",
         "2120375285724123578",
@@ -2344,7 +2581,7 @@
         "2118958843501920268",
         "anthropic-output-styles"
       ],
-      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nNew findings reviewed on 2026-11-12\n\n2026-11-12 KST · OPENSPEC 2.0\nSave edited skills before updating\n\nOpenSpec 2.0 removed the /opsx:* commands as previously announced and introduced a shared .agents/skills/ directory. For example, it says to use /openspec-propose instead of /opsx:propose, or $openspec-propose in Codex.\n\nThe release notes say edited generated files in old locations are kept, but openspec update overwrites skills edited directly in the shared directory. Save those edits and inspect the --dry-run before migrating. We did not run the update.\n\n2.0 release · 2026-11-12 ↗ 1.17.0 announcement · 2026-11-10 ↗\n\n2026-11-11 KST · X\nSingle-task speed and multi-task throughput\n\npoteto says verification can make one session take longer, but less handholding lets them run multiple large projects simultaneously.\n\nAnother user prefers selective use on larger tasks, while another reports substantial quota consumption. These are personal experiences. Compare single-task time, work completed per interval, human involvement and total usage separately on comparable tasks.\n\npoteto’s explanation · 2026-11-11 KST ↗ Selective-use view · 2026-11-11 KST ↗ Quota experience · 2026-11-11 KST ↗\n\n2026-11-08 / 11-12 KST · GITHUB / REDDIT\nWork separation and access control differ\n\nOne Codex user reports that an agent recursively searched a parent directory, attempting to reach sibling worktrees. Whether other instructions were actually applied is unverified. Set a separate filesystem access boundary, and check search attempts and actual context leakage separately.\n\nAnother maker describes coordinating agents in the same project with a lock before file changes. The paid beta is macOS Apple Silicon only. We did not verify which edit paths respect the lock or whether it is released after an interruption.\n\nCodex user report · 2026-11-08 ↗ Proposed check · 2026-11-09 ↗ File-lock beta introduction · 2026-11-12 ↗\n\nNew findings reviewed on 2026-11-11\n\n2026-11-11 KST · REDDIT / GITHUB\nA multi-agent task board and its permissions\n\nThe maker of AI Agent Workspace describes a local app that manages Claude Code, Codex and other tasks as cards with branches and worktrees. Its detailed docs say separate worktrees are off by default per project, and automatic merge can be controlled per project or task.\n\nThe security docs say its control token grants authority equivalent to host file access and command execution, without per-operator roles. We did not run it to verify Gitea integration or recovery across PCs.\n\nMaker’s post · 2026-11-11 ↗ README · Document revised 2026-11-11 KST ↗ Isolation and merge docs · Document revised 2026-11-11 KST ↗ Permission docs · Document revised 2026-11-11 KST ↗\n\nEXPERIMENT 2026-11-02 UTC · GITHUB\nWhat does handoff success measure?\n\nThe Stint makers compared handoff packets, transcripts and task-plus-diff from the same starting point. Held-out tests passed for all three methods, but the tool’s own gate counts differed. The table below shows ten runs per method.\n\nThe difference came from a rule for recording locked-test changes. In a separate comparison on two unfinished tasks, all four methods passed held-out tests and the packet cost the most in that small sample. Neither result establishes a universal winner.\n\nShared-start experiment · Document revised 2026-11-04 KST ↗ Unfinished-task follow-up · Document revised 2026-11-04 KST ↗\n\n2026-11-11 KST · X\nAllocating model costs after merge\n\nIn a discussion about post-merge review, Mitchell Hashimoto described his team’s custom context. Expensive models handle nightly checks; cheaper models handle more frequent checks and decisions that may escalate to a stronger model.\n\nThis is one team’s experience, not a comparative study of cost and accuracy. Do not assume post-merge review replaces pre-merge checks or deployment controls.\n\nPost-merge review question · 2026-11-11 KST ↗ Mitchell’s reply · 2026-11-11 KST ↗\n\nThe Stint makers’ comparison on November 2 UTC: five tasks × two runs per method. Held-out tests and the tool’s gate measure different things.\nHandoff methodPassed held-out testsPassed tool gate\nHandoff packet10 / 10\n10 / 10\n\nTranscript10 / 10\n7 / 10\n\nTask and diff10 / 10\n4 / 10\n\nFour of the five initial runs had already passed held-out tests before handoff. The gate difference does not establish a difference in code quality. The makers used one example environment; we did not reproduce the results.\n\nNew findings reviewed on 2026-11-10\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\nQueued messages and email-check changes\n\nThe release notes report fixes for Remote Control Queue for later messages arriving mid-turn, some background reports lost during compaction in auto mode, and MCP OAuth secrets sent to another host after redirects.\n\nThey say the account-email check now refuses only shell commands containing the email and a User-Agent reference, without a prompt. That does not establish other protections or removal from model context. We did not reproduce the behavior in a user environment.\n\n2.1.321 release · 2026-11-10 ↗ Changelog comparison · Document revised 2026-11-10 KST ↗ Privacy mod · Document revised 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\nConditions for updating specs\n\nThe release notes say projects from 0.12 onward can be updated in one run, removing unedited generated files while preserving edited ones.\n\nAt the time, 2.0 was planned to remove command files and retain skills. The later 2.0 release adds a warning about overwriting edits made directly in the shared skill directory. This guide did not run the update.\n\n1.17.0 release · 2026-11-10 ↗ 2.0 release · 2026-11-12 ↗ Previous release · 2026-11-07 ↗ OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-09 RELEASE DATE · 11-10 KST COMMENT\nToken prices can differ from cost per task\n\nAn Anthropic team member says internal tests tended to show Fable 5.2 costing roughly the same as 5.1 per task: it used more tokens despite 20% lower token pricing. The task mix and variance were not disclosed.\n\nThe official API docs also list restrictions on some forced tool_choice types and data retention. Do not equate API prices with subscription usage; compare on actual tasks.\n\nTeam member’s cost explanation · 2026-11-10 KST ↗ Official API conditions · 2026-11-09 ↗\n\n2026-11-09 KST · X\nMeasure the proposed savings from deterministic checks\n\nIn response to a usage-limit concern, poteto predicted that running checks as code instead of through an agent could save tokens over time.\n\nNo comparative savings experiment was supplied. Compare maintenance, failure investigation and execution time as well as the initial creation cost on actual work.\n\nUsage concern · 2026-11-09 KST ↗ poteto’s reply · 2026-11-09 KST ↗ Related verification proposal · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\nA solo example linking decisions to implementation\n\nA developer describes splitting work into PM, Lead and worker roles and linking decision IDs to implementing code. Another agent attempts to disprove review findings.\n\nThe documentation checker verifies paths and IDs but cannot detect omitted content. This is a solo project, not verification of multi-person conflict handling.\n\nDeveloper’s example · 2026-11-10 ↗ Process and audit docs · Document revised 2026-11-10 KST ↗\n\n2026-11-09 DOCUMENT REVISION · AETHER\nCompletion and input-request notifications documented\n\nThe new README describes alerts when a chat that is not being viewed completes or needs input. An optional webhook, off by default, is described as sending title, body, chat and state.\n\nThis documentation revision is newer than the existing alpha release. We did not run it or verify inclusion in that build or recovery across PCs.\n\nRevised docs · Document revised 2026-11-09 KST ↗ Existing alpha release · 2026-11-08 ↗ Maker’s introduction · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-09\n\n2026-11-09 KST · X / PSTACK\nAfter finding hidden states\n\nQuoting Steve Ruiz’s prompt to find implicit state machines, poteto suggests creating a formal-verification skill per subsystem and drawing statecharts for important user flows. This can also be read alongside Trevin’s existing investigation prompt.\n\nCheck the model’s assumptions, bounds and correspondence to actual code. Checking a bounded model does not prove the whole product.\n\nQuoted prompt · 2026-11-01 KST ↗ poteto’s follow-up · 2026-11-09 KST ↗ Trevin’s investigation prompt · 2026-11-06 KST ↗ pstack source · Document revised 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\nWork in progress and evidence\n\nAddy Osmani suggests defining each task’s goal, constraints and completion evidence, and splitting work into non-overlapping slices. He recommends watching the amount of work a person can review, as well as rework and reversions.\n\nOne Reddit commenter suggests checking delegated results in a separate context and leaving unverified work open. Neither is a study establishing a universal optimum for task count or method.\n\nAddy’s article · 2026-11-08 KST ↗ Independent-check viewpoint · 2026-11-08 ↗ Earlier layered verification · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether delegation and open questions\n\nThe maker describes an app for managing Claude Code, Codex and other chats in one workspace, with a lead chat able to spawn, read, message and stop child agents. Another commenter raises connecting existing CLIs as an alternative.\n\nThe alpha release includes a Windows ZIP, but the README’s platform overview differs. We did not run it or verify concurrent collaboration and recovery across PCs.\n\nMaker’s post · 2026-11-08 ↗ Documentation · Document revised 2026-11-09 KST ↗ Alpha release · 2026-11-08 ↗ CLI alternative viewpoint · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-08\n\n2026-11-06 DOCUMENT REVISION · CLAUDE CODE\nScope of the privacy mod\n\nOur previous edition described the changelog and team member’s account of checks for web or shell calls. The newly reviewed public cc-plugin-privacy documentation says this mod checks only some shell inputs, excluding WebFetch, WebSearch, MCP and values inside scripts.\n\nThe descriptions have different scopes. This mod’s documentation alone does not establish what other protections or the whole product actually do.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-10 KST ↗ Mod source · Document revised 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nWhere to start after compaction\n\nThe Neo.mjs example checks messages, outgoing commitments and recent activity first, then compares related decisions with current issues and branches. It records degraded confidence when checks are missing.\n\nAnother user suggests short notes that surface refusals early so stale work is not revived. These are examples and opinions, not a comparative experiment.\n\nReddit post · 2026-11-08 ↗ Recovery procedure · Document revised 2026-10-30 KST ↗ Comment · 2026-11-08 ↗ Earlier handoff discussion · 2026-11-06 ↗\n\nRECORDED 2026-11-02 · SKILL EVAL\nCompare before keeping a skill\n\nIn a small report, twelve of sixteen counted skills scored above same-length placebo text on at least one of three text tasks and below it on none. The same Haiku model generated and graded answers.\n\nBeating placebo does not establish an advantage over no skill. Test poteto’s prediction of shorter skills on actual work too.\n\nEvaluation · Document revised 2026-11-05 KST ↗ poteto’s prediction · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\nHandling changes that could lose requirements\n\nThe 1.16.1 release says that requirements under an unrecognized delta section, previously warned about and potentially dropped during archive, now cause validation to fail and archive to refuse the change.\n\nCheck the version and actual result. This guide did not run the tool.\n\nRelease notes · 2026-11-07 ↗ Existing OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-06–07 KST · X\nHidden states and suspected bugs\n\nTrevin proposes examining implicit states and transitions, retries and concurrency, with evidence of reachable execution paths. One reply warns that AI can also report things that are not bugs.\n\nCheck requirements and actual paths, and follow the repository’s rules for changes and tests.\n\nOriginal prompt · 2026-11-06 KST ↗ Counterpoint · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\nShort answers have a scope too\n\nConcise is an output style for shorter default responses. The official docs say it requires Claude Code 2.1.237 or later and applies to the main conversation and forks, but not separate subagents.\n\nAsk separately for the evidence and details you need.\n\nTeam member post · 2026-11-07 KST ↗ Official docs · Publication date unknown ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
+      "text": "11 / HUMAN + AGENT\nA guide people can read\nand the next agent can build on\n\nDiscoverPeriod · queries · platforms\n\nCheck originalsAuthor · date · context\n\nCompareExisting claims · counterevidence · changes\n\nAssess useConditions · costs · limits\n\nRecordSources · changelog · Git\n\nAdditional research on 2026-11-12 · Shared guidance across PCs\n\n2026-11-11–12 KST · X\nFrom a home repository to a wiki server\n\nMatt Pocock describes starting agents in a home repository that contains shared skills and instructions, with pointers to other repositories. Viking describes a similar common entry point.\n\nAfter finding repository synchronization cumbersome across PCs, eiaserinnys says a dashboard injects wiki-server guidance according to the agent profile. In a follow-up, the author says they reduced the many available skills and use a skill for searching skills. The public posts do not establish the server implementation or search accuracy.\n\nMatt’s post · 2026-11-11 KST ↗ Viking’s quote · 2026-11-11 KST ↗ Wiki-server experience · 2026-11-11 KST ↗ Skill-search reply · 2026-11-12 KST ↗\n\n2026-11-11 KST · X\nAn alternative: start in each project\n\nAnother user says starting at home led to unnecessary exploration of other repositories, so they start in each isolated repository and refer to relevant shared guidance. Another comment proposes keeping project-only scripts and restricted areas in a local AGENTS.md; Matt agreed.\n\nMatt says he uses worktrees for parallel changes within a repository and keeps cross-repository issues in the home repository. Sharing instructions alone does not resolve edit conflicts or restrict access.\n\nCounterexample · 2026-11-11 KST ↗ Project-rule proposal · 2026-11-11 KST ↗ Matt’s agreement · 2026-11-11 KST ↗ Worktree reply · 2026-11-11 KST ↗ Cross-repository issues reply · 2026-11-11 KST ↗\n\nCHECKED 2026-11-12 · OFFICIAL DOCS\nPointing to a folder does not prove loading\n\nCodex docs describe loading global instructions and project instructions from the repository root down to the working directory at session start. By default, Claude Code reads project CLAUDE.md files instead of AGENTS.md when a project CLAUDE.md or CLAUDE.local.md exists in the working path. Versions and settings matter.\n\nClaude Code’s --add-dir loads skills in the added directory but does not load its CLAUDE.md by default. Ordinary sessions load skill descriptions first and full content when invoked; preloaded subagent skills are different.\n\nCodex instruction docs · Publication date unknown ↗ Claude instruction docs · Publication date unknown ↗ Claude skill docs · Publication date unknown ↗\n\nThree ways to connect shared guidance. The conditions are editorial comparisons.\nApproachAgent starting pointCondition to check\nHome repositoryRepository with shared guidance\nTarget-project rules and access scope\n\nProject-firstTarget project or worktree\nWhether needed shared guidance actually loaded\n\nWiki server and profileSession receiving profile-based guidance\nApplied version, concurrent edits, failures and access\n\nShared guidance spreads working practices. Issue coordination, edit conflicts and filesystem access controls require separate design and verification.\n\n2026-11-09 DOCUMENT REVISION · GITHUB\nCartographer: a wiki and client configuration\n\nThe README describes a Git-backed wiki and MCP server delivering guidance and skills to clients including Claude Code and Codex. It lists Gitea as a Git-host option and describes token roles per knowledge base.\n\nIt is pre-1.0. It can create or update client configuration, so inspect its targets and conflict handling. We did not test Gitea, multi-PC or Roundtable integration or access controls.\n\nREADME · Document revised 2026-11-09 KST ↗\n\n2026-08-21 DOCUMENT REVISION · GITHUB\nSkill Sync: skills through GitHub\n\nThe README describes previewing user-level skill changes through a GitHub repository and choosing how to resolve conflicts before applying. It says v1 excludes project-level skills and custom roots.\n\nThe Windows installer is documented as unsigned. Do not assume it is a Gitea alternative or syncs all guidance. We did not install it or test sync and conflict recovery.\n\nREADME · Document revised 2026-08-21 KST ↗\n\nNew findings reviewed on 2026-11-12\n\n2026-11-12 KST · OPENSPEC 2.0\nSave edited skills before updating\n\nOpenSpec 2.0 removed the /opsx:* commands as previously announced and introduced a shared .agents/skills/ directory. For example, it says to use /openspec-propose instead of /opsx:propose, or $openspec-propose in Codex.\n\nThe release notes say edited generated files in old locations are kept, but openspec update overwrites skills edited directly in the shared directory. Save those edits and inspect the --dry-run before migrating. We did not run the update.\n\n2.0 release · 2026-11-12 ↗ 1.17.0 announcement · 2026-11-10 ↗\n\n2026-11-11 KST · X\nSingle-task speed and multi-task throughput\n\npoteto says verification can make one session take longer, but less handholding lets them run multiple large projects simultaneously.\n\nAnother user prefers selective use on larger tasks, while another reports substantial quota consumption. These are personal experiences. Compare single-task time, work completed per interval, human involvement and total usage separately on comparable tasks.\n\npoteto’s explanation · 2026-11-11 KST ↗ Selective-use view · 2026-11-11 KST ↗ Quota experience · 2026-11-11 KST ↗\n\n2026-11-08 / 11-12 KST · GITHUB / REDDIT\nWork separation and access control differ\n\nOne Codex user reports that an agent recursively searched a parent directory, attempting to reach sibling worktrees. Whether other instructions were actually applied is unverified. Set a separate filesystem access boundary, and check search attempts and actual context leakage separately.\n\nAnother maker describes coordinating agents in the same project with a lock before file changes. The paid beta is macOS Apple Silicon only. We did not verify which edit paths respect the lock or whether it is released after an interruption.\n\nCodex user report · 2026-11-08 ↗ Proposed check · 2026-11-09 ↗ File-lock beta introduction · 2026-11-12 ↗\n\nNew findings reviewed on 2026-11-11\n\n2026-11-11 KST · REDDIT / GITHUB\nA multi-agent task board and its permissions\n\nThe maker of AI Agent Workspace describes a local app that manages Claude Code, Codex and other tasks as cards with branches and worktrees. Its detailed docs say separate worktrees are off by default per project, and automatic merge can be controlled per project or task.\n\nThe security docs say its control token grants authority equivalent to host file access and command execution, without per-operator roles. We did not run it to verify Gitea integration or recovery across PCs.\n\nMaker’s post · 2026-11-11 ↗ README · Document revised 2026-11-11 KST ↗ Isolation and merge docs · Document revised 2026-11-11 KST ↗ Permission docs · Document revised 2026-11-11 KST ↗\n\nEXPERIMENT 2026-11-02 UTC · GITHUB\nWhat does handoff success measure?\n\nThe Stint makers compared handoff packets, transcripts and task-plus-diff from the same starting point. Held-out tests passed for all three methods, but the tool’s own gate counts differed. The table below shows ten runs per method.\n\nThe difference came from a rule for recording locked-test changes. In a separate comparison on two unfinished tasks, all four methods passed held-out tests and the packet cost the most in that small sample. Neither result establishes a universal winner.\n\nShared-start experiment · Document revised 2026-11-04 KST ↗ Unfinished-task follow-up · Document revised 2026-11-04 KST ↗\n\n2026-11-11 KST · X\nAllocating model costs after merge\n\nIn a discussion about post-merge review, Mitchell Hashimoto described his team’s custom context. Expensive models handle nightly checks; cheaper models handle more frequent checks and decisions that may escalate to a stronger model.\n\nThis is one team’s experience, not a comparative study of cost and accuracy. Do not assume post-merge review replaces pre-merge checks or deployment controls.\n\nPost-merge review question · 2026-11-11 KST ↗ Mitchell’s reply · 2026-11-11 KST ↗\n\nThe Stint makers’ comparison on November 2 UTC: five tasks × two runs per method. Held-out tests and the tool’s gate measure different things.\nHandoff methodPassed held-out testsPassed tool gate\nHandoff packet10 / 10\n10 / 10\n\nTranscript10 / 10\n7 / 10\n\nTask and diff10 / 10\n4 / 10\n\nFour of the five initial runs had already passed held-out tests before handoff. The gate difference does not establish a difference in code quality. The makers used one example environment; we did not reproduce the results.\n\nNew findings reviewed on 2026-11-10\n\n2026-11-10 KST · CLAUDE CODE 2.1.321\nQueued messages and email-check changes\n\nThe release notes report fixes for Remote Control Queue for later messages arriving mid-turn, some background reports lost during compaction in auto mode, and MCP OAuth secrets sent to another host after redirects.\n\nThey say the account-email check now refuses only shell commands containing the email and a User-Agent reference, without a prompt. That does not establish other protections or removal from model context. We did not reproduce the behavior in a user environment.\n\n2.1.321 release · 2026-11-10 ↗ Changelog comparison · Document revised 2026-11-10 KST ↗ Privacy mod · Document revised 2026-11-06 KST ↗\n\n2026-11-10 KST · OPENSPEC 1.17.0\nConditions for updating specs\n\nThe release notes say projects from 0.12 onward can be updated in one run, removing unedited generated files while preserving edited ones.\n\nAt the time, 2.0 was planned to remove command files and retain skills. The later 2.0 release adds a warning about overwriting edits made directly in the shared skill directory. This guide did not run the update.\n\n1.17.0 release · 2026-11-10 ↗ 2.0 release · 2026-11-12 ↗ Previous release · 2026-11-07 ↗ OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-09 RELEASE DATE · 11-10 KST COMMENT\nToken prices can differ from cost per task\n\nAn Anthropic team member says internal tests tended to show Fable 5.2 costing roughly the same as 5.1 per task: it used more tokens despite 20% lower token pricing. The task mix and variance were not disclosed.\n\nThe official API docs also list restrictions on some forced tool_choice types and data retention. Do not equate API prices with subscription usage; compare on actual tasks.\n\nTeam member’s cost explanation · 2026-11-10 KST ↗ Official API conditions · 2026-11-09 ↗\n\n2026-11-09 KST · X\nMeasure the proposed savings from deterministic checks\n\nIn response to a usage-limit concern, poteto predicted that running checks as code instead of through an agent could save tokens over time.\n\nNo comparative savings experiment was supplied. Compare maintenance, failure investigation and execution time as well as the initial creation cost on actual work.\n\nUsage concern · 2026-11-09 KST ↗ poteto’s reply · 2026-11-09 KST ↗ Related verification proposal · 2026-11-09 KST ↗\n\n2026-11-10 KST · REDDIT / GITHUB\nA solo example linking decisions to implementation\n\nA developer describes splitting work into PM, Lead and worker roles and linking decision IDs to implementing code. Another agent attempts to disprove review findings.\n\nThe documentation checker verifies paths and IDs but cannot detect omitted content. This is a solo project, not verification of multi-person conflict handling.\n\nDeveloper’s example · 2026-11-10 ↗ Process and audit docs · Document revised 2026-11-10 KST ↗\n\n2026-11-09 DOCUMENT REVISION · AETHER\nCompletion and input-request notifications documented\n\nThe new README describes alerts when a chat that is not being viewed completes or needs input. An optional webhook, off by default, is described as sending title, body, chat and state.\n\nThis documentation revision is newer than the existing alpha release. We did not run it or verify inclusion in that build or recovery across PCs.\n\nRevised docs · Document revised 2026-11-09 KST ↗ Existing alpha release · 2026-11-08 ↗ Maker’s introduction · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-09\n\n2026-11-09 KST · X / PSTACK\nAfter finding hidden states\n\nQuoting Steve Ruiz’s prompt to find implicit state machines, poteto suggests creating a formal-verification skill per subsystem and drawing statecharts for important user flows. This can also be read alongside Trevin’s existing investigation prompt.\n\nCheck the model’s assumptions, bounds and correspondence to actual code. Checking a bounded model does not prove the whole product.\n\nQuoted prompt · 2026-11-01 KST ↗ poteto’s follow-up · 2026-11-09 KST ↗ Trevin’s investigation prompt · 2026-11-06 KST ↗ pstack source · Document revised 2026-10-28 KST ↗\n\n2026-11-08 KST · X / REDDIT\nWork in progress and evidence\n\nAddy Osmani suggests defining each task’s goal, constraints and completion evidence, and splitting work into non-overlapping slices. He recommends watching the amount of work a person can review, as well as rework and reversions.\n\nOne Reddit commenter suggests checking delegated results in a separate context and leaving unverified work open. Neither is a study establishing a universal optimum for task count or method.\n\nAddy’s article · 2026-11-08 KST ↗ Independent-check viewpoint · 2026-11-08 ↗ Earlier layered verification · 2026-10-18 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nAether delegation and open questions\n\nThe maker describes an app for managing Claude Code, Codex and other chats in one workspace, with a lead chat able to spawn, read, message and stop child agents. Another commenter raises connecting existing CLIs as an alternative.\n\nThe alpha release includes a Windows ZIP, but the README’s platform overview differs. We did not run it or verify concurrent collaboration and recovery across PCs.\n\nMaker’s post · 2026-11-08 ↗ Documentation · Document revised 2026-11-09 KST ↗ Alpha release · 2026-11-08 ↗ CLI alternative viewpoint · 2026-11-08 ↗\n\nNew findings reviewed on 2026-11-08\n\n2026-11-06 DOCUMENT REVISION · CLAUDE CODE\nScope of the privacy mod\n\nOur previous edition described the changelog and team member’s account of checks for web or shell calls. The newly reviewed public cc-plugin-privacy documentation says this mod checks only some shell inputs, excluding WebFetch, WebSearch, MCP and values inside scripts.\n\nThe descriptions have different scopes. This mod’s documentation alone does not establish what other protections or the whole product actually do.\n\nUser report · 2026-11-06 ↗ Team member’s explanation · 2026-11-07 KST ↗ Changelog · Document revised 2026-11-10 KST ↗ Mod source · Document revised 2026-11-06 KST ↗\n\n2026-11-08 KST · REDDIT / GITHUB\nWhere to start after compaction\n\nThe Neo.mjs example checks messages, outgoing commitments and recent activity first, then compares related decisions with current issues and branches. It records degraded confidence when checks are missing.\n\nAnother user suggests short notes that surface refusals early so stale work is not revived. These are examples and opinions, not a comparative experiment.\n\nReddit post · 2026-11-08 ↗ Recovery procedure · Document revised 2026-10-30 KST ↗ Comment · 2026-11-08 ↗ Earlier handoff discussion · 2026-11-06 ↗\n\nRECORDED 2026-11-02 · SKILL EVAL\nCompare before keeping a skill\n\nIn a small report, twelve of sixteen counted skills scored above same-length placebo text on at least one of three text tasks and below it on none. The same Haiku model generated and graded answers.\n\nBeating placebo does not establish an advantage over no skill. Test poteto’s prediction of shorter skills on actual work too.\n\nEvaluation · Document revised 2026-11-05 KST ↗ poteto’s prediction · 2026-11-07 KST ↗\n\n2026-11-07 KST · OPENSPEC\nHandling changes that could lose requirements\n\nThe 1.16.1 release says that requirements under an unrecognized delta section, previously warned about and potentially dropped during archive, now cause validation to fail and archive to refuse the change.\n\nCheck the version and actual result. This guide did not run the tool.\n\nRelease notes · 2026-11-07 ↗ Existing OpenSpec source · Document revised 2026-10-31 KST ↗\n\n2026-11-06–07 KST · X\nHidden states and suspected bugs\n\nTrevin proposes examining implicit states and transitions, retries and concurrency, with evidence of reachable execution paths. One reply warns that AI can also report things that are not bugs.\n\nCheck requirements and actual paths, and follow the repository’s rules for changes and tests.\n\nOriginal prompt · 2026-11-06 KST ↗ Counterpoint · 2026-11-07 KST ↗\n\n2026-11-07 KST · CLAUDE CODE\nShort answers have a scope too\n\nConcise is an output style for shorter default responses. The official docs say it requires Claude Code 2.1.237 or later and applies to the main conversation and forks, but not separate subagents.\n\nAsk separately for the evidence and details you need.\n\nTeam member post · 2026-11-07 KST ↗ Official docs · Publication date unknown ↗\n\nFor people\nRead and explore the HTML\n\nUse topic comparisons, timelines, the task chooser, prompts and source cards. Saving this file is enough to retain its content and navigation features.\n\nFor the next agent\nStable IDs and structured handoffs\n\nPass sources, dates, claims and conditions as JSON. The next agent can extend the material while keeping source information separate from editorial judgment.\n\nHandoff Markdown ↗ · Full research JSON ↗\n\nRecord new material, corrections to existing explanations, and unresolved questions separately. Do not discard principles simply because they are old. Recheck advice that depends on particular models or tools.\n\nThe user has authorized a daily workflow at 09:00 Asia/Seoul: research new and changed material on X, Reddit and GitHub, remove duplicates, update the Korean and English editions together, push to main, and update GitHub Pages.\n\nThe recurring automation is registered and active in the Codex desktop app. Local execution requires the computer and app to remain running. Registration does not establish that a future scheduled run has completed successfully.\n\nChangelog ↗Research and update process ↗Agent instructions ↗"
     }
   ],
   "reviewed_batches": [
@@ -3695,6 +3932,354 @@
           "같은 과제에서 단일 작업 지연, 검토·재작업과 병렬 처리량 및 사용량은 어떻게 달라지는가?",
           "서로 다른 PC와 편집 경로에서 잠금 복구와 접근 경계가 어떻게 동작하는가?",
           "OpenSpec 2.0 업그레이드에서 사용자별 수정분 보존은 실제로 어떻게 동작하는가?"
+        ],
+        "publishing_status": "reviewed_for_publication"
+      }
+    },
+    {
+      "path": "research/batches/2026-11-12-shared-agent-guidance.json",
+      "data": {
+        "schema_version": 1,
+        "topic": "여러 PC와 저장소의 공통 지침·스킬 관리",
+        "as_of": "2026-11-12",
+        "timezone": "Asia/Seoul",
+        "scope": "사용자가 지정한 2026-11-11 KST X 글과 인용 원문·후속 답글, 저장소별 진입 반론, 공식 도구 문서와 비교 가능한 GitHub 프로젝트를 조사했다. GitHub 문서는 최초 게시일이 아니라 확인한 README 개정 시각을 별도로 기록했다.",
+        "findings": [
+          {
+            "source_id": "2120260969750540327",
+            "original_url": "https://x.com/mattpocockuk/status/2120260969750540327",
+            "author": "@mattpocockuk",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 21:03:02 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "홈 저장소에서 에이전트를 시작하고 공통 스킬과 지침, 다른 저장소의 위치를 관리한다.",
+            "editorial_takeaway": "공통 지침의 정본과 각 프로젝트의 적용 범위를 정하고 저장소별 규칙을 확인한다.",
+            "limitations": [
+              "개인 사용 사례다. 모든 프로젝트의 지침이 자동으로 로드되거나 작업 속도가 향상되는지 검증하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120488589750579646",
+              "2120488255074517383",
+              "2120446713781481544",
+              "matt-pocock-skills"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120488589750579646",
+            "original_url": "https://x.com/vikingmute/status/2120488589750579646",
+            "author": "@vikingmute",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 12:07:31 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "에이전트를 공통 start repo에서 시작하고 다른 프로젝트 위치를 문서로 안내한다.",
+            "editorial_takeaway": "공통 진입점을 쓰더라도 각 저장소의 지침과 파일 접근 권한을 별도로 확인한다.",
+            "limitations": [
+              "작성자의 경험이며 비교 실험은 아니다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327",
+              "2120529839107276803"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120529839107276803",
+            "original_url": "https://x.com/eiaserinnys/status/2120529839107276803",
+            "author": "@eiaserinnys",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 14:51:25 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 중앙 위키 서버와 대시보드의 에이전트 프로필별 지침·스킬 주입 방식을 설명한다.",
+            "editorial_takeaway": "각 세션에 어떤 버전과 프로젝트 지침이 적용됐는지 기록하고 여러 PC의 충돌과 서버 장애를 따로 검토한다.",
+            "limitations": [
+              "개인의 운영 경험이다. 서버 제품, 동기화 알고리즘, 사용량과 구현 세부는 게시물에 없다.",
+              "효과나 여러 사용자의 안전한 병렬 운영을 재현하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120488589750579646",
+              "2120534567006450041",
+              "2120260969750540327"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120534567006450041",
+            "original_url": "https://x.com/eiaserinnys/status/2120534567006450041",
+            "author": "@eiaserinnys",
+            "published_on": "2026-11-12",
+            "date_basis": "게시 시각 2026-11-11 15:10:13 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 스킬이 많아 대부분을 덜어내고 스킬 검색 스킬을 사용한다고 말한다.",
+            "editorial_takeaway": "스킬 목록과 실제 로드 내용을 구분하고 빠진 스킬을 찾을 수 있는지 직접 확인한다.",
+            "limitations": [
+              "검색 기술, 구체적인 제거 위치와 사용량 절감은 확인되지 않았다."
+            ],
+            "related_source_ids": [
+              "2120529839107276803",
+              "claude-code-skills-loading"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120488255074517383",
+            "original_url": "https://x.com/BobClowdr/status/2120488255074517383",
+            "author": "@BobClowdr",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 12:06:11 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "opinion",
+            "author_claim": "작성자는 홈에서 시작할 때 다른 저장소를 탐색한 경험을 들어 프로젝트에서 시작하는 역방향을 선호한다.",
+            "editorial_takeaway": "공통 진입과 프로젝트별 진입을 비교하고 프로젝트 밖의 접근 권한은 별도로 제한한다.",
+            "limitations": [
+              "개인 경험이며 프로젝트 진입만으로 파일 접근이 차단되는 것은 아니다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327",
+              "github-codex-issue-60189"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120446713781481544",
+            "original_url": "https://x.com/pobletedev/status/2120446713781481544",
+            "author": "@pobletedev",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 09:21:07 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "opinion",
+            "author_claim": "각 저장소에만 유효한 지침을 공통 파일과 분리하자고 제안한다.",
+            "editorial_takeaway": "공통 규칙과 프로젝트 고유 계약의 적용 범위 및 우선순위를 명시한다.",
+            "limitations": [
+              "댓글의 제안이며 실제 자동 로딩 범위는 도구·버전과 설정에 따라 다르다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327",
+              "2120449526674993463",
+              "codex-instruction-discovery"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120449526674993463",
+            "original_url": "https://x.com/mattpocockuk/status/2120449526674993463",
+            "author": "@mattpocockuk",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-11 09:32:17 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "opinion",
+            "author_claim": "홈 저장소 제안자는 저장소별 AGENTS.md를 유지하자는 의견에 동의했다.",
+            "editorial_takeaway": "홈 저장소 제안을 프로젝트의 고유 규칙 삭제 주장으로 해석하지 않는다.",
+            "limitations": [
+              "짧은 동의이며 실제 파일 구성이나 로딩 절차를 설명하지 않는다."
+            ],
+            "related_source_ids": [
+              "2120446713781481544",
+              "2120260969750540327"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120262371075670256",
+            "original_url": "https://x.com/mattpocockuk/status/2120262371075670256",
+            "author": "@mattpocockuk",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 21:08:36 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 같은 저장소의 병렬 작업에 각 클론의 worktree를 쓴다고 답했다.",
+            "editorial_takeaway": "공통 지침 공유와 작업별 브랜치·worktree 및 병합 조정을 별개의 문제로 다룬다.",
+            "limitations": [
+              "짧은 답변이며 충돌·여러 사람의 협업이나 권한 분리를 검증하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327",
+              "github-codex-issue-60189"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "2120274646348030270",
+            "original_url": "https://x.com/mattpocockuk/status/2120274646348030270",
+            "author": "@mattpocockuk",
+            "published_on": "2026-11-11",
+            "date_basis": "게시 시각 2026-11-10 21:57:23 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "X",
+            "evidence_kind": "self_report",
+            "author_claim": "작성자는 여러 저장소에 걸친 이슈를 홈 저장소에서 관리한다고 말했다.",
+            "editorial_takeaway": "공통 지침 저장소와 기존 이슈 시스템은 독립적으로 선택하며 저장소 간 변경의 연결 위치를 명시한다.",
+            "limitations": [
+              "작성자의 개인 방식이며 기존 이슈 도구를 대체해야 한다는 근거는 아니다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "claude-code-instruction-loading",
+            "original_url": "https://code.claude.com/docs/en/memory",
+            "author": "Anthropic",
+            "published_on": null,
+            "date_basis": "공식 문서의 최초 게시일 미확인. 2026-11-12에 문서 내용을 확인",
+            "checked_on": "2026-11-12",
+            "source_kind": "Web",
+            "evidence_kind": "vendor_report",
+            "author_claim": "공식 문서는 Claude Code의 지침 파일 선택, 추가 디렉터리와 Windows에서의 가져오기 조건을 설명한다.",
+            "editorial_takeaway": "실제 세션에서 어떤 지침이 로드됐는지 확인하고 공통 파일을 참조하도록 구성한다.",
+            "limitations": [
+              "문서 확인이며 특정 설치의 설정이나 실제 로딩을 시험하지 않았다.",
+              "AGENTS.md 직접 지원은 문서상 v2.1.277 이상이며 설정과 예외가 있다."
+            ],
+            "related_source_ids": [
+              "2120446713781481544",
+              "codex-instruction-discovery",
+              "claude-code-skills-loading"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "claude-code-skills-loading",
+            "original_url": "https://code.claude.com/docs/en/skills",
+            "author": "Anthropic",
+            "published_on": null,
+            "date_basis": "공식 문서의 최초 게시일 미확인. 2026-11-12에 문서 내용을 확인",
+            "checked_on": "2026-11-12",
+            "source_kind": "Web",
+            "evidence_kind": "vendor_report",
+            "author_claim": "일반 세션은 스킬 설명을 포함하고 호출 시 본문을 로드하며 미리 지정한 서브에이전트는 다르다고 문서가 설명한다.",
+            "editorial_takeaway": "스킬 검색과 본문 주입을 구분하고 도구가 기본 제공하는 지연 로드도 비교한다.",
+            "limitations": [
+              "공식 문서이며 실제 세션 로드·검색 정확도·토큰 절감은 확인하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120534567006450041",
+              "claude-code-instruction-loading"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "codex-instruction-discovery",
+            "original_url": "https://developers.openai.com/codex/guides/agents-md",
+            "author": "OpenAI",
+            "published_on": null,
+            "date_basis": "공식 문서의 최초 게시일 미확인. 2026-11-12에 문서 내용을 확인",
+            "checked_on": "2026-11-12",
+            "source_kind": "Web",
+            "evidence_kind": "vendor_report",
+            "author_claim": "문서는 Codex가 시작 시 전역과 작업 경로의 프로젝트 지침을 조합한다고 설명한다.",
+            "editorial_takeaway": "홈 저장소 밖의 대상 프로젝트 규칙이 실제로 로드됐는지 명시적으로 확인한다.",
+            "limitations": [
+              "공식 문서이며 사용자의 실제 세션과 접근 권한을 검증하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120260969750540327",
+              "2120488255074517383",
+              "claude-code-instruction-loading"
+            ],
+            "change_type": "addition",
+            "revision": null,
+            "snapshot_url": null
+          },
+          {
+            "source_id": "github-cartographer-shared-wiki",
+            "original_url": "https://github.com/BeppeTemp/cartographer",
+            "author": "BeppeTemp/cartographer contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-09 14:47:54 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "GitHub",
+            "evidence_kind": "vendor_report",
+            "author_claim": "README는 Git 기반 위키의 지침·스킬을 여러 에이전트 형식으로 배포하고 서버별 접근 범위를 나눌 수 있다고 소개한다.",
+            "editorial_takeaway": "여러 사람·PC에서 운영하기 전 Gitea 인증, 역할, 충돌, 중단과 기존 설정 변경을 별도 시험한다.",
+            "limitations": [
+              "README 설명만 확인했다. 설치·Gitea 연동·권한 격리·충돌 복구는 재현하지 않았다.",
+              "Roundtable 연동 여부는 확인하지 않았다."
+            ],
+            "related_source_ids": [
+              "2120529839107276803",
+              "github-skill-sync-shared",
+              "github-aiws-security"
+            ],
+            "change_type": "addition",
+            "revision": "6352f2ee78b810e98707dca2c8bfedc4dc492255",
+            "snapshot_url": "https://github.com/BeppeTemp/cartographer/blob/6352f2ee78b810e98707dca2c8bfedc4dc492255/README.md"
+          },
+          {
+            "source_id": "github-skill-sync-shared",
+            "original_url": "https://github.com/TreatTrick/skill-sync",
+            "author": "TreatTrick/skill-sync contributors",
+            "published_on": null,
+            "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-08-21 11:01:54 UTC를 Asia/Seoul로 변환",
+            "checked_on": "2026-11-12",
+            "source_kind": "GitHub",
+            "evidence_kind": "vendor_report",
+            "author_claim": "README는 GitHub 저장소를 사용하고 변경을 미리 보고 충돌 선택 후 사용자 스킬을 동기화한다고 설명한다.",
+            "editorial_takeaway": "프로젝트 지침이나 Gitea 동기화까지 해결한다고 가정하지 말고 대상 경로와 인증·복구 범위를 확인한다.",
+            "limitations": [
+              "README를 읽었으며 설치·실행·충돌 복구를 검증하지 않았다.",
+              "v1에서 프로젝트별 스킬과 사용자 지정 경로는 지원 범위 밖이다."
+            ],
+            "related_source_ids": [
+              "github-cartographer-shared-wiki",
+              "2120529839107276803"
+            ],
+            "change_type": "addition",
+            "revision": "da2f3a4c3f665b45add40b8ca18b8416d75fae7f",
+            "snapshot_url": "https://github.com/TreatTrick/skill-sync/blob/da2f3a4c3f665b45add40b8ca18b8416d75fae7f/README.md"
+          }
+        ],
+        "counterevidence": [
+          "홈 저장소에서 시작하면 다른 저장소를 불필요하게 탐색한다는 반대 경험이 있다.",
+          "홈 저장소 제안자도 각 저장소 고유 지침의 분리에 동의했다.",
+          "Claude Code는 일반 세션에서 기본적으로 스킬 본문을 모두 한꺼번에 로드하지 않으며 미리 지정한 서브에이전트는 다르다.",
+          "추가 폴더의 스킬 로드와 지침 파일 로드 조건은 같지 않다.",
+          "GitHub 기반 Skill Sync의 v1은 프로젝트별·사용자 지정 스킬 경로를 다루지 않는다."
+        ],
+        "access_gaps": [
+          "원작성자의 위키 서버 구현, 제품명, 검색 알고리즘, 토큰 사용량과 여러 사용자 간 동기화 세부는 공개 글에서 확인하지 못했다.",
+          "Cartographer와 Skill Sync는 README를 읽었으며 설치·실행·보안 감사·Gitea 또는 Roundtable 연동을 검증하지 않았다.",
+          "공식 문서의 최초 게시일을 찾지 못했다. 사용자의 Claude 앱 설정과 세션별 지침 로드는 확인하지 않았다."
+        ],
+        "next_questions": [
+          "각 PC와 여러 사람의 세션에서 공통·프로젝트 지침이 어떤 버전으로 실제 적용되는가?",
+          "실행 중 정책이나 요청이 바뀌면 알림·중단·재개를 어떻게 처리하는가?",
+          "자체 환경에서 충돌, 접근 권한, 서버 장애와 필요한 스킬 검색을 어떻게 검증할 것인가?"
         ],
         "publishing_status": "reviewed_for_publication"
       }
