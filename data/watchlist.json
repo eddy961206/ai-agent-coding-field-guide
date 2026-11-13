@@ -13,8 +13,8 @@
     "measured productivity and developer learning",
     "shared agent instructions and skills across projects and machines"
   ],
-  "x_authors": ["poteto", "bcherny", "addyosmani", "simonw", "mitchellh", "steipete", "trq212", "karpathy", "GergelyOrosz", "mattpocockuk", "eiaserinnys", "vikingmute"],
+  "x_authors": ["poteto", "bcherny", "addyosmani", "simonw", "mitchellh", "steipete", "trq212", "karpathy", "GergelyOrosz", "mattpocockuk", "eiaserinnys", "vikingmute", "BizCapybara"],
   "reddit_communities": ["ClaudeAI", "ClaudeCode", "codex"],
-  "github_source_ids": ["pipelign", "awesome", "when-not", "pstack", "last30days", "superpowers", "compound", "agent-os", "spec-kit", "openspec", "gsd", "awesome-claude", "claude-best", "ralph-guide", "matt-pocock-skills", "karpathy-autoresearch", "github-cartographer-shared-wiki", "github-skill-sync-shared"],
+  "github_source_ids": ["pipelign", "awesome", "when-not", "pstack", "last30days", "superpowers", "compound", "agent-os", "spec-kit", "openspec", "gsd", "awesome-claude", "claude-best", "ralph-guide", "matt-pocock-skills", "karpathy-autoresearch", "github-cartographer-shared-wiki", "github-skill-sync-shared", "github-aki-workboard"],
   "selection_rule": "Seek substantive original evidence and counterexamples. This is a starting list, not a closed set or a popularity ranking."
 }

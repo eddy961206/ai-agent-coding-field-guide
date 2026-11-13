@@ -401,9 +401,9 @@
   {
     "id": "openspec",
     "title": "OpenSpec: specifications and archives for individual changes",
-    "evidence": "README reviewed; specifications must be maintained so they do not drift from the actual code",
-    "date_basis": "Publication date unverified",
-    "review_scope": "Relevant sections of the README or linked documents"
+    "evidence": "The README examples now use 2.0 /openspec-* skills instead of earlier /opsx:* commands. Codex uses $openspec-propose. Consult the 2.0 release for the overwrite condition on edited shared skills.",
+    "date_basis": "Original README publication date unknown; reviewed revision 2026-11-11 20:04:00 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of previous and current pinned README examples and the 2.0 release"
   },
   {
     "id": "gsd",
@@ -981,5 +981,89 @@
     "evidence": "The v1 README describes previewing and resolving conflicts before syncing user-level Claude Code, Codex and shared skills through a GitHub repository. Project-level and custom roots are excluded; the Windows installer is unsigned. We did not run it.",
     "date_basis": "Original README publication date unknown; reviewed revision 2026-08-21 11:01:54 UTC converted to Asia/Seoul",
     "review_scope": "Pinned README revision: synchronization, conflicts, supported roots and Windows condition"
+  },
+  {
+    "id": "github-claude-2-1-323",
+    "title": "Claude Code 2.1.323: resume and compaction fixes, experimental Code Mode",
+    "evidence": "The release notes describe experimental opt-in Code Mode, fixes for unanswered messages lost during compaction and interrupted messages joined after resume, 30-second progress signals for long hooks, some Bash permission and sandbox fixes, and a changed default context assumption for unknown models. We did not reproduce them.",
+    "date_basis": "Original timestamp 2026-11-12 22:12:13 UTC converted to Asia/Seoul",
+    "review_scope": "Release notes on Code Mode, compaction, resume, hooks, Bash permissions, and third-party model context"
+  },
+  {
+    "id": "reddit-1xuqnnc",
+    "title": "A small comparison of one agent with skills versus a subagent team",
+    "evidence": "For the harder version of a fictional booking app, the author reports seven runs per setup with the same Claude Code model and effort. Forty held-out tests and median AI design scores matched, while team versus single median API-list-price estimates were $1.31 versus $0.81 and times were 28.6 versus 15.0 minutes. Both missed a UI flaw.",
+    "date_basis": "Original timestamp 2026-11-12 22:23:36 UTC converted to Asia/Seoul",
+    "review_scope": "Task, model, repetition count, evaluation, price estimation and missed flaw in the post"
+  },
+  {
+    "id": "reddit-1xuqnnc-19sjqbtqh4y1s",
+    "title": "A counterexample favoring subagent review on a large codebase",
+    "evidence": "The commenter reports that a single agent broke neighboring behavior in a large monorepo and says subagent review helped despite taking longer and asking more questions. This is not a measured comparative study.",
+    "date_basis": "Original timestamp 2026-11-12 23:50:31 UTC converted to Asia/Seoul",
+    "review_scope": "Counterexample comment on the single-versus-multi-agent post and its timestamp"
+  },
+  {
+    "id": "reddit-1xuiswk",
+    "title": "A user asks about progress stalled by multi-agent test setup",
+    "evidence": "The author asks about a coordinator-driven multi-agent workflow where exacting tests and setup or teardown appear to stall product work. The cause and remedy were not independently verified.",
+    "date_basis": "Original timestamp 2026-11-12 17:24:13 UTC converted to Asia/Seoul",
+    "review_scope": "The described workflow, reported stall and post time"
+  },
+  {
+    "id": "reddit-1xuiswk-19sj9kf1wn0v5",
+    "title": "A proposal to scope checks to the changed area",
+    "evidence": "The commenter describes retaining safety checks while triggering only those needed for changed areas, and monitoring usage, handoffs, rework and local resource contention.",
+    "date_basis": "Original timestamp 2026-11-12 17:34:44 UTC converted to Asia/Seoul",
+    "review_scope": "Comment on check scope, costs and local contention"
+  },
+  {
+    "id": "reddit-1xuqj2r",
+    "title": "A work board showing who is waiting on whom",
+    "evidence": "The maker describes a terminal board that divides GitLab, GitHub, Jira and other work into items for them and items waiting on others, and launches Claude Code with a task brief. The post says the brief prohibits posting, merging or pushing before approval.",
+    "date_basis": "Original timestamp 2026-11-12 22:18:25 UTC converted to Asia/Seoul",
+    "review_scope": "Waiting-state and agent-briefing behavior described in the maker’s post"
+  },
+  {
+    "id": "github-aki-workboard",
+    "title": "aki’s integrations and recovery limits",
+    "evidence": "The README describes GitLab, GitHub and Jira work and agent launch. Gitea appears only as a potential new adapter, and it says a Herdr agent tab may not be restored as before after a restart. We did not run it.",
+    "date_basis": "Original README publication date unknown; reviewed revision 2026-11-12 17:23:56 UTC converted to Asia/Seoul",
+    "review_scope": "Supported sources, agent briefing and recovery limits in the pinned README"
+  },
+  {
+    "id": "2120221244478083249",
+    "title": "A small team’s release countdown and post-push review",
+    "evidence": "The author says the small team generally pushes directly to main, with machine-aided review before push and human plus machine review afterwards. Releases trigger a 15-minute notice during which anyone can pause. This is a team experience, not a controlled safety study.",
+    "date_basis": "Original timestamp 2026-11-10 18:25:11 UTC converted to Asia/Seoul",
+    "review_scope": "Original account of the release notice and pause, exceptional PRs, and review allocation"
+  },
+  {
+    "id": "2120238443645358318",
+    "title": "The release countdown generally overlaps the build",
+    "evidence": "The author replies that the countdown generally runs alongside the build, although not identically across platforms.",
+    "date_basis": "Original timestamp 2026-11-10 19:33:31 UTC converted to Asia/Seoul",
+    "review_scope": "Follow-up on the relationship between release countdown and build"
+  },
+  {
+    "id": "arxiv-flowplan-2611-13241",
+    "title": "A preprint comparing token use with flow-based repair planning",
+    "evidence": "The authors compare function-level control/data-flow repair plans and post-edit verification using Claude Code 2.1.220, two models and three benchmarks. On SWE-bench Verified with Haiku 4.5, total tokens were 0.32–0.35 times the baseline. No statistically significant resolution difference does not prove equivalent quality.",
+    "date_basis": "Original timestamp 2026-11-09 21:11:29 UTC converted to Asia/Seoul",
+    "review_scope": "Methods, benchmarks, token accounting, statistics and limitations in the v1 preprint"
+  },
+  {
+    "id": "2120746715414466854",
+    "title": "A neutral base and model-specific guidance variants",
+    "evidence": "The author reports synchronization problems across three or more PCs and multiple models, then describes keeping a neutral base and redistributing model-adapted variants. The effects were not independently verified.",
+    "date_basis": "Original timestamp 2026-11-12 05:13:13 UTC converted to Asia/Seoul",
+    "review_scope": "Original reply on guidance across devices and models"
+  },
+  {
+    "id": "2120759183838793776",
+    "title": "A follow-up favoring a shared base and contextual variants",
+    "evidence": "The author of the earlier wiki-server post says mixed devices and models make guidance optimization difficult and that a centrally managed base with contextual variants is needed. This is not a detailed implementation.",
+    "date_basis": "Original timestamp 2026-11-12 06:02:45 UTC converted to Asia/Seoul",
+    "review_scope": "Author’s follow-up opinion on the neutral-base example and timestamp"
   }
 ]
