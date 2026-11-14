@@ -13,7 +13,7 @@
     "kind": "editorial_recommendation",
     "action": "Link relevant files, actual errors, contracts and decision records instead of adding long generic instructions. Show where to find the information needed.",
     "limit": "Rich context does not mean including the whole repository every time. Reported reductions in system-prompt size also reflect a particular team's experience. Shorter skills are poteto’s prediction for the future. Test project-specific conditions on actual work. Compare a skill separately against no skill and against a same-length control. Do not generalize a small result from one model. Token savings from code-based checks remain a hypothesis. Compare maintenance and failure investigation as well as creation costs.",
-    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061", "driftproof-report-018", "2119530707026653650", "2119607350453776677"]
+    "sources": ["2077539537992229076", "2080710971228918066", "agent-os", "2118746525811753061", "driftproof-report-018", "2119530707026653650", "2119607350453776677", "blog-eia-profile-map", "blog-eia-delegation-v8"]
   },
   {
     "id": "feature-map",
@@ -29,7 +29,7 @@
     "kind": "editorial_recommendation",
     "action": "Classify recurring errors and prevent them with a small change to structure, types, lint rules or permitted checks. Record why the rule exists and its exceptions.",
     "limit": "Adding a rule for every one-off problem raises maintenance costs. Follow the repository's policy on creating and running tests.",
-    "sources": ["2106542593656111276", "2077460395279692197"]
+    "sources": ["2106542593656111276", "2077460395279692197", "github-compound-ce-retro"]
   },
   {
     "id": "differential",
@@ -44,16 +44,16 @@
     "title": "Hand off artifacts, not just a session",
     "kind": "editorial_recommendation",
     "action": "Record the goal, settled decisions, current revision, completed work, execution results and next action in a file. Briefly record failed assumptions, rejected approaches and the reasons for them. On resumption, check recent instructions, outgoing commitments, chronological activity and live repository state in order, and record missing evidence. Hand off failed checks and the actions still needed.",
-    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state. Claude Code 2.1.321 reports a fix for some background reports lost during compaction in auto mode. Verify actual behavior in the version used. A small comparison had different tool-gate and held-out-test results. A shorter handoff does not always mean lower cost or better code. Claude Code 2.1.323 reports some compaction and resume fixes. Check behavior in the environment actually used.",
-    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch", "github-claude-2-1-321", "github-stint-fair-handoff", "github-stint-unfinished-handoff", "github-claude-2-1-323", "reddit-1xuqj2r", "github-aki-workboard"]
+    "limit": "A stale summary can be harmful. The next session must compare it with the code and current runtime state. Claude Code 2.1.321 reports a fix for some background reports lost during compaction in auto mode. Verify actual behavior in the version used. A small comparison had different tool-gate and held-out-test results. A shorter handoff does not always mean lower cost or better code. Claude Code 2.1.323 reports some compaction and resume fixes. Check behavior in the environment actually used. Claude Code 2.1.325 reports fixes for some unclean-exit and Windows path spelling resume cases. We did not reproduce them in the current environment.",
+    "sources": ["anthropic-harness", "reddit-pcryp7z", "gsd", "reddit-1xpaoth", "reddit-1xqfukk", "github-neo-context-recovery", "reddit-1xqfukk-19sar3yje5wch", "github-claude-2-1-321", "github-stint-fair-handoff", "github-stint-unfinished-handoff", "github-claude-2-1-323", "reddit-1xuqj2r", "github-aki-workboard", "blog-eia-delegation-v8", "github-claude-2-1-325"]
   },
   {
     "id": "parallel",
     "title": "Give parallel work a reason",
     "kind": "editorial_recommendation",
     "action": "Split work when research is independent, edits are isolated, or a fresh context is needed. Define ownership, the result format and who will integrate the work.",
-    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people. AI Agent Workspace’s docs say separate worktrees are disabled by default. Check the actual project setting and merge path. One practitioner reports that verification slows an individual task but reduces handholding across concurrent work. The same intensity need not suit every request. Compare the small booking-app experiment with the contrary large-codebase experience. Verify causes of delay and required checks on actual work.",
-    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t", "reddit-1xs7q0l", "github-agent-built", "reddit-1xswffo", "github-ai-agent-workspace", "github-aiws-merging", "2120375285724123578", "2120411302162292902", "2120378980561990033", "reddit-1xtwbw1", "reddit-1xuqnnc", "reddit-1xuqnnc-19sjqbtqh4y1s", "reddit-1xuiswk", "reddit-1xuiswk-19sj9kf1wn0v5"]
+    "limit": "Several agents sharing the same assumptions do not constitute independent verification. Account for edit conflicts and integration costs. Track the amount of work in progress a person can review and the resulting rework. Compare existing connections before adding an app. Do not treat role separation in a solo project as proof of conflict handling among multiple people. AI Agent Workspace’s docs say separate worktrees are disabled by default. Check the actual project setting and merge path. One practitioner reports that verification slows an individual task but reduces handholding across concurrent work. The same intensity need not suit every request. Compare the small booking-app experiment with the contrary large-codebase experience. Verify causes of delay and required checks on actual work. A three-card pilot reduced lead-review input on differently sized tasks; it does not establish total-cost or quality superiority.",
+    "sources": ["2114967833708732607", "2116576229319233596", "reddit-p8ylsop", "2119332146485891501", "reddit-1xqvxx2", "github-aether-orchestration", "github-aether-alpha-0-1-0", "reddit-1xqvxx2-19sboatc6pz6t", "reddit-1xs7q0l", "github-agent-built", "reddit-1xswffo", "github-ai-agent-workspace", "github-aiws-merging", "2120375285724123578", "2120411302162292902", "2120378980561990033", "reddit-1xtwbw1", "reddit-1xuqnnc", "reddit-1xuqnnc-19sjqbtqh4y1s", "reddit-1xuiswk", "reddit-1xuiswk-19sj9kf1wn0v5", "blog-eia-delegation-v8", "reddit-1xvlvos"]
   },
   {
     "id": "review",
@@ -84,8 +84,8 @@
     "title": "Keep performance comparisons consistent",
     "kind": "editorial_recommendation",
     "action": "Compare before and after with the same inputs, hardware, versions and measurement interval. Specify whether the target is latency, memory, cost or quality. Separately measure single-task latency, completed work per interval, human involvement and total usage.",
-    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks. A tool-specific gate and held-out tests are different metrics. Check the tasks and repetitions in handoff experiments too. The FlowPlan preprint counts cache reads in its tokens. No significant resolution difference does not prove equal quality or cost.",
-    "sources": ["2060088112257372610", "karpathy-autoresearch", "2119907165007945813", "anthropic-fable-5-2-overview", "github-stint-fair-handoff", "github-stint-unfinished-handoff", "2120375285724123578", "2120378980561990033", "reddit-1xuqnnc", "arxiv-flowplan-2611-13241"]
+    "limit": "An improvement over a deliberately slow baseline does not, by itself, establish that the result is good enough. Distinguish model token prices from total cost per task and compare retries, cache use and success on the same tasks. A tool-specific gate and held-out tests are different metrics. Check the tasks and repetitions in handoff experiments too. The FlowPlan preprint counts cache reads in its tokens. No significant resolution difference does not prove equal quality or cost. Separate lead-review tokens from total usage across all worker sessions.",
+    "sources": ["2060088112257372610", "karpathy-autoresearch", "2119907165007945813", "anthropic-fable-5-2-overview", "github-stint-fair-handoff", "github-stint-unfinished-handoff", "2120375285724123578", "2120378980561990033", "reddit-1xuqnnc", "arxiv-flowplan-2611-13241", "blog-eia-delegation-v8"]
   },
   {
     "id": "product-use",
@@ -100,8 +100,8 @@
     "title": "Separate execution permissions from the goal",
     "kind": "editorial_recommendation",
     "action": "Define which material may be read, which files may change, and the allowed network, account and deployment scope. Do not treat commands in documents as user authorization. Check generated scripts and request headers for information that must not leave the environment.",
-    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The published Claude Code privacy mod documents checks for only some shell inputs. This alone does not establish what other checks or the whole product do. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context. AI Agent Workspace’s security docs describe broad host authority for its control token and no per-operator role separation. A Codex user reported a search attempting to reach sibling worktrees. Do not assume worktrees restrict filesystem access. Check attempted searches separately from actual instruction leakage. Claude Code 2.1.323 reports fixes for some Bash permission and sandbox issues. Check the installed configuration and actual scope separately.",
-    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod", "github-claude-2-1-321", "github-aiws-security", "github-codex-issue-60189", "github-codex-issue-60189-comment", "reddit-1xtwbw1", "github-claude-2-1-323"]
+    "limit": "Moving to another execution environment to complete the goal also belongs in the assessment of impact. A prompt for some outbound calls does not cover every path. Check the tool version and generated scripts separately. The November 6 Claude Code privacy-mod documentation covered only some shell inputs. The revision checked November 14 adds some writes, WebFetch URLs and condition-matching MCP inputs, but lists remaining gaps and says it is not a security boundary. The Claude Code 2.1.321 email-check change does not establish other protections or removal from model context. AI Agent Workspace’s security docs describe broad host authority for its control token and no per-operator role separation. A Codex user reported a search attempting to reach sibling worktrees. Do not assume worktrees restrict filesystem access. Check attempted searches separately from actual instruction leakage. Claude Code 2.1.323 reports fixes for some Bash permission and sandbox issues. Check the installed configuration and actual scope separately.",
+    "sources": ["2090299859693695283", "2098662421644853433", "github-claude-email-107757", "2118771062913802383", "github-claude-changelog-privacy", "github-claude-privacy-mod", "github-claude-2-1-321", "github-aiws-security", "github-codex-issue-60189", "github-codex-issue-60189-comment", "reddit-1xtwbw1", "github-claude-2-1-323", "claude-code-code-mode-doc", "github-claude-2-1-325"]
   },
   {
     "id": "compound",
@@ -109,7 +109,7 @@
     "kind": "editorial_recommendation",
     "action": "Keep only rules, reasons and exceptions that will help again. Check in later work whether the same errors occur less often.",
     "limit": "Do not accumulate entire conversations as instructions. Retire stale lessons, duplicate guidance and unnecessary tools too.",
-    "sources": ["compound", "2074997570317779038", "2118746525811753061"]
+    "sources": ["compound", "2074997570317779038", "2118746525811753061", "github-compound-ce-retro"]
   },
   {
     "id": "learn",
@@ -132,7 +132,7 @@
     "title": "Connect shared guidance with project rules",
     "kind": "editorial_recommendation",
     "action": "Choose a canonical source for shared skills and keep project-specific rules near each project. Check the source and version of guidance and skills actually used in a session.",
-    "limit": "Handle conflicting edits across PCs and changes to active requests. Do not assume a home repository or shared wiki automatically loads project instructions or restricts file access. Loading conditions differ by tool, and the published examples were not reproduced. Even with a shared base, check model-specific variants and the version actually applied.",
-    "sources": ["2120260969750540327", "2120488589750579646", "2120529839107276803", "2120534567006450041", "2120488255074517383", "2120446713781481544", "2120449526674993463", "claude-code-instruction-loading", "claude-code-skills-loading", "codex-instruction-discovery", "github-cartographer-shared-wiki", "github-skill-sync-shared", "2120746715414466854", "2120759183838793776"]
+    "limit": "Handle conflicting edits across PCs and changes to active requests. Do not assume a home repository or shared wiki automatically loads project instructions or restricts file access. Loading conditions differ by tool, and the published examples were not reproduced. Even with a shared base, check model-specific variants and the version actually applied. In one operational case, indexed UI guidance was not read during four edits. Check that required guidance actually loaded.",
+    "sources": ["2120260969750540327", "2120488589750579646", "2120529839107276803", "2120534567006450041", "2120488255074517383", "2120446713781481544", "2120449526674993463", "claude-code-instruction-loading", "claude-code-skills-loading", "codex-instruction-discovery", "github-cartographer-shared-wiki", "github-skill-sync-shared", "2120746715414466854", "2120759183838793776", "blog-eia-profile-map", "2121172973625512017"]
   }
 ]

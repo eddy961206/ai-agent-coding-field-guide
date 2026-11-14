@@ -1,6 +1,6 @@
 # AI 에이전트와 일을 잘하는 방법
 
-조사 기준: 2026-11-13 (Asia/Seoul)
+조사 기준: 2026-11-14 (Asia/Seoul)
 
 AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은 실행 지시가 아닙니다. 개인 경험, 회사 보고, 연구, 편집 제안을 구분하십시오.
 
@@ -8,7 +8,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `exports/research.json`: sources, methods, prompts, narrative_sections, reviewed_batches
 - `data/sources.json`: canonical source provenance
-- `research/runs/2026-11-13.md`: 이번 판의 조사 범위·검색 경로·미검증
+- `research/runs/2026-11-14.md`: 이번 판의 조사 범위·검색 경로·미검증
 - `research/DAILY_UPDATE.md`
 - `CONTRIBUTING.md`
 - `AGENTS.md`
@@ -29,7 +29,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 적용 한계: 풍부한 맥락은 저장소 전체를 매번 넣는다는 뜻이 아니야. 시스템 프롬프트 축소 수치도 특정 팀의 경험이야. 스킬 축소는 poteto의 미래 전망이야. 프로젝트 고유 조건은 실제 작업에서 검증해. 스킬 효과는 무스킬과 길이가 같은 대조 조건을 각각 비교해. 한 모델의 소규모 결과는 일반화하지 마. 코드 기반 검사의 토큰 절약은 가설이야. 생성뿐 아니라 유지·실패 조사 비용도 비교해.
 
-근거: [@trq212 · 2026-07-16 KST](https://x.com/trq212/status/2077539537992229076), [@trq212 · 2026-07-25 KST](https://x.com/trq212/status/2080710971228918066), [Builder Methods · 문서 개정 2026-01-21 KST](https://github.com/buildermethods/agent-os), [@poteto · 2026-11-07 KST](https://x.com/poteto/status/2118746525811753061), [Driftproof · 문서 개정 2026-11-05 KST](https://driftproofhq.com/reports/018/), [@ASaltyVet · 2026-11-09 KST](https://x.com/ASaltyVet/status/2119530707026653650), [@poteto · 2026-11-09 KST](https://x.com/poteto/status/2119607350453776677)
+근거: [@trq212 · 2026-07-16 KST](https://x.com/trq212/status/2077539537992229076), [@trq212 · 2026-07-25 KST](https://x.com/trq212/status/2080710971228918066), [Builder Methods · 문서 개정 2026-01-21 KST](https://github.com/buildermethods/agent-os), [@poteto · 2026-11-07 KST](https://x.com/poteto/status/2118746525811753061), [Driftproof · 문서 개정 2026-11-05 KST](https://driftproofhq.com/reports/018/), [@ASaltyVet · 2026-11-09 KST](https://x.com/ASaltyVet/status/2119530707026653650), [@poteto · 2026-11-09 KST](https://x.com/poteto/status/2119607350453776677), [서소영 · @eiaserinnys 운영 사례 · 2026-11-13](https://seosoyoung.eiaserinnys.me/posts/agent-profile-loading-map/), [서소영 · @eiaserinnys 운영 사례 · 2026-11-12](https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/)
 
 ### 실제로 쓸 수 있는 기능 지도 (`feature-map`)
 
@@ -45,7 +45,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 적용 한계: 일회성 문제마다 새 규칙을 만들면 관리 비용이 커져. 저장소의 테스트 생성·실행 정책을 따라.
 
-근거: [@poteto · 2026-10-04 KST](https://x.com/poteto/status/2106542593656111276), [@bcherny · 2026-07-16 KST](https://x.com/bcherny/status/2077460395279692197)
+근거: [@poteto · 2026-10-04 KST](https://x.com/poteto/status/2106542593656111276), [@bcherny · 2026-07-16 KST](https://x.com/bcherny/status/2077460395279692197), [EveryInc/compound-engineering-plugin contributors · 문서 개정 2026-11-12 KST](https://github.com/EveryInc/compound-engineering-plugin/blob/main/skills/ce-retro/SKILL.md)
 
 ### 기존 동작을 비교 기준으로 (`differential`)
 
@@ -59,17 +59,17 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 편집 제안: 목표·확정된 결정·현재 리비전·완료한 일·실행 결과·다음 행동을 파일에 남겨. 실패한 가정과 기각한 접근, 그 이유도 짧게 기록해. 다시 시작할 때 최신 지시와 보낸 약속, 최근 작업 순서, 현재 저장소 상태를 차례로 확인하고 빠진 근거를 남겨. 실패한 검증과 다음에 필요한 조치도 인계해.
 
-적용 한계: 요약이 오래되면 오히려 위험해. 다음 세션은 코드와 실행 상태를 다시 대조해야 해. Claude Code 2.1.321은 auto mode의 일부 압축 중 배경 보고 유실을 수정했다고 안내해. 현재 버전의 실제 결과는 따로 확인해. 작은 비교 사례에서는 인계 방식별 도구 게이트와 보류 테스트 결과가 달랐어. 짧은 인계가 항상 더 싸거나 코드가 더 낫다는 뜻은 아니야. Claude Code 2.1.323은 압축·재개 관련 일부 수정을 발표했어. 사용 중인 환경의 실제 동작을 확인해.
+적용 한계: 요약이 오래되면 오히려 위험해. 다음 세션은 코드와 실행 상태를 다시 대조해야 해. Claude Code 2.1.321은 auto mode의 일부 압축 중 배경 보고 유실을 수정했다고 안내해. 현재 버전의 실제 결과는 따로 확인해. 작은 비교 사례에서는 인계 방식별 도구 게이트와 보류 테스트 결과가 달랐어. 짧은 인계가 항상 더 싸거나 코드가 더 낫다는 뜻은 아니야. Claude Code 2.1.323은 압축·재개 관련 일부 수정을 발표했어. 사용 중인 환경의 실제 동작을 확인해. Claude Code 2.1.325는 비정상 종료 뒤 재개와 Windows 경로 표기 관련 일부 수정을 안내해. 현재 환경에서 재현하지 않았어.
 
-근거: [Anthropic · 2025-11-26](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents), [u/that1hairdude (질문: u/girthyclock) · 2026-09-29](https://www.reddit.com/r/ClaudeCode/comments/1wspayq/comment/pcryp7z/), [Open GSD · 문서 개정 2026-07-15 KST](https://github.com/open-gsd/gsd-core), [u/ombre-ai · 2026-11-06](https://www.reddit.com/r/ClaudeCode/comments/1xpaoth/people_keep_building_their_own_tools_to_move_work/), [u/TobiasUhlig · 2026-11-08](https://www.reddit.com/r/codex/comments/1xqfukk/a_recovery_runbook_we_built_with_codex_for/), [Neo.mjs contributors · 문서 개정 2026-10-30 KST](https://github.com/neomjs/neo-agent-skills/blob/main/.agents/skills/context-recovery/references/context-recovery-workflow.md), [u/kaijurules · 2026-11-08](https://www.reddit.com/r/codex/comments/1xqfukk/comment/19sar3yje5wch/), [Anthropic · 2026-11-10](https://github.com/anthropics/claude-code/releases/tag/v2.1.321), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md), [Anthropic · 2026-11-13](https://github.com/anthropics/claude-code/releases/tag/v2.1.323), [u/No-Homework-3484 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqj2r/i_built_aki_with_claude_code_a_board_of_who_is/), [nathan-poncet/aki contributors · 문서 개정 2026-11-13 KST](https://github.com/nathan-poncet/aki)
+근거: [Anthropic · 2025-11-26](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents), [u/that1hairdude (질문: u/girthyclock) · 2026-09-29](https://www.reddit.com/r/ClaudeCode/comments/1wspayq/comment/pcryp7z/), [Open GSD · 문서 개정 2026-07-15 KST](https://github.com/open-gsd/gsd-core), [u/ombre-ai · 2026-11-06](https://www.reddit.com/r/ClaudeCode/comments/1xpaoth/people_keep_building_their_own_tools_to_move_work/), [u/TobiasUhlig · 2026-11-08](https://www.reddit.com/r/codex/comments/1xqfukk/a_recovery_runbook_we_built_with_codex_for/), [Neo.mjs contributors · 문서 개정 2026-10-30 KST](https://github.com/neomjs/neo-agent-skills/blob/main/.agents/skills/context-recovery/references/context-recovery-workflow.md), [u/kaijurules · 2026-11-08](https://www.reddit.com/r/codex/comments/1xqfukk/comment/19sar3yje5wch/), [Anthropic · 2026-11-10](https://github.com/anthropics/claude-code/releases/tag/v2.1.321), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md), [Anthropic · 2026-11-13](https://github.com/anthropics/claude-code/releases/tag/v2.1.323), [u/No-Homework-3484 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqj2r/i_built_aki_with_claude_code_a_board_of_who_is/), [nathan-poncet/aki contributors · 문서 개정 2026-11-13 KST](https://github.com/nathan-poncet/aki), [서소영 · @eiaserinnys 운영 사례 · 2026-11-12](https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/), [Anthropic · 2026-11-14](https://github.com/anthropics/claude-code/releases/tag/v2.1.325)
 
 ### 병렬화에는 이유를 붙이기 (`parallel`)
 
 편집 제안: 독립된 조사, 분리된 수정, 새 맥락이 필요한 작업만 나눠. 담당 범위와 결과 형식, 통합할 사람을 정해.
 
-적용 한계: 같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐. 사람이 확인할 수 있는 진행 중 작업의 양과 재작업을 함께 살펴. 별도 앱 도입 전 기존 연결 방식도 비교해. 단독 개발 사례의 역할 구분을 여러 사람 간 충돌 해결의 검증으로 여기지 마. AI Agent Workspace 문서는 별도 worktree 설정이 기본으로 꺼져 있다고 설명해. 실제 프로젝트 설정과 병합 경로를 확인해. 검증으로 한 작업이 느려져도 사람의 개입이 줄어 여러 작업을 진행한다는 개인 경험이 있어. 모든 요청에 같은 강도를 적용할 필요는 없어. 작은 예약 앱 비교와 큰 코드베이스의 반대 경험을 함께 봐. 지연의 원인과 필수 검사는 실제 작업에서 확인해.
+적용 한계: 같은 가정을 나눠 가진 여러 에이전트는 독립 검증이 아니야. 변경 충돌과 통합 비용까지 봐. 사람이 확인할 수 있는 진행 중 작업의 양과 재작업을 함께 살펴. 별도 앱 도입 전 기존 연결 방식도 비교해. 단독 개발 사례의 역할 구분을 여러 사람 간 충돌 해결의 검증으로 여기지 마. AI Agent Workspace 문서는 별도 worktree 설정이 기본으로 꺼져 있다고 설명해. 실제 프로젝트 설정과 병합 경로를 확인해. 검증으로 한 작업이 느려져도 사람의 개입이 줄어 여러 작업을 진행한다는 개인 경험이 있어. 모든 요청에 같은 강도를 적용할 필요는 없어. 작은 예약 앱 비교와 큰 코드베이스의 반대 경험을 함께 봐. 지연의 원인과 필수 검사는 실제 작업에서 확인해. 담당의 검수 입력을 줄인 세 카드 시범은 작업 크기가 같지 않았고 전체 비용이나 품질 우열을 입증하지 않아.
 
-근거: [@addyosmani · 2026-10-27 KST](https://x.com/addyosmani/status/2114967833708732607), [@poteto · 2026-11-01 KST](https://x.com/poteto/status/2116576229319233596), [u/OriginalHospital (질문: u/Jao_) · 2026-09-10](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/), [@addyosmani · 2026-11-08 KST](https://x.com/addyosmani/status/2119332146485891501), [u/strange1807 · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/i_built_a_way_for_claude_code_to_delegate_work_to/), [PrashnaLabs and Aether contributors · 문서 개정 2026-11-09 KST](https://github.com/PrashnaLabs/aether/blob/main/README.md), [PrashnaLabs · 2026-11-08](https://github.com/PrashnaLabs/aether/releases/tag/alpha-0.1.0), [u/pwkye · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sboatc6pz6t/), [u/BTCLSD · 2026-11-10](https://www.reddit.com/r/ClaudeCode/comments/1xs7q0l/multiagent_release_pipeline_with_claude_code_pm/), [agent-built contributors · 문서 개정 2026-11-10 KST](https://github.com/Copypaster3000/agent-built/blob/main/README.md), [u/demirmusa · 2026-11-11](https://www.reddit.com/r/ClaudeCode/comments/1xswffo/open_sourced_the_tool_i_use_to_run_claude_code/), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/README.md), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Git-Worktrees-and-Merging.md), [@poteto · 2026-11-11 KST](https://x.com/poteto/status/2120375285724123578), [@robinebers · 2026-11-11 KST](https://x.com/robinebers/status/2120411302162292902), [@matthewbeikoff · 2026-11-11 KST](https://x.com/matthewbeikoff/status/2120378980561990033), [u/byfastorg · 2026-11-12](https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/), [u/Sufficient-Storage87 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/i_tested_anthropics_one_agent_with_skills_beats_a/), [u/heizo · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/comment/19sjqbtqh4y1s/), [u/Mind-Pollution · 2026-11-13](https://www.reddit.com/r/codex/comments/1xuiswk/codex_hierarchical_multiagent_orchestration_is/), [u/FoxheadWorkshop · 2026-11-13](https://www.reddit.com/r/codex/comments/1xuiswk/comment/19sj9kf1wn0v5/)
+근거: [@addyosmani · 2026-10-27 KST](https://x.com/addyosmani/status/2114967833708732607), [@poteto · 2026-11-01 KST](https://x.com/poteto/status/2116576229319233596), [u/OriginalHospital (질문: u/Jao_) · 2026-09-10](https://www.reddit.com/r/ClaudeCode/comments/1wckrof/comment/p8ylsop/), [@addyosmani · 2026-11-08 KST](https://x.com/addyosmani/status/2119332146485891501), [u/strange1807 · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/i_built_a_way_for_claude_code_to_delegate_work_to/), [PrashnaLabs and Aether contributors · 문서 개정 2026-11-09 KST](https://github.com/PrashnaLabs/aether/blob/main/README.md), [PrashnaLabs · 2026-11-08](https://github.com/PrashnaLabs/aether/releases/tag/alpha-0.1.0), [u/pwkye · 2026-11-08](https://www.reddit.com/r/ClaudeCode/comments/1xqvxx2/comment/19sboatc6pz6t/), [u/BTCLSD · 2026-11-10](https://www.reddit.com/r/ClaudeCode/comments/1xs7q0l/multiagent_release_pipeline_with_claude_code_pm/), [agent-built contributors · 문서 개정 2026-11-10 KST](https://github.com/Copypaster3000/agent-built/blob/main/README.md), [u/demirmusa · 2026-11-11](https://www.reddit.com/r/ClaudeCode/comments/1xswffo/open_sourced_the_tool_i_use_to_run_claude_code/), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/README.md), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Git-Worktrees-and-Merging.md), [@poteto · 2026-11-11 KST](https://x.com/poteto/status/2120375285724123578), [@robinebers · 2026-11-11 KST](https://x.com/robinebers/status/2120411302162292902), [@matthewbeikoff · 2026-11-11 KST](https://x.com/matthewbeikoff/status/2120378980561990033), [u/byfastorg · 2026-11-12](https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/), [u/Sufficient-Storage87 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/i_tested_anthropics_one_agent_with_skills_beats_a/), [u/heizo · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/comment/19sjqbtqh4y1s/), [u/Mind-Pollution · 2026-11-13](https://www.reddit.com/r/codex/comments/1xuiswk/codex_hierarchical_multiagent_orchestration_is/), [u/FoxheadWorkshop · 2026-11-13](https://www.reddit.com/r/codex/comments/1xuiswk/comment/19sj9kf1wn0v5/), [서소영 · @eiaserinnys 운영 사례 · 2026-11-12](https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/), [u/xbst_ · 2026-11-14](https://www.reddit.com/r/ClaudeCode/comments/1xvlvos/reducing_usage_on_very_large_mloc_projects/)
 
 ### 리뷰 기준을 좁히기 (`review`)
 
@@ -99,9 +99,9 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 편집 제안: 같은 입력·하드웨어·버전·측정 구간에서 전후를 비교해. 지연·메모리·비용·품질 중 무엇을 바꾸는지도 정해. 단일 완료 시간과 일정 기간의 완료량, 사람의 개입 및 총 사용량을 따로 살펴.
 
-적용 한계: 일부러 느린 출발점에서 좋아졌다는 사실만으로 충분히 좋은 결과라고 판단하지 않아. 모델의 토큰 단가와 작업당 총비용을 구별하고 같은 과제의 재시도·캐시·성공률을 함께 비교해. 도구가 정한 게이트 통과와 보류 테스트 통과는 다른 지표야. 인계 실험의 과제와 반복 횟수도 함께 봐. FlowPlan 논문은 캐시 읽기를 포함한 토큰을 비교했어. 유의한 해결률 차이가 없다는 사실이 품질 동등성이나 비용 동등성을 입증하지 않아.
+적용 한계: 일부러 느린 출발점에서 좋아졌다는 사실만으로 충분히 좋은 결과라고 판단하지 않아. 모델의 토큰 단가와 작업당 총비용을 구별하고 같은 과제의 재시도·캐시·성공률을 함께 비교해. 도구가 정한 게이트 통과와 보류 테스트 통과는 다른 지표야. 인계 실험의 과제와 반복 횟수도 함께 봐. FlowPlan 논문은 캐시 읽기를 포함한 토큰을 비교했어. 유의한 해결률 차이가 없다는 사실이 품질 동등성이나 비용 동등성을 입증하지 않아. 담당 검수 토큰과 모든 하위 세션을 합친 총 사용량을 구분해.
 
-근거: [@mitchellh · 2026-05-29 KST](https://x.com/mitchellh/status/2060088112257372610), [Andrej Karpathy · 문서 개정 2026-03-21 KST](https://github.com/karpathy/autoresearch), [@addyosmani · 2026-11-10 KST](https://x.com/addyosmani/status/2119907165007945813), [Anthropic · 2026-11-09](https://platform.claude.com/docs/en/models/fable-5-2/overview), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md), [@poteto · 2026-11-11 KST](https://x.com/poteto/status/2120375285724123578), [@matthewbeikoff · 2026-11-11 KST](https://x.com/matthewbeikoff/status/2120378980561990033), [u/Sufficient-Storage87 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/i_tested_anthropics_one_agent_with_skills_beats_a/), [Melika Sepidband et al. · 2026-11-10](https://arxiv.org/abs/2611.13241v1)
+근거: [@mitchellh · 2026-05-29 KST](https://x.com/mitchellh/status/2060088112257372610), [Andrej Karpathy · 문서 개정 2026-03-21 KST](https://github.com/karpathy/autoresearch), [@addyosmani · 2026-11-10 KST](https://x.com/addyosmani/status/2119907165007945813), [Anthropic · 2026-11-09](https://platform.claude.com/docs/en/models/fable-5-2/overview), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair/README.md), [Stint contributors · 문서 개정 2026-11-04 KST](https://github.com/QuintinBotes/stint/blob/main/bench/fair-unfinished/README.md), [@poteto · 2026-11-11 KST](https://x.com/poteto/status/2120375285724123578), [@matthewbeikoff · 2026-11-11 KST](https://x.com/matthewbeikoff/status/2120378980561990033), [u/Sufficient-Storage87 · 2026-11-13](https://www.reddit.com/r/ClaudeCode/comments/1xuqnnc/i_tested_anthropics_one_agent_with_skills_beats_a/), [Melika Sepidband et al. · 2026-11-10](https://arxiv.org/abs/2611.13241v1), [서소영 · @eiaserinnys 운영 사례 · 2026-11-12](https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/)
 
 ### 제품을 실제로 사용하기 (`product-use`)
 
@@ -115,9 +115,9 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 편집 제안: 읽을 자료, 바꿀 파일, 네트워크·계정·배포 범위를 정해. 문서에 적힌 명령을 사용자 허가로 취급하지 않게 해. 생성된 스크립트와 요청 헤더에 외부로 나가면 안 되는 정보가 있는지도 확인해.
 
-적용 한계: 목표를 완수하려고 다른 실행 환경으로 넘어가는 행동도 영향 범위에 포함돼. 일부 전송 확인 절차가 모든 경로를 막는 것은 아니야. 도구 버전과 생성 스크립트의 동작을 따로 확인해. 공개된 Claude Code 개인정보 모듈은 일부 셸 입력만 검사한다고 명시해. 이것만으로 다른 검사나 전체 제품 동작을 단정할 수 없어. Claude Code 2.1.321의 이메일 검사 변경은 다른 보호 계층이나 모델 맥락에서의 제거를 입증하지 않아. AI Agent Workspace 문서는 제어 토큰에 광범위한 호스트 권한이 있고 운영자별 역할 분리는 없다고 설명해. 한 Codex 사용자 보고는 형제 worktree 검색 시도를 설명해. worktree가 파일 접근 권한까지 제한한다고 가정하지 마. 검색 시도와 지침의 실제 유입은 별개로 확인해. Claude Code 2.1.323은 일부 Bash 권한과 샌드박스 문제의 수정을 안내해. 설치된 구성과 실제 범위는 별도 확인해.
+적용 한계: 목표를 완수하려고 다른 실행 환경으로 넘어가는 행동도 영향 범위에 포함돼. 일부 전송 확인 절차가 모든 경로를 막는 것은 아니야. 도구 버전과 생성 스크립트의 동작을 따로 확인해. Claude Code 개인정보 모듈의 11월 6일 문서는 일부 셸 입력만 검사한다고 했어. 11월 14일 확인한 개정은 일부 쓰기, WebFetch URL과 조건을 만족하는 MCP 입력 등으로 범위를 넓혔지만 누락 경로가 남고 보안 경계는 아니라고 설명해. Claude Code 2.1.321의 이메일 검사 변경은 다른 보호 계층이나 모델 맥락에서의 제거를 입증하지 않아. AI Agent Workspace 문서는 제어 토큰에 광범위한 호스트 권한이 있고 운영자별 역할 분리는 없다고 설명해. 한 Codex 사용자 보고는 형제 worktree 검색 시도를 설명해. worktree가 파일 접근 권한까지 제한한다고 가정하지 마. 검색 시도와 지침의 실제 유입은 별개로 확인해. Claude Code 2.1.323은 일부 Bash 권한과 샌드박스 문제의 수정을 안내해. 설치된 구성과 실제 범위는 별도 확인해.
 
-근거: [@simonw · 2026-08-20 KST](https://x.com/simonw/status/2090299859693695283), [@addyosmani · 2026-09-12 KST](https://x.com/addyosmani/status/2098662421644853433), [taylor-edwards · 2026-11-06](https://github.com/anthropics/claude-code/issues/107757), [@addyosmani · 2026-11-07 KST](https://x.com/addyosmani/status/2118771062913802383), [Anthropic · 문서 개정 2026-11-10 KST](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [Anthropic · 문서 개정 2026-11-06 KST](https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md), [Anthropic · 2026-11-10](https://github.com/anthropics/claude-code/releases/tag/v2.1.321), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Security.md), [oalders · 2026-11-08](https://github.com/openai/codex/issues/60189), [Zyph3rKeaton · 2026-11-09](https://github.com/openai/codex/issues/60189#issuecomment-6724530693), [u/byfastorg · 2026-11-12](https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/), [Anthropic · 2026-11-13](https://github.com/anthropics/claude-code/releases/tag/v2.1.323)
+근거: [@simonw · 2026-08-20 KST](https://x.com/simonw/status/2090299859693695283), [@addyosmani · 2026-09-12 KST](https://x.com/addyosmani/status/2098662421644853433), [taylor-edwards · 2026-11-06](https://github.com/anthropics/claude-code/issues/107757), [@addyosmani · 2026-11-07 KST](https://x.com/addyosmani/status/2118771062913802383), [Anthropic · 문서 개정 2026-11-10 KST](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [Anthropic · 문서 개정 2026-11-14 KST](https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md), [Anthropic · 2026-11-10](https://github.com/anthropics/claude-code/releases/tag/v2.1.321), [AI Agent Workspace contributors · 문서 개정 2026-11-11 KST](https://github.com/demirmusa/ai-agent-workspace/blob/main/wiki/Security.md), [oalders · 2026-11-08](https://github.com/openai/codex/issues/60189), [Zyph3rKeaton · 2026-11-09](https://github.com/openai/codex/issues/60189#issuecomment-6724530693), [u/byfastorg · 2026-11-12](https://www.reddit.com/r/ClaudeCode/comments/1xtwbw1/i_made_claude_code_file_locks_for_shared_projects/), [Anthropic · 2026-11-13](https://github.com/anthropics/claude-code/releases/tag/v2.1.323), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/code-mode), [Anthropic · 2026-11-14](https://github.com/anthropics/claude-code/releases/tag/v2.1.325)
 
 ### 배운 것을 재사용하기 (`compound`)
 
@@ -125,7 +125,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 적용 한계: 대화 전체를 지침으로 누적하지 않아. 오래된 교훈, 중복 지침, 불필요한 도구도 정리 대상이야.
 
-근거: [Every · 문서 개정 2026-11-02 KST](https://github.com/EveryInc/compound-engineering-plugin), [@bcherny · 2026-07-09 KST](https://x.com/bcherny/status/2074997570317779038), [@poteto · 2026-11-07 KST](https://x.com/poteto/status/2118746525811753061)
+근거: [Every · 문서 개정 2026-11-12 KST](https://github.com/EveryInc/compound-engineering-plugin), [@bcherny · 2026-07-09 KST](https://x.com/bcherny/status/2074997570317779038), [@poteto · 2026-11-07 KST](https://x.com/poteto/status/2118746525811753061), [EveryInc/compound-engineering-plugin contributors · 문서 개정 2026-11-12 KST](https://github.com/EveryInc/compound-engineering-plugin/blob/main/skills/ce-retro/SKILL.md)
 
 ### 내 이해도를 따로 확인 (`learn`)
 
@@ -147,9 +147,9 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 편집 제안: 공통 스킬의 정본을 정하고 각 프로젝트의 고유 규칙을 가까이 둬. 세션에 실제 적용된 지침·스킬의 출처와 버전을 확인해.
 
-적용 한계: 여러 PC에서 변경 충돌과 진행 중 요청 변경을 다뤄야 해. 홈 저장소나 공통 위키가 프로젝트 지침을 자동으로 읽거나 파일 권한을 제한한다고 가정하지 마. 도구마다 로드 조건이 다르고 게시된 사례는 재현하지 않았어. 공통 원본을 두더라도 모델별 변형과 실제 적용 버전을 확인해.
+적용 한계: 여러 PC에서 변경 충돌과 진행 중 요청 변경을 다뤄야 해. 홈 저장소나 공통 위키가 프로젝트 지침을 자동으로 읽거나 파일 권한을 제한한다고 가정하지 마. 도구마다 로드 조건이 다르고 게시된 사례는 재현하지 않았어. 공통 원본을 두더라도 모델별 변형과 실제 적용 버전을 확인해. 한 운영 사례에서 색인만 남긴 화면 기준이 네 차례 수정 동안 읽히지 않았어. 필수 지침의 실제 로드 여부를 확인해.
 
-근거: [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120260969750540327), [@vikingmute · 2026-11-11 KST](https://x.com/vikingmute/status/2120488589750579646), [@eiaserinnys · 2026-11-11 KST](https://x.com/eiaserinnys/status/2120529839107276803), [@eiaserinnys · 2026-11-12 KST](https://x.com/eiaserinnys/status/2120534567006450041), [@BobClowdr · 2026-11-11 KST](https://x.com/BobClowdr/status/2120488255074517383), [@pobletedev · 2026-11-11 KST](https://x.com/pobletedev/status/2120446713781481544), [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120449526674993463), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/memory), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/skills), [OpenAI · 작성일 미확인](https://developers.openai.com/codex/guides/agents-md), [BeppeTemp/cartographer contributors · 문서 개정 2026-11-09 KST](https://github.com/BeppeTemp/cartographer), [TreatTrick/skill-sync contributors · 문서 개정 2026-08-21 KST](https://github.com/TreatTrick/skill-sync), [@BizCapybara · 2026-11-12 KST](https://x.com/BizCapybara/status/2120746715414466854), [@eiaserinnys · 2026-11-12 KST](https://x.com/eiaserinnys/status/2120759183838793776)
+근거: [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120260969750540327), [@vikingmute · 2026-11-11 KST](https://x.com/vikingmute/status/2120488589750579646), [@eiaserinnys · 2026-11-11 KST](https://x.com/eiaserinnys/status/2120529839107276803), [@eiaserinnys · 2026-11-12 KST](https://x.com/eiaserinnys/status/2120534567006450041), [@BobClowdr · 2026-11-11 KST](https://x.com/BobClowdr/status/2120488255074517383), [@pobletedev · 2026-11-11 KST](https://x.com/pobletedev/status/2120446713781481544), [@mattpocockuk · 2026-11-11 KST](https://x.com/mattpocockuk/status/2120449526674993463), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/memory), [Anthropic · 작성일 미확인](https://code.claude.com/docs/en/skills), [OpenAI · 작성일 미확인](https://developers.openai.com/codex/guides/agents-md), [BeppeTemp/cartographer contributors · 문서 개정 2026-11-13 KST](https://github.com/BeppeTemp/cartographer), [TreatTrick/skill-sync contributors · 문서 개정 2026-08-21 KST](https://github.com/TreatTrick/skill-sync), [@BizCapybara · 2026-11-12 KST](https://x.com/BizCapybara/status/2120746715414466854), [@eiaserinnys · 2026-11-12 KST](https://x.com/eiaserinnys/status/2120759183838793776), [서소영 · @eiaserinnys 운영 사례 · 2026-11-13](https://seosoyoung.eiaserinnys.me/posts/agent-profile-loading-map/), [@eiaserinnys · 2026-11-13 KST](https://x.com/eiaserinnys/status/2121172973625512017)
 
 ## 출처 목록
 
@@ -261,7 +261,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `superpowers` [Superpowers: 설계·계획·검증을 스킬로](https://github.com/obra/superpowers) — 문서 개정 2026-10-21 KST; 자료 확인일 2026-11-06. README 확인; 효과를 독립적으로 검증하지 않음
 
-- `compound` [Compound Engineering: 작업 결과를 다음 작업의 지식으로](https://github.com/EveryInc/compound-engineering-plugin) — 문서 개정 2026-11-02 KST; 자료 확인일 2026-11-06. README 확인; 기능별 효과와 비용은 환경마다 다름
+- `compound` [Compound Engineering: 작업 결과를 다음 작업의 지식으로](https://github.com/EveryInc/compound-engineering-plugin) — 문서 개정 2026-11-12 KST; 자료 확인일 2026-11-14. README의 스킬 목록에 세션 마찰 회고 ce-retro가 추가됐다. 연결된 스킬은 현재 원인과 비용을 확인하고 승인된 환경 수정을 검증하도록 설명한다. 실행·효과는 확인하지 않았다.
 
 - `agent-os` [Agent OS: 프로젝트 규칙을 필요한 곳에 주입](https://github.com/buildermethods/agent-os) — 문서 개정 2026-01-21 KST; 자료 확인일 2026-11-06. README 확인; 프로젝트 규칙 정리 비용 필요
 
@@ -319,7 +319,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `github-claude-changelog-privacy` [Claude Code 2.1.317과 2.1.321의 이메일 검사 범위](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) — 문서 개정 2026-11-10 KST; 자료 확인일 2026-11-10. 변경 이력은 2.1.317에서 웹 또는 셸 호출의 계정 이메일 전송에 확인을 도입했다고 기록했다. 2.1.321은 계정 이메일과 User-Agent가 함께 있는 셸 명령만 확인 없이 거절하도록 바꿨다고 설명한다. 별도 보호 기능과 실제 실행 범위는 검증하지 않았다.
 
-- `github-claude-privacy-mod` [Claude Code 개인정보 모듈이 검사하는 범위](https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md) — 문서 개정 2026-11-06 KST; 자료 확인일 2026-11-08. 공개 README와 hook 소스는 이 모듈이 계정 이메일과 User-Agent 표현이 함께 있는 일부 셸 호출을 거절한다고 설명한다. WebFetch·WebSearch·MCP 호출과 스크립트 내부 값 등은 이 모듈의 대상이 아니다. 다른 보호 기능과 실제 동작은 재현하지 않았다.
+- `github-claude-privacy-mod` [Claude Code 개인정보 모듈이 검사하는 범위](https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md) — 문서 개정 2026-11-14 KST; 자료 확인일 2026-11-14. 이전 README는 일부 셸 입력만 확인한다고 설명했다. 새 README는 일부 스크립트와 쓰기·편집, WebFetch URL, 조건을 만족하는 MCP 입력까지 검사한다고 설명한다. WebSearch·브라우저와 실행 중 계산한 값 등 빠지는 경우가 있으며 보안 경계가 아니라고 밝힌다.
 
 - `reddit-1xqfukk` [압축 이후 최근 작업 순서부터 복구하기](https://www.reddit.com/r/codex/comments/1xqfukk/a_recovery_runbook_we_built_with_codex_for/) — 2026-11-08; 자료 확인일 2026-11-08. Neo.mjs 작성자가 메시지·자기 인계·최근 대화·관련 기억·현재 저장소 상태·방향 문서를 함께 확인하는 복구 절차를 소개했다. 실제 효과를 비교한 통제 실험은 아니다.
 
@@ -405,7 +405,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `2120488589750579646` [공통 진입 저장소에서 다른 프로젝트를 찾아가는 방식](https://x.com/vikingmute/status/2120488589750579646) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 Matt의 글을 인용하며 공통 start repo에 지침과 스킬을 모으고 다른 프로젝트 경로를 기록하는 비슷한 방식을 설명한다. 개인 경험이다.
 
-- `2120529839107276803` [여러 PC와 저장소의 지침을 위키 서버와 프로필로 관리한 경험](https://x.com/eiaserinnys/status/2120529839107276803) — 2026-11-11 KST; 자료 확인일 2026-11-12. 작성자는 여러 PC에서 저장소로 스킬을 동기화하던 불편을 겪은 뒤, 지침과 스킬을 LLM 위키 서버에 두고 대시보드가 세션을 띄울 때 에이전트 프로필에 맞춰 주입한다고 설명한다. 서버 구현은 공개하지 않았다.
+- `2120529839107276803` [여러 PC와 저장소의 지침을 위키 서버와 프로필로 관리한 경험](https://x.com/eiaserinnys/status/2120529839107276803) — 2026-11-11 KST; 자료 확인일 2026-11-14. 작성자는 여러 PC에서 저장소로 스킬을 동기화하던 불편을 겪은 뒤, 지침과 스킬을 LLM 위키 서버에 두고 대시보드가 세션을 띄울 때 에이전트 프로필에 맞춰 주입한다고 설명한다. 이 게시물에는 상세 구현이 없으며 후속 글에서 전달 방식을 설명했다.
 
 - `2120534567006450041` [많아진 스킬 대신 스킬 검색 스킬을 쓴다는 후속 답변](https://x.com/eiaserinnys/status/2120534567006450041) — 2026-11-12 KST; 자료 확인일 2026-11-12. 작성자는 스킬이 너무 많아 대부분을 덜어내고 스킬을 검색하는 스킬을 쓰고 있다고 답했다. 검색 구현이나 정확도·비용은 설명하지 않았다.
 
@@ -425,7 +425,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `codex-instruction-discovery` [Codex의 전역·프로젝트 지침 탐색 범위](https://developers.openai.com/codex/guides/agents-md) — 작성일 미확인; 자료 확인일 2026-11-12. 공식 문서는 시작할 때 전역 지침과 프로젝트 루트에서 현재 작업 디렉터리까지의 AGENTS.md 계열을 결합한다고 설명한다. 홈 저장소에서 다른 저장소의 경로를 아는 것만으로 그 저장소 지침이 로드된다고 단정할 수 없다.
 
-- `github-cartographer-shared-wiki` [Git 기반 위키와 에이전트 설정 배포를 묶은 Cartographer](https://github.com/BeppeTemp/cartographer) — 문서 개정 2026-11-09 KST; 자료 확인일 2026-11-12. README는 Git 기반 지식 저장소와 MCP 서버, Claude Code·Codex 등 클라이언트별 설정 배포를 설명한다. Gitea를 Git 저장소 후보로 열거하고 지식 저장소별 토큰 역할을 소개한다. 1.0 이전 프로젝트이며 직접 실행하지 않았다.
+- `github-cartographer-shared-wiki` [Git 기반 위키와 에이전트 설정 배포를 묶은 Cartographer](https://github.com/BeppeTemp/cartographer) — 문서 개정 2026-11-13 KST; 자료 확인일 2026-11-14. 새 README는 Git 기반 지식 서버 Meridian, 각 PC의 설정·동기화 클라이언트 Compass, 읽기 전용 화면 Atlas와 선택적 유지 관리 에이전트 Surveyor를 구분한다. Gitea와 권한 설명은 유지되며 직접 실행하지 않았다.
 
 - `github-skill-sync-shared` [GitHub 기반 개인 스킬 동기화 도구 Skill Sync](https://github.com/TreatTrick/skill-sync) — 문서 개정 2026-08-21 KST; 자료 확인일 2026-11-12. README의 v1은 GitHub 저장소를 통해 사용자 범위의 Claude Code·Codex·공통 스킬을 미리 비교하고 충돌을 선택해 동기화한다고 설명한다. 프로젝트별 스킬·임의 경로는 범위 밖이며 Windows 설치 프로그램은 서명되지 않았다. 실행하지 않았다.
 
@@ -441,7 +441,7 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 
 - `reddit-1xuqj2r` [누가 누구의 답을 기다리는지 보여주는 작업 보드 사례](https://www.reddit.com/r/ClaudeCode/comments/1xuqj2r/i_built_aki_with_claude_code_a_board_of_who_is/) — 2026-11-13; 자료 확인일 2026-11-13. 제작자는 GitLab·GitHub·Jira 등의 작업을 내가 할 일과 남을 기다리는 일로 나누고, 작업 맥락을 붙여 Claude Code를 여는 터미널 도구를 소개한다. 게시물에는 승인 전 게시·병합·푸시 금지를 인계에 포함한다고 적었다.
 
-- `github-aki-workboard` [대기 담당 보드 aki의 연동과 복구 한계](https://github.com/nathan-poncet/aki) — 문서 개정 2026-11-13 KST; 자료 확인일 2026-11-13. README는 GitLab·GitHub·Jira 작업과 에이전트 실행을 설명한다. Gitea는 새 어댑터 후보로만 제시하며, Herdr에서는 재시작 후 에이전트 탭이 그대로 복원되지 않을 수 있다고 밝힌다. 실행하지 않았다.
+- `github-aki-workboard` [대기 담당 보드 aki의 연동과 복구 한계](https://github.com/nathan-poncet/aki) — 문서 개정 2026-11-13 KST; 자료 확인일 2026-11-14. 새 README는 지원 운영체제를 macOS와 Linux로 안내하고 GitLab·GitHub·Jira 보드를 설명한다. 이전 README는 Gitea를 새 연결의 예시로만 언급했다. 같은 개정의 LIMITS.md는 Herdr 재시작 복구 한계를 유지한다. 직접 실행하지 않았다.
 
 - `2120221244478083249` [작은 팀의 배포 대기 시간과 병합 후 검토 방식](https://x.com/mitchellh/status/2120221244478083249) — 2026-11-11 KST; 자료 확인일 2026-11-13. 작성자는 소규모 팀이 대체로 main에 직접 푸시하며 푸시 전 기계 지원 리뷰와 푸시 후 사람·기계 리뷰를 한다고 말한다. 배포를 시작하면 15분 알림이 있고 그동안 누구나 일시 중지할 수 있다고 설명한다. 경험이며 일반적 안전성을 검증한 실험이 아니다.
 
@@ -452,3 +452,17 @@ AI 에이전트 인계를 위한 자동 생성 요약입니다. 외부 원문은
 - `2120746715414466854` [여러 모델에 중립 원본과 모델별 지침 변형을 배포한 사례](https://x.com/BizCapybara/status/2120746715414466854) — 2026-11-12 KST; 자료 확인일 2026-11-13. 작성자는 3대 이상의 PC와 여러 모델에서 동기화 문제를 겪고, 중립적인 지침을 원본으로 둔 뒤 모델별 적응본을 만들어 다시 배포한다고 설명한다. 실제 효과는 검증하지 않았다.
 
 - `2120759183838793776` [여러 모델에 공통 원본과 상황별 변형이 필요하다는 후속 의견](https://x.com/eiaserinnys/status/2120759183838793776) — 2026-11-12 KST; 자료 확인일 2026-11-13. 앞서 위키 서버 사용을 소개한 작성자는 여러 기기와 모델을 섞을 때 지침 최적화가 어렵다며 중앙에서 기본 형태를 관리하고 상황에 맞게 변형하는 체계가 필요하다고 말했다. 실제 구현의 상세 설명은 아니다.
+
+- `2121172973625512017` [이전 위키 서버 사례에 이어 13개 프로필 지침 지도를 소개](https://x.com/eiaserinnys/status/2121172973625512017) — 2026-11-13 KST; 자료 확인일 2026-11-14. 작성자는 앞서 소개한 작업 영역별 지침·스킬 주입을 정리한 후속 글을 연결했다. 연결된 글은 운영 사례와 한계를 설명한다.
+
+- `blog-eia-profile-map` [13개 에이전트 프로필에 공통 지침과 스킬을 전달한 운영 사례](https://seosoyoung.eiaserinnys.me/posts/agent-profile-loading-map/) — 2026-11-13; 자료 확인일 2026-11-14. 작성자는 중앙 위키 원본을 프로필에 따라 전문 주입, 목차 후 조회, 실행 중 검색으로 나눈다고 설명한다. 화면 지침을 목차에만 둔 뒤 네 차례 수정 동안 읽히지 않은 사례와 필수 원격 지침 로드 실패 시 기동을 중단하도록 바꾼 경험을 적었다.
+
+- `blog-eia-delegation-v8` [담당 에이전트의 조사·실행을 분리하고 검증 꾸러미로 인계한 사례](https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/) — 2026-11-12; 자료 확인일 2026-11-14. 작성자는 담당의 검색·셸·편집을 제한하고 다른 세션의 변경분, 종료 코드와 원출력을 모아 담당이 판단했다고 설명한다. 과업 크기가 같지 않은 기존 검수 55턴과 시범 3개 카드의 23턴을 비교해 검수 입력 중앙값 2.85M→0.55M 토큰을 보고했다.
+
+- `claude-code-code-mode-doc` [Code Mode의 실행 환경·재개·권한 조건](https://code.claude.com/docs/en/code-mode) — 작성일 미확인; 자료 확인일 2026-11-14. 공식 문서는 Code Mode를 기본 꺼진 실험 기능으로 설명한다. 2.1.323 이상에서 대화형 터미널만 지원하며 Desktop·SDK·-p와 에이전트 팀에는 적용되지 않는다고 한다. 재개에도 터미널과 해당 모드가 필요하다.
+
+- `github-claude-2-1-325` [Claude Code 2.1.325의 재개 수정과 자동 작업 권한 변경](https://github.com/anthropics/claude-code/releases/tag/v2.1.325) — 2026-11-14; 자료 확인일 2026-11-14. 제작사는 비정상 종료 후 재개에서 최근 대화가 빠지거나 Windows 경로 표기 차이로 세션이 숨겨지던 문제의 수정을 안내한다. 샌드박스 Bash의 기본 권한 흐름과 일부 스킬을 실행하는 예약 작업의 확인 조건도 바뀌었다.
+
+- `reddit-1xvlvos` [계층형 다중 에이전트 작업에서 사용량이 빠르게 소진된 경험](https://www.reddit.com/r/ClaudeCode/comments/1xvlvos/reducing_usage_on_very_large_mloc_projects/) — 2026-11-14; 자료 확인일 2026-11-14. 작성자는 여러 단계의 계획·구현·리뷰 에이전트를 운영하며 사용 한도를 빨리 소진했다고 한다. 연결된 하위 세션이 쉬는 동안 상위 세션이 다시 응답해 사용량이 발생한다는 경험도 보고했다.
+
+- `github-compound-ce-retro` [세션의 반복 마찰을 근거로 검토하는 ce-retro](https://github.com/EveryInc/compound-engineering-plugin/blob/main/skills/ce-retro/SKILL.md) — 문서 개정 2026-11-12 KST; 자료 확인일 2026-11-14. 문서는 세션에서 반복된 탐색·실패 등 환경 마찰을 찾고 현재 저장소에서 원인이 남았는지 확인한 뒤, 사용자가 승인한 환경 변경을 적용·검증하고 결정 기록을 남긴다고 설명한다. 직접 실행하지 않았다.

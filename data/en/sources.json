@@ -380,9 +380,9 @@
   {
     "id": "compound",
     "title": "Compound Engineering: turning work results into knowledge for the next task",
-    "evidence": "README reviewed; effects and costs of individual features vary by environment",
-    "date_basis": "Publication date unverified",
-    "review_scope": "Relevant sections of the README or linked documents"
+    "evidence": "The README adds ce-retro to its skill list. The linked skill describes checking current causes and costs of session friction, then verifying approved environment fixes. We did not run it or measure its effect.",
+    "date_basis": "Original README publication unknown; reviewed revision 2026-11-11 20:33:15 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of the previous and current pinned README skill list and the added skill docs"
   },
   {
     "id": "agent-os",
@@ -600,9 +600,9 @@
   {
     "id": "github-claude-privacy-mod",
     "title": "Scope of the Claude Code privacy mod",
-    "evidence": "The published README and hook source describe refusal of certain shell calls containing both the account email and a User-Agent reference. This mod does not check WebFetch, WebSearch, MCP calls or values inside scripts. Other protections and runtime behavior were not reproduced.",
-    "date_basis": "Original publication date unknown; reviewed document revision 2026-11-06 00:00:33 UTC",
-    "review_scope": "Mod README and hooks/register.ts at the pinned revision"
+    "evidence": "The earlier README described checks limited to some shell input. The new README describes checks on some scripts and writes or edits, WebFetch URLs and MCP inputs matching conditions. It still lists gaps including WebSearch, browser tools and runtime-computed values, and says it is not a security boundary.",
+    "date_basis": "Original publication unknown; reviewed README revision 2026-11-13 21:52:54 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of old and new pinned README scope, exclusions and disable conditions"
   },
   {
     "id": "reddit-1xqfukk",
@@ -901,9 +901,9 @@
   {
     "id": "2120529839107276803",
     "title": "A wiki server and profiles for guidance across PCs and repositories",
-    "evidence": "After finding repository-based skill synchronization cumbersome across PCs, the author says they keep guidance and skills on an LLM wiki server and inject them by agent profile when a dashboard launches a session. The server implementation is not disclosed.",
+    "evidence": "After finding repository-based skill synchronization cumbersome across PCs, the author says guidance and skills are kept on an LLM wiki server and injected by profile when a dashboard launches a session. This post does not detail the implementation; a later article describes its delivery modes.",
     "date_basis": "Post time 2026-11-11 14:51:25 UTC converted to Asia/Seoul",
-    "review_scope": "Original post, conversation context and publication time"
+    "review_scope": "Original post rechecked and connected to the later article"
   },
   {
     "id": "2120534567006450041",
@@ -971,9 +971,9 @@
   {
     "id": "github-cartographer-shared-wiki",
     "title": "Cartographer combines a Git-backed wiki with agent configuration delivery",
-    "evidence": "The README describes a Git-backed knowledge base, MCP server and configuration delivery to clients including Claude Code and Codex. It lists Gitea as a Git-host option and describes token roles per knowledge base. It is pre-1.0 and was not run.",
-    "date_basis": "Original README publication date unknown; reviewed revision 2026-11-09 14:47:54 UTC converted to Asia/Seoul",
-    "review_scope": "Pinned README revision: storage and client support, stated access controls and version limits"
+    "evidence": "The new README distinguishes Meridian, the Git-backed knowledge server; Compass, the per-machine setup and sync client; Atlas, a read-only view; and optional Surveyor maintenance agents. Gitea and access-control descriptions remain. We did not run it.",
+    "date_basis": "Original README publication unknown; reviewed revision 2026-11-13 12:14:34 UTC converted to Asia/Seoul",
+    "review_scope": "Comparison of old and new pinned README and the deployment component descriptions"
   },
   {
     "id": "github-skill-sync-shared",
@@ -1027,9 +1027,9 @@
   {
     "id": "github-aki-workboard",
     "title": "aki’s integrations and recovery limits",
-    "evidence": "The README describes GitLab, GitHub and Jira work and agent launch. Gitea appears only as a potential new adapter, and it says a Herdr agent tab may not be restored as before after a restart. We did not run it.",
-    "date_basis": "Original README publication date unknown; reviewed revision 2026-11-12 17:23:56 UTC converted to Asia/Seoul",
-    "review_scope": "Supported sources, agent briefing and recovery limits in the pinned README"
+    "evidence": "The new README lists macOS and Linux and describes GitLab, GitHub and Jira. The older README mentioned Gitea only as a potential new connector. LIMITS.md at the same revision retains the Herdr restart warning. We did not run it.",
+    "date_basis": "Original README publication unknown; reviewed revision 2026-11-13 11:39:25 UTC converted to Asia/Seoul",
+    "review_scope": "Old and new pinned README and current LIMITS.md: sources, operating systems and recovery"
   },
   {
     "id": "2120221244478083249",
@@ -1065,5 +1065,54 @@
     "evidence": "The author of the earlier wiki-server post says mixed devices and models make guidance optimization difficult and that a centrally managed base with contextual variants is needed. This is not a detailed implementation.",
     "date_basis": "Original timestamp 2026-11-12 06:02:45 UTC converted to Asia/Seoul",
     "review_scope": "Author’s follow-up opinion on the neutral-base example and timestamp"
+  },
+  {
+    "id": "2121172973625512017",
+    "title": "A follow-up links a map of instructions across 13 agent profiles",
+    "evidence": "The author links a follow-up on the previously described workspace-specific injection of instructions and skills. The article describes an operational case and its limits.",
+    "date_basis": "Original timestamp 2026-11-13 09:27:01 UTC converted to Asia/Seoul",
+    "review_scope": "Post, linked article and timestamp"
+  },
+  {
+    "id": "blog-eia-profile-map",
+    "title": "An operational map of guidance and skills across 13 agent profiles",
+    "evidence": "The author describes delivering a central wiki by full injection, index then retrieval, or runtime search according to profile. An indexed UI rule was not read during four edits; required remote guidance failures were changed to stop startup.",
+    "date_basis": "Date displayed by the article; page metadata 2026-11-13 00:30:00 Asia/Seoul",
+    "review_scope": "Delivery modes, missed guidance, cost accounting, profiles and limitations"
+  },
+  {
+    "id": "blog-eia-delegation-v8",
+    "title": "A lead agent reviews a sealed evidence bundle after delegating execution",
+    "evidence": "The author says the lead’s search, shell and editing tools were restricted and the lead reviewed a bundle of diffs, exit codes and raw outputs from other sessions. For 55 earlier review turns versus 23 turns on three pilot cards with unequal task sizes, median review input was reported as 2.85M to 0.55M tokens.",
+    "date_basis": "Date displayed by the article; page metadata 2026-11-12 10:30:00 Asia/Seoul",
+    "review_scope": "Diagnosis, roles, evidence bundle, three-card pilot, one rejection replay and limits"
+  },
+  {
+    "id": "claude-code-code-mode-doc",
+    "title": "Code Mode execution, resume and permission conditions",
+    "evidence": "The official docs describe Code Mode as experimental and off by default. Version 2.1.323 or later supports interactive terminal sessions, not Desktop, SDK, -p or agent teams. Resuming requires a terminal with the mode on.",
+    "date_basis": "Original publication and revision dates unknown; official documentation checked 2026-11-14",
+    "review_scope": "Official requirements, limits, resume and permission checks"
+  },
+  {
+    "id": "github-claude-2-1-325",
+    "title": "Claude Code 2.1.325 changes resume behavior and automation permissions",
+    "evidence": "The vendor reports fixes for recent turns lost after an unclean exit and Windows resume failures caused by path spelling differences. It also changes the default sandboxed Bash permission flow and confirmation for some skills in scheduled tasks.",
+    "date_basis": "Release timestamp 2026-11-13 20:40:01 UTC converted to Asia/Seoul",
+    "review_scope": "Release notes on unclean exit, Windows resume, Code Mode, scheduled tasks and permission changes"
+  },
+  {
+    "id": "reddit-1xvlvos",
+    "title": "A user reports rapid usage in hierarchical multi-agent work",
+    "evidence": "The author reports rapidly exhausting usage limits while operating multiple levels of planning, implementation and review agents. They also report the parent session being prompted to respond while linked sessions are idle.",
+    "date_basis": "Original time element 2026-11-13 22:32:45 UTC converted to Asia/Seoul",
+    "review_scope": "Post, selected replies and timestamp element"
+  },
+  {
+    "id": "github-compound-ce-retro",
+    "title": "ce-retro: reviewing recurring session friction with evidence",
+    "evidence": "The docs describe finding repeated environmental friction in sessions, checking whether its cause remains in the current repository, applying and verifying approved environment changes, and keeping a decision ledger. We did not run it.",
+    "date_basis": "Original publication date unknown; reviewed revision 2026-11-11 20:33:15 UTC converted to Asia/Seoul",
+    "review_scope": "Pinned skill and guide: session scope, proposal criteria, approval and privacy conditions"
   }
 ]

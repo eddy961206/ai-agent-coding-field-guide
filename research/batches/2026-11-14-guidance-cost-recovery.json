@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "topic": "공통 지침의 실제 전달과 에이전트 협업 비용",
+  "as_of": "2026-11-14",
+  "timezone": "Asia/Seoul",
+  "scope": "직전 성공 조사 2026-11-13 09:14:34 KST에서 72시간 겹치는 2026-11-10 09:14:34 KST부터 X·Reddit·GitHub와 공식 문서를 확인했다.",
+  "findings": [
+    {
+      "source_id": "2121172973625512017",
+      "original_url": "https://x.com/eiaserinnys/status/2121172973625512017",
+      "author": "@eiaserinnys",
+      "published_on": "2026-11-13",
+      "date_basis": "원문 시각 2026-11-13 09:27:01 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 13개 에이전트 프로필의 지침과 스킬을 정리한 글을 소개했다.",
+      "editorial_takeaway": "이전 게시물에 없던 전달 방식과 누락 사례는 후속 원문에서 확인한다.",
+      "limitations": [
+        "후속 글의 측정과 구현을 독립적으로 재현하지 않았다."
+      ],
+      "related_source_ids": [
+        "2120529839107276803",
+        "blog-eia-profile-map"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "blog-eia-profile-map",
+      "original_url": "https://seosoyoung.eiaserinnys.me/posts/agent-profile-loading-map/",
+      "author": "서소영 · @eiaserinnys 운영 사례",
+      "published_on": "2026-11-13",
+      "date_basis": "원문 표시 날짜. 페이지 메타데이터 2026-11-13 00:30:00 Asia/Seoul",
+      "checked_on": "2026-11-14",
+      "source_kind": "Web",
+      "evidence_kind": "self_report",
+      "author_claim": "운영자는 프로필과 상황에 따라 지침 본문, 색인 또는 검색을 쓰고 지침 미열람과 로드 실패를 겪었다고 설명한다.",
+      "editorial_takeaway": "누락 시 영향이 큰 규칙은 실제 로드 여부를 확인하고 원격 필수 지침 실패를 조용히 넘기지 않는다.",
+      "limitations": [
+        "한 운영 환경의 자가 보고이며 원본 서버 설정과 측정치를 독립 확인하지 않았다.",
+        "색인과 검색의 실제 호출률은 미계측이라고 밝혔다.",
+        "전문 주입 자체가 모델의 준수를 보장하는 것은 아니다."
+      ],
+      "related_source_ids": [
+        "2121172973625512017",
+        "2120529839107276803",
+        "blog-eia-delegation-v8"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "blog-eia-delegation-v8",
+      "original_url": "https://seosoyoung.eiaserinnys.me/posts/opus-card-assignee-delegation-v8/",
+      "author": "서소영 · @eiaserinnys 운영 사례",
+      "published_on": "2026-11-12",
+      "date_basis": "원문 표시 날짜. 페이지 메타데이터 2026-11-12 10:30:00 Asia/Seoul",
+      "checked_on": "2026-11-14",
+      "source_kind": "Web",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 담당의 누적 대화 입력을 줄이기 위해 도구 역할을 분리하고 검수 입력을 전후 비교했다.",
+      "editorial_takeaway": "결과물과 실행 증거를 구분해 인계하고, 전체 사용량·재작업·실제 품질도 별도로 비교한다.",
+      "limitations": [
+        "한 팀의 자가 보고이며 실험을 독립 재현하지 않았다.",
+        "기존과 시범 작업의 크기가 같지 않으며 시범은 세 카드다.",
+        "수치는 담당 검수 턴 입력이며 전체 시스템 비용이나 품질 개선을 입증하지 않는다.",
+        "기계 통과는 검수 준비 신호이며 요구사항 충족을 보장하지 않는다."
+      ],
+      "related_source_ids": [
+        "blog-eia-profile-map",
+        "reddit-1xvlvos",
+        "reddit-1xuqnnc"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "claude-code-code-mode-doc",
+      "original_url": "https://code.claude.com/docs/en/code-mode",
+      "author": "Anthropic",
+      "published_on": null,
+      "date_basis": "최초 게시·개정 날짜 미확인. 2026-11-14 공식 문서를 확인",
+      "checked_on": "2026-11-14",
+      "source_kind": "Web",
+      "evidence_kind": "vendor_report",
+      "author_claim": "공식 문서는 Code Mode의 허용 환경, 재개 조건과 자동 권한 검사의 범위를 설명한다.",
+      "editorial_takeaway": "사용하는 환경이 지원되는지 먼저 확인하고 도구 호출별 권한 규칙과 코드 단위 자동 분류를 구별한다.",
+      "limitations": [
+        "지난 조사에서 404였지만 이번에는 본문을 읽었다. 최초 게시일은 확인하지 못했다.",
+        "공식 문서 설명이며 실제 세션에서 기능·권한 동작을 시험하지 않았다.",
+        "자동 모드 분류기는 실행 시 계산되는 값을 보지 못한다고 문서가 설명한다."
+      ],
+      "related_source_ids": [
+        "github-claude-2-1-323",
+        "github-claude-2-1-325"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-claude-2-1-325",
+      "original_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "author": "Anthropic",
+      "published_on": "2026-11-14",
+      "date_basis": "릴리스 시각 2026-11-13 20:40:01 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "제작사는 관련 재개 오류를 수정하고 샌드박스와 예약 스킬의 권한 흐름을 변경했다고 발표한다.",
+      "editorial_takeaway": "자동 작업이 승인을 기다릴 수 있는지 사용 중인 버전과 정책에서 확인한다.",
+      "limitations": [
+        "릴리스 설명이며 사용자 환경의 설치 버전과 실제 동작은 확인하지 않았다.",
+        "예약 작업의 확인은 allowed-tools 또는 훅을 선언한 스킬에 대한 설명이다.",
+        "Code Mode 수정과 일반 재개 수정을 구분한다."
+      ],
+      "related_source_ids": [
+        "github-claude-2-1-323",
+        "claude-code-code-mode-doc",
+        "github-claude-privacy-mod"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "reddit-1xvlvos",
+      "original_url": "https://www.reddit.com/r/ClaudeCode/comments/1xvlvos/reducing_usage_on_very_large_mloc_projects/",
+      "author": "u/xbst_",
+      "published_on": "2026-11-14",
+      "date_basis": "원문 time 요소 2026-11-13 22:32:45 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "Reddit",
+      "evidence_kind": "self_report",
+      "author_claim": "작성자는 대형 프로젝트의 계층형 병렬 작업에서 사용량과 상위 세션 재호출 문제를 보고한다.",
+      "editorial_takeaway": "여러 에이전트를 쓸 때 실제 유휴 재호출과 전체 사용량·완료 품질을 따로 계측한다.",
+      "limitations": [
+        "개인 경험이며 사용량과 원인, 제품 동작을 독립 재현하지 않았다.",
+        "작성자가 설정 해법을 찾지 못했다는 말은 불가능하다는 증명이 아니다."
+      ],
+      "related_source_ids": [
+        "blog-eia-delegation-v8",
+        "reddit-1xuqnnc"
+      ],
+      "change_type": "addition",
+      "revision": null,
+      "snapshot_url": null
+    },
+    {
+      "source_id": "github-compound-ce-retro",
+      "original_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/main/skills/ce-retro/SKILL.md",
+      "author": "EveryInc/compound-engineering-plugin contributors",
+      "published_on": null,
+      "date_basis": "스킬 최초 게시일 미확인. 확인한 개정 2026-11-11 20:33:15 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "스킬은 세션의 반복 마찰을 근거로 현재 환경을 점검하고 승인된 개선만 적용하도록 설명한다.",
+      "editorial_takeaway": "지침을 늘리기 전에 반복 비용과 현재 원인을 확인하고 민감한 대화 내용의 공개를 피한다.",
+      "limitations": [
+        "문서·스킬 정의를 읽었으며 설치·실행하거나 효과를 측정하지 않았다.",
+        "원문은 승인과 저장 범위에 대한 조건을 둔다."
+      ],
+      "related_source_ids": [
+        "compound",
+        "pstack"
+      ],
+      "change_type": "addition",
+      "revision": "d6d00627bb70e933664d5641b41502d4121a1252",
+      "snapshot_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/d6d00627bb70e933664d5641b41502d4121a1252/skills/ce-retro/SKILL.md"
+    },
+    {
+      "source_id": "github-claude-privacy-mod",
+      "original_url": "https://github.com/anthropics/claude-code/blob/main/mods/privacy/README.md",
+      "author": "Anthropic",
+      "published_on": null,
+      "date_basis": "최초 게시일 미확인. 확인한 README 개정 2026-11-13 21:52:54 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "개정된 모듈 README는 기존 셸 중심 검사에서 일부 추가 경로로 검사 범위가 넓어졌고 여전히 빠지는 경우가 있다고 설명한다.",
+      "editorial_takeaway": "모듈과 실제 세션의 로드 여부, 검사 조건과 빠지는 경로를 구분해 확인한다.",
+      "limitations": [
+        "모든 이메일이나 모든 비밀 전송을 막는 보안 경계가 아니다.",
+        "README 비교이며 현재 환경에 모듈이 로드됐는지와 실제 거절 결과를 시험하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-claude-2-1-325",
+        "github-claude-changelog-privacy"
+      ],
+      "change_type": "changed_view",
+      "revision": "678bca6d141fb69feb451013e055234a2085aeff",
+      "snapshot_url": "https://github.com/anthropics/claude-code/blob/678bca6d141fb69feb451013e055234a2085aeff/mods/privacy/README.md",
+      "previous_evidence": "공개 README와 hook 소스는 이 모듈이 계정 이메일과 User-Agent 표현이 함께 있는 일부 셸 호출을 거절한다고 설명한다. WebFetch·WebSearch·MCP 호출과 스크립트 내부 값 등은 이 모듈의 대상이 아니다. 다른 보호 기능과 실제 동작은 재현하지 않았다.",
+      "previous_revision": "90380efca7f9d73e206fac453f841b6acd664f4d",
+      "previous_snapshot_url": "https://github.com/anthropics/claude-code/blob/90380efca7f9d73e206fac453f841b6acd664f4d/mods/privacy/README.md"
+    },
+    {
+      "source_id": "2120529839107276803",
+      "original_url": "https://x.com/eiaserinnys/status/2120529839107276803",
+      "author": "@eiaserinnys",
+      "published_on": "2026-11-11",
+      "date_basis": "게시 시각 2026-11-11 14:51:25 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "X",
+      "evidence_kind": "self_report",
+      "author_claim": "처음 게시물에는 구현 상세가 없지만 이후 글은 운영 서버와 전달 방식을 설명한다.",
+      "editorial_takeaway": "당시 확인하지 못했던 구현 정보와 현재 공개된 후속 설명을 구분한다.",
+      "limitations": [
+        "후속 글에 적힌 범위를 독립적으로 실행하거나 감사하지 않았다."
+      ],
+      "related_source_ids": [
+        "2121172973625512017",
+        "blog-eia-profile-map"
+      ],
+      "change_type": "correction",
+      "revision": null,
+      "snapshot_url": null,
+      "previous_evidence": "작성자는 여러 PC에서 저장소로 스킬을 동기화하던 불편을 겪은 뒤, 지침과 스킬을 LLM 위키 서버에 두고 대시보드가 세션을 띄울 때 에이전트 프로필에 맞춰 주입한다고 설명한다. 서버 구현은 공개하지 않았다."
+    },
+    {
+      "source_id": "github-cartographer-shared-wiki",
+      "original_url": "https://github.com/BeppeTemp/cartographer",
+      "author": "BeppeTemp/cartographer contributors",
+      "published_on": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-13 12:14:34 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "새 README는 위키 서버, PC별 클라이언트, 읽기 화면과 유지 관리 에이전트의 역할을 명확히 나눈다.",
+      "editorial_takeaway": "여러 PC에서 서버와 클라이언트의 역할, 권한과 장애 복구를 따로 확인한다.",
+      "limitations": [
+        "문서 설명이 새 기능의 최초 출시 시점을 입증하지 않는다.",
+        "Gitea·다중 PC·복구와 권한을 직접 시험하지 않았다."
+      ],
+      "related_source_ids": [
+        "blog-eia-profile-map"
+      ],
+      "change_type": "applicability_change",
+      "revision": "ed8a63ef692fcbaa59bf42e5e7e85621ddf44a5e",
+      "snapshot_url": "https://github.com/BeppeTemp/cartographer/blob/ed8a63ef692fcbaa59bf42e5e7e85621ddf44a5e/README.md",
+      "previous_evidence": "README는 Git 기반 지식 저장소와 MCP 서버, Claude Code·Codex 등 클라이언트별 설정 배포를 설명한다. Gitea를 Git 저장소 후보로 열거하고 지식 저장소별 토큰 역할을 소개한다. 1.0 이전 프로젝트이며 직접 실행하지 않았다.",
+      "previous_revision": "6352f2ee78b810e98707dca2c8bfedc4dc492255",
+      "previous_snapshot_url": "https://github.com/BeppeTemp/cartographer/blob/6352f2ee78b810e98707dca2c8bfedc4dc492255/README.md"
+    },
+    {
+      "source_id": "github-aki-workboard",
+      "original_url": "https://github.com/nathan-poncet/aki",
+      "author": "nathan-poncet/aki contributors",
+      "published_on": null,
+      "date_basis": "문서 최초 게시일 미확인. 확인한 README 개정 2026-11-13 11:39:25 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "vendor_report",
+      "author_claim": "README가 macOS와 Linux를 명시하고 세부 제한을 LIMITS.md로 옮겼다.",
+      "editorial_takeaway": "Windows나 Gitea에서 바로 쓸 수 있다고 가정하지 않고 별도로 확인한다.",
+      "limitations": [
+        "문서는 지원 범위의 설명이며 직접 설치하거나 Windows·Gitea 연결을 시험하지 않았다."
+      ],
+      "related_source_ids": [
+        "reddit-1xuqj2r"
+      ],
+      "change_type": "applicability_change",
+      "revision": "af6e5ad89442ed9875ca4797cc49499e30a7097b",
+      "snapshot_url": "https://github.com/nathan-poncet/aki/blob/af6e5ad89442ed9875ca4797cc49499e30a7097b/README.md",
+      "previous_evidence": "README는 GitLab·GitHub·Jira 작업과 에이전트 실행을 설명한다. Gitea는 새 어댑터 후보로만 제시하며, Herdr에서는 재시작 후 에이전트 탭이 그대로 복원되지 않을 수 있다고 밝힌다. 실행하지 않았다.",
+      "previous_revision": "0e08b66b9bcb7452ec86b73163249576278c8726",
+      "previous_snapshot_url": "https://github.com/nathan-poncet/aki/blob/0e08b66b9bcb7452ec86b73163249576278c8726/README.md"
+    },
+    {
+      "source_id": "compound",
+      "original_url": "https://github.com/EveryInc/compound-engineering-plugin",
+      "author": "Every",
+      "published_on": null,
+      "date_basis": "README 최초 게시일 미확인. 확인한 개정 2026-11-11 20:33:15 UTC를 Asia/Seoul로 변환",
+      "checked_on": "2026-11-14",
+      "source_kind": "GitHub",
+      "evidence_kind": "implementation",
+      "author_claim": "기존 스킬 목록에 세션 단위 환경 마찰 회고가 추가됐다.",
+      "editorial_takeaway": "반복 실수나 지연은 실제 기록과 현재 원인을 대조한 뒤 개선한다.",
+      "limitations": [
+        "새 스킬을 설치하거나 실행하지 않았다."
+      ],
+      "related_source_ids": [
+        "github-compound-ce-retro",
+        "pstack"
+      ],
+      "change_type": "applicability_change",
+      "revision": "d6d00627bb70e933664d5641b41502d4121a1252",
+      "snapshot_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/d6d00627bb70e933664d5641b41502d4121a1252/README.md",
+      "previous_evidence": "README 확인; 기능별 효과와 비용은 환경마다 다름",
+      "previous_revision": "fea9d22bbc243c236902aeda59894af8e57b4ea6",
+      "previous_snapshot_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/fea9d22bbc243c236902aeda59894af8e57b4ea6/README.md"
+    }
+  ],
+  "counterevidence": [
+    "색인으로 남긴 화면 기준을 네 차례 수정 동안 읽지 않았다는 작성자의 사례는 필요한 규칙의 무조건적인 지연 로드에 반례다.",
+    "세 카드 시범의 담당 검수 토큰 감소는 작업 크기가 같은 비교나 전체 시스템 비용 절감을 입증하지 않는다.",
+    "개인정보 모듈의 새 검사 범위에도 WebSearch·브라우저·실행 중 계산 값 등 누락 경로가 남는다."
+  ],
+  "access_gaps": [
+    "X와 Reddit 검색·댓글은 전수조사가 아니다.",
+    "외부 도구·사용자 실험·공식 릴리스 동작은 직접 실행하거나 재현하지 않았다.",
+    "Code Mode 문서는 읽을 수 있게 됐지만 최초 게시일과 실제 사용자 환경의 지원 여부는 확인하지 못했다."
+  ],
+  "next_questions": [
+    "에이전트별 실제 지침 로드·검색 호출률과 누락 영향을 측정한다.",
+    "동일 과제에서 담당뿐 아니라 모든 하위 세션의 시간·사용량과 재작업을 합산한다.",
+    "개인정보 모듈의 실제 로드·권한 조건과 제품 전체의 보호 범위는 별도 확인한다."
+  ],
+  "publishing_status": "reviewed_for_publication"
+}
